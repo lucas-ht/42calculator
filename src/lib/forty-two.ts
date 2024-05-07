@@ -4,6 +4,7 @@ import {
   FortyTwoCursusProject
 } from 'forty-two'
 
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export const ParseCursus = (
   cursus_user: Array<any>,
   projects_users: Array<any>
