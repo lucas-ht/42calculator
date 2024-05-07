@@ -3,6 +3,8 @@
   "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
   "enableGlobDot": true,
   "words": [
+    "tailwindcss",
+    "clsx",
     "fortytwo",
     "cursus"
   ],
