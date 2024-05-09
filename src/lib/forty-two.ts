@@ -2,7 +2,7 @@ import {
   FortyTwoCursus,
   FortyTwoCursusId,
   FortyTwoCursusProject
-} from 'forty-two'
+} from '@/types/forty-two'
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
 export const ParseCursus = (
@@ -15,6 +15,9 @@ export const ParseCursus = (
     experience: undefined,
     projects: []
   }
+
+  console.log('cursus_user:', cursus_user)
+  console.log('projects_users:', projects_users)
 
   for (const cu of cursus_user) {
     if (cu.cursus_id === FortyTwoCursusId.MAIN) {
