@@ -6,13 +6,17 @@
     "tailwindcss",
     "clsx",
     "fortytwo",
-    "cursus"
+    "cursus",
+    "dotenv",
+    "levelname",
   ],
   "useGitignore": true,
   "ignorePaths": [
     "cspell.json",
     ".git/**",
     ".gitignore",
-    ".github/workflows/*"
+    ".github/workflows/*",
+    "scripts/**",
+    "src/data/*"
   ]
 }
