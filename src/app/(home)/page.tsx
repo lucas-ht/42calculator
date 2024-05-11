@@ -1,4 +1,6 @@
 import { auth, signIn } from '@/auth'
+import FortyTwo from '@/components/icons/FortyTwo'
+import { Button } from '@/components/ui/button'
 
 function SignIn() {
   return (
@@ -8,7 +10,10 @@ function SignIn() {
         await signIn('42-school')
       }}
     >
-      <button type="submit">Sign in with 42</button>
+      <Button>
+        <FortyTwo className="mr-4 h-6" />
+        Sign in with 42
+      </Button>
     </form>
   )
 }
@@ -16,11 +21,14 @@ function SignIn() {
 export default async function Home() {
   const session = await auth()
 
+  // if (session != null)
+  //   return <div>Already signed in</div>
+
   console.log(`page: ${JSON.stringify(session?.user)}`)
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <SignIn></SignIn>
+    <main className="flex flex-col items-center justify-between p-24">
+      <SignIn />
     </main>
   )
 }

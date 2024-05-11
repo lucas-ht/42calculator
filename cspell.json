@@ -9,6 +9,8 @@
     "cursus",
     "dotenv",
     "levelname",
+    "lucide",
+    "zustand",
   ],
   "useGitignore": true,
   "ignorePaths": [
@@ -16,7 +18,10 @@
     ".git/**",
     ".gitignore",
     ".github/workflows/*",
+    "package.json",
+    "package-lock.json",
     "scripts/**",
+    "/src/components/ui/**",
     "src/data/*"
   ]
 }
