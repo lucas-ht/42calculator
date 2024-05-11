@@ -1,0 +1,4435 @@
+{
+  "meta": {
+    "id": 1,
+    "created_at": "2014-11-02T16:43:38.480Z",
+    "kind": "main_deprecated",
+    "name": "42",
+    "slug": "42"
+  },
+  "projects": {
+    "1": {
+      "id": 1,
+      "created_at": "2014-11-02T18:23:57.156Z",
+      "updated_at": "2024-04-12T08:42:11.772Z",
+      "name": "Libft",
+      "slug": "libft",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "2": {
+      "id": 2,
+      "created_at": "2014-11-04T15:23:49.425Z",
+      "updated_at": "2024-03-25T16:46:17.034Z",
+      "name": "GET_Next_Line",
+      "slug": "get_next_line",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "3": {
+      "id": 3,
+      "created_at": "2014-11-13T13:43:01.950Z",
+      "updated_at": "2024-03-25T16:46:18.261Z",
+      "name": "ft_ls",
+      "slug": "ft_ls",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "4": {
+      "id": 4,
+      "created_at": "2014-11-19T21:40:34.605Z",
+      "updated_at": "2024-03-25T16:46:16.930Z",
+      "name": "FdF",
+      "slug": "fdf",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "5": {
+      "id": 5,
+      "created_at": "2014-11-25T18:54:23.200Z",
+      "updated_at": "2024-03-25T16:46:17.894Z",
+      "name": "ft_printf",
+      "slug": "ft_printf",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "7": {
+      "id": 7,
+      "created_at": "2014-11-26T13:10:09.906Z",
+      "updated_at": "2024-03-25T16:46:17.077Z",
+      "name": "minishell",
+      "slug": "minishell",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "8": {
+      "id": 8,
+      "created_at": "2014-11-26T19:11:13.825Z",
+      "updated_at": "2024-03-25T16:46:17.916Z",
+      "name": "Wolf3d",
+      "slug": "wolf3d",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "11": {
+      "id": 11,
+      "created_at": "2014-12-02T19:11:33.500Z",
+      "updated_at": "2024-03-25T16:46:16.889Z",
+      "name": "C Exam Alone In The Dark - Beginner",
+      "slug": "c-exam-alone-in-the-dark-beginner",
+      "experience": 100,
+      "exam": true,
+      "parent": null
+    },
+    "14": {
+      "id": 14,
+      "created_at": "2014-12-04T14:16:43.396Z",
+      "updated_at": "2022-12-30T15:33:10.085Z",
+      "name": "Introduction to Wordpress",
+      "slug": "rushes-introduction-to-wordpress",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "15": {
+      "id": 15,
+      "created_at": "2014-12-05T10:58:05.253Z",
+      "updated_at": "2024-03-25T16:46:13.334Z",
+      "name": "Fract'ol",
+      "slug": "fract-ol",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "18": {
+      "id": 18,
+      "created_at": "2014-12-11T13:45:50.955Z",
+      "updated_at": "2024-03-25T16:46:17.400Z",
+      "name": "Introduction to iOS",
+      "slug": "rushes-introduction-to-ios",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "22": {
+      "id": 22,
+      "created_at": "2014-12-22T23:42:45.672Z",
+      "updated_at": "2024-03-25T16:46:16.820Z",
+      "name": "Corewar",
+      "slug": "corewar",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "23": {
+      "id": 23,
+      "created_at": "2014-12-23T00:39:19.646Z",
+      "updated_at": "2024-03-25T16:46:17.098Z",
+      "name": "RTv1",
+      "slug": "rtv1",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "24": {
+      "id": 24,
+      "created_at": "2014-12-23T00:50:14.259Z",
+      "updated_at": "2024-03-25T16:46:18.285Z",
+      "name": "RT",
+      "slug": "rt",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "25": {
+      "id": 25,
+      "created_at": "2014-12-23T15:21:20.049Z",
+      "updated_at": "2024-03-25T16:46:18.195Z",
+      "name": "Hotrace",
+      "slug": "rushes-c-hotrace",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "26": {
+      "id": 26,
+      "created_at": "2014-12-23T15:22:36.355Z",
+      "updated_at": "2024-03-25T16:46:17.935Z",
+      "name": "Filler",
+      "slug": "filler",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "27": {
+      "id": 27,
+      "created_at": "2014-12-23T15:24:29.527Z",
+      "updated_at": "2024-03-25T16:46:16.999Z",
+      "name": "Push_swap",
+      "slug": "push_swap",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "28": {
+      "id": 28,
+      "created_at": "2014-12-23T15:25:25.776Z",
+      "updated_at": "2024-03-25T16:46:18.127Z",
+      "name": "AlCu",
+      "slug": "rushes-alcu",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "29": {
+      "id": 29,
+      "created_at": "2014-12-23T15:26:50.628Z",
+      "updated_at": "2024-03-25T16:46:16.974Z",
+      "name": "Lem_in",
+      "slug": "lem_in",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "30": {
+      "id": 30,
+      "created_at": "2014-12-23T15:29:38.730Z",
+      "updated_at": "2024-03-25T16:46:18.235Z",
+      "name": "Pipex",
+      "slug": "rushes-c-pipex",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "31": {
+      "id": 31,
+      "created_at": "2014-12-23T15:30:25.262Z",
+      "updated_at": "2024-03-25T16:46:15.949Z",
+      "name": "ft_sh2",
+      "slug": "ft_sh2",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "32": {
+      "id": 32,
+      "created_at": "2014-12-23T15:31:21.319Z",
+      "updated_at": "2024-03-25T16:46:18.217Z",
+      "name": "Minitalk",
+      "slug": "rushes-c-minitalk",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "33": {
+      "id": 33,
+      "created_at": "2014-12-23T15:32:44.260Z",
+      "updated_at": "2024-03-25T16:46:17.960Z",
+      "name": "ft_select",
+      "slug": "ft_select",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "34": {
+      "id": 34,
+      "created_at": "2014-12-23T15:34:06.892Z",
+      "updated_at": "2024-03-25T16:46:17.989Z",
+      "name": "ft_sh3",
+      "slug": "ft_sh3",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "35": {
+      "id": 35,
+      "created_at": "2014-12-23T15:36:11.653Z",
+      "updated_at": "2024-03-25T16:46:18.449Z",
+      "name": "42sh",
+      "slug": "42sh",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "36": {
+      "id": 36,
+      "created_at": "2014-12-23T15:39:15.491Z",
+      "updated_at": "2024-03-25T16:46:17.241Z",
+      "name": "Malloc",
+      "slug": "malloc",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "37": {
+      "id": 37,
+      "created_at": "2014-12-23T15:48:27.750Z",
+      "updated_at": "2024-03-25T16:46:17.688Z",
+      "name": "Nm-otool",
+      "slug": "nm-otool",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "38": {
+      "id": 38,
+      "created_at": "2014-12-23T15:49:31.824Z",
+      "updated_at": "2024-03-25T16:46:16.083Z",
+      "name": "ft_script",
+      "slug": "ft_script",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "39": {
+      "id": 39,
+      "created_at": "2014-12-23T15:53:24.615Z",
+      "updated_at": "2024-03-25T16:46:16.451Z",
+      "name": "Philosophers",
+      "slug": "philosophers",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "40": {
+      "id": 40,
+      "created_at": "2014-12-23T15:54:58.274Z",
+      "updated_at": "2024-03-25T16:46:16.141Z",
+      "name": "ft_p",
+      "slug": "ft_p",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "41": {
+      "id": 41,
+      "created_at": "2014-12-23T15:56:56.737Z",
+      "updated_at": "2024-03-25T16:46:18.420Z",
+      "name": "IRC",
+      "slug": "irc",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "42": {
+      "id": 42,
+      "created_at": "2014-12-23T15:57:28.000Z",
+      "updated_at": "2024-03-25T16:46:18.385Z",
+      "name": "Lem-ipc",
+      "slug": "lem-ipc",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "43": {
+      "id": 43,
+      "created_at": "2014-12-23T16:08:01.384Z",
+      "updated_at": "2024-03-25T16:46:18.353Z",
+      "name": "Zappy",
+      "slug": "zappy",
+      "experience": 600,
+      "exam": false,
+      "parent": null
+    },
+    "48": {
+      "id": 48,
+      "created_at": "2014-12-29T11:55:04.667Z",
+      "updated_at": "2024-03-25T16:46:17.288Z",
+      "name": "Piscine PHP",
+      "slug": "piscine-php",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "49": {
+      "id": 49,
+      "created_at": "2014-12-29T11:58:54.020Z",
+      "updated_at": "2024-03-25T16:46:12.943Z",
+      "name": "Day 00",
+      "slug": "42-piscine-c-formation-piscine-php-day-00",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 48,
+        "name": "Piscine PHP",
+        "slug": "piscine-php"
+      }
+    },
+    "50": {
+      "id": 50,
+      "created_at": "2014-12-29T11:59:42.526Z",
+      "updated_at": "2024-03-25T16:46:12.913Z",
+      "name": "Day 01",
+      "slug": "42-piscine-c-formation-piscine-php-day-01",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 48,
+        "name": "Piscine PHP",
+        "slug": "piscine-php"
+      }
+    },
+    "51": {
+      "id": 51,
+      "created_at": "2014-12-29T12:00:40.288Z",
+      "updated_at": "2024-03-25T16:46:12.956Z",
+      "name": "Day 02",
+      "slug": "42-piscine-c-formation-piscine-php-day-02",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 48,
+        "name": "Piscine PHP",
+        "slug": "piscine-php"
+      }
+    },
+    "52": {
+      "id": 52,
+      "created_at": "2014-12-29T12:01:21.788Z",
+      "updated_at": "2024-03-25T16:46:13.062Z",
+      "name": "Day 03",
+      "slug": "42-piscine-c-formation-piscine-php-day-03",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 48,
+        "name": "Piscine PHP",
+        "slug": "piscine-php"
+      }
+    },
+    "53": {
+      "id": 53,
+      "created_at": "2014-12-29T12:02:06.283Z",
+      "updated_at": "2024-03-25T16:46:12.790Z",
+      "name": "Day 04",
+      "slug": "42-piscine-c-formation-piscine-php-day-04",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 48,
+        "name": "Piscine PHP",
+        "slug": "piscine-php"
+      }
+    },
+    "54": {
+      "id": 54,
+      "created_at": "2014-12-29T12:03:34.214Z",
+      "updated_at": "2024-03-25T16:46:13.937Z",
+      "name": "Day 05",
+      "slug": "42-piscine-c-formation-piscine-php-day-05",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 48,
+        "name": "Piscine PHP",
+        "slug": "piscine-php"
+      }
+    },
+    "55": {
+      "id": 55,
+      "created_at": "2014-12-29T12:04:44.931Z",
+      "updated_at": "2024-03-25T16:46:13.913Z",
+      "name": "Day 06",
+      "slug": "42-piscine-c-formation-piscine-php-day-06",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 48,
+        "name": "Piscine PHP",
+        "slug": "piscine-php"
+      }
+    },
+    "56": {
+      "id": 56,
+      "created_at": "2014-12-29T12:05:34.741Z",
+      "updated_at": "2024-03-25T16:46:14.787Z",
+      "name": "Day 07",
+      "slug": "42-piscine-c-formation-piscine-php-day-07",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 48,
+        "name": "Piscine PHP",
+        "slug": "piscine-php"
+      }
+    },
+    "57": {
+      "id": 57,
+      "created_at": "2014-12-29T12:06:07.904Z",
+      "updated_at": "2024-03-25T16:46:13.493Z",
+      "name": "Day 08",
+      "slug": "42-piscine-c-formation-piscine-php-day-08",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 48,
+        "name": "Piscine PHP",
+        "slug": "piscine-php"
+      }
+    },
+    "58": {
+      "id": 58,
+      "created_at": "2014-12-29T12:06:22.473Z",
+      "updated_at": "2024-03-25T16:46:13.789Z",
+      "name": "Day 09",
+      "slug": "42-piscine-c-formation-piscine-php-day-09",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 48,
+        "name": "Piscine PHP",
+        "slug": "piscine-php"
+      }
+    },
+    "59": {
+      "id": 59,
+      "created_at": "2014-12-29T12:07:24.722Z",
+      "updated_at": "2024-03-25T16:46:15.987Z",
+      "name": "Rush00",
+      "slug": "piscine-php-rush00",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 48,
+        "name": "Piscine PHP",
+        "slug": "piscine-php"
+      }
+    },
+    "60": {
+      "id": 60,
+      "created_at": "2014-12-29T12:08:36.345Z",
+      "updated_at": "2024-03-25T16:46:16.706Z",
+      "name": "Rush01",
+      "slug": "piscine-php-rush01",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 48,
+        "name": "Piscine PHP",
+        "slug": "piscine-php"
+      }
+    },
+    "61": {
+      "id": 61,
+      "created_at": "2014-12-29T15:13:55.573Z",
+      "updated_at": "2024-03-25T16:46:25.436Z",
+      "name": "Rushes",
+      "slug": "rushes",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "62": {
+      "id": 62,
+      "created_at": "2015-01-02T13:31:24.822Z",
+      "updated_at": "2024-03-25T16:46:18.055Z",
+      "name": "Piscine CPP",
+      "slug": "piscine-cpp",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "63": {
+      "id": 63,
+      "created_at": "2015-01-02T13:37:32.761Z",
+      "updated_at": "2024-03-25T16:46:12.849Z",
+      "name": "Day 00",
+      "slug": "42-piscine-c-formation-piscine-cpp-day-00",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 62,
+        "name": "Piscine CPP",
+        "slug": "piscine-cpp"
+      }
+    },
+    "64": {
+      "id": 64,
+      "created_at": "2015-01-02T13:45:21.292Z",
+      "updated_at": "2024-03-25T16:46:12.833Z",
+      "name": "Day 01",
+      "slug": "42-piscine-c-formation-piscine-cpp-day-01",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 62,
+        "name": "Piscine CPP",
+        "slug": "piscine-cpp"
+      }
+    },
+    "65": {
+      "id": 65,
+      "created_at": "2015-01-02T13:46:43.909Z",
+      "updated_at": "2024-03-25T16:46:16.515Z",
+      "name": "Day 02",
+      "slug": "42-piscine-c-formation-piscine-cpp-day-02",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 62,
+        "name": "Piscine CPP",
+        "slug": "piscine-cpp"
+      }
+    },
+    "66": {
+      "id": 66,
+      "created_at": "2015-01-02T13:48:33.409Z",
+      "updated_at": "2024-03-25T16:46:12.927Z",
+      "name": "Day 03",
+      "slug": "42-piscine-c-formation-piscine-cpp-day-03",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 62,
+        "name": "Piscine CPP",
+        "slug": "piscine-cpp"
+      }
+    },
+    "67": {
+      "id": 67,
+      "created_at": "2015-01-02T13:49:34.674Z",
+      "updated_at": "2024-03-25T16:46:14.299Z",
+      "name": "Day 04",
+      "slug": "42-piscine-c-formation-piscine-cpp-day-04",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 62,
+        "name": "Piscine CPP",
+        "slug": "piscine-cpp"
+      }
+    },
+    "69": {
+      "id": 69,
+      "created_at": "2015-01-02T13:54:10.399Z",
+      "updated_at": "2024-03-25T16:46:16.058Z",
+      "name": "Rush00",
+      "slug": "piscine-cpp-rush00",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 62,
+        "name": "Piscine CPP",
+        "slug": "piscine-cpp"
+      }
+    },
+    "70": {
+      "id": 70,
+      "created_at": "2015-01-02T13:58:22.655Z",
+      "updated_at": "2024-03-25T16:46:12.758Z",
+      "name": "Day 05",
+      "slug": "42-piscine-c-formation-piscine-cpp-day-05",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 62,
+        "name": "Piscine CPP",
+        "slug": "piscine-cpp"
+      }
+    },
+    "71": {
+      "id": 71,
+      "created_at": "2015-01-02T13:58:48.120Z",
+      "updated_at": "2024-03-25T16:46:14.638Z",
+      "name": "Day 06",
+      "slug": "42-piscine-c-formation-piscine-cpp-day-06",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 62,
+        "name": "Piscine CPP",
+        "slug": "piscine-cpp"
+      }
+    },
+    "72": {
+      "id": 72,
+      "created_at": "2015-01-02T14:00:09.964Z",
+      "updated_at": "2024-03-25T16:46:13.979Z",
+      "name": "Day 07",
+      "slug": "42-piscine-c-formation-piscine-cpp-day-07",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 62,
+        "name": "Piscine CPP",
+        "slug": "piscine-cpp"
+      }
+    },
+    "73": {
+      "id": 73,
+      "created_at": "2015-01-02T14:00:49.864Z",
+      "updated_at": "2024-03-25T16:46:12.866Z",
+      "name": "Day 08",
+      "slug": "42-piscine-c-formation-piscine-cpp-day-08",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 62,
+        "name": "Piscine CPP",
+        "slug": "piscine-cpp"
+      }
+    },
+    "76": {
+      "id": 76,
+      "created_at": "2015-01-02T14:04:12.202Z",
+      "updated_at": "2024-03-25T16:46:16.645Z",
+      "name": "Rush01",
+      "slug": "piscine-cpp-rush01",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 62,
+        "name": "Piscine CPP",
+        "slug": "piscine-cpp"
+      }
+    },
+    "78": {
+      "id": 78,
+      "created_at": "2015-01-18T13:43:02.120Z",
+      "updated_at": "2024-03-25T16:46:18.321Z",
+      "name": "mod1",
+      "slug": "mod1",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "79": {
+      "id": 79,
+      "created_at": "2015-01-20T11:36:11.221Z",
+      "updated_at": "2024-03-25T16:46:17.057Z",
+      "name": "LibftASM",
+      "slug": "libftasm",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "80": {
+      "id": 80,
+      "created_at": "2015-01-21T17:52:06.538Z",
+      "updated_at": "2024-03-25T16:46:16.039Z",
+      "name": "Abstract VM",
+      "slug": "abstract-vm",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "85": {
+      "id": 85,
+      "created_at": "2015-01-30T10:06:27.181Z",
+      "updated_at": "2024-03-25T16:46:15.969Z",
+      "name": "Open Project I",
+      "slug": "open-project-i",
+      "experience": 600,
+      "exam": false,
+      "parent": null
+    },
+    "86": {
+      "id": 86,
+      "created_at": "2015-01-30T10:09:30.211Z",
+      "updated_at": "2024-03-25T16:46:15.964Z",
+      "name": "Define your subject",
+      "slug": "open-project-i-define-your-subject",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 85,
+        "name": "Open Project I",
+        "slug": "open-project-i"
+      }
+    },
+    "87": {
+      "id": 87,
+      "created_at": "2015-01-30T10:13:31.299Z",
+      "updated_at": "2024-03-25T16:46:13.580Z",
+      "name": "Complete the project",
+      "slug": "open-project-i-complete-the-project",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 85,
+        "name": "Open Project I",
+        "slug": "open-project-i"
+      }
+    },
+    "93": {
+      "id": 93,
+      "created_at": "2015-02-23T14:05:05.294Z",
+      "updated_at": "2024-03-25T16:46:13.100Z",
+      "name": "wong_kar_wai",
+      "slug": "rushes-wong_kar_wai",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "95": {
+      "id": 95,
+      "created_at": "2015-02-27T14:44:25.121Z",
+      "updated_at": "2024-03-25T16:46:21.068Z",
+      "name": "Nibbler",
+      "slug": "nibbler",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "97": {
+      "id": 97,
+      "created_at": "2015-03-03T14:42:23.676Z",
+      "updated_at": "2024-03-25T16:46:21.048Z",
+      "name": "N-puzzle",
+      "slug": "n-puzzle",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "98": {
+      "id": 98,
+      "created_at": "2015-03-04T14:41:23.571Z",
+      "updated_at": "2024-03-25T16:46:21.111Z",
+      "name": "Expert System",
+      "slug": "expert-system",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "107": {
+      "id": 107,
+      "created_at": "2015-03-06T14:27:53.769Z",
+      "updated_at": "2024-03-25T16:46:20.280Z",
+      "name": "Gomoku",
+      "slug": "gomoku",
+      "experience": 600,
+      "exam": false,
+      "parent": null
+    },
+    "108": {
+      "id": 108,
+      "created_at": "2015-03-12T15:43:09.521Z",
+      "updated_at": "2024-03-25T16:46:17.612Z",
+      "name": "Rush Network and System Administration #0",
+      "slug": "rushes-rush-network-and-system-administration-0",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "109": {
+      "id": 109,
+      "created_at": "2015-03-12T15:47:15.321Z",
+      "updated_at": "2024-03-25T16:46:17.718Z",
+      "name": "Rush Network and System Administration #1",
+      "slug": "rushes-rush-network-and-system-administration-1",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "111": {
+      "id": 111,
+      "created_at": "2015-03-18T16:20:35.303Z",
+      "updated_at": "2024-03-25T16:46:21.156Z",
+      "name": "ComputorV1",
+      "slug": "computorv1",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "114": {
+      "id": 114,
+      "created_at": "2015-03-25T12:55:02.841Z",
+      "updated_at": "2024-03-25T16:46:13.139Z",
+      "name": "Cluedo (Prolog)",
+      "slug": "rushes-cluedo-prolog",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "118": {
+      "id": 118,
+      "created_at": "2015-04-02T10:32:33.225Z",
+      "updated_at": "2024-03-25T16:46:24.102Z",
+      "name": "First Internship",
+      "slug": "first-internship",
+      "experience": 1000,
+      "exam": false,
+      "parent": null
+    },
+    "119": {
+      "id": 119,
+      "created_at": "2015-04-02T10:37:50.062Z",
+      "updated_at": "2024-03-25T16:46:13.195Z",
+      "name": "Contract Upload",
+      "slug": "first-internship-contract-upload",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 118,
+        "name": "First Internship",
+        "slug": "first-internship"
+      }
+    },
+    "120": {
+      "id": 120,
+      "created_at": "2015-04-02T10:39:58.633Z",
+      "updated_at": "2024-03-25T16:46:13.229Z",
+      "name": "Company final evaluation",
+      "slug": "first-internship-company-final-evaluation",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 118,
+        "name": "First Internship",
+        "slug": "first-internship"
+      }
+    },
+    "121": {
+      "id": 121,
+      "created_at": "2015-04-02T10:41:36.102Z",
+      "updated_at": "2024-03-25T16:46:13.255Z",
+      "name": "Peer Video",
+      "slug": "first-internship-peer-video",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 118,
+        "name": "First Internship",
+        "slug": "first-internship"
+      }
+    },
+    "122": {
+      "id": 122,
+      "created_at": "2015-04-03T09:15:55.570Z",
+      "updated_at": "2024-03-25T16:46:19.385Z",
+      "name": "Taskmaster",
+      "slug": "taskmaster",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "135": {
+      "id": 135,
+      "created_at": "2015-04-20T09:58:43.145Z",
+      "updated_at": "2024-03-25T16:46:20.240Z",
+      "name": "Scop",
+      "slug": "scop",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "140": {
+      "id": 140,
+      "created_at": "2015-04-28T17:35:56.440Z",
+      "updated_at": "2024-03-25T16:46:12.987Z",
+      "name": "Duration",
+      "slug": "first-internship-duration",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 118,
+        "name": "First Internship",
+        "slug": "first-internship"
+      }
+    },
+    "141": {
+      "id": 141,
+      "created_at": "2015-04-29T11:07:48.499Z",
+      "updated_at": "2024-03-25T16:46:12.815Z",
+      "name": "Arkanoid",
+      "slug": "rushes-arkanoid",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "178": {
+      "id": 178,
+      "created_at": "2015-05-12T17:32:31.460Z",
+      "updated_at": "2024-03-25T16:46:21.348Z",
+      "name": "42run",
+      "slug": "42run",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "179": {
+      "id": 179,
+      "created_at": "2015-05-18T12:11:21.337Z",
+      "updated_at": "2024-03-25T16:46:20.219Z",
+      "name": "strace",
+      "slug": "strace",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "180": {
+      "id": 180,
+      "created_at": "2015-05-20T11:22:15.701Z",
+      "updated_at": "2024-03-25T16:46:13.893Z",
+      "name": "Contract Upload",
+      "slug": "part-time-contract-upload",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 184,
+        "name": "Part-time",
+        "slug": "part-time"
+      }
+    },
+    "181": {
+      "id": 181,
+      "created_at": "2015-05-20T11:22:15.917Z",
+      "updated_at": "2024-03-25T16:46:14.022Z",
+      "name": "Duration",
+      "slug": "part-time-duration",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 184,
+        "name": "Part-time",
+        "slug": "part-time"
+      }
+    },
+    "182": {
+      "id": 182,
+      "created_at": "2015-05-20T11:22:16.053Z",
+      "updated_at": "2024-03-25T16:46:14.113Z",
+      "name": "Company final evaluation",
+      "slug": "part-time-company-final-evaluation",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 184,
+        "name": "Part-time",
+        "slug": "part-time"
+      }
+    },
+    "183": {
+      "id": 183,
+      "created_at": "2015-05-20T11:22:16.323Z",
+      "updated_at": "2024-03-25T16:46:14.085Z",
+      "name": "Peer Video",
+      "slug": "part-time-peer-video",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 184,
+        "name": "Part-time",
+        "slug": "part-time"
+      }
+    },
+    "184": {
+      "id": 184,
+      "created_at": "2015-05-20T11:22:16.716Z",
+      "updated_at": "2024-03-25T16:46:24.148Z",
+      "name": "Part-time",
+      "slug": "part-time",
+      "experience": 1000,
+      "exam": false,
+      "parent": null
+    },
+    "208": {
+      "id": 208,
+      "created_at": "2015-05-22T12:42:03.905Z",
+      "updated_at": "2024-03-25T16:46:12.971Z",
+      "name": "Contract Upload",
+      "slug": "final-internship-contract-upload",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 212,
+        "name": "Final Internship",
+        "slug": "final-internship"
+      }
+    },
+    "209": {
+      "id": 209,
+      "created_at": "2015-05-22T12:42:04.085Z",
+      "updated_at": "2024-03-25T16:46:14.218Z",
+      "name": "Duration",
+      "slug": "final-internship-duration",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 212,
+        "name": "Final Internship",
+        "slug": "final-internship"
+      }
+    },
+    "210": {
+      "id": 210,
+      "created_at": "2015-05-22T12:42:04.204Z",
+      "updated_at": "2024-03-25T16:46:14.193Z",
+      "name": "Company final evaluation",
+      "slug": "final-internship-company-final-evaluation",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 212,
+        "name": "Final Internship",
+        "slug": "final-internship"
+      }
+    },
+    "211": {
+      "id": 211,
+      "created_at": "2015-05-22T12:42:04.632Z",
+      "updated_at": "2024-03-25T16:46:14.051Z",
+      "name": "Peer Video",
+      "slug": "final-internship-peer-video",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 212,
+        "name": "Final Internship",
+        "slug": "final-internship"
+      }
+    },
+    "212": {
+      "id": 212,
+      "created_at": "2015-05-22T12:42:05.048Z",
+      "updated_at": "2024-03-25T16:46:24.124Z",
+      "name": "Final Internship",
+      "slug": "final-internship",
+      "experience": 1500,
+      "exam": false,
+      "parent": null
+    },
+    "214": {
+      "id": 214,
+      "created_at": "2015-05-27T15:05:58.272Z",
+      "updated_at": "2024-03-25T16:46:20.386Z",
+      "name": "Communication Trainer",
+      "slug": "communication-trainer",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "215": {
+      "id": 215,
+      "created_at": "2015-05-27T15:14:03.515Z",
+      "updated_at": "2024-03-25T16:46:15.405Z",
+      "name": "Trainees sessions",
+      "slug": "communication-trainer-trainees-sessions",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 214,
+        "name": "Communication Trainer",
+        "slug": "communication-trainer"
+      }
+    },
+    "216": {
+      "id": 216,
+      "created_at": "2015-05-27T15:19:43.378Z",
+      "updated_at": "2024-03-25T16:46:14.269Z",
+      "name": "Training the community",
+      "slug": "communication-trainer-training-the-community",
+      "experience": 225,
+      "exam": false,
+      "parent": {
+        "id": 214,
+        "name": "Communication Trainer",
+        "slug": "communication-trainer"
+      }
+    },
+    "370": {
+      "id": 370,
+      "created_at": "2015-06-09T10:58:35.746Z",
+      "updated_at": "2024-03-25T16:46:17.822Z",
+      "name": "Piscine OCaml",
+      "slug": "piscine-ocaml",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "372": {
+      "id": 372,
+      "created_at": "2015-06-09T11:07:16.317Z",
+      "updated_at": "2024-03-25T16:46:14.417Z",
+      "name": "Day 00",
+      "slug": "piscine-ocaml-day-00",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 370,
+        "name": "Piscine OCaml",
+        "slug": "piscine-ocaml"
+      }
+    },
+    "374": {
+      "id": 374,
+      "created_at": "2015-06-09T11:15:41.128Z",
+      "updated_at": "2024-03-25T16:46:14.150Z",
+      "name": "Day 01",
+      "slug": "piscine-ocaml-day-01",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 370,
+        "name": "Piscine OCaml",
+        "slug": "piscine-ocaml"
+      }
+    },
+    "375": {
+      "id": 375,
+      "created_at": "2015-06-09T11:19:20.699Z",
+      "updated_at": "2024-03-25T16:46:16.583Z",
+      "name": "Day 02",
+      "slug": "piscine-ocaml-day-02",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 370,
+        "name": "Piscine OCaml",
+        "slug": "piscine-ocaml"
+      }
+    },
+    "377": {
+      "id": 377,
+      "created_at": "2015-06-09T11:41:36.503Z",
+      "updated_at": "2024-03-25T16:46:13.615Z",
+      "name": "Day 03",
+      "slug": "piscine-ocaml-day-03",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 370,
+        "name": "Piscine OCaml",
+        "slug": "piscine-ocaml"
+      }
+    },
+    "379": {
+      "id": 379,
+      "created_at": "2015-06-09T13:14:48.349Z",
+      "updated_at": "2024-03-25T16:46:14.745Z",
+      "name": "Day 04",
+      "slug": "piscine-ocaml-day-04",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 370,
+        "name": "Piscine OCaml",
+        "slug": "piscine-ocaml"
+      }
+    },
+    "380": {
+      "id": 380,
+      "created_at": "2015-06-09T13:18:48.213Z",
+      "updated_at": "2024-03-25T16:46:14.766Z",
+      "name": "Day 05",
+      "slug": "piscine-ocaml-day-05",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 370,
+        "name": "Piscine OCaml",
+        "slug": "piscine-ocaml"
+      }
+    },
+    "381": {
+      "id": 381,
+      "created_at": "2015-06-09T13:19:30.725Z",
+      "updated_at": "2024-03-25T16:46:13.739Z",
+      "name": "Day 00",
+      "slug": "piscine-unity-day-00",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 394,
+        "name": "Piscine Unity",
+        "slug": "piscine-unity"
+      }
+    },
+    "382": {
+      "id": 382,
+      "created_at": "2015-06-09T13:19:31.730Z",
+      "updated_at": "2024-03-25T16:46:14.804Z",
+      "name": "Day 01",
+      "slug": "piscine-unity-day-01",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 394,
+        "name": "Piscine Unity",
+        "slug": "piscine-unity"
+      }
+    },
+    "383": {
+      "id": 383,
+      "created_at": "2015-06-09T13:19:33.471Z",
+      "updated_at": "2024-03-25T16:46:14.818Z",
+      "name": "Day 02",
+      "slug": "piscine-unity-day-02",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 394,
+        "name": "Piscine Unity",
+        "slug": "piscine-unity"
+      }
+    },
+    "384": {
+      "id": 384,
+      "created_at": "2015-06-09T13:19:34.733Z",
+      "updated_at": "2024-03-25T16:46:14.843Z",
+      "name": "Day 03",
+      "slug": "piscine-unity-day-03",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 394,
+        "name": "Piscine Unity",
+        "slug": "piscine-unity"
+      }
+    },
+    "385": {
+      "id": 385,
+      "created_at": "2015-06-09T13:19:36.762Z",
+      "updated_at": "2024-03-25T16:46:13.717Z",
+      "name": "Day 04",
+      "slug": "piscine-unity-day-04",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 394,
+        "name": "Piscine Unity",
+        "slug": "piscine-unity"
+      }
+    },
+    "386": {
+      "id": 386,
+      "created_at": "2015-06-09T13:19:39.304Z",
+      "updated_at": "2024-03-25T16:46:16.016Z",
+      "name": "Rush00",
+      "slug": "piscine-unity-rush00",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 394,
+        "name": "Piscine Unity",
+        "slug": "piscine-unity"
+      }
+    },
+    "388": {
+      "id": 388,
+      "created_at": "2015-06-09T13:19:41.047Z",
+      "updated_at": "2024-03-25T16:46:13.870Z",
+      "name": "Day 05",
+      "slug": "piscine-unity-day-05",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 394,
+        "name": "Piscine Unity",
+        "slug": "piscine-unity"
+      }
+    },
+    "389": {
+      "id": 389,
+      "created_at": "2015-06-09T13:19:42.172Z",
+      "updated_at": "2024-03-25T16:46:13.847Z",
+      "name": "Day 06",
+      "slug": "piscine-unity-day-06",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 394,
+        "name": "Piscine Unity",
+        "slug": "piscine-unity"
+      }
+    },
+    "390": {
+      "id": 390,
+      "created_at": "2015-06-09T13:19:43.058Z",
+      "updated_at": "2024-03-25T16:46:13.828Z",
+      "name": "Day 07",
+      "slug": "piscine-unity-day-07",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 394,
+        "name": "Piscine Unity",
+        "slug": "piscine-unity"
+      }
+    },
+    "391": {
+      "id": 391,
+      "created_at": "2015-06-09T13:19:44.541Z",
+      "updated_at": "2024-03-25T16:46:13.535Z",
+      "name": "Day 08",
+      "slug": "piscine-unity-day-08",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 394,
+        "name": "Piscine Unity",
+        "slug": "piscine-unity"
+      }
+    },
+    "393": {
+      "id": 393,
+      "created_at": "2015-06-09T13:19:46.725Z",
+      "updated_at": "2024-03-25T16:46:16.765Z",
+      "name": "Rush01",
+      "slug": "piscine-unity-rush01",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 394,
+        "name": "Piscine Unity",
+        "slug": "piscine-unity"
+      }
+    },
+    "394": {
+      "id": 394,
+      "created_at": "2015-06-09T13:19:47.923Z",
+      "updated_at": "2024-03-25T16:46:17.370Z",
+      "name": "Piscine Unity",
+      "slug": "piscine-unity",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "395": {
+      "id": 395,
+      "created_at": "2015-06-09T13:20:50.113Z",
+      "updated_at": "2024-03-25T16:46:13.164Z",
+      "name": "Day 06",
+      "slug": "piscine-ocaml-day-06",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 370,
+        "name": "Piscine OCaml",
+        "slug": "piscine-ocaml"
+      }
+    },
+    "396": {
+      "id": 396,
+      "created_at": "2015-06-09T13:22:41.731Z",
+      "updated_at": "2024-03-25T16:46:14.384Z",
+      "name": "Day 07",
+      "slug": "piscine-ocaml-day-07",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 370,
+        "name": "Piscine OCaml",
+        "slug": "piscine-ocaml"
+      }
+    },
+    "397": {
+      "id": 397,
+      "created_at": "2015-06-09T13:24:36.587Z",
+      "updated_at": "2024-03-25T16:46:13.004Z",
+      "name": "Day 08",
+      "slug": "piscine-ocaml-day-08",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 370,
+        "name": "Piscine OCaml",
+        "slug": "piscine-ocaml"
+      }
+    },
+    "398": {
+      "id": 398,
+      "created_at": "2015-06-09T13:28:27.650Z",
+      "updated_at": "2024-03-25T16:46:13.023Z",
+      "name": "Day 09",
+      "slug": "piscine-ocaml-day-09",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 370,
+        "name": "Piscine OCaml",
+        "slug": "piscine-ocaml"
+      }
+    },
+    "399": {
+      "id": 399,
+      "created_at": "2015-06-09T13:29:27.570Z",
+      "updated_at": "2024-03-25T16:46:17.816Z",
+      "name": "Rush00",
+      "slug": "piscine-ocaml-rush00",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 370,
+        "name": "Piscine OCaml",
+        "slug": "piscine-ocaml"
+      }
+    },
+    "400": {
+      "id": 400,
+      "created_at": "2015-06-09T13:31:07.679Z",
+      "updated_at": "2024-03-25T16:46:16.664Z",
+      "name": "Rush01",
+      "slug": "piscine-ocaml-rush01",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 370,
+        "name": "Piscine OCaml",
+        "slug": "piscine-ocaml"
+      }
+    },
+    "401": {
+      "id": 401,
+      "created_at": "2015-06-09T14:14:45.645Z",
+      "updated_at": "2024-03-25T16:46:13.766Z",
+      "name": "Day 09",
+      "slug": "piscine-unity-day-09",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 394,
+        "name": "Piscine Unity",
+        "slug": "piscine-unity"
+      }
+    },
+    "403": {
+      "id": 403,
+      "created_at": "2015-06-29T08:57:00.701Z",
+      "updated_at": "2024-03-25T16:46:19.016Z",
+      "name": "Corewar Championship",
+      "slug": "corewar-championship",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "409": {
+      "id": 409,
+      "created_at": "2015-07-02T11:26:18.347Z",
+      "updated_at": "2024-03-25T16:46:21.443Z",
+      "name": "ft_hangouts",
+      "slug": "ft_hangouts",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "410": {
+      "id": 410,
+      "created_at": "2015-07-02T17:30:04.458Z",
+      "updated_at": "2024-03-25T16:46:19.447Z",
+      "name": "Bomberman",
+      "slug": "bomberman",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "411": {
+      "id": 411,
+      "created_at": "2015-07-25T04:07:49.406Z",
+      "updated_at": "2024-03-25T16:46:17.340Z",
+      "name": "Electronics",
+      "slug": "electronics",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "414": {
+      "id": 414,
+      "created_at": "2015-09-12T14:04:01.618Z",
+      "updated_at": "2024-04-16T13:14:38.796Z",
+      "name": "ft_linear_regression",
+      "slug": "ft_linear_regression",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "522": {
+      "id": 522,
+      "created_at": "2015-10-01T10:49:14.581Z",
+      "updated_at": "2024-03-25T16:46:21.376Z",
+      "name": "KrpSim",
+      "slug": "krpsim",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "523": {
+      "id": 523,
+      "created_at": "2015-10-07T17:39:35.663Z",
+      "updated_at": "2024-03-25T16:46:12.136Z",
+      "name": "21sh",
+      "slug": "21sh",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "534": {
+      "id": 534,
+      "created_at": "2015-10-19T10:02:16.473Z",
+      "updated_at": "2024-03-25T16:46:20.293Z",
+      "name": "Rubik",
+      "slug": "rubik",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "535": {
+      "id": 535,
+      "created_at": "2015-10-19T10:06:58.036Z",
+      "updated_at": "2024-03-25T16:46:19.405Z",
+      "name": "HumanGL",
+      "slug": "humangl",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "536": {
+      "id": 536,
+      "created_at": "2015-10-28T15:55:02.097Z",
+      "updated_at": "2024-03-25T16:46:17.646Z",
+      "name": "Swifty Companion",
+      "slug": "swifty-companion",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "537": {
+      "id": 537,
+      "created_at": "2015-11-02T12:55:18.627Z",
+      "updated_at": "2024-03-25T16:46:19.719Z",
+      "name": "Camagru",
+      "slug": "camagru",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "538": {
+      "id": 538,
+      "created_at": "2015-11-04T11:04:12.779Z",
+      "updated_at": "2024-01-18T09:14:32.224Z",
+      "name": "ft_minirogue",
+      "slug": "rushes-ft_minirogue",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "539": {
+      "id": 539,
+      "created_at": "2015-11-12T13:47:06.183Z",
+      "updated_at": "2024-03-25T16:46:18.535Z",
+      "name": "ft_ping",
+      "slug": "ft_ping",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "540": {
+      "id": 540,
+      "created_at": "2015-11-13T14:06:25.951Z",
+      "updated_at": "2024-03-25T16:46:21.246Z",
+      "name": "Fillit",
+      "slug": "fillit",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "548": {
+      "id": 548,
+      "created_at": "2015-11-16T13:49:14.915Z",
+      "updated_at": "2024-03-25T16:46:19.425Z",
+      "name": "ft_traceroute",
+      "slug": "ft_traceroute",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "593": {
+      "id": 593,
+      "created_at": "2015-11-18T07:32:30.262Z",
+      "updated_at": "2024-03-25T16:46:21.408Z",
+      "name": "ft_nmap",
+      "slug": "ft_nmap",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "596": {
+      "id": 596,
+      "created_at": "2015-11-23T15:04:24.379Z",
+      "updated_at": "2024-03-25T16:46:21.270Z",
+      "name": "Matcha",
+      "slug": "matcha",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "597": {
+      "id": 597,
+      "created_at": "2015-11-23T15:09:06.083Z",
+      "updated_at": "2024-03-25T16:46:18.641Z",
+      "name": "Hypertube",
+      "slug": "hypertube",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "599": {
+      "id": 599,
+      "created_at": "2015-12-01T14:02:35.213Z",
+      "updated_at": "2024-03-25T16:46:18.159Z",
+      "name": "Mexican Standoff",
+      "slug": "rushes-mexican-standoff",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "601": {
+      "id": 601,
+      "created_at": "2015-12-09T14:19:09.141Z",
+      "updated_at": "2024-03-25T16:46:17.464Z",
+      "name": "ft_turing",
+      "slug": "ft_turing",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "602": {
+      "id": 602,
+      "created_at": "2015-12-15T09:59:49.601Z",
+      "updated_at": "2024-03-25T16:46:18.088Z",
+      "name": "Rage Against The aPi",
+      "slug": "rushes-rage-against-the-api",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "603": {
+      "id": 603,
+      "created_at": "2015-12-17T13:13:50.980Z",
+      "updated_at": "2024-03-25T16:46:17.670Z",
+      "name": "Snow Crash",
+      "slug": "snow-crash",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "604": {
+      "id": 604,
+      "created_at": "2015-12-17T13:46:18.502Z",
+      "updated_at": "2024-03-25T16:46:18.850Z",
+      "name": "Darkly",
+      "slug": "darkly",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "613": {
+      "id": 613,
+      "created_at": "2016-01-07T11:21:09.280Z",
+      "updated_at": "2024-03-25T16:46:18.475Z",
+      "name": "Define your subject",
+      "slug": "open-project-ii-define-your-subject",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 615,
+        "name": "Open Project II",
+        "slug": "open-project-ii"
+      }
+    },
+    "614": {
+      "id": 614,
+      "created_at": "2016-01-07T11:21:10.508Z",
+      "updated_at": "2024-03-25T16:46:21.532Z",
+      "name": "Complete the project",
+      "slug": "open-project-ii-complete-the-project",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 615,
+        "name": "Open Project II",
+        "slug": "open-project-ii"
+      }
+    },
+    "615": {
+      "id": 615,
+      "created_at": "2016-01-07T11:21:11.664Z",
+      "updated_at": "2024-03-25T16:46:21.567Z",
+      "name": "Open Project II",
+      "slug": "open-project-ii",
+      "experience": 850,
+      "exam": false,
+      "parent": null
+    },
+    "659": {
+      "id": 659,
+      "created_at": "2016-01-14T15:02:55.261Z",
+      "updated_at": "2024-03-25T16:46:17.153Z",
+      "name": "Electronics Selection Test",
+      "slug": "electronics-electronics-selection-test",
+      "experience": 0,
+      "exam": true,
+      "parent": {
+        "id": 411,
+        "name": "Electronics",
+        "slug": "electronics"
+      }
+    },
+    "661": {
+      "id": 661,
+      "created_at": "2016-01-18T12:17:32.164Z",
+      "updated_at": "2024-03-25T16:46:17.436Z",
+      "name": "Swifty Proteins",
+      "slug": "swifty-proteins",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "662": {
+      "id": 662,
+      "created_at": "2016-01-20T11:33:28.900Z",
+      "updated_at": "2024-03-25T16:46:17.580Z",
+      "name": "YASL",
+      "slug": "rushes-yasl",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "663": {
+      "id": 663,
+      "created_at": "2016-01-20T11:40:18.204Z",
+      "updated_at": "2024-03-25T16:46:17.536Z",
+      "name": "Carnifex (LISP)",
+      "slug": "rushes-carnifex-lisp",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "665": {
+      "id": 665,
+      "created_at": "2016-01-21T15:01:19.779Z",
+      "updated_at": "2024-03-25T16:46:14.832Z",
+      "name": "ft_ality",
+      "slug": "ft_ality",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "666": {
+      "id": 666,
+      "created_at": "2016-01-22T18:38:21.048Z",
+      "updated_at": "2024-03-25T16:46:17.329Z",
+      "name": "Electronics Project",
+      "slug": "electronics-electronics-project",
+      "experience": 850,
+      "exam": false,
+      "parent": {
+        "id": 411,
+        "name": "Electronics",
+        "slug": "electronics"
+      }
+    },
+    "677": {
+      "id": 677,
+      "created_at": "2016-02-09T12:26:25.416Z",
+      "updated_at": "2024-03-25T16:46:17.743Z",
+      "name": "XV",
+      "slug": "xv",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "678": {
+      "id": 678,
+      "created_at": "2016-02-09T12:31:54.043Z",
+      "updated_at": "2024-03-25T16:46:17.849Z",
+      "name": "In the Shadows",
+      "slug": "in-the-shadows",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "679": {
+      "id": 679,
+      "created_at": "2016-02-10T12:35:07.455Z",
+      "updated_at": "2024-03-25T16:46:17.872Z",
+      "name": "Particle System",
+      "slug": "particle-system",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "683": {
+      "id": 683,
+      "created_at": "2016-02-19T12:48:43.878Z",
+      "updated_at": "2024-03-25T16:46:21.622Z",
+      "name": "Friends with Benefits",
+      "slug": "friends-with-benefits",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "684": {
+      "id": 684,
+      "created_at": "2016-02-24T14:40:36.611Z",
+      "updated_at": "2024-03-25T16:46:21.649Z",
+      "name": "Puissance 4",
+      "slug": "rushes-puissance-4",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "685": {
+      "id": 685,
+      "created_at": "2016-02-24T14:45:02.094Z",
+      "updated_at": "2024-03-25T16:46:21.689Z",
+      "name": "Domino",
+      "slug": "rushes-domino",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "687": {
+      "id": 687,
+      "created_at": "2016-02-26T14:26:01.220Z",
+      "updated_at": "2024-03-25T16:46:21.732Z",
+      "name": "init",
+      "slug": "init",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "688": {
+      "id": 688,
+      "created_at": "2016-02-26T14:36:54.500Z",
+      "updated_at": "2024-03-25T16:46:21.751Z",
+      "name": "roger-skyline-2",
+      "slug": "roger-skyline-2",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "694": {
+      "id": 694,
+      "created_at": "2016-03-08T14:33:50.871Z",
+      "updated_at": "2024-04-16T07:40:31.701Z",
+      "name": "cloud-1",
+      "slug": "cloud-1",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "695": {
+      "id": 695,
+      "created_at": "2016-03-09T15:23:23.223Z",
+      "updated_at": "2024-03-25T16:46:21.981Z",
+      "name": "ft_linux",
+      "slug": "ft_linux",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "696": {
+      "id": 696,
+      "created_at": "2016-03-09T15:31:46.579Z",
+      "updated_at": "2024-03-25T16:46:22.013Z",
+      "name": "little-penguin-1",
+      "slug": "little-penguin-1",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "697": {
+      "id": 697,
+      "created_at": "2016-03-09T22:30:00.326Z",
+      "updated_at": "2024-03-25T16:46:22.044Z",
+      "name": "LLDB",
+      "slug": "rushes-lldb",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "699": {
+      "id": 699,
+      "created_at": "2016-03-15T10:41:39.310Z",
+      "updated_at": "2024-03-25T16:46:22.072Z",
+      "name": "RainFall",
+      "slug": "rainfall",
+      "experience": 600,
+      "exam": false,
+      "parent": null
+    },
+    "700": {
+      "id": 700,
+      "created_at": "2016-03-15T10:57:09.060Z",
+      "updated_at": "2024-03-25T16:46:22.089Z",
+      "name": "Dr Quine",
+      "slug": "dr-quine",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "701": {
+      "id": 701,
+      "created_at": "2016-03-15T11:05:31.927Z",
+      "updated_at": "2024-03-25T16:46:22.111Z",
+      "name": "Woody Woodpacker",
+      "slug": "woody-woodpacker",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "702": {
+      "id": 702,
+      "created_at": "2016-03-15T11:17:48.260Z",
+      "updated_at": "2024-03-25T16:46:22.131Z",
+      "name": "Matt Daemon",
+      "slug": "matt-daemon",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "703": {
+      "id": 703,
+      "created_at": "2016-04-20T13:39:04.588Z",
+      "updated_at": "2024-03-25T16:46:22.153Z",
+      "name": "Factrace",
+      "slug": "rushes-factrace",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "709": {
+      "id": 709,
+      "created_at": "2016-05-02T12:58:52.145Z",
+      "updated_at": "2024-03-25T16:46:22.179Z",
+      "name": "Process and Memory",
+      "slug": "process-and-memory",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "710": {
+      "id": 710,
+      "created_at": "2016-05-02T14:00:33.308Z",
+      "updated_at": "2024-03-25T16:46:22.205Z",
+      "name": "Drivers and Interrupts",
+      "slug": "drivers-and-interrupts",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "711": {
+      "id": 711,
+      "created_at": "2016-05-02T14:07:38.685Z",
+      "updated_at": "2024-03-25T16:46:22.232Z",
+      "name": "Filesystem",
+      "slug": "filesystem",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "714": {
+      "id": 714,
+      "created_at": "2016-05-30T09:38:28.982Z",
+      "updated_at": "2024-03-25T16:46:22.263Z",
+      "name": "KFS-2",
+      "slug": "kfs-2",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "716": {
+      "id": 716,
+      "created_at": "2016-05-30T11:58:06.290Z",
+      "updated_at": "2024-03-25T16:46:22.288Z",
+      "name": "KFS-1",
+      "slug": "kfs-1",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "717": {
+      "id": 717,
+      "created_at": "2016-06-01T06:58:34.501Z",
+      "updated_at": "2024-03-25T16:46:22.321Z",
+      "name": "KFS-3",
+      "slug": "kfs-3",
+      "experience": 850,
+      "exam": false,
+      "parent": null
+    },
+    "719": {
+      "id": 719,
+      "created_at": "2016-06-22T15:53:37.741Z",
+      "updated_at": "2024-03-25T16:46:22.354Z",
+      "name": "Music Room",
+      "slug": "music-room",
+      "experience": 600,
+      "exam": false,
+      "parent": null
+    },
+    "727": {
+      "id": 727,
+      "created_at": "2016-08-25T08:39:26.044Z",
+      "updated_at": "2024-03-25T16:46:22.599Z",
+      "name": "Piscine Python Django",
+      "slug": "piscine-python-django",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "732": {
+      "id": 732,
+      "created_at": "2016-08-25T11:01:56.264Z",
+      "updated_at": "2024-01-18T09:14:36.174Z",
+      "name": "Day 03",
+      "slug": "piscine-python-django-day-03",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 727,
+        "name": "Piscine Python Django",
+        "slug": "piscine-python-django"
+      }
+    },
+    "733": {
+      "id": 733,
+      "created_at": "2016-08-25T11:01:57.006Z",
+      "updated_at": "2024-01-18T09:14:36.202Z",
+      "name": "Day 04",
+      "slug": "piscine-python-django-day-04",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 727,
+        "name": "Piscine Python Django",
+        "slug": "piscine-python-django"
+      }
+    },
+    "734": {
+      "id": 734,
+      "created_at": "2016-08-25T11:01:57.778Z",
+      "updated_at": "2024-01-18T09:14:36.218Z",
+      "name": "Rush00",
+      "slug": "piscine-python-django-rush00",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 727,
+        "name": "Piscine Python Django",
+        "slug": "piscine-python-django"
+      }
+    },
+    "735": {
+      "id": 735,
+      "created_at": "2016-08-25T11:01:58.362Z",
+      "updated_at": "2024-01-18T09:14:36.232Z",
+      "name": "Day 05",
+      "slug": "piscine-python-django-day-05",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 727,
+        "name": "Piscine Python Django",
+        "slug": "piscine-python-django"
+      }
+    },
+    "736": {
+      "id": 736,
+      "created_at": "2016-08-25T11:01:59.179Z",
+      "updated_at": "2024-01-18T09:14:36.247Z",
+      "name": "Day 06",
+      "slug": "piscine-python-django-day-06",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 727,
+        "name": "Piscine Python Django",
+        "slug": "piscine-python-django"
+      }
+    },
+    "737": {
+      "id": 737,
+      "created_at": "2016-08-25T11:01:59.885Z",
+      "updated_at": "2024-01-18T09:14:36.261Z",
+      "name": "Day 07",
+      "slug": "piscine-python-django-day-07",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 727,
+        "name": "Piscine Python Django",
+        "slug": "piscine-python-django"
+      }
+    },
+    "742": {
+      "id": 742,
+      "created_at": "2016-09-01T12:37:42.748Z",
+      "updated_at": "2024-03-25T16:46:23.050Z",
+      "name": "Piscine Swift iOS",
+      "slug": "piscine-swift-ios",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "743": {
+      "id": 743,
+      "created_at": "2016-09-01T12:42:45.466Z",
+      "updated_at": "2024-03-25T16:46:22.649Z",
+      "name": "Day 00",
+      "slug": "piscine-swift-ios-day-00",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 742,
+        "name": "Piscine Swift iOS",
+        "slug": "piscine-swift-ios"
+      }
+    },
+    "744": {
+      "id": 744,
+      "created_at": "2016-09-01T12:55:40.675Z",
+      "updated_at": "2024-03-25T16:46:22.694Z",
+      "name": "Day 01",
+      "slug": "piscine-swift-ios-day-01",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 742,
+        "name": "Piscine Swift iOS",
+        "slug": "piscine-swift-ios"
+      }
+    },
+    "745": {
+      "id": 745,
+      "created_at": "2016-09-01T12:56:25.007Z",
+      "updated_at": "2024-03-25T16:46:22.728Z",
+      "name": "Day 02",
+      "slug": "piscine-swift-ios-day-02",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 742,
+        "name": "Piscine Swift iOS",
+        "slug": "piscine-swift-ios"
+      }
+    },
+    "746": {
+      "id": 746,
+      "created_at": "2016-09-07T13:23:36.579Z",
+      "updated_at": "2024-01-18T09:14:36.404Z",
+      "name": "Day 00",
+      "slug": "piscine-python-django-day-00",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 727,
+        "name": "Piscine Python Django",
+        "slug": "piscine-python-django"
+      }
+    },
+    "747": {
+      "id": 747,
+      "created_at": "2016-09-07T14:59:36.404Z",
+      "updated_at": "2024-03-25T16:46:22.746Z",
+      "name": "Day 03",
+      "slug": "piscine-swift-ios-day-03",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 742,
+        "name": "Piscine Swift iOS",
+        "slug": "piscine-swift-ios"
+      }
+    },
+    "748": {
+      "id": 748,
+      "created_at": "2016-09-07T15:00:39.299Z",
+      "updated_at": "2024-03-25T16:46:22.767Z",
+      "name": "Day 04",
+      "slug": "piscine-swift-ios-day-04",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 742,
+        "name": "Piscine Swift iOS",
+        "slug": "piscine-swift-ios"
+      }
+    },
+    "749": {
+      "id": 749,
+      "created_at": "2016-09-07T15:00:45.115Z",
+      "updated_at": "2024-03-25T16:46:22.817Z",
+      "name": "Rush00",
+      "slug": "piscine-swift-ios-rush00",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 742,
+        "name": "Piscine Swift iOS",
+        "slug": "piscine-swift-ios"
+      }
+    },
+    "750": {
+      "id": 750,
+      "created_at": "2016-09-07T15:00:45.844Z",
+      "updated_at": "2024-03-25T16:46:22.857Z",
+      "name": "Day 05",
+      "slug": "piscine-swift-ios-day-05",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 742,
+        "name": "Piscine Swift iOS",
+        "slug": "piscine-swift-ios"
+      }
+    },
+    "751": {
+      "id": 751,
+      "created_at": "2016-09-07T15:00:50.404Z",
+      "updated_at": "2024-03-25T16:46:22.887Z",
+      "name": "Day 06",
+      "slug": "piscine-swift-ios-day-06",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 742,
+        "name": "Piscine Swift iOS",
+        "slug": "piscine-swift-ios"
+      }
+    },
+    "752": {
+      "id": 752,
+      "created_at": "2016-09-07T15:00:52.485Z",
+      "updated_at": "2024-03-25T16:46:22.927Z",
+      "name": "Day 07",
+      "slug": "piscine-swift-ios-day-07",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 742,
+        "name": "Piscine Swift iOS",
+        "slug": "piscine-swift-ios"
+      }
+    },
+    "753": {
+      "id": 753,
+      "created_at": "2016-09-07T15:00:53.294Z",
+      "updated_at": "2024-03-25T16:46:22.972Z",
+      "name": "Day 08",
+      "slug": "piscine-swift-ios-day-08",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 742,
+        "name": "Piscine Swift iOS",
+        "slug": "piscine-swift-ios"
+      }
+    },
+    "754": {
+      "id": 754,
+      "created_at": "2016-09-07T15:00:53.905Z",
+      "updated_at": "2024-03-25T16:46:23.012Z",
+      "name": "Day 09",
+      "slug": "piscine-swift-ios-day-09",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 742,
+        "name": "Piscine Swift iOS",
+        "slug": "piscine-swift-ios"
+      }
+    },
+    "755": {
+      "id": 755,
+      "created_at": "2016-09-07T15:00:54.847Z",
+      "updated_at": "2024-03-25T16:46:23.042Z",
+      "name": "Rush01",
+      "slug": "piscine-swift-ios-rush01",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 742,
+        "name": "Piscine Swift iOS",
+        "slug": "piscine-swift-ios"
+      }
+    },
+    "756": {
+      "id": 756,
+      "created_at": "2016-09-26T08:10:14.049Z",
+      "updated_at": "2024-03-25T16:46:23.081Z",
+      "name": "Piscine Reloaded",
+      "slug": "piscine-reloaded",
+      "experience": 25,
+      "exam": false,
+      "parent": null
+    },
+    "791": {
+      "id": 791,
+      "created_at": "2016-10-26T12:56:06.551Z",
+      "updated_at": "2024-03-25T16:46:23.464Z",
+      "name": "Piscine Ruby on Rails",
+      "slug": "piscine-ruby-on-rails",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "792": {
+      "id": 792,
+      "created_at": "2016-10-26T13:12:16.982Z",
+      "updated_at": "2024-03-25T16:46:23.129Z",
+      "name": "Day 00",
+      "slug": "piscine-ruby-on-rails-day-00",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 791,
+        "name": "Piscine Ruby on Rails",
+        "slug": "piscine-ruby-on-rails"
+      }
+    },
+    "793": {
+      "id": 793,
+      "created_at": "2016-10-26T13:12:51.224Z",
+      "updated_at": "2024-03-25T16:46:23.156Z",
+      "name": "Day 01",
+      "slug": "piscine-ruby-on-rails-day-01",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 791,
+        "name": "Piscine Ruby on Rails",
+        "slug": "piscine-ruby-on-rails"
+      }
+    },
+    "794": {
+      "id": 794,
+      "created_at": "2016-10-26T13:12:56.823Z",
+      "updated_at": "2024-03-25T16:46:23.193Z",
+      "name": "Day 02",
+      "slug": "piscine-ruby-on-rails-day-02",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 791,
+        "name": "Piscine Ruby on Rails",
+        "slug": "piscine-ruby-on-rails"
+      }
+    },
+    "795": {
+      "id": 795,
+      "created_at": "2016-10-26T13:13:03.030Z",
+      "updated_at": "2024-03-25T16:46:23.216Z",
+      "name": "Day 03",
+      "slug": "piscine-ruby-on-rails-day-03",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 791,
+        "name": "Piscine Ruby on Rails",
+        "slug": "piscine-ruby-on-rails"
+      }
+    },
+    "796": {
+      "id": 796,
+      "created_at": "2016-10-26T13:13:09.083Z",
+      "updated_at": "2024-03-25T16:46:23.251Z",
+      "name": "Day 04",
+      "slug": "piscine-ruby-on-rails-day-04",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 791,
+        "name": "Piscine Ruby on Rails",
+        "slug": "piscine-ruby-on-rails"
+      }
+    },
+    "797": {
+      "id": 797,
+      "created_at": "2016-10-26T13:13:17.133Z",
+      "updated_at": "2024-03-25T16:46:23.273Z",
+      "name": "Rush00",
+      "slug": "piscine-ruby-on-rails-rush00",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 791,
+        "name": "Piscine Ruby on Rails",
+        "slug": "piscine-ruby-on-rails"
+      }
+    },
+    "798": {
+      "id": 798,
+      "created_at": "2016-10-26T13:13:24.620Z",
+      "updated_at": "2024-03-25T16:46:23.305Z",
+      "name": "Day 05",
+      "slug": "piscine-ruby-on-rails-day-05",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 791,
+        "name": "Piscine Ruby on Rails",
+        "slug": "piscine-ruby-on-rails"
+      }
+    },
+    "799": {
+      "id": 799,
+      "created_at": "2016-10-26T13:13:30.796Z",
+      "updated_at": "2024-03-25T16:46:23.338Z",
+      "name": "Day 06",
+      "slug": "piscine-ruby-on-rails-day-06",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 791,
+        "name": "Piscine Ruby on Rails",
+        "slug": "piscine-ruby-on-rails"
+      }
+    },
+    "800": {
+      "id": 800,
+      "created_at": "2016-10-26T13:13:36.904Z",
+      "updated_at": "2024-03-25T16:46:23.360Z",
+      "name": "Day 07",
+      "slug": "piscine-ruby-on-rails-day-07",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 791,
+        "name": "Piscine Ruby on Rails",
+        "slug": "piscine-ruby-on-rails"
+      }
+    },
+    "801": {
+      "id": 801,
+      "created_at": "2016-10-26T13:13:43.032Z",
+      "updated_at": "2024-03-25T16:46:23.385Z",
+      "name": "Day 08",
+      "slug": "piscine-ruby-on-rails-day-08",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 791,
+        "name": "Piscine Ruby on Rails",
+        "slug": "piscine-ruby-on-rails"
+      }
+    },
+    "802": {
+      "id": 802,
+      "created_at": "2016-10-26T13:13:50.828Z",
+      "updated_at": "2024-03-25T16:46:23.416Z",
+      "name": "Day 09",
+      "slug": "piscine-ruby-on-rails-day-09",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 791,
+        "name": "Piscine Ruby on Rails",
+        "slug": "piscine-ruby-on-rails"
+      }
+    },
+    "803": {
+      "id": 803,
+      "created_at": "2016-10-26T13:13:56.458Z",
+      "updated_at": "2024-03-25T16:46:23.455Z",
+      "name": "Rush01",
+      "slug": "piscine-ruby-on-rails-rush01",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 791,
+        "name": "Piscine Ruby on Rails",
+        "slug": "piscine-ruby-on-rails"
+      }
+    },
+    "817": {
+      "id": 817,
+      "created_at": "2016-10-28T14:11:57.302Z",
+      "updated_at": "2024-03-25T16:46:23.928Z",
+      "name": "42 Commandements",
+      "slug": "42-formation-pole-emploi-42-commandements",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "818": {
+      "id": 818,
+      "created_at": "2016-11-16T10:39:29.879Z",
+      "updated_at": "2024-03-25T16:46:23.954Z",
+      "name": "Red Tetris",
+      "slug": "red-tetris",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "819": {
+      "id": 819,
+      "created_at": "2016-11-29T12:20:22.305Z",
+      "updated_at": "2024-03-25T16:46:23.981Z",
+      "name": "H42N42",
+      "slug": "h42n42",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "820": {
+      "id": 820,
+      "created_at": "2016-12-14T15:21:55.220Z",
+      "updated_at": "2024-03-25T16:46:24.006Z",
+      "name": "Famine",
+      "slug": "famine",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "823": {
+      "id": 823,
+      "created_at": "2017-01-04T11:18:16.388Z",
+      "updated_at": "2024-03-25T16:46:24.031Z",
+      "name": "libunit",
+      "slug": "42-formation-pole-emploi-rushes-libunit",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "824": {
+      "id": 824,
+      "created_at": "2017-01-08T21:39:47.739Z",
+      "updated_at": "2024-03-25T16:46:24.060Z",
+      "name": "KFS-4",
+      "slug": "kfs-4",
+      "experience": 600,
+      "exam": false,
+      "parent": null
+    },
+    "825": {
+      "id": 825,
+      "created_at": "2017-01-08T21:45:20.042Z",
+      "updated_at": "2024-03-25T16:46:24.080Z",
+      "name": "KFS-5",
+      "slug": "kfs-5",
+      "experience": 850,
+      "exam": false,
+      "parent": null
+    },
+    "826": {
+      "id": 826,
+      "created_at": "2017-01-31T13:10:42.836Z",
+      "updated_at": "2024-03-25T16:46:24.098Z",
+      "name": "Company mid evaluation",
+      "slug": "first-internship-company-mid-evaluation",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 118,
+        "name": "First Internship",
+        "slug": "first-internship"
+      }
+    },
+    "827": {
+      "id": 827,
+      "created_at": "2017-01-31T13:10:43.673Z",
+      "updated_at": "2024-03-25T16:46:24.120Z",
+      "name": "Company mid evaluation",
+      "slug": "final-internship-company-mid-evaluation",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 212,
+        "name": "Final Internship",
+        "slug": "final-internship"
+      }
+    },
+    "828": {
+      "id": 828,
+      "created_at": "2017-01-31T13:10:44.183Z",
+      "updated_at": "2024-03-25T16:46:24.145Z",
+      "name": "Company mid evaluation",
+      "slug": "part-time-company-mid-evaluation",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 184,
+        "name": "Part-time",
+        "slug": "part-time"
+      }
+    },
+    "830": {
+      "id": 830,
+      "created_at": "2017-02-02T13:18:49.669Z",
+      "updated_at": "2024-03-25T16:46:25.661Z",
+      "name": "Matrice",
+      "slug": "matrice",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "831": {
+      "id": 831,
+      "created_at": "2017-02-02T13:22:58.893Z",
+      "updated_at": "2024-03-25T16:46:24.178Z",
+      "name": "Matrice CPA",
+      "slug": "matrice-matrice-cpa",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 830,
+        "name": "Matrice",
+        "slug": "matrice"
+      }
+    },
+    "833": {
+      "id": 833,
+      "created_at": "2017-02-07T02:08:21.594Z",
+      "updated_at": "2020-04-08T03:17:38.347Z",
+      "name": "Hercules",
+      "slug": "hercules",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "834": {
+      "id": 834,
+      "created_at": "2017-02-08T00:36:32.811Z",
+      "updated_at": "2020-04-08T03:17:37.454Z",
+      "name": "Nemean Lion",
+      "slug": "hercules-nemean-lion",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 833,
+        "name": "Hercules",
+        "slug": "hercules"
+      }
+    },
+    "835": {
+      "id": 835,
+      "created_at": "2017-02-13T22:03:48.245Z",
+      "updated_at": "2020-04-08T03:17:36.575Z",
+      "name": "Lernaean Hydra",
+      "slug": "hercules-lernaean-hydra",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 833,
+        "name": "Hercules",
+        "slug": "hercules"
+      }
+    },
+    "836": {
+      "id": 836,
+      "created_at": "2017-02-13T22:14:11.616Z",
+      "updated_at": "2020-04-08T03:17:35.685Z",
+      "name": "Ceryneian Hind",
+      "slug": "hercules-ceryneian-hind",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 833,
+        "name": "Hercules",
+        "slug": "hercules"
+      }
+    },
+    "837": {
+      "id": 837,
+      "created_at": "2017-02-13T22:20:39.224Z",
+      "updated_at": "2020-04-08T03:17:34.848Z",
+      "name": "Erymanthian Boar",
+      "slug": "hercules-erymanthian-boar",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 833,
+        "name": "Hercules",
+        "slug": "hercules"
+      }
+    },
+    "838": {
+      "id": 838,
+      "created_at": "2017-02-13T22:31:51.049Z",
+      "updated_at": "2020-04-08T03:17:34.049Z",
+      "name": "Augean stables",
+      "slug": "hercules-augean-stables",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 833,
+        "name": "Hercules",
+        "slug": "hercules"
+      }
+    },
+    "839": {
+      "id": 839,
+      "created_at": "2017-02-13T23:11:53.152Z",
+      "updated_at": "2020-04-08T03:17:33.241Z",
+      "name": "Stymphalian Birds",
+      "slug": "hercules-stymphalian-birds",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 833,
+        "name": "Hercules",
+        "slug": "hercules"
+      }
+    },
+    "840": {
+      "id": 840,
+      "created_at": "2017-02-13T23:22:32.492Z",
+      "updated_at": "2020-04-08T03:17:32.471Z",
+      "name": "Cretan Bull",
+      "slug": "hercules-cretan-bull",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 833,
+        "name": "Hercules",
+        "slug": "hercules"
+      }
+    },
+    "841": {
+      "id": 841,
+      "created_at": "2017-02-13T23:26:36.701Z",
+      "updated_at": "2020-04-08T03:17:31.659Z",
+      "name": "Mares of Diomedes",
+      "slug": "hercules-mares-of-diomedes",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 833,
+        "name": "Hercules",
+        "slug": "hercules"
+      }
+    },
+    "842": {
+      "id": 842,
+      "created_at": "2017-02-13T23:32:01.164Z",
+      "updated_at": "2020-04-08T03:17:30.843Z",
+      "name": "Girdle of Hippolyta",
+      "slug": "hercules-girdle-of-hippolyta",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 833,
+        "name": "Hercules",
+        "slug": "hercules"
+      }
+    },
+    "843": {
+      "id": 843,
+      "created_at": "2017-02-13T23:41:07.376Z",
+      "updated_at": "2020-04-08T03:17:29.786Z",
+      "name": "Cattle of Geryon",
+      "slug": "hercules-cattle-of-geryon",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 833,
+        "name": "Hercules",
+        "slug": "hercules"
+      }
+    },
+    "844": {
+      "id": 844,
+      "created_at": "2017-02-13T23:46:10.849Z",
+      "updated_at": "2020-04-08T03:17:29.024Z",
+      "name": "Apples of the Hesperides",
+      "slug": "hercules-apples-of-the-hesperides",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 833,
+        "name": "Hercules",
+        "slug": "hercules"
+      }
+    },
+    "845": {
+      "id": 845,
+      "created_at": "2017-02-13T23:49:38.174Z",
+      "updated_at": "2020-04-08T03:17:27.625Z",
+      "name": "Capturing Cerberus",
+      "slug": "hercules-capturing-cerberus",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 833,
+        "name": "Hercules",
+        "slug": "hercules"
+      }
+    },
+    "846": {
+      "id": 846,
+      "created_at": "2017-02-28T10:48:32.197Z",
+      "updated_at": "2024-03-25T16:46:24.196Z",
+      "name": "ComputorV2",
+      "slug": "computorv2",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "847": {
+      "id": 847,
+      "created_at": "2017-03-13T15:16:37.229Z",
+      "updated_at": "2024-03-25T16:46:24.210Z",
+      "name": "docker-1",
+      "slug": "docker-1",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "849": {
+      "id": 849,
+      "created_at": "2017-03-16T01:07:04.174Z",
+      "updated_at": "2020-05-02T16:02:36.301Z",
+      "name": "Piscine Interview",
+      "slug": "piscine-interview",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "850": {
+      "id": 850,
+      "created_at": "2017-03-16T01:10:35.767Z",
+      "updated_at": "2020-04-08T03:17:07.868Z",
+      "name": "Day 00",
+      "slug": "piscine-starfleet-day-00",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 849,
+        "name": "Piscine Interview",
+        "slug": "piscine-interview"
+      }
+    },
+    "851": {
+      "id": 851,
+      "created_at": "2017-03-16T01:11:29.432Z",
+      "updated_at": "2020-04-08T03:15:51.620Z",
+      "name": "Exam 00",
+      "slug": "piscine-starfleet-exam-00",
+      "experience": 0,
+      "exam": true,
+      "parent": {
+        "id": 849,
+        "name": "Piscine Interview",
+        "slug": "piscine-interview"
+      }
+    },
+    "852": {
+      "id": 852,
+      "created_at": "2017-03-16T01:12:17.243Z",
+      "updated_at": "2020-04-08T03:17:07.107Z",
+      "name": "Day 01",
+      "slug": "piscine-starfleet-day-01",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 849,
+        "name": "Piscine Interview",
+        "slug": "piscine-interview"
+      }
+    },
+    "853": {
+      "id": 853,
+      "created_at": "2017-03-16T01:13:11.127Z",
+      "updated_at": "2020-04-08T03:17:06.108Z",
+      "name": "Day 02",
+      "slug": "piscine-starfleet-day-02",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 849,
+        "name": "Piscine Interview",
+        "slug": "piscine-interview"
+      }
+    },
+    "855": {
+      "id": 855,
+      "created_at": "2017-03-16T01:15:00.869Z",
+      "updated_at": "2020-04-08T03:17:05.381Z",
+      "name": "Day 03",
+      "slug": "piscine-starfleet-day-03",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 849,
+        "name": "Piscine Interview",
+        "slug": "piscine-interview"
+      }
+    },
+    "857": {
+      "id": 857,
+      "created_at": "2017-03-16T01:16:32.324Z",
+      "updated_at": "2020-04-08T03:15:50.750Z",
+      "name": "Exam 02",
+      "slug": "piscine-starfleet-exam-02",
+      "experience": 0,
+      "exam": true,
+      "parent": {
+        "id": 849,
+        "name": "Piscine Interview",
+        "slug": "piscine-interview"
+      }
+    },
+    "858": {
+      "id": 858,
+      "created_at": "2017-03-16T01:17:11.745Z",
+      "updated_at": "2020-04-08T03:17:04.255Z",
+      "name": "Rush 00",
+      "slug": "piscine-starfleet-rush-00",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 849,
+        "name": "Piscine Interview",
+        "slug": "piscine-interview"
+      }
+    },
+    "859": {
+      "id": 859,
+      "created_at": "2017-03-16T01:17:55.301Z",
+      "updated_at": "2020-05-02T16:01:37.203Z",
+      "name": "Day 04",
+      "slug": "piscine-starfleet-day-04",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 849,
+        "name": "Piscine Interview",
+        "slug": "piscine-interview"
+      }
+    },
+    "860": {
+      "id": 860,
+      "created_at": "2017-03-16T01:18:58.944Z",
+      "updated_at": "2020-04-08T03:15:49.911Z",
+      "name": "Exam 03",
+      "slug": "piscine-starfleet-exam-03",
+      "experience": 0,
+      "exam": true,
+      "parent": {
+        "id": 849,
+        "name": "Piscine Interview",
+        "slug": "piscine-interview"
+      }
+    },
+    "862": {
+      "id": 862,
+      "created_at": "2017-03-16T01:21:21.838Z",
+      "updated_at": "2020-04-08T03:17:11.427Z",
+      "name": "Day 05",
+      "slug": "piscine-starfleet-day-05",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 849,
+        "name": "Piscine Interview",
+        "slug": "piscine-interview"
+      }
+    },
+    "863": {
+      "id": 863,
+      "created_at": "2017-03-16T17:10:25.840Z",
+      "updated_at": "2020-04-08T03:17:10.574Z",
+      "name": "Day 06",
+      "slug": "piscine-starfleet-day-06",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 849,
+        "name": "Piscine Interview",
+        "slug": "piscine-interview"
+      }
+    },
+    "865": {
+      "id": 865,
+      "created_at": "2017-03-16T17:13:12.991Z",
+      "updated_at": "2020-04-08T03:17:09.713Z",
+      "name": "Day 07",
+      "slug": "piscine-starfleet-day-07",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 849,
+        "name": "Piscine Interview",
+        "slug": "piscine-interview"
+      }
+    },
+    "867": {
+      "id": 867,
+      "created_at": "2017-03-16T17:15:25.511Z",
+      "updated_at": "2020-04-08T03:15:48.862Z",
+      "name": "Exam 05",
+      "slug": "piscine-starfleet-exam-05",
+      "experience": 0,
+      "exam": true,
+      "parent": {
+        "id": 849,
+        "name": "Piscine Interview",
+        "slug": "piscine-interview"
+      }
+    },
+    "868": {
+      "id": 868,
+      "created_at": "2017-03-16T17:16:25.293Z",
+      "updated_at": "2020-04-08T03:17:03.145Z",
+      "name": "Rush 01",
+      "slug": "piscine-starfleet-rush-01",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 849,
+        "name": "Piscine Interview",
+        "slug": "piscine-interview"
+      }
+    },
+    "869": {
+      "id": 869,
+      "created_at": "2017-03-21T12:56:55.813Z",
+      "updated_at": "2024-03-25T16:46:24.230Z",
+      "name": "Matrice CEA",
+      "slug": "matrice-matrice-cea",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 830,
+        "name": "Matrice",
+        "slug": "matrice"
+      }
+    },
+    "870": {
+      "id": 870,
+      "created_at": "2017-03-22T14:11:13.682Z",
+      "updated_at": "2024-03-25T16:46:24.249Z",
+      "name": "avaj-launcher",
+      "slug": "avaj-launcher",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "871": {
+      "id": 871,
+      "created_at": "2017-03-23T12:38:48.267Z",
+      "updated_at": "2024-03-25T16:46:24.272Z",
+      "name": "swingy",
+      "slug": "swingy",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "872": {
+      "id": 872,
+      "created_at": "2017-03-24T13:15:27.010Z",
+      "updated_at": "2024-03-25T16:46:24.302Z",
+      "name": "fix-me",
+      "slug": "fix-me",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "873": {
+      "id": 873,
+      "created_at": "2017-03-28T12:19:18.516Z",
+      "updated_at": "2024-03-25T16:46:24.319Z",
+      "name": "KFS-6",
+      "slug": "kfs-6",
+      "experience": 600,
+      "exam": false,
+      "parent": null
+    },
+    "874": {
+      "id": 874,
+      "created_at": "2017-03-28T12:34:12.845Z",
+      "updated_at": "2024-03-25T16:46:24.339Z",
+      "name": "KFS-7",
+      "slug": "kfs-7",
+      "experience": 850,
+      "exam": false,
+      "parent": null
+    },
+    "876": {
+      "id": 876,
+      "created_at": "2017-03-28T12:49:44.492Z",
+      "updated_at": "2024-03-25T16:46:24.361Z",
+      "name": "KFS-8",
+      "slug": "kfs-8",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "877": {
+      "id": 877,
+      "created_at": "2017-03-28T13:16:19.906Z",
+      "updated_at": "2024-03-25T16:46:24.378Z",
+      "name": "KFS-9",
+      "slug": "kfs-9",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "882": {
+      "id": 882,
+      "created_at": "2017-03-28T13:40:38.399Z",
+      "updated_at": "2024-03-25T16:46:24.395Z",
+      "name": "KFS-X",
+      "slug": "kfs-x",
+      "experience": 850,
+      "exam": false,
+      "parent": null
+    },
+    "887": {
+      "id": 887,
+      "created_at": "2017-04-05T18:09:34.458Z",
+      "updated_at": "2024-03-25T16:46:25.431Z",
+      "name": "ft_contrast",
+      "slug": "rushes-ft_contrast",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "888": {
+      "id": 888,
+      "created_at": "2017-04-13T19:14:57.923Z",
+      "updated_at": "2020-04-08T03:17:01.329Z",
+      "name": "ft_db",
+      "slug": "ft_db",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "902": {
+      "id": 902,
+      "created_at": "2017-04-22T08:53:13.089Z",
+      "updated_at": "2024-03-25T16:46:24.549Z",
+      "name": "Curriculum Vitae",
+      "slug": "curriculum-vitae",
+      "experience": 25,
+      "exam": false,
+      "parent": null
+    },
+    "905": {
+      "id": 905,
+      "created_at": "2017-05-20T15:37:34.619Z",
+      "updated_at": "2024-03-25T16:46:24.641Z",
+      "name": "Pestilence",
+      "slug": "pestilence",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "907": {
+      "id": 907,
+      "created_at": "2017-05-20T15:50:53.352Z",
+      "updated_at": "2024-03-25T16:46:24.671Z",
+      "name": "War",
+      "slug": "war",
+      "experience": 850,
+      "exam": false,
+      "parent": null
+    },
+    "908": {
+      "id": 908,
+      "created_at": "2017-05-20T15:55:51.696Z",
+      "updated_at": "2024-03-25T16:46:24.696Z",
+      "name": "Death",
+      "slug": "death",
+      "experience": 850,
+      "exam": false,
+      "parent": null
+    },
+    "909": {
+      "id": 909,
+      "created_at": "2017-05-25T13:40:39.268Z",
+      "updated_at": "2024-03-25T16:46:24.723Z",
+      "name": "Boot2Root",
+      "slug": "boot2root",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "910": {
+      "id": 910,
+      "created_at": "2017-05-25T13:46:53.772Z",
+      "updated_at": "2024-03-25T16:46:24.751Z",
+      "name": "Durex",
+      "slug": "durex",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "912": {
+      "id": 912,
+      "created_at": "2017-05-25T14:39:18.437Z",
+      "updated_at": "2024-03-25T16:46:24.793Z",
+      "name": "Override",
+      "slug": "override",
+      "experience": 850,
+      "exam": false,
+      "parent": null
+    },
+    "914": {
+      "id": 914,
+      "created_at": "2017-05-29T18:42:28.803Z",
+      "updated_at": "2020-04-08T03:16:58.994Z",
+      "name": "KIFT",
+      "slug": "kift",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "942": {
+      "id": 942,
+      "created_at": "2017-06-26T15:01:17.649Z",
+      "updated_at": "2019-10-21T19:42:16.983Z",
+      "name": "harassment_policy",
+      "slug": "42-piscine-c-harassment_policy",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "945": {
+      "id": 945,
+      "created_at": "2017-06-30T21:37:22.840Z",
+      "updated_at": "2020-04-08T03:16:55.870Z",
+      "name": "Reverse Game of Life",
+      "slug": "reverse-game-of-life",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "948": {
+      "id": 948,
+      "created_at": "2017-06-30T22:20:01.957Z",
+      "updated_at": "2019-08-13T12:54:27.373Z",
+      "name": "greenlight",
+      "slug": "greenlight",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "953": {
+      "id": 953,
+      "created_at": "2017-07-25T17:07:45.692Z",
+      "updated_at": "2019-12-12T19:06:16.170Z",
+      "name": "Check Your Dorms",
+      "slug": "check-your-dorms",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "960": {
+      "id": 960,
+      "created_at": "2017-07-26T20:38:58.174Z",
+      "updated_at": "2019-08-13T12:54:18.798Z",
+      "name": "Stairway_to_42",
+      "slug": "stairway_to_42",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "977": {
+      "id": 977,
+      "created_at": "2017-08-09T02:33:30.303Z",
+      "updated_at": "2024-03-25T16:46:24.887Z",
+      "name": "ft_zenko",
+      "slug": "ft_zenko",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "978": {
+      "id": 978,
+      "created_at": "2017-08-11T13:55:10.644Z",
+      "updated_at": "2024-03-25T16:46:24.872Z",
+      "name": "ft_vox",
+      "slug": "ft_vox",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "980": {
+      "id": 980,
+      "created_at": "2017-08-24T00:34:36.946Z",
+      "updated_at": "2020-09-08T21:41:21.490Z",
+      "name": "Walking Marvin",
+      "slug": "walking-marvin",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "983": {
+      "id": 983,
+      "created_at": "2017-08-31T01:46:35.783Z",
+      "updated_at": "2024-03-25T16:46:12.200Z",
+      "name": "ft_ssl_rsa",
+      "slug": "ft_ssl_rsa",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "985": {
+      "id": 985,
+      "created_at": "2017-08-31T01:52:36.277Z",
+      "updated_at": "2024-03-25T16:46:12.226Z",
+      "name": "ft_ssl_des",
+      "slug": "ft_ssl_des",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "1012": {
+      "id": 1012,
+      "created_at": "2017-09-21T19:13:25.687Z",
+      "updated_at": "2020-04-08T03:16:14.589Z",
+      "name": "C Exam Alone In The Dark - Intermediate",
+      "slug": "c-exam-alone-in-the-dark-intermediate",
+      "experience": 225,
+      "exam": true,
+      "parent": null
+    },
+    "1023": {
+      "id": 1023,
+      "created_at": "2017-10-24T00:43:09.107Z",
+      "updated_at": "2020-04-08T03:16:42.743Z",
+      "name": "ft_debut",
+      "slug": "ft_debut",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1025": {
+      "id": 1025,
+      "created_at": "2017-10-24T01:53:28.130Z",
+      "updated_at": "2024-03-25T16:46:12.175Z",
+      "name": "Frozen",
+      "slug": "rushes-frozen",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "1049": {
+      "id": 1049,
+      "created_at": "2017-11-21T12:44:54.752Z",
+      "updated_at": "2020-03-21T10:41:27.723Z",
+      "name": "UNIT Factory Harassment & Tolerance Policy",
+      "slug": "unit-factory-harassment-tolerance-policy",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1052": {
+      "id": 1052,
+      "created_at": "2017-11-30T13:18:14.522Z",
+      "updated_at": "2019-08-13T12:54:23.305Z",
+      "name": "SimplyElectronic",
+      "slug": "simplyelectronic",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1055": {
+      "id": 1055,
+      "created_at": "2017-12-01T11:56:00.833Z",
+      "updated_at": "2024-03-25T16:46:25.642Z",
+      "name": "Startup-Internship",
+      "slug": "startup-internship",
+      "experience": 1000,
+      "exam": false,
+      "parent": null
+    },
+    "1057": {
+      "id": 1057,
+      "created_at": "2017-12-04T16:44:23.383Z",
+      "updated_at": "2024-03-25T16:46:24.933Z",
+      "name": "Blackhole - Peer Help",
+      "slug": "blackhole-peer-help",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1058": {
+      "id": 1058,
+      "created_at": "2017-12-04T17:03:49.564Z",
+      "updated_at": "2019-09-07T16:58:21.167Z",
+      "name": "Grimly",
+      "slug": "grimly",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1080": {
+      "id": 1080,
+      "created_at": "2017-12-08T00:50:47.421Z",
+      "updated_at": "2019-08-13T12:54:25.621Z",
+      "name": "H2S Project Authorship - T2",
+      "slug": "h2s-project-authorship-t2",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "1081": {
+      "id": 1081,
+      "created_at": "2017-12-18T10:58:34.786Z",
+      "updated_at": "2024-03-25T16:46:25.459Z",
+      "name": "DSLR",
+      "slug": "dslr",
+      "experience": 142,
+      "exam": false,
+      "parent": null
+    },
+    "1084": {
+      "id": 1084,
+      "created_at": "2017-12-27T17:51:52.846Z",
+      "updated_at": "2019-09-07T16:58:23.157Z",
+      "name": "CCMN",
+      "slug": "ccmn",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "1087": {
+      "id": 1087,
+      "created_at": "2018-01-02T13:40:04.511Z",
+      "updated_at": "2024-03-25T16:46:25.481Z",
+      "name": "ShaderPixel",
+      "slug": "shaderpixel",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "1092": {
+      "id": 1092,
+      "created_at": "2018-01-03T14:18:33.633Z",
+      "updated_at": "2024-03-25T16:46:25.562Z",
+      "name": "Entrepreneurship mid evaluation",
+      "slug": "startup-internship-entrepreneurship-mid-evaluation",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 1055,
+        "name": "Startup-Internship",
+        "slug": "startup-internship"
+      }
+    },
+    "1093": {
+      "id": 1093,
+      "created_at": "2018-01-03T14:20:39.126Z",
+      "updated_at": "2024-03-25T16:46:25.613Z",
+      "name": "Entrepreneurship final evaluation",
+      "slug": "startup-internship-entrepreneurship-final-evaluation",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 1055,
+        "name": "Startup-Internship",
+        "slug": "startup-internship"
+      }
+    },
+    "1094": {
+      "id": 1094,
+      "created_at": "2018-01-03T15:02:28.231Z",
+      "updated_at": "2024-03-25T16:46:25.637Z",
+      "name": "Peer Video",
+      "slug": "startup-internship-peer-video",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 1055,
+        "name": "Startup-Internship",
+        "slug": "startup-internship"
+      }
+    },
+    "1095": {
+      "id": 1095,
+      "created_at": "2018-01-04T00:29:58.052Z",
+      "updated_at": "2020-04-08T03:16:39.883Z",
+      "name": "Numpy",
+      "slug": "rushes-numpy",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "1096": {
+      "id": 1096,
+      "created_at": "2018-01-04T12:33:55.921Z",
+      "updated_at": "2024-03-25T16:46:25.657Z",
+      "name": "Matrice Arts & Num\u00e9rique",
+      "slug": "matrice-matrice-arts-numerique",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 830,
+        "name": "Matrice",
+        "slug": "matrice"
+      }
+    },
+    "1106": {
+      "id": 1106,
+      "created_at": "2018-01-15T14:30:02.789Z",
+      "updated_at": "2024-03-25T16:46:12.714Z",
+      "name": "Electronics Project - Level UP",
+      "slug": "electronics-electronics-project-level-up",
+      "experience": 850,
+      "exam": false,
+      "parent": {
+        "id": 411,
+        "name": "Electronics",
+        "slug": "electronics"
+      }
+    },
+    "1111": {
+      "id": 1111,
+      "created_at": "2018-01-19T19:01:19.515Z",
+      "updated_at": "2020-02-07T23:11:58.138Z",
+      "name": "H2S Project Authorship - T1",
+      "slug": "h2s-project-authorship-t1",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1112": {
+      "id": 1112,
+      "created_at": "2018-01-25T23:01:22.304Z",
+      "updated_at": "2020-04-08T03:16:39.079Z",
+      "name": "ft_tar",
+      "slug": "rushes-ft_tar",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "1113": {
+      "id": 1113,
+      "created_at": "2018-01-27T19:36:49.604Z",
+      "updated_at": "2019-08-13T12:54:21.104Z",
+      "name": "H2S Mentorship - Project Auditing",
+      "slug": "h2s-mentorship-project-auditing",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1117": {
+      "id": 1117,
+      "created_at": "2018-02-19T12:20:00.769Z",
+      "updated_at": "2024-03-25T16:46:21.326Z",
+      "name": "GUImp",
+      "slug": "guimp",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "1118": {
+      "id": 1118,
+      "created_at": "2018-02-20T23:18:18.161Z",
+      "updated_at": "2019-08-13T12:54:25.717Z",
+      "name": "HackerRank University CodeSprint 4",
+      "slug": "hackerrank-university-codesprint-4",
+      "experience": 25,
+      "exam": false,
+      "parent": null
+    },
+    "1119": {
+      "id": 1119,
+      "created_at": "2018-03-01T14:54:50.891Z",
+      "updated_at": "2024-03-25T16:46:12.702Z",
+      "name": "userspace_digressions",
+      "slug": "userspace_digressions",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "1124": {
+      "id": 1124,
+      "created_at": "2018-03-11T03:42:04.561Z",
+      "updated_at": "2019-08-13T12:54:25.309Z",
+      "name": "Netflix Hackathon",
+      "slug": "netflix-hackathon",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1147": {
+      "id": 1147,
+      "created_at": "2018-04-05T11:18:41.429Z",
+      "updated_at": "2024-03-25T16:46:12.524Z",
+      "name": "Piscine PHP Symfony",
+      "slug": "piscine-php-symfony",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "1148": {
+      "id": 1148,
+      "created_at": "2018-04-05T23:24:06.885Z",
+      "updated_at": "2024-03-25T16:46:12.504Z",
+      "name": "Day 00",
+      "slug": "piscine-php-symfony-day-00",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 1147,
+        "name": "Piscine PHP Symfony",
+        "slug": "piscine-php-symfony"
+      }
+    },
+    "1149": {
+      "id": 1149,
+      "created_at": "2018-04-09T11:58:49.756Z",
+      "updated_at": "2024-03-25T16:46:12.483Z",
+      "name": "Day 01",
+      "slug": "piscine-php-symfony-day-01",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 1147,
+        "name": "Piscine PHP Symfony",
+        "slug": "piscine-php-symfony"
+      }
+    },
+    "1150": {
+      "id": 1150,
+      "created_at": "2018-04-09T13:25:40.300Z",
+      "updated_at": "2024-03-25T16:46:12.453Z",
+      "name": "Day 02",
+      "slug": "piscine-php-symfony-day-02",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 1147,
+        "name": "Piscine PHP Symfony",
+        "slug": "piscine-php-symfony"
+      }
+    },
+    "1151": {
+      "id": 1151,
+      "created_at": "2018-04-09T13:31:36.471Z",
+      "updated_at": "2024-03-25T16:46:12.423Z",
+      "name": "Day 03",
+      "slug": "piscine-php-symfony-day-03",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 1147,
+        "name": "Piscine PHP Symfony",
+        "slug": "piscine-php-symfony"
+      }
+    },
+    "1152": {
+      "id": 1152,
+      "created_at": "2018-04-10T15:10:30.293Z",
+      "updated_at": "2024-03-25T16:46:12.409Z",
+      "name": "Day 04",
+      "slug": "piscine-php-symfony-day-04",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 1147,
+        "name": "Piscine PHP Symfony",
+        "slug": "piscine-php-symfony"
+      }
+    },
+    "1153": {
+      "id": 1153,
+      "created_at": "2018-04-10T15:16:22.816Z",
+      "updated_at": "2024-03-25T16:46:12.393Z",
+      "name": "Rush00",
+      "slug": "piscine-php-symfony-rush00",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 1147,
+        "name": "Piscine PHP Symfony",
+        "slug": "piscine-php-symfony"
+      }
+    },
+    "1154": {
+      "id": 1154,
+      "created_at": "2018-04-10T15:24:19.202Z",
+      "updated_at": "2024-03-25T16:46:12.380Z",
+      "name": "Day 05",
+      "slug": "piscine-php-symfony-day-05",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 1147,
+        "name": "Piscine PHP Symfony",
+        "slug": "piscine-php-symfony"
+      }
+    },
+    "1155": {
+      "id": 1155,
+      "created_at": "2018-04-10T15:27:30.901Z",
+      "updated_at": "2024-03-25T16:46:12.365Z",
+      "name": "Day 06",
+      "slug": "piscine-php-symfony-day-06",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 1147,
+        "name": "Piscine PHP Symfony",
+        "slug": "piscine-php-symfony"
+      }
+    },
+    "1156": {
+      "id": 1156,
+      "created_at": "2018-04-10T15:38:02.411Z",
+      "updated_at": "2024-03-25T16:46:12.347Z",
+      "name": "Day 07",
+      "slug": "piscine-php-symfony-day-07",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 1147,
+        "name": "Piscine PHP Symfony",
+        "slug": "piscine-php-symfony"
+      }
+    },
+    "1157": {
+      "id": 1157,
+      "created_at": "2018-04-10T15:39:26.608Z",
+      "updated_at": "2024-03-25T16:46:12.331Z",
+      "name": "Day 08",
+      "slug": "piscine-php-symfony-day-08",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 1147,
+        "name": "Piscine PHP Symfony",
+        "slug": "piscine-php-symfony"
+      }
+    },
+    "1158": {
+      "id": 1158,
+      "created_at": "2018-04-10T15:40:29.818Z",
+      "updated_at": "2024-03-25T16:46:12.311Z",
+      "name": "Day 09",
+      "slug": "piscine-php-symfony-day-09",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 1147,
+        "name": "Piscine PHP Symfony",
+        "slug": "piscine-php-symfony"
+      }
+    },
+    "1160": {
+      "id": 1160,
+      "created_at": "2018-04-13T09:48:27.879Z",
+      "updated_at": "2024-03-25T16:46:12.295Z",
+      "name": "Rush01",
+      "slug": "piscine-php-symfony-rush01",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 1147,
+        "name": "Piscine PHP Symfony",
+        "slug": "piscine-php-symfony"
+      }
+    },
+    "1162": {
+      "id": 1162,
+      "created_at": "2018-04-19T08:50:19.192Z",
+      "updated_at": "2024-03-25T16:46:12.282Z",
+      "name": "Multilayer Perceptron",
+      "slug": "multilayer-perceptron",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "1163": {
+      "id": 1163,
+      "created_at": "2018-04-23T11:22:31.418Z",
+      "updated_at": "2024-03-25T16:46:12.269Z",
+      "name": "ft_pastebin",
+      "slug": "rushes-ft_pastebin",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "1165": {
+      "id": 1165,
+      "created_at": "2018-05-10T18:43:33.522Z",
+      "updated_at": "2020-04-08T03:16:24.533Z",
+      "name": "ft_sommelier",
+      "slug": "ft_sommelier",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1166": {
+      "id": 1166,
+      "created_at": "2018-05-25T10:10:45.528Z",
+      "updated_at": "2019-09-06T22:00:16.740Z",
+      "name": "NP1",
+      "slug": "np1",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "1176": {
+      "id": 1176,
+      "created_at": "2018-05-30T11:52:46.644Z",
+      "updated_at": "2024-03-25T16:46:12.254Z",
+      "name": "Reverse Engineering",
+      "slug": "rushes-reverse-engineering",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "1182": {
+      "id": 1182,
+      "created_at": "2018-06-08T12:11:35.497Z",
+      "updated_at": "2024-03-25T16:46:12.103Z",
+      "name": "Doom Nukem",
+      "slug": "doom-nukem",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "1183": {
+      "id": 1183,
+      "created_at": "2018-06-13T09:20:58.419Z",
+      "updated_at": "2024-03-25T16:46:12.154Z",
+      "name": "Hackathon Born2Hack",
+      "slug": "hackathon-born2hack",
+      "experience": 25,
+      "exam": false,
+      "parent": null
+    },
+    "1184": {
+      "id": 1184,
+      "created_at": "2018-07-03T02:40:30.402Z",
+      "updated_at": "2019-08-13T12:54:19.389Z",
+      "name": "Teen Idol",
+      "slug": "teen-idol",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1185": {
+      "id": 1185,
+      "created_at": "2018-07-13T00:56:17.892Z",
+      "updated_at": "2020-04-08T03:15:52.752Z",
+      "name": "Yellow Brick Road",
+      "slug": "yellow-brick-road",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1189": {
+      "id": 1189,
+      "created_at": "2018-08-02T19:04:29.162Z",
+      "updated_at": "2019-08-13T12:54:18.408Z",
+      "name": "H2S Project Editor T1",
+      "slug": "h2s-project-editor-t1",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1190": {
+      "id": 1190,
+      "created_at": "2018-08-03T11:10:39.582Z",
+      "updated_at": "2024-03-25T16:46:12.076Z",
+      "name": "roger-skyline-1",
+      "slug": "roger-skyline-1",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1198": {
+      "id": 1198,
+      "created_at": "2018-08-16T06:59:41.327Z",
+      "updated_at": "2019-09-06T22:04:23.767Z",
+      "name": "Dapp-init",
+      "slug": "dapp-init",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1199": {
+      "id": 1199,
+      "created_at": "2018-08-24T13:36:58.099Z",
+      "updated_at": "2019-09-06T22:06:15.683Z",
+      "name": "uf_bird",
+      "slug": "uf_bird",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1203": {
+      "id": 1203,
+      "created_at": "2018-09-05T12:04:29.719Z",
+      "updated_at": "2024-03-25T16:46:12.055Z",
+      "name": "Total-perspective-vortex",
+      "slug": "total-perspective-vortex",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "1205": {
+      "id": 1205,
+      "created_at": "2018-09-10T16:14:33.054Z",
+      "updated_at": "2019-09-07T17:03:33.237Z",
+      "name": "b_printf",
+      "slug": "b_printf",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1207": {
+      "id": 1207,
+      "created_at": "2018-09-14T16:35:15.824Z",
+      "updated_at": "2019-09-06T22:08:27.453Z",
+      "name": "CS-Joy",
+      "slug": "cs-joy",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "1227": {
+      "id": 1227,
+      "created_at": "2018-11-12T14:11:04.912Z",
+      "updated_at": "2024-03-25T16:46:11.729Z",
+      "name": "Blackhole - Peer Helper",
+      "slug": "blackhole-peer-helper",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1230": {
+      "id": 1230,
+      "created_at": "2018-11-20T23:56:33.599Z",
+      "updated_at": "2020-01-29T20:21:28.229Z",
+      "name": "Wildcard",
+      "slug": "wildcard",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1237": {
+      "id": 1237,
+      "created_at": "2019-01-04T23:38:34.363Z",
+      "updated_at": "2020-02-12T21:42:01.098Z",
+      "name": "HackHighSchool Mentorship Program",
+      "slug": "hackhighschool-mentorship-program",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1238": {
+      "id": 1238,
+      "created_at": "2019-01-07T13:59:49.805Z",
+      "updated_at": "2024-03-01T20:04:09.587Z",
+      "name": "LinkedIn",
+      "slug": "linkedin",
+      "experience": 25,
+      "exam": false,
+      "parent": null
+    },
+    "1272": {
+      "id": 1272,
+      "created_at": "2019-03-06T13:21:28.973Z",
+      "updated_at": "2024-03-25T16:46:10.557Z",
+      "name": "Matrice Sant\u00e9",
+      "slug": "matrice-matrice-sante",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 830,
+        "name": "Matrice",
+        "slug": "matrice"
+      }
+    },
+    "1285": {
+      "id": 1285,
+      "created_at": "2019-03-15T02:27:26.523Z",
+      "updated_at": "2019-08-13T12:54:19.624Z",
+      "name": "H2S Project Editor T2",
+      "slug": "h2s-project-editor-t2",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "1300": {
+      "id": 1300,
+      "created_at": "2019-05-02T15:12:33.003Z",
+      "updated_at": "2024-03-25T16:46:10.434Z",
+      "name": "Matrice Air Data",
+      "slug": "matrice-matrice-air-data",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 830,
+        "name": "Matrice",
+        "slug": "matrice"
+      }
+    },
+    "1306": {
+      "id": 1306,
+      "created_at": "2019-05-20T13:00:17.995Z",
+      "updated_at": "2019-09-06T22:11:54.223Z",
+      "name": "Genesis B",
+      "slug": "genesis-b",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1634": {
+      "id": 1634,
+      "created_at": "2019-10-14T12:39:23.784Z",
+      "updated_at": "2024-03-25T16:46:07.572Z",
+      "name": "Matrice Solutions Urbaines",
+      "slug": "matrice-matrice-solutions-urbaines",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 830,
+        "name": "Matrice",
+        "slug": "matrice"
+      }
+    },
+    "1685": {
+      "id": 1685,
+      "created_at": "2019-12-20T14:12:40.175Z",
+      "updated_at": "2024-03-25T16:46:07.010Z",
+      "name": "[DEPRECATED] Old-CPP Module 00",
+      "slug": "deprecated-old-cpp-module-00",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1686": {
+      "id": 1686,
+      "created_at": "2019-12-20T14:13:25.190Z",
+      "updated_at": "2024-03-25T16:46:07.000Z",
+      "name": "[DEPRECATED] Old-CPP Module 01",
+      "slug": "deprecated-old-cpp-module-01",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1687": {
+      "id": 1687,
+      "created_at": "2019-12-20T14:14:01.066Z",
+      "updated_at": "2024-03-25T16:46:06.991Z",
+      "name": "[DEPRECATED] Old-CPP Module 02",
+      "slug": "deprecated-old-cpp-module-02",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1688": {
+      "id": 1688,
+      "created_at": "2019-12-20T14:14:20.996Z",
+      "updated_at": "2024-03-25T16:46:06.980Z",
+      "name": "[DEPRECATED] Old-CPP Module 03",
+      "slug": "deprecated-old-cpp-module-03",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1689": {
+      "id": 1689,
+      "created_at": "2019-12-20T14:14:46.004Z",
+      "updated_at": "2024-03-25T16:46:06.970Z",
+      "name": "[DEPRECATED] Old-CPP Module 04",
+      "slug": "deprecated-old-cpp-module-04",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1690": {
+      "id": 1690,
+      "created_at": "2019-12-20T14:15:19.954Z",
+      "updated_at": "2024-03-25T16:46:06.960Z",
+      "name": "[DEPRECATED] Old-CPP Module 05",
+      "slug": "deprecated-old-cpp-module-05",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1691": {
+      "id": 1691,
+      "created_at": "2019-12-20T14:15:43.633Z",
+      "updated_at": "2024-03-25T16:46:06.949Z",
+      "name": "[DEPRECATED] Old-CPP Module 06",
+      "slug": "deprecated-old-cpp-module-06",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1692": {
+      "id": 1692,
+      "created_at": "2019-12-20T14:16:41.350Z",
+      "updated_at": "2024-03-25T16:46:06.939Z",
+      "name": "[DEPRECATED] Old-CPP Module 07",
+      "slug": "deprecated-old-cpp-module-07",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1693": {
+      "id": 1693,
+      "created_at": "2019-12-20T14:17:10.469Z",
+      "updated_at": "2024-03-25T16:46:06.926Z",
+      "name": "[DEPRECATED] Old-CPP Module 08",
+      "slug": "deprecated-old-cpp-module-08",
+      "experience": 9660,
+      "exam": false,
+      "parent": null
+    },
+    "1716": {
+      "id": 1716,
+      "created_at": "2020-02-21T17:57:58.390Z",
+      "updated_at": "2024-03-25T16:46:06.747Z",
+      "name": "Matrice Concept car",
+      "slug": "matrice-matrice-concept-car",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 830,
+        "name": "Matrice",
+        "slug": "matrice"
+      }
+    },
+    "1733": {
+      "id": 1733,
+      "created_at": "2020-03-06T16:52:50.876Z",
+      "updated_at": "2020-03-26T14:44:35.720Z",
+      "name": "IoTApp",
+      "slug": "iotapp",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "2112": {
+      "id": 2112,
+      "created_at": "2022-03-02T12:55:54.399Z",
+      "updated_at": "2023-03-13T14:52:40.721Z",
+      "name": "ft_ssl_md5",
+      "slug": "ft_ssl_md5",
+      "experience": null,
+      "exam": false,
+      "parent": null
+    },
+    "2113": {
+      "id": 2113,
+      "created_at": "2022-03-03T06:41:44.329Z",
+      "updated_at": "2022-03-04T12:40:58.503Z",
+      "name": "ft_newton42",
+      "slug": "ft_newton42",
+      "experience": null,
+      "exam": false,
+      "parent": null
+    },
+    "2114": {
+      "id": 2114,
+      "created_at": "2022-03-03T07:36:48.702Z",
+      "updated_at": "2023-03-13T10:00:11.883Z",
+      "name": "ft_abstract_vm",
+      "slug": "ft_abstract_vm",
+      "experience": null,
+      "exam": false,
+      "parent": null
+    },
+    "2115": {
+      "id": 2115,
+      "created_at": "2022-03-03T11:13:30.762Z",
+      "updated_at": "2023-03-13T10:03:05.459Z",
+      "name": "42_matrix",
+      "slug": "42_matrix",
+      "experience": null,
+      "exam": false,
+      "parent": null
+    },
+    "2116": {
+      "id": 2116,
+      "created_at": "2022-03-03T11:21:59.481Z",
+      "updated_at": "2023-03-13T10:03:30.371Z",
+      "name": "42 Ready Set boole",
+      "slug": "42-ready-set-boole",
+      "experience": null,
+      "exam": false,
+      "parent": null
+    },
+    "2117": {
+      "id": 2117,
+      "created_at": "2022-03-03T11:27:38.262Z",
+      "updated_at": "2023-03-13T10:03:55.997Z",
+      "name": "ft_malcolm_42",
+      "slug": "ft_malcolm_42",
+      "experience": null,
+      "exam": false,
+      "parent": null
+    },
+    "2118": {
+      "id": 2118,
+      "created_at": "2022-03-03T12:19:02.115Z",
+      "updated_at": "2022-03-15T09:39:11.476Z",
+      "name": "42_ft_shield",
+      "slug": "42_ft_shield",
+      "experience": null,
+      "exam": false,
+      "parent": null
+    },
+    "2121": {
+      "id": 2121,
+      "created_at": "2022-03-09T10:39:03.426Z",
+      "updated_at": "2022-03-21T11:53:19.741Z",
+      "name": "Abstract Games",
+      "slug": "rushes-abstract-games",
+      "experience": null,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "2153": {
+      "id": 2153,
+      "created_at": "2022-04-07T09:40:06.509Z",
+      "updated_at": "2022-04-23T19:36:23.945Z",
+      "name": "Music Collection",
+      "slug": "rushes-music-collection",
+      "experience": null,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "2176": {
+      "id": 2176,
+      "created_at": "2022-05-19T11:44:04.350Z",
+      "updated_at": "2022-05-19T12:15:03.483Z",
+      "name": "Sound Synthesis",
+      "slug": "rushes-sound-synthesis",
+      "experience": null,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "2178": {
+      "id": 2178,
+      "created_at": "2022-06-16T10:51:44.733Z",
+      "updated_at": "2022-06-21T09:20:23.437Z",
+      "name": "Game of Life",
+      "slug": "rushes-game-of-life",
+      "experience": null,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    }
+  }
+}

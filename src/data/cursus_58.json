@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "id": 58,
+    "created_at": "2022-03-02T12:43:51.471Z",
+    "kind": "professional_training_deprecated",
+    "name": "[DEPRECATED] Bootcamp Cybersecurity",
+    "slug": "deprecated-bootcamp-cybersecurity"
+  },
+  "projects": {
+    "2157": {
+      "id": 2157,
+      "created_at": "2022-04-11T14:25:15.366Z",
+      "updated_at": "2024-03-04T08:52:45.426Z",
+      "name": "arachnida",
+      "slug": "arachnida",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "2159": {
+      "id": 2159,
+      "created_at": "2022-04-11T14:31:49.832Z",
+      "updated_at": "2024-03-04T08:52:45.393Z",
+      "name": "ft_blockchain",
+      "slug": "ft_blockchain",
+      "experience": null,
+      "exam": false,
+      "parent": null
+    },
+    "2162": {
+      "id": 2162,
+      "created_at": "2022-04-12T07:40:13.945Z",
+      "updated_at": "2024-03-04T08:52:45.351Z",
+      "name": "ft_onion",
+      "slug": "ft_onion",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "2163": {
+      "id": 2163,
+      "created_at": "2022-04-12T07:50:17.650Z",
+      "updated_at": "2024-03-04T08:52:45.347Z",
+      "name": "ft_otp",
+      "slug": "ft_otp",
+      "experience": null,
+      "exam": false,
+      "parent": null
+    },
+    "2164": {
+      "id": 2164,
+      "created_at": "2022-04-12T07:53:44.074Z",
+      "updated_at": "2024-03-04T08:52:45.338Z",
+      "name": "inquisitor",
+      "slug": "inquisitor",
+      "experience": null,
+      "exam": false,
+      "parent": null
+    },
+    "2165": {
+      "id": 2165,
+      "created_at": "2022-04-12T07:57:09.219Z",
+      "updated_at": "2024-03-04T08:52:45.342Z",
+      "name": "vaccine",
+      "slug": "vaccine",
+      "experience": null,
+      "exam": false,
+      "parent": null
+    },
+    "2166": {
+      "id": 2166,
+      "created_at": "2022-04-12T08:00:13.322Z",
+      "updated_at": "2024-03-04T08:52:45.315Z",
+      "name": "tsunami",
+      "slug": "tsunami",
+      "experience": null,
+      "exam": false,
+      "parent": null
+    },
+    "2167": {
+      "id": 2167,
+      "created_at": "2022-04-12T08:09:28.504Z",
+      "updated_at": "2024-03-04T08:52:45.418Z",
+      "name": "iron_dome",
+      "slug": "iron_dome",
+      "experience": null,
+      "exam": false,
+      "parent": null
+    },
+    "2168": {
+      "id": 2168,
+      "created_at": "2022-04-12T08:13:58.258Z",
+      "updated_at": "2024-03-04T08:52:45.414Z",
+      "name": "extraction",
+      "slug": "extraction",
+      "experience": null,
+      "exam": false,
+      "parent": null
+    },
+    "2169": {
+      "id": 2169,
+      "created_at": "2022-04-12T08:57:17.241Z",
+      "updated_at": "2024-03-04T08:52:45.334Z",
+      "name": "recovery",
+      "slug": "recovery",
+      "experience": null,
+      "exam": false,
+      "parent": null
+    },
+    "2171": {
+      "id": 2171,
+      "created_at": "2022-04-19T08:17:00.944Z",
+      "updated_at": "2024-03-04T08:52:45.355Z",
+      "name": "coRSAir",
+      "slug": "corsair",
+      "experience": 90,
+      "exam": false,
+      "parent": null
+    },
+    "2172": {
+      "id": 2172,
+      "created_at": "2022-04-22T14:37:43.952Z",
+      "updated_at": "2024-03-04T08:52:45.330Z",
+      "name": "stockholm",
+      "slug": "stockholm",
+      "experience": 90,
+      "exam": false,
+      "parent": null
+    }
+  }
+}

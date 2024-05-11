@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "id": 22,
+    "created_at": "2019-08-05T11:25:46.878Z",
+    "kind": "external",
+    "name": "static-riddle-101",
+    "slug": "static-riddle-101"
+  },
+  "projects": {
+    "1347": {
+      "id": 1347,
+      "created_at": "2019-08-05T11:56:48.456Z",
+      "updated_at": "2021-09-04T08:37:49.625Z",
+      "name": "D00 - HTML",
+      "slug": "d00-html",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1348": {
+      "id": 1348,
+      "created_at": "2019-08-05T15:12:54.220Z",
+      "updated_at": "2021-09-03T15:28:49.658Z",
+      "name": "D01 - CSS",
+      "slug": "d01-css",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1349": {
+      "id": 1349,
+      "created_at": "2019-08-05T15:55:33.876Z",
+      "updated_at": "2021-09-03T15:29:36.937Z",
+      "name": "D03 - Javascript",
+      "slug": "d03-javascript",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1350": {
+      "id": 1350,
+      "created_at": "2019-08-07T15:00:10.095Z",
+      "updated_at": "2021-09-03T15:30:04.284Z",
+      "name": "D04 - Advanced Javascript",
+      "slug": "d04-advanced-javascript",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1351": {
+      "id": 1351,
+      "created_at": "2019-08-07T15:04:02.241Z",
+      "updated_at": "2021-09-03T15:29:07.467Z",
+      "name": "D02 - CSS/JS",
+      "slug": "d02-css-js",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1352": {
+      "id": 1352,
+      "created_at": "2019-08-07T16:24:37.096Z",
+      "updated_at": "2021-09-06T11:33:45.433Z",
+      "name": "RUSH",
+      "slug": "rush",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    }
+  }
+}

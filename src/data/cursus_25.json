@@ -1,0 +1,51 @@
+{
+  "meta": {
+    "id": 25,
+    "created_at": "2019-12-04T16:13:04.537Z",
+    "kind": "external",
+    "name": "micropiscine-web-101",
+    "slug": "micropiscine-web-101"
+  },
+  "projects": {
+    "1676": {
+      "id": 1676,
+      "created_at": "2019-12-04T17:11:46.536Z",
+      "updated_at": "2022-09-14T10:30:17.006Z",
+      "name": "Day00 - HTML",
+      "slug": "day00-html",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1677": {
+      "id": 1677,
+      "created_at": "2019-12-04T17:17:25.226Z",
+      "updated_at": "2022-09-14T09:51:06.470Z",
+      "name": "Day01 - CSS",
+      "slug": "day01-css",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1678": {
+      "id": 1678,
+      "created_at": "2019-12-04T17:23:39.154Z",
+      "updated_at": "2022-09-14T10:03:27.333Z",
+      "name": "Day02 - JS",
+      "slug": "day02-js",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1679": {
+      "id": 1679,
+      "created_at": "2019-12-04T17:25:03.091Z",
+      "updated_at": "2022-09-16T12:24:59.391Z",
+      "name": "Rush final",
+      "slug": "rush-final",
+      "experience": 200,
+      "exam": false,
+      "parent": null
+    }
+  }
+}

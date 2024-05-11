@@ -1,0 +1,389 @@
+{
+  "meta": {
+    "id": 13,
+    "created_at": "2017-02-01T14:25:42.300Z",
+    "kind": "external_deprecated",
+    "name": "42 Labs",
+    "slug": "42-labs"
+  },
+  "projects": {
+    "154": {
+      "id": 154,
+      "created_at": "2015-05-01T20:04:00.540Z",
+      "updated_at": "2024-03-25T16:46:19.584Z",
+      "name": "Day 00",
+      "slug": "piscine-c-day-00",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "155": {
+      "id": 155,
+      "created_at": "2015-05-01T20:12:10.639Z",
+      "updated_at": "2024-03-25T16:46:21.032Z",
+      "name": "Day 01",
+      "slug": "piscine-c-day-01",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "156": {
+      "id": 156,
+      "created_at": "2015-05-01T20:16:49.187Z",
+      "updated_at": "2024-03-25T16:46:20.814Z",
+      "name": "Day 02",
+      "slug": "piscine-c-day-02",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "157": {
+      "id": 157,
+      "created_at": "2015-05-01T20:30:13.467Z",
+      "updated_at": "2024-03-25T16:46:20.742Z",
+      "name": "Day 03",
+      "slug": "piscine-c-day-03",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "158": {
+      "id": 158,
+      "created_at": "2015-05-01T20:32:02.406Z",
+      "updated_at": "2024-03-25T16:46:20.188Z",
+      "name": "Day 04",
+      "slug": "piscine-c-day-04",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "159": {
+      "id": 159,
+      "created_at": "2015-05-01T20:33:26.757Z",
+      "updated_at": "2024-03-25T16:46:20.769Z",
+      "name": "Day 05",
+      "slug": "piscine-c-day-05",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "160": {
+      "id": 160,
+      "created_at": "2015-05-01T20:37:20.980Z",
+      "updated_at": "2024-03-25T16:46:20.791Z",
+      "name": "Day 06",
+      "slug": "piscine-c-day-06",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "161": {
+      "id": 161,
+      "created_at": "2015-05-01T20:39:17.477Z",
+      "updated_at": "2024-03-25T16:46:20.019Z",
+      "name": "Day 07",
+      "slug": "piscine-c-day-07",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "162": {
+      "id": 162,
+      "created_at": "2015-05-01T20:40:39.381Z",
+      "updated_at": "2024-03-25T16:46:19.000Z",
+      "name": "Day 08",
+      "slug": "piscine-c-day-08",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "163": {
+      "id": 163,
+      "created_at": "2015-05-01T20:42:15.300Z",
+      "updated_at": "2024-03-25T16:46:18.756Z",
+      "name": "Day 10",
+      "slug": "piscine-c-day-10",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "164": {
+      "id": 164,
+      "created_at": "2015-05-01T20:45:34.489Z",
+      "updated_at": "2024-03-25T16:46:19.700Z",
+      "name": "Day 11",
+      "slug": "piscine-c-day-11",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "165": {
+      "id": 165,
+      "created_at": "2015-05-01T20:47:21.402Z",
+      "updated_at": "2024-03-25T16:46:19.683Z",
+      "name": "Day 12",
+      "slug": "piscine-c-day-12",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "166": {
+      "id": 166,
+      "created_at": "2015-05-01T20:50:21.476Z",
+      "updated_at": "2024-03-25T16:46:18.985Z",
+      "name": "Day 13",
+      "slug": "piscine-c-day-13",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "168": {
+      "id": 168,
+      "created_at": "2015-05-01T21:27:01.212Z",
+      "updated_at": "2024-03-25T16:46:20.039Z",
+      "name": "Rush 00",
+      "slug": "piscine-c-rush-00",
+      "experience": 25,
+      "exam": false,
+      "parent": null
+    },
+    "171": {
+      "id": 171,
+      "created_at": "2015-05-01T21:38:22.888Z",
+      "updated_at": "2024-03-25T16:46:21.009Z",
+      "name": "Sastantua",
+      "slug": "piscine-c-sastantua",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "404": {
+      "id": 404,
+      "created_at": "2015-06-29T13:14:20.064Z",
+      "updated_at": "2024-03-25T16:46:20.992Z",
+      "name": "Exam00",
+      "slug": "piscine-c-exam00",
+      "experience": 100,
+      "exam": true,
+      "parent": null
+    },
+    "405": {
+      "id": 405,
+      "created_at": "2015-06-29T13:14:31.702Z",
+      "updated_at": "2024-03-25T16:46:19.195Z",
+      "name": "Exam01",
+      "slug": "piscine-c-exam01",
+      "experience": 100,
+      "exam": true,
+      "parent": null
+    },
+    "406": {
+      "id": 406,
+      "created_at": "2015-06-29T13:15:06.389Z",
+      "updated_at": "2024-03-25T16:46:20.871Z",
+      "name": "Exam02",
+      "slug": "piscine-c-exam02",
+      "experience": 100,
+      "exam": true,
+      "parent": null
+    },
+    "407": {
+      "id": 407,
+      "created_at": "2015-06-29T13:21:32.257Z",
+      "updated_at": "2024-03-25T16:46:19.138Z",
+      "name": "Exam Final",
+      "slug": "piscine-c-exam-final",
+      "experience": 225,
+      "exam": true,
+      "parent": null
+    },
+    "727": {
+      "id": 727,
+      "created_at": "2016-08-25T08:39:26.044Z",
+      "updated_at": "2024-03-25T16:46:22.599Z",
+      "name": "Piscine Python Django",
+      "slug": "piscine-python-django",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "1147": {
+      "id": 1147,
+      "created_at": "2018-04-05T11:18:41.429Z",
+      "updated_at": "2024-03-25T16:46:12.524Z",
+      "name": "Piscine PHP Symfony",
+      "slug": "piscine-php-symfony",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "1148": {
+      "id": 1148,
+      "created_at": "2018-04-05T23:24:06.885Z",
+      "updated_at": "2024-03-25T16:46:12.504Z",
+      "name": "Day 00",
+      "slug": "piscine-php-symfony-day-00",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 1147,
+        "name": "Piscine PHP Symfony",
+        "slug": "piscine-php-symfony"
+      }
+    },
+    "1149": {
+      "id": 1149,
+      "created_at": "2018-04-09T11:58:49.756Z",
+      "updated_at": "2024-03-25T16:46:12.483Z",
+      "name": "Day 01",
+      "slug": "piscine-php-symfony-day-01",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 1147,
+        "name": "Piscine PHP Symfony",
+        "slug": "piscine-php-symfony"
+      }
+    },
+    "1150": {
+      "id": 1150,
+      "created_at": "2018-04-09T13:25:40.300Z",
+      "updated_at": "2024-03-25T16:46:12.453Z",
+      "name": "Day 02",
+      "slug": "piscine-php-symfony-day-02",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 1147,
+        "name": "Piscine PHP Symfony",
+        "slug": "piscine-php-symfony"
+      }
+    },
+    "1151": {
+      "id": 1151,
+      "created_at": "2018-04-09T13:31:36.471Z",
+      "updated_at": "2024-03-25T16:46:12.423Z",
+      "name": "Day 03",
+      "slug": "piscine-php-symfony-day-03",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 1147,
+        "name": "Piscine PHP Symfony",
+        "slug": "piscine-php-symfony"
+      }
+    },
+    "1152": {
+      "id": 1152,
+      "created_at": "2018-04-10T15:10:30.293Z",
+      "updated_at": "2024-03-25T16:46:12.409Z",
+      "name": "Day 04",
+      "slug": "piscine-php-symfony-day-04",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 1147,
+        "name": "Piscine PHP Symfony",
+        "slug": "piscine-php-symfony"
+      }
+    },
+    "1153": {
+      "id": 1153,
+      "created_at": "2018-04-10T15:16:22.816Z",
+      "updated_at": "2024-03-25T16:46:12.393Z",
+      "name": "Rush00",
+      "slug": "piscine-php-symfony-rush00",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 1147,
+        "name": "Piscine PHP Symfony",
+        "slug": "piscine-php-symfony"
+      }
+    },
+    "1154": {
+      "id": 1154,
+      "created_at": "2018-04-10T15:24:19.202Z",
+      "updated_at": "2024-03-25T16:46:12.380Z",
+      "name": "Day 05",
+      "slug": "piscine-php-symfony-day-05",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 1147,
+        "name": "Piscine PHP Symfony",
+        "slug": "piscine-php-symfony"
+      }
+    },
+    "1155": {
+      "id": 1155,
+      "created_at": "2018-04-10T15:27:30.901Z",
+      "updated_at": "2024-03-25T16:46:12.365Z",
+      "name": "Day 06",
+      "slug": "piscine-php-symfony-day-06",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 1147,
+        "name": "Piscine PHP Symfony",
+        "slug": "piscine-php-symfony"
+      }
+    },
+    "1156": {
+      "id": 1156,
+      "created_at": "2018-04-10T15:38:02.411Z",
+      "updated_at": "2024-03-25T16:46:12.347Z",
+      "name": "Day 07",
+      "slug": "piscine-php-symfony-day-07",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 1147,
+        "name": "Piscine PHP Symfony",
+        "slug": "piscine-php-symfony"
+      }
+    },
+    "1157": {
+      "id": 1157,
+      "created_at": "2018-04-10T15:39:26.608Z",
+      "updated_at": "2024-03-25T16:46:12.331Z",
+      "name": "Day 08",
+      "slug": "piscine-php-symfony-day-08",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 1147,
+        "name": "Piscine PHP Symfony",
+        "slug": "piscine-php-symfony"
+      }
+    },
+    "1158": {
+      "id": 1158,
+      "created_at": "2018-04-10T15:40:29.818Z",
+      "updated_at": "2024-03-25T16:46:12.311Z",
+      "name": "Day 09",
+      "slug": "piscine-php-symfony-day-09",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 1147,
+        "name": "Piscine PHP Symfony",
+        "slug": "piscine-php-symfony"
+      }
+    },
+    "1160": {
+      "id": 1160,
+      "created_at": "2018-04-13T09:48:27.879Z",
+      "updated_at": "2024-03-25T16:46:12.295Z",
+      "name": "Rush01",
+      "slug": "piscine-php-symfony-rush01",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 1147,
+        "name": "Piscine PHP Symfony",
+        "slug": "piscine-php-symfony"
+      }
+    }
+  }
+}

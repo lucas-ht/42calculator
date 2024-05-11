@@ -1,0 +1,931 @@
+{
+  "meta": {
+    "id": 17,
+    "created_at": "2017-08-28T23:27:49.646Z",
+    "kind": "external_deprecated",
+    "name": "H2S",
+    "slug": "h2s"
+  },
+  "projects": {
+    "988": {
+      "id": 988,
+      "created_at": "2017-09-06T20:23:50.898Z",
+      "updated_at": "2020-02-14T20:12:23.035Z",
+      "name": "APCSP - Explore Task",
+      "slug": "apcsp-prep-apcsp-explore-task",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1361,
+        "name": "APCSP Prep",
+        "slug": "apcsp-prep"
+      }
+    },
+    "991": {
+      "id": 991,
+      "created_at": "2017-09-06T20:26:21.571Z",
+      "updated_at": "2018-05-05T19:14:54.428Z",
+      "name": "Crypto intro",
+      "slug": "algorithmic-puzzles-crypto-intro",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1107,
+        "name": "Algorithmic Puzzles",
+        "slug": "algorithmic-puzzles"
+      }
+    },
+    "1007": {
+      "id": 1007,
+      "created_at": "2017-09-07T19:02:18.027Z",
+      "updated_at": "2020-01-11T10:19:23.126Z",
+      "name": "APCSP - Create Task",
+      "slug": "apcsp-prep-apcsp-create-task",
+      "experience": 225,
+      "exam": false,
+      "parent": {
+        "id": 1361,
+        "name": "APCSP Prep",
+        "slug": "apcsp-prep"
+      }
+    },
+    "1009": {
+      "id": 1009,
+      "created_at": "2017-09-13T01:39:56.960Z",
+      "updated_at": "2020-01-25T22:14:14.368Z",
+      "name": "START HERE - Hello 42!",
+      "slug": "start-here-hello-42",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1027": {
+      "id": 1027,
+      "created_at": "2017-11-02T18:22:51.065Z",
+      "updated_at": "2020-02-14T20:12:22.830Z",
+      "name": "APCSP - Explore Practice",
+      "slug": "apcsp-explore-task-apcsp-explore-practice",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 988,
+        "name": "APCSP - Explore Task",
+        "slug": "apcsp-prep-apcsp-explore-task"
+      }
+    },
+    "1028": {
+      "id": 1028,
+      "created_at": "2017-11-02T18:24:37.972Z",
+      "updated_at": "2020-02-14T20:12:23.060Z",
+      "name": "APCSP - Explore Portfolio",
+      "slug": "deprecated-apcsp-explore-apcsp-explore-portfolio",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 988,
+        "name": "APCSP - Explore Task",
+        "slug": "apcsp-prep-apcsp-explore-task"
+      }
+    },
+    "1095": {
+      "id": 1095,
+      "created_at": "2018-01-04T00:29:58.052Z",
+      "updated_at": "2020-04-08T03:16:39.883Z",
+      "name": "Numpy",
+      "slug": "rushes-numpy",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "1107": {
+      "id": 1107,
+      "created_at": "2018-01-17T23:37:23.378Z",
+      "updated_at": "2020-01-06T22:55:43.859Z",
+      "name": "Algorithmic Puzzles",
+      "slug": "algorithmic-puzzles",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1108": {
+      "id": 1108,
+      "created_at": "2018-01-18T00:04:18.416Z",
+      "updated_at": "2020-01-06T22:55:43.868Z",
+      "name": "Matchbox",
+      "slug": "algorithmic-puzzles-matchbox",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1107,
+        "name": "Algorithmic Puzzles",
+        "slug": "algorithmic-puzzles"
+      }
+    },
+    "1109": {
+      "id": 1109,
+      "created_at": "2018-01-18T00:57:26.227Z",
+      "updated_at": "2019-08-24T00:31:33.671Z",
+      "name": "Hack Your Own Adventure",
+      "slug": "hack-your-own-adventure",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "1110": {
+      "id": 1110,
+      "created_at": "2018-01-19T05:17:20.038Z",
+      "updated_at": "2018-05-26T02:46:27.971Z",
+      "name": "Map Your Own Adventure",
+      "slug": "hack-your-own-adventure-map-your-own-adventure",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1109,
+        "name": "Hack Your Own Adventure",
+        "slug": "hack-your-own-adventure"
+      }
+    },
+    "1131": {
+      "id": 1131,
+      "created_at": "2018-03-16T18:43:56.916Z",
+      "updated_at": "2020-01-06T23:01:46.744Z",
+      "name": "Web01 - HTML_CSS",
+      "slug": "javascript-web01-html_css",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1175,
+        "name": "Javascript",
+        "slug": "javascript"
+      }
+    },
+    "1141": {
+      "id": 1141,
+      "created_at": "2018-03-31T22:14:01.432Z",
+      "updated_at": "2020-01-06T22:55:43.688Z",
+      "name": "Python",
+      "slug": "python",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "1143": {
+      "id": 1143,
+      "created_at": "2018-04-03T15:21:58.367Z",
+      "updated_at": "2020-01-06T22:55:43.717Z",
+      "name": "Parseltongue - Part 1",
+      "slug": "parseltongue-piscine-parseltongue-part-1",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1141,
+        "name": "Python",
+        "slug": "python"
+      }
+    },
+    "1144": {
+      "id": 1144,
+      "created_at": "2018-04-04T15:20:03.154Z",
+      "updated_at": "2020-01-06T22:55:43.753Z",
+      "name": "Parseltongue - Part 3",
+      "slug": "parseltongue-piscine-parseltongue-part-3",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1141,
+        "name": "Python",
+        "slug": "python"
+      }
+    },
+    "1145": {
+      "id": 1145,
+      "created_at": "2018-04-04T15:26:10.704Z",
+      "updated_at": "2020-01-06T22:55:43.699Z",
+      "name": "Parseltongue - Part 2",
+      "slug": "parseltongue-piscine-parseltongue-part-2",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1141,
+        "name": "Python",
+        "slug": "python"
+      }
+    },
+    "1146": {
+      "id": 1146,
+      "created_at": "2018-04-04T15:33:41.562Z",
+      "updated_at": "2020-01-06T22:55:43.726Z",
+      "name": "Parseltongue - Part 4",
+      "slug": "parseltongue-piscine-parseltongue-part-4",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1141,
+        "name": "Python",
+        "slug": "python"
+      }
+    },
+    "1175": {
+      "id": 1175,
+      "created_at": "2018-05-26T02:28:41.283Z",
+      "updated_at": "2020-02-07T21:58:36.772Z",
+      "name": "Javascript",
+      "slug": "javascript",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "1191": {
+      "id": 1191,
+      "created_at": "2018-08-09T01:23:01.044Z",
+      "updated_at": "2020-01-06T22:55:43.910Z",
+      "name": "Data Mining",
+      "slug": "data-mining",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1192": {
+      "id": 1192,
+      "created_at": "2018-08-09T01:35:23.118Z",
+      "updated_at": "2020-01-06T22:55:43.916Z",
+      "name": "Web Scraping with Beautiful Soup",
+      "slug": "data-mining-the-49ers-web-scraping-with-beautiful-soup",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1191,
+        "name": "Data Mining",
+        "slug": "data-mining"
+      }
+    },
+    "1193": {
+      "id": 1193,
+      "created_at": "2018-08-09T01:37:17.652Z",
+      "updated_at": "2020-01-06T22:55:43.906Z",
+      "name": "Mapping Geographical Data in Plotly",
+      "slug": "data-mining-the-49ers-mapping-geographical-data-in-plotly",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1191,
+        "name": "Data Mining",
+        "slug": "data-mining"
+      }
+    },
+    "1194": {
+      "id": 1194,
+      "created_at": "2018-08-09T01:38:56.714Z",
+      "updated_at": "2020-01-06T22:55:43.924Z",
+      "name": "API Queries to MySportsFeeds",
+      "slug": "data-mining-the-49ers-api-queries-to-mysportsfeeds",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1191,
+        "name": "Data Mining",
+        "slug": "data-mining"
+      }
+    },
+    "1195": {
+      "id": 1195,
+      "created_at": "2018-08-09T01:40:05.167Z",
+      "updated_at": "2020-01-06T22:55:43.935Z",
+      "name": "Statistical Data Visualization with Seaborn",
+      "slug": "data-mining-the-49ers-statistical-data-visualization-with-seaborn",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1191,
+        "name": "Data Mining",
+        "slug": "data-mining"
+      }
+    },
+    "1200": {
+      "id": 1200,
+      "created_at": "2018-08-24T18:04:52.891Z",
+      "updated_at": "2020-02-22T22:32:26.872Z",
+      "name": "p5JS",
+      "slug": "p5js",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1201": {
+      "id": 1201,
+      "created_at": "2018-08-24T18:17:44.962Z",
+      "updated_at": "2020-01-06T22:55:43.780Z",
+      "name": "jQuery",
+      "slug": "javascript-jquery",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1175,
+        "name": "Javascript",
+        "slug": "javascript"
+      }
+    },
+    "1208": {
+      "id": 1208,
+      "created_at": "2018-09-19T01:31:07.932Z",
+      "updated_at": "2022-09-19T08:04:16.490Z",
+      "name": "Java",
+      "slug": "java",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "1221": {
+      "id": 1221,
+      "created_at": "2018-10-06T01:56:24.288Z",
+      "updated_at": "2020-02-22T22:32:26.857Z",
+      "name": "p5js-00",
+      "slug": "javascript-and-graphics-in-p5js-p5js-00",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1200,
+        "name": "p5JS",
+        "slug": "p5js"
+      }
+    },
+    "1222": {
+      "id": 1222,
+      "created_at": "2018-10-11T21:54:47.210Z",
+      "updated_at": "2019-07-22T19:02:31.446Z",
+      "name": "p5js-01",
+      "slug": "javascript-and-graphics-in-p5js-p5js-01",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1200,
+        "name": "p5JS",
+        "slug": "p5js"
+      }
+    },
+    "1224": {
+      "id": 1224,
+      "created_at": "2018-10-19T22:52:26.524Z",
+      "updated_at": "2019-07-22T19:03:15.123Z",
+      "name": "p5js-02",
+      "slug": "javascript-and-graphics-in-p5js-p5js-02",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1200,
+        "name": "p5JS",
+        "slug": "p5js"
+      }
+    },
+    "1225": {
+      "id": 1225,
+      "created_at": "2018-11-03T18:05:03.512Z",
+      "updated_at": "2019-07-22T19:04:26.954Z",
+      "name": "p5js-03",
+      "slug": "javascript-and-graphics-in-p5js-p5js-03",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1200,
+        "name": "p5JS",
+        "slug": "p5js"
+      }
+    },
+    "1229": {
+      "id": 1229,
+      "created_at": "2018-11-17T19:53:06.872Z",
+      "updated_at": "2019-10-09T12:59:50.859Z",
+      "name": "p5js-04",
+      "slug": "javascript-and-graphics-in-p5js-p5js-04",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1200,
+        "name": "p5JS",
+        "slug": "p5js"
+      }
+    },
+    "1231": {
+      "id": 1231,
+      "created_at": "2018-12-01T08:14:11.918Z",
+      "updated_at": "2019-07-22T19:03:44.849Z",
+      "name": "p5js-05",
+      "slug": "javascript-and-graphics-in-p5js-p5js-05",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1200,
+        "name": "p5JS",
+        "slug": "p5js"
+      }
+    },
+    "1239": {
+      "id": 1239,
+      "created_at": "2019-01-16T22:37:57.804Z",
+      "updated_at": "2020-01-06T22:55:43.845Z",
+      "name": "Go Programming",
+      "slug": "go-programming",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1240": {
+      "id": 1240,
+      "created_at": "2019-01-16T23:43:40.395Z",
+      "updated_at": "2019-01-17T00:13:11.154Z",
+      "name": "Go 00",
+      "slug": "go-programming-go-00",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1239,
+        "name": "Go Programming",
+        "slug": "go-programming"
+      }
+    },
+    "1283": {
+      "id": 1283,
+      "created_at": "2019-03-14T18:34:29.481Z",
+      "updated_at": "2020-02-08T21:02:20.939Z",
+      "name": "Machine Learning",
+      "slug": "machine-learning",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1286": {
+      "id": 1286,
+      "created_at": "2019-03-15T06:04:41.820Z",
+      "updated_at": "2019-11-09T22:35:41.716Z",
+      "name": "ML_01",
+      "slug": "machine-learning-using-python-ml_01",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1283,
+        "name": "Machine Learning",
+        "slug": "machine-learning"
+      }
+    },
+    "1287": {
+      "id": 1287,
+      "created_at": "2019-03-15T06:06:15.037Z",
+      "updated_at": "2019-03-16T00:24:04.712Z",
+      "name": "ML_02",
+      "slug": "machine-learning-using-python-ml_02",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1283,
+        "name": "Machine Learning",
+        "slug": "machine-learning"
+      }
+    },
+    "1288": {
+      "id": 1288,
+      "created_at": "2019-03-15T06:09:05.735Z",
+      "updated_at": "2020-01-18T23:12:11.854Z",
+      "name": "ML_03",
+      "slug": "machine-learning-using-python-ml_03",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1283,
+        "name": "Machine Learning",
+        "slug": "machine-learning"
+      }
+    },
+    "1289": {
+      "id": 1289,
+      "created_at": "2019-03-15T06:09:52.422Z",
+      "updated_at": "2019-03-16T00:25:35.703Z",
+      "name": "ML_04",
+      "slug": "machine-learning-using-python-ml_04",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1283,
+        "name": "Machine Learning",
+        "slug": "machine-learning"
+      }
+    },
+    "1291": {
+      "id": 1291,
+      "created_at": "2019-03-15T22:59:55.748Z",
+      "updated_at": "2020-01-06T22:55:43.805Z",
+      "name": "Pygame",
+      "slug": "pygame",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1292": {
+      "id": 1292,
+      "created_at": "2019-03-15T23:04:26.368Z",
+      "updated_at": "2020-01-06T22:55:43.811Z",
+      "name": "Showcase: Arcade",
+      "slug": "pygame-showcase-arcade",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1291,
+        "name": "Pygame",
+        "slug": "pygame"
+      }
+    },
+    "1293": {
+      "id": 1293,
+      "created_at": "2019-03-16T03:14:57.100Z",
+      "updated_at": "2022-09-19T08:04:16.478Z",
+      "name": "OOP Essentials in Java",
+      "slug": "java-oop-essentials-in-java",
+      "experience": 225,
+      "exam": false,
+      "parent": {
+        "id": 1208,
+        "name": "Java",
+        "slug": "java"
+      }
+    },
+    "1294": {
+      "id": 1294,
+      "created_at": "2019-03-22T07:24:09.108Z",
+      "updated_at": "2020-01-06T23:02:25.926Z",
+      "name": "Web02 - FreeCodeCamp JS",
+      "slug": "javascript-web02-freecodecamp-js",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1175,
+        "name": "Javascript",
+        "slug": "javascript"
+      }
+    },
+    "1295": {
+      "id": 1295,
+      "created_at": "2019-04-03T01:11:55.837Z",
+      "updated_at": "2020-01-06T22:55:43.986Z",
+      "name": "Node.js",
+      "slug": "node-js",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "1296": {
+      "id": 1296,
+      "created_at": "2019-04-03T04:54:20.138Z",
+      "updated_at": "2020-01-06T22:55:43.977Z",
+      "name": "API Creation",
+      "slug": "api-s-with-node-js-api-creation",
+      "experience": 225,
+      "exam": false,
+      "parent": {
+        "id": 1295,
+        "name": "Node.js",
+        "slug": "node-js"
+      }
+    },
+    "1297": {
+      "id": 1297,
+      "created_at": "2019-04-03T21:57:21.781Z",
+      "updated_at": "2019-09-25T20:48:23.424Z",
+      "name": "MongoDB Setup",
+      "slug": "api-s-with-node-js-mongodb-setup",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1295,
+        "name": "Node.js",
+        "slug": "node-js"
+      }
+    },
+    "1298": {
+      "id": 1298,
+      "created_at": "2019-04-03T22:03:19.924Z",
+      "updated_at": "2019-09-25T20:50:07.642Z",
+      "name": "Hosting on Heroku",
+      "slug": "api-s-with-node-js-hosting-on-heroku",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1295,
+        "name": "Node.js",
+        "slug": "node-js"
+      }
+    },
+    "1313": {
+      "id": 1313,
+      "created_at": "2019-06-27T00:21:04.056Z",
+      "updated_at": "2019-09-21T06:12:31.906Z",
+      "name": "Showcase: Command-Line Games",
+      "slug": "python-showcase-command-line-games",
+      "experience": 225,
+      "exam": false,
+      "parent": {
+        "id": 1141,
+        "name": "Python",
+        "slug": "python"
+      }
+    },
+    "1353": {
+      "id": 1353,
+      "created_at": "2019-08-08T23:17:35.098Z",
+      "updated_at": "2020-01-06T22:55:43.891Z",
+      "name": "Data Structures",
+      "slug": "data-structures",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "1354": {
+      "id": 1354,
+      "created_at": "2019-08-08T23:20:43.538Z",
+      "updated_at": "2020-01-06T22:55:43.800Z",
+      "name": "Intro to OOP",
+      "slug": "pygame-intro-to-oop",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1291,
+        "name": "Pygame",
+        "slug": "pygame"
+      }
+    },
+    "1357": {
+      "id": 1357,
+      "created_at": "2019-08-24T00:22:43.691Z",
+      "updated_at": "2019-08-24T00:22:43.910Z",
+      "name": "Fractal",
+      "slug": "algorithmic-puzzles-fractal",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1107,
+        "name": "Algorithmic Puzzles",
+        "slug": "algorithmic-puzzles"
+      }
+    },
+    "1358": {
+      "id": 1358,
+      "created_at": "2019-08-24T00:23:14.426Z",
+      "updated_at": "2019-08-24T00:23:14.600Z",
+      "name": "Connect-4",
+      "slug": "algorithmic-puzzles-connect-4",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1107,
+        "name": "Algorithmic Puzzles",
+        "slug": "algorithmic-puzzles"
+      }
+    },
+    "1359": {
+      "id": 1359,
+      "created_at": "2019-08-24T00:23:35.632Z",
+      "updated_at": "2019-08-24T00:23:35.791Z",
+      "name": "Game Of Life",
+      "slug": "algorithmic-puzzles-game-of-life",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1107,
+        "name": "Algorithmic Puzzles",
+        "slug": "algorithmic-puzzles"
+      }
+    },
+    "1360": {
+      "id": 1360,
+      "created_at": "2019-08-24T00:29:53.919Z",
+      "updated_at": "2019-08-24T00:29:54.091Z",
+      "name": "SonicPi",
+      "slug": "algorithmic-puzzles-sonicpi",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1107,
+        "name": "Algorithmic Puzzles",
+        "slug": "algorithmic-puzzles"
+      }
+    },
+    "1361": {
+      "id": 1361,
+      "created_at": "2019-08-24T00:36:37.044Z",
+      "updated_at": "2020-06-25T00:57:40.859Z",
+      "name": "APCSP Prep",
+      "slug": "apcsp-prep",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1363": {
+      "id": 1363,
+      "created_at": "2019-08-24T00:38:12.207Z",
+      "updated_at": "2019-09-26T17:57:33.289Z",
+      "name": "APCSP - Practice Exam",
+      "slug": "apcsp-prep-apcsp-practice-exam",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1361,
+        "name": "APCSP Prep",
+        "slug": "apcsp-prep"
+      }
+    },
+    "1365": {
+      "id": 1365,
+      "created_at": "2019-08-24T00:38:58.183Z",
+      "updated_at": "2020-01-06T22:55:43.947Z",
+      "name": "APCSP - Internet Simulator",
+      "slug": "apcsp-prep-apcsp-internet-simulator",
+      "experience": 225,
+      "exam": false,
+      "parent": {
+        "id": 1361,
+        "name": "APCSP Prep",
+        "slug": "apcsp-prep"
+      }
+    },
+    "1366": {
+      "id": 1366,
+      "created_at": "2019-08-24T00:39:45.468Z",
+      "updated_at": "2020-01-06T22:55:43.966Z",
+      "name": "APCSP - Vocabulary",
+      "slug": "apcsp-prep-apcsp-vocabulary",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1361,
+        "name": "APCSP Prep",
+        "slug": "apcsp-prep"
+      }
+    },
+    "1367": {
+      "id": 1367,
+      "created_at": "2019-08-24T00:51:59.379Z",
+      "updated_at": "2019-08-24T00:51:59.520Z",
+      "name": "Runestone Academy - AP Java",
+      "slug": "java-runestone-academy-ap-java",
+      "experience": 225,
+      "exam": false,
+      "parent": {
+        "id": 1208,
+        "name": "Java",
+        "slug": "java"
+      }
+    },
+    "1368": {
+      "id": 1368,
+      "created_at": "2019-08-24T01:11:34.119Z",
+      "updated_at": "2020-01-06T22:55:43.886Z",
+      "name": "Part 1: Linked Lists",
+      "slug": "data-structures-in-python-part-1-linked-lists",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1353,
+        "name": "Data Structures",
+        "slug": "data-structures"
+      }
+    },
+    "1369": {
+      "id": 1369,
+      "created_at": "2019-08-24T01:12:14.682Z",
+      "updated_at": "2020-01-06T22:55:43.897Z",
+      "name": "Part 2: Queues and Stacks",
+      "slug": "data-structures-in-python-part-2-queues-and-stacks",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1353,
+        "name": "Data Structures",
+        "slug": "data-structures"
+      }
+    },
+    "1370": {
+      "id": 1370,
+      "created_at": "2019-08-24T01:12:52.255Z",
+      "updated_at": "2019-09-26T19:41:17.236Z",
+      "name": "Plants vs NonPlants!",
+      "slug": "data-structures-plants-vs-nonplants",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1353,
+        "name": "Data Structures",
+        "slug": "data-structures"
+      }
+    },
+    "1668": {
+      "id": 1668,
+      "created_at": "2019-11-02T11:28:07.778Z",
+      "updated_at": "2020-02-05T21:41:35.886Z",
+      "name": "[Deprecated]APCSP_00",
+      "slug": "deprecated-apcsp_00",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1681": {
+      "id": 1681,
+      "created_at": "2019-12-14T14:08:52.626Z",
+      "updated_at": "2020-01-30T06:50:40.081Z",
+      "name": "Pygame",
+      "slug": "apcsp-programming-pygame",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 1710,
+        "name": "APCSP-Programming",
+        "slug": "apcsp-prep-apcsp-programming"
+      }
+    },
+    "1694": {
+      "id": 1694,
+      "created_at": "2020-01-06T23:30:23.345Z",
+      "updated_at": "2020-02-07T21:36:52.500Z",
+      "name": "Web Basics 01 - Recipe",
+      "slug": "javascript-web-basics-01-recipe",
+      "experience": null,
+      "exam": false,
+      "parent": {
+        "id": 1175,
+        "name": "Javascript",
+        "slug": "javascript"
+      }
+    },
+    "1695": {
+      "id": 1695,
+      "created_at": "2020-01-07T04:45:55.096Z",
+      "updated_at": "2020-02-07T21:58:36.765Z",
+      "name": "Web Basics 02 - Pinterest",
+      "slug": "javascript-web-basics-02-pinterest",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1175,
+        "name": "Javascript",
+        "slug": "javascript"
+      }
+    },
+    "1697": {
+      "id": 1697,
+      "created_at": "2020-01-11T09:44:10.974Z",
+      "updated_at": "2020-01-11T10:27:47.564Z",
+      "name": "APCSP - Digital Portfolio",
+      "slug": "apcsp-prep-apcsp-digital-portfolio",
+      "experience": null,
+      "exam": false,
+      "parent": {
+        "id": 1361,
+        "name": "APCSP Prep",
+        "slug": "apcsp-prep"
+      }
+    },
+    "1710": {
+      "id": 1710,
+      "created_at": "2020-01-29T06:55:01.594Z",
+      "updated_at": "2020-06-25T00:56:54.629Z",
+      "name": "APCSP-Programming",
+      "slug": "apcsp-prep-apcsp-programming",
+      "experience": null,
+      "exam": false,
+      "parent": {
+        "id": 1361,
+        "name": "APCSP Prep",
+        "slug": "apcsp-prep"
+      }
+    },
+    "1712": {
+      "id": 1712,
+      "created_at": "2020-02-07T01:18:57.944Z",
+      "updated_at": "2020-02-08T21:02:20.879Z",
+      "name": "IBM Machine Learning 00",
+      "slug": "machine-learning-ibm-machine-learning-00",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 1283,
+        "name": "Machine Learning",
+        "slug": "machine-learning"
+      }
+    },
+    "1713": {
+      "id": 1713,
+      "created_at": "2020-02-07T01:31:10.646Z",
+      "updated_at": "2020-02-07T19:45:53.011Z",
+      "name": "IBM Machine Learning 01",
+      "slug": "machine-learning-ibm-machine-learning-01",
+      "experience": 50,
+      "exam": false,
+      "parent": {
+        "id": 1283,
+        "name": "Machine Learning",
+        "slug": "machine-learning"
+      }
+    }
+  }
+}

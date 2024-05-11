@@ -1,0 +1,241 @@
+{
+  "meta": {
+    "id": 3,
+    "created_at": "2015-04-20T07:39:49.050Z",
+    "kind": "professional_training",
+    "name": "Discovery Piscine - Web",
+    "slug": "discovery-piscine-web"
+  },
+  "projects": {
+    "2012": {
+      "id": 2012,
+      "created_at": "2021-07-30T08:15:22.786Z",
+      "updated_at": "2024-05-07T13:26:02.250Z",
+      "name": "Cellule0.0 - Shell",
+      "slug": "cellule0-0-shell",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "2013": {
+      "id": 2013,
+      "created_at": "2021-07-30T08:20:01.213Z",
+      "updated_at": "2024-05-07T13:26:05.041Z",
+      "name": "Cellule0.1 - Shell",
+      "slug": "cellule0-1-shell",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "2014": {
+      "id": 2014,
+      "created_at": "2021-07-30T08:21:27.719Z",
+      "updated_at": "2024-05-07T13:26:07.906Z",
+      "name": "Cellule0.2 - Shell",
+      "slug": "cellule0-2-shell",
+      "experience": 200,
+      "exam": false,
+      "parent": null
+    },
+    "2015": {
+      "id": 2015,
+      "created_at": "2021-07-30T08:22:24.824Z",
+      "updated_at": "2024-05-07T13:26:10.817Z",
+      "name": "Cellule0.3 - Shell",
+      "slug": "cellule0-3-shell",
+      "experience": 200,
+      "exam": false,
+      "parent": null
+    },
+    "2016": {
+      "id": 2016,
+      "created_at": "2021-07-30T08:24:06.470Z",
+      "updated_at": "2024-05-07T13:26:13.260Z",
+      "name": "Cellule0.4 - Shell",
+      "slug": "cellule0-4-shell",
+      "experience": 200,
+      "exam": false,
+      "parent": null
+    },
+    "2017": {
+      "id": 2017,
+      "created_at": "2021-07-30T08:25:02.423Z",
+      "updated_at": "2024-05-07T13:26:16.318Z",
+      "name": "Cellule0.5 - Shell",
+      "slug": "cellule0-5-shell",
+      "experience": 200,
+      "exam": false,
+      "parent": null
+    },
+    "2018": {
+      "id": 2018,
+      "created_at": "2021-07-30T08:26:18.566Z",
+      "updated_at": "2024-05-07T13:26:19.436Z",
+      "name": "Cellule1.0 - Web",
+      "slug": "cellule1-0-web",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "2019": {
+      "id": 2019,
+      "created_at": "2021-07-30T08:27:20.149Z",
+      "updated_at": "2024-05-08T07:43:37.664Z",
+      "name": "Cellule1.1 - Web",
+      "slug": "cellule1-1-web",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "2020": {
+      "id": 2020,
+      "created_at": "2021-07-30T08:28:02.514Z",
+      "updated_at": "2024-05-07T13:26:25.452Z",
+      "name": "Cellule1.2 - Web",
+      "slug": "cellule1-2-web",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "2021": {
+      "id": 2021,
+      "created_at": "2021-07-30T08:28:40.006Z",
+      "updated_at": "2024-05-07T13:26:28.295Z",
+      "name": "Cellule1.3 - Web",
+      "slug": "cellule1-3-web",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "2022": {
+      "id": 2022,
+      "created_at": "2021-07-30T08:29:26.937Z",
+      "updated_at": "2024-05-07T13:26:31.064Z",
+      "name": "Cellule1.4 - Web",
+      "slug": "cellule1-4-web",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "2023": {
+      "id": 2023,
+      "created_at": "2021-07-30T08:30:09.148Z",
+      "updated_at": "2024-05-07T13:26:33.758Z",
+      "name": "Cellule1.5 - Web",
+      "slug": "cellule1-5-web",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "2024": {
+      "id": 2024,
+      "created_at": "2021-07-30T08:33:43.483Z",
+      "updated_at": "2024-05-08T07:44:50.390Z",
+      "name": "Cellule1.6 - Web",
+      "slug": "cellule1-6-web",
+      "experience": 200,
+      "exam": false,
+      "parent": null
+    },
+    "2025": {
+      "id": 2025,
+      "created_at": "2021-07-30T08:34:52.263Z",
+      "updated_at": "2024-05-07T13:26:38.995Z",
+      "name": "Cellule2.0 - Web",
+      "slug": "cellule2-0-web",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "2026": {
+      "id": 2026,
+      "created_at": "2021-07-30T08:35:33.746Z",
+      "updated_at": "2024-05-07T13:26:41.584Z",
+      "name": "Cellule2.1 - Web",
+      "slug": "cellule2-1-web",
+      "experience": 200,
+      "exam": false,
+      "parent": null
+    },
+    "2027": {
+      "id": 2027,
+      "created_at": "2021-07-30T08:36:22.238Z",
+      "updated_at": "2024-05-07T13:26:44.127Z",
+      "name": "Cellule2.2 - Web",
+      "slug": "cellule2-2-web",
+      "experience": 200,
+      "exam": false,
+      "parent": null
+    },
+    "2028": {
+      "id": 2028,
+      "created_at": "2021-07-30T08:37:03.727Z",
+      "updated_at": "2024-05-07T13:26:46.498Z",
+      "name": "Cellule2.3 - Web",
+      "slug": "cellule2-3-web",
+      "experience": 200,
+      "exam": false,
+      "parent": null
+    },
+    "2029": {
+      "id": 2029,
+      "created_at": "2021-07-30T08:37:48.748Z",
+      "updated_at": "2024-05-07T13:26:48.479Z",
+      "name": "Cellule3.0 - Web",
+      "slug": "cellule3-0-web",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "2030": {
+      "id": 2030,
+      "created_at": "2021-07-30T08:39:35.888Z",
+      "updated_at": "2024-05-07T13:26:50.886Z",
+      "name": "Cellule3.1 - Web",
+      "slug": "cellule3-1-web",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "2031": {
+      "id": 2031,
+      "created_at": "2021-07-30T08:40:28.348Z",
+      "updated_at": "2024-05-07T13:26:53.148Z",
+      "name": "Cellule3.2 - Web",
+      "slug": "cellule3-2-web",
+      "experience": 200,
+      "exam": false,
+      "parent": null
+    },
+    "2032": {
+      "id": 2032,
+      "created_at": "2021-07-30T08:41:01.909Z",
+      "updated_at": "2024-05-07T13:26:55.107Z",
+      "name": "Cellule3.3 - Web",
+      "slug": "cellule3-3-web",
+      "experience": 200,
+      "exam": false,
+      "parent": null
+    },
+    "2033": {
+      "id": 2033,
+      "created_at": "2021-07-30T08:41:30.566Z",
+      "updated_at": "2024-05-07T13:26:56.986Z",
+      "name": "Cellule3.4 - Web",
+      "slug": "cellule3-4-web",
+      "experience": 200,
+      "exam": false,
+      "parent": null
+    },
+    "2034": {
+      "id": 2034,
+      "created_at": "2021-07-30T08:42:34.962Z",
+      "updated_at": "2024-05-07T13:26:58.984Z",
+      "name": "Cellule4.0 - Rush",
+      "slug": "cellule4-0-rush",
+      "experience": 500,
+      "exam": false,
+      "parent": null
+    }
+  }
+}

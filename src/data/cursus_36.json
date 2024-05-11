@@ -1,0 +1,231 @@
+{
+  "meta": {
+    "id": 36,
+    "created_at": "2020-09-28T20:18:44.438Z",
+    "kind": "piscine_community",
+    "name": "Basecamp",
+    "slug": "basecamp"
+  },
+  "projects": {
+    "1817": {
+      "id": 1817,
+      "created_at": "2020-09-30T15:22:26.557Z",
+      "updated_at": "2023-10-16T17:02:40.920Z",
+      "name": "Basecamp Shell 00",
+      "slug": "basecamp-shell-00",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1818": {
+      "id": 1818,
+      "created_at": "2020-09-30T15:36:16.417Z",
+      "updated_at": "2023-10-16T17:02:51.438Z",
+      "name": "Basecamp Shell 01",
+      "slug": "basecamp-shell-01",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1819": {
+      "id": 1819,
+      "created_at": "2020-09-30T17:11:05.748Z",
+      "updated_at": "2023-11-30T18:57:57.671Z",
+      "name": "Basecamp Eu Aceito",
+      "slug": "basecamp-eu-aceito",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1820": {
+      "id": 1820,
+      "created_at": "2020-10-02T16:07:25.197Z",
+      "updated_at": "2024-02-29T19:55:18.319Z",
+      "name": "Basecamp C 00",
+      "slug": "basecamp-c-00",
+      "experience": null,
+      "exam": false,
+      "parent": null
+    },
+    "1821": {
+      "id": 1821,
+      "created_at": "2020-10-02T16:26:56.729Z",
+      "updated_at": "2023-11-24T21:11:45.885Z",
+      "name": "Basecamp C 01",
+      "slug": "basecamp-c-01",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1822": {
+      "id": 1822,
+      "created_at": "2020-10-02T16:42:19.429Z",
+      "updated_at": "2023-11-24T21:16:10.722Z",
+      "name": "Basecamp C 02",
+      "slug": "basecamp-c-02",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1823": {
+      "id": 1823,
+      "created_at": "2020-10-02T16:45:10.502Z",
+      "updated_at": "2023-11-24T21:18:16.881Z",
+      "name": "Basecamp C 03",
+      "slug": "basecamp-c-03",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1824": {
+      "id": 1824,
+      "created_at": "2020-10-02T16:46:39.195Z",
+      "updated_at": "2023-11-24T22:02:35.799Z",
+      "name": "Basecamp C 04",
+      "slug": "basecamp-c-04",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1825": {
+      "id": 1825,
+      "created_at": "2020-10-02T16:47:45.527Z",
+      "updated_at": "2023-11-29T19:25:12.202Z",
+      "name": "Basecamp C 05",
+      "slug": "basecamp-c-05",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1826": {
+      "id": 1826,
+      "created_at": "2020-10-02T16:48:50.502Z",
+      "updated_at": "2023-11-24T21:59:47.429Z",
+      "name": "Basecamp C 06",
+      "slug": "basecamp-c-06",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1827": {
+      "id": 1827,
+      "created_at": "2020-10-02T16:51:14.342Z",
+      "updated_at": "2023-11-24T21:58:39.357Z",
+      "name": "Basecamp C 07",
+      "slug": "basecamp-c-07",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1828": {
+      "id": 1828,
+      "created_at": "2020-10-02T16:52:35.807Z",
+      "updated_at": "2023-11-24T21:57:07.504Z",
+      "name": "Basecamp C 08",
+      "slug": "basecamp-c-08",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1829": {
+      "id": 1829,
+      "created_at": "2020-10-02T16:53:25.682Z",
+      "updated_at": "2023-11-24T21:56:02.301Z",
+      "name": "Basecamp C 09",
+      "slug": "basecamp-c-09",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1830": {
+      "id": 1830,
+      "created_at": "2020-10-02T16:54:18.326Z",
+      "updated_at": "2023-11-24T21:54:39.464Z",
+      "name": "Basecamp C 10",
+      "slug": "basecamp-c-10",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1831": {
+      "id": 1831,
+      "created_at": "2020-10-02T16:54:42.536Z",
+      "updated_at": "2023-11-24T21:53:06.435Z",
+      "name": "Basecamp C 11",
+      "slug": "basecamp-c-11",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1832": {
+      "id": 1832,
+      "created_at": "2020-10-02T16:55:09.356Z",
+      "updated_at": "2023-11-30T18:56:33.110Z",
+      "name": "Basecamp C 12",
+      "slug": "basecamp-c-12",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1833": {
+      "id": 1833,
+      "created_at": "2020-10-02T16:55:35.443Z",
+      "updated_at": "2023-11-30T18:57:11.621Z",
+      "name": "Basecamp C 13",
+      "slug": "basecamp-c-13",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1834": {
+      "id": 1834,
+      "created_at": "2020-10-02T20:33:54.561Z",
+      "updated_at": "2023-10-16T17:03:57.206Z",
+      "name": "Basecamp Rush 00",
+      "slug": "basecamp-rush-00",
+      "experience": 150,
+      "exam": false,
+      "parent": null
+    },
+    "1835": {
+      "id": 1835,
+      "created_at": "2020-10-02T20:55:41.274Z",
+      "updated_at": "2023-10-16T17:04:04.930Z",
+      "name": "Basecamp Rush 01",
+      "slug": "basecamp-rush-01",
+      "experience": 150,
+      "exam": false,
+      "parent": null
+    },
+    "1837": {
+      "id": 1837,
+      "created_at": "2020-10-04T19:29:55.524Z",
+      "updated_at": "2023-10-16T17:04:14.451Z",
+      "name": "Basecamp Exam 00",
+      "slug": "basecamp-exam-00",
+      "experience": null,
+      "exam": true,
+      "parent": null
+    },
+    "1838": {
+      "id": 1838,
+      "created_at": "2020-10-04T19:45:43.068Z",
+      "updated_at": "2023-10-16T17:04:24.954Z",
+      "name": "Basecamp Exam 01",
+      "slug": "basecamp-exam-01",
+      "experience": null,
+      "exam": true,
+      "parent": null
+    },
+    "1839": {
+      "id": 1839,
+      "created_at": "2020-10-04T22:25:13.134Z",
+      "updated_at": "2023-10-16T17:04:59.553Z",
+      "name": "Basecamp Final Exam",
+      "slug": "basecamp-final-exam",
+      "experience": null,
+      "exam": true,
+      "parent": null
+    }
+  }
+}

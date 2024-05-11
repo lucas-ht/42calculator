@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "id": 23,
+    "created_at": "2019-08-27T09:02:47.893Z",
+    "kind": "external",
+    "name": "python-101",
+    "slug": "python-101"
+  },
+  "projects": {
+    "1372": {
+      "id": 1372,
+      "created_at": "2019-08-27T10:23:20.377Z",
+      "updated_at": "2019-09-08T18:39:12.748Z",
+      "name": "Python-101 D00",
+      "slug": "python-101-d00",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1373": {
+      "id": 1373,
+      "created_at": "2019-08-27T11:49:30.959Z",
+      "updated_at": "2019-09-12T22:51:58.167Z",
+      "name": "Python-101 D01",
+      "slug": "python-101-d01",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1374": {
+      "id": 1374,
+      "created_at": "2019-08-27T12:06:27.286Z",
+      "updated_at": "2019-09-12T22:51:27.220Z",
+      "name": "Python-101 D02",
+      "slug": "python-101-d02",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1376": {
+      "id": 1376,
+      "created_at": "2019-09-11T14:47:10.127Z",
+      "updated_at": "2019-09-12T22:50:52.963Z",
+      "name": "Python-101 D03",
+      "slug": "python-101-d03",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1377": {
+      "id": 1377,
+      "created_at": "2019-09-12T22:43:33.874Z",
+      "updated_at": "2019-09-12T22:52:23.277Z",
+      "name": "Python-101 D04",
+      "slug": "python-101-d04",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1378": {
+      "id": 1378,
+      "created_at": "2019-09-13T09:04:08.702Z",
+      "updated_at": "2019-09-15T16:44:02.219Z",
+      "name": "Python-101 Rush",
+      "slug": "python-101-rush",
+      "experience": 450,
+      "exam": false,
+      "parent": null
+    }
+  }
+}

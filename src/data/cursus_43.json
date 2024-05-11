@@ -1,0 +1,241 @@
+{
+  "meta": {
+    "id": 43,
+    "created_at": "2021-01-11T16:38:46.008Z",
+    "kind": "piscine_community",
+    "name": "Brussels Basecamp",
+    "slug": "brussels-basecamp"
+  },
+  "projects": {
+    "1912": {
+      "id": 1912,
+      "created_at": "2021-01-11T20:29:15.748Z",
+      "updated_at": "2021-09-03T15:01:49.205Z",
+      "name": "Brussels Basecamp Shell 00",
+      "slug": "brussels-basecamp-shell-00",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1913": {
+      "id": 1913,
+      "created_at": "2021-01-11T20:32:20.205Z",
+      "updated_at": "2021-09-04T14:08:59.599Z",
+      "name": "Brussels Basecamp Shell 01",
+      "slug": "brussels-basecamp-shell-01",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1914": {
+      "id": 1914,
+      "created_at": "2021-01-11T21:07:18.725Z",
+      "updated_at": "2021-02-07T23:01:24.503Z",
+      "name": "Brussels Basecamp C 00",
+      "slug": "brussels-basecamp-c-00",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1915": {
+      "id": 1915,
+      "created_at": "2021-01-11T21:08:30.821Z",
+      "updated_at": "2021-02-07T23:01:28.080Z",
+      "name": "Brussels Basecamp C 01",
+      "slug": "brussels-basecamp-c-01",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1916": {
+      "id": 1916,
+      "created_at": "2021-01-11T21:18:19.139Z",
+      "updated_at": "2021-02-23T12:48:42.763Z",
+      "name": "Brussels Basecamp C 09",
+      "slug": "brussels-basecamp-c-09",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1917": {
+      "id": 1917,
+      "created_at": "2021-01-11T21:18:25.139Z",
+      "updated_at": "2021-01-18T16:21:51.424Z",
+      "name": "Brussels Basecamp C 02",
+      "slug": "brussels-basecamp-c-02",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1918": {
+      "id": 1918,
+      "created_at": "2021-01-11T21:18:26.830Z",
+      "updated_at": "2021-01-18T16:25:10.232Z",
+      "name": "Brussels Basecamp C 03",
+      "slug": "brussels-basecamp-c-03",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1919": {
+      "id": 1919,
+      "created_at": "2021-01-11T21:18:29.773Z",
+      "updated_at": "2021-01-18T16:27:51.763Z",
+      "name": "Brussels Basecamp C 04",
+      "slug": "brussels-basecamp-c-04",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1920": {
+      "id": 1920,
+      "created_at": "2021-01-11T21:18:30.939Z",
+      "updated_at": "2021-02-17T19:41:43.789Z",
+      "name": "Brussels Basecamp C 05",
+      "slug": "brussels-basecamp-c-05",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1921": {
+      "id": 1921,
+      "created_at": "2021-01-11T21:18:32.423Z",
+      "updated_at": "2021-01-18T16:32:25.035Z",
+      "name": "Brussels Basecamp C 06",
+      "slug": "brussels-basecamp-c-06",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1922": {
+      "id": 1922,
+      "created_at": "2021-01-11T21:18:34.835Z",
+      "updated_at": "2021-01-18T16:34:38.941Z",
+      "name": "Brussels Basecamp C 07",
+      "slug": "brussels-basecamp-c-07",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1923": {
+      "id": 1923,
+      "created_at": "2021-01-11T21:18:38.292Z",
+      "updated_at": "2021-01-18T16:36:22.932Z",
+      "name": "Brussels Basecamp C 08",
+      "slug": "brussels-basecamp-c-08",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1924": {
+      "id": 1924,
+      "created_at": "2021-01-11T21:28:01.177Z",
+      "updated_at": "2021-09-09T15:15:55.186Z",
+      "name": "Brussels Basecamp Rush 00",
+      "slug": "brussels-basecamp-rush-00",
+      "experience": 150,
+      "exam": false,
+      "parent": null
+    },
+    "1925": {
+      "id": 1925,
+      "created_at": "2021-01-11T21:28:21.811Z",
+      "updated_at": "2021-09-18T13:46:23.788Z",
+      "name": "Brussels Basecamp Rush 01",
+      "slug": "brussels-basecamp-rush-01",
+      "experience": 150,
+      "exam": false,
+      "parent": null
+    },
+    "1926": {
+      "id": 1926,
+      "created_at": "2021-01-11T21:35:59.899Z",
+      "updated_at": "2021-09-09T09:36:33.025Z",
+      "name": "Brussels Basecamp Exam 00",
+      "slug": "brussels-basecamp-exam-00",
+      "experience": null,
+      "exam": true,
+      "parent": null
+    },
+    "1927": {
+      "id": 1927,
+      "created_at": "2021-01-11T21:38:38.375Z",
+      "updated_at": "2021-09-15T16:43:51.537Z",
+      "name": "Brussels Basecamp Exam 01",
+      "slug": "brussels-basecamp-exam-01",
+      "experience": null,
+      "exam": true,
+      "parent": null
+    },
+    "1928": {
+      "id": 1928,
+      "created_at": "2021-01-11T21:47:36.131Z",
+      "updated_at": "2021-09-23T14:15:13.485Z",
+      "name": "Brussels Basecamp Final Exam",
+      "slug": "brussels-basecamp-final-exam",
+      "experience": null,
+      "exam": true,
+      "parent": null
+    },
+    "1929": {
+      "id": 1929,
+      "created_at": "2021-01-11T21:50:03.565Z",
+      "updated_at": "2021-01-18T16:39:37.938Z",
+      "name": "Brussels Basecamp C 10",
+      "slug": "brussels-basecamp-c-10",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1930": {
+      "id": 1930,
+      "created_at": "2021-01-11T21:51:29.176Z",
+      "updated_at": "2021-01-18T16:40:59.922Z",
+      "name": "Brussels Basecamp C 11",
+      "slug": "brussels-basecamp-c-11",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1931": {
+      "id": 1931,
+      "created_at": "2021-01-11T21:51:37.214Z",
+      "updated_at": "2021-01-18T16:42:37.867Z",
+      "name": "Brussels Basecamp C 12",
+      "slug": "brussels-basecamp-c-12",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1932": {
+      "id": 1932,
+      "created_at": "2021-01-11T21:51:43.912Z",
+      "updated_at": "2021-01-18T16:45:15.547Z",
+      "name": "Brussels Basecamp C 13",
+      "slug": "brussels-basecamp-c-13",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1936": {
+      "id": 1936,
+      "created_at": "2021-01-25T16:15:58.632Z",
+      "updated_at": "2021-09-01T09:05:20.694Z",
+      "name": "Brussels Basecamp I Accept",
+      "slug": "brussels-basecamp-i-accept",
+      "experience": 10,
+      "exam": false,
+      "parent": null
+    },
+    "1937": {
+      "id": 1937,
+      "created_at": "2021-01-27T15:46:11.404Z",
+      "updated_at": "2021-11-16T15:34:37.727Z",
+      "name": "Brussels Basecamp Intro Git",
+      "slug": "brussels-basecamp-intro-git",
+      "experience": 10,
+      "exam": false,
+      "parent": null
+    }
+  }
+}

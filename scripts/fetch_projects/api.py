@@ -1,11 +1,6 @@
 """
 This module provides functions for interacting with the 42 School API.
-
-It includes functions to fetch an access token,
-and to fetch data from the API using the access token.
-
-This module uses the `requests` library to send HTTP requests,
-and the `dotenv` library to load environment variables.
+This module uses the `requests` library to send HTTP requests.
 """
 
 import os
@@ -19,21 +14,7 @@ import requests
 
 def fetch_from_api() -> typing.Callable[[typing.Optional[str]], dict | None]:
     """
-    Returns a function that fetches data from an API using the provided access token.
-
-    The returned function takes an optional URL as an argument.
-    If a URL is provided, it fetches data from that URL.
-    If no URL is provided, it fetches data from the URL stored in the `fetch_url` variable.
-
-    The function handles rate limiting by the API by waiting and retrying the request.
-    If the rate limit is exceeded again,
-    it waits for 10 minutes before retrying. If any other HTTP error occurs,
-    it logs the error and returns None.
-
-    The function also ensures that requests are not made more frequently than every 0.5 seconds.
-
-    Args:
-        access_token (str): The access token to use for the API requests.
+    Returns a function that fetches data from an API.
 
     Returns:
         Callable[[Optional[str]], dict | None]: A function that fetches data from the API.
@@ -50,23 +31,6 @@ def fetch_from_api() -> typing.Callable[[typing.Optional[str]], dict | None]:
 
 
     def _get_access_token() -> str:
-        """
-        Fetches an access token from the 42 School API.
-
-        This function sends a POST request to the API's OAuth
-        endpoint with client credentials loaded from environment variables.
-        If the request is successful, it returns the access token from the response.
-
-        If an HTTP error occurs during the request,
-        the function logs the error and terminates the program.
-
-        Returns:
-            str: The access token for the API.
-
-        Raises:
-            SystemExit: If an HTTP error occurs during the request.
-        """
-
         data = {
             "grant_type":    "client_credentials",
             "client_id":     os.environ.get("AUTH_42_SCHOOL_ID"),
@@ -103,8 +67,9 @@ def fetch_from_api() -> typing.Callable[[typing.Optional[str]], dict | None]:
     def _handle_unauthorized(response: requests.Response) -> None:
         content = response.json()
         message = content.get('message')
+        error = content.get('error')
 
-        if message != 'The access token expired.':
+        if not (message == 'The access token expired.' or error == 'The access token is invalid'):
             return None
 
         logging.warning('Access token expired, fetching a new one.')
@@ -132,17 +97,12 @@ def fetch_from_api() -> typing.Callable[[typing.Optional[str]], dict | None]:
 
     def fetch_data(url: str | None = None) -> dict | None:
         """
-        Fetches data from an API using the provided access token and URL.
+        Fetches data from an API using the provided URL.
 
         This function sends a GET request to the API and returns the response
         as a JSON object.
-        If the request takes less than 0.5 seconds,
 
-        the function will pause to ensure that requests
-        are not made more frequently than every 0.5 seconds.
-
-        If an HTTP error occurs, the function will handle it
-        by calling the `handle_http_exception` function.
+        If an HTTP error occurs, the function will handle it.
         If any other request exception occurs, it logs the error and returns None.
 
         Args:

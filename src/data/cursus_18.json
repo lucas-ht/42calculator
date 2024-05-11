@@ -1,0 +1,553 @@
+{
+  "meta": {
+    "id": 18,
+    "created_at": "2017-12-15T22:31:21.361Z",
+    "kind": "external_deprecated",
+    "name": "Starfleet",
+    "slug": "starfleet"
+  },
+  "projects": {
+    "2": {
+      "id": 2,
+      "created_at": "2014-11-04T15:23:49.425Z",
+      "updated_at": "2024-03-25T16:46:17.034Z",
+      "name": "GET_Next_Line",
+      "slug": "get_next_line",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "3": {
+      "id": 3,
+      "created_at": "2014-11-13T13:43:01.950Z",
+      "updated_at": "2024-03-25T16:46:18.261Z",
+      "name": "ft_ls",
+      "slug": "ft_ls",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "5": {
+      "id": 5,
+      "created_at": "2014-11-25T18:54:23.200Z",
+      "updated_at": "2024-03-25T16:46:17.894Z",
+      "name": "ft_printf",
+      "slug": "ft_printf",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "8": {
+      "id": 8,
+      "created_at": "2014-11-26T19:11:13.825Z",
+      "updated_at": "2024-03-25T16:46:17.916Z",
+      "name": "Wolf3d",
+      "slug": "wolf3d",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "22": {
+      "id": 22,
+      "created_at": "2014-12-22T23:42:45.672Z",
+      "updated_at": "2024-03-25T16:46:16.820Z",
+      "name": "Corewar",
+      "slug": "corewar",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "23": {
+      "id": 23,
+      "created_at": "2014-12-23T00:39:19.646Z",
+      "updated_at": "2024-03-25T16:46:17.098Z",
+      "name": "RTv1",
+      "slug": "rtv1",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "26": {
+      "id": 26,
+      "created_at": "2014-12-23T15:22:36.355Z",
+      "updated_at": "2024-03-25T16:46:17.935Z",
+      "name": "Filler",
+      "slug": "filler",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "27": {
+      "id": 27,
+      "created_at": "2014-12-23T15:24:29.527Z",
+      "updated_at": "2024-03-25T16:46:16.999Z",
+      "name": "Push_swap",
+      "slug": "push_swap",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "29": {
+      "id": 29,
+      "created_at": "2014-12-23T15:26:50.628Z",
+      "updated_at": "2024-03-25T16:46:16.974Z",
+      "name": "Lem_in",
+      "slug": "lem_in",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "33": {
+      "id": 33,
+      "created_at": "2014-12-23T15:32:44.260Z",
+      "updated_at": "2024-03-25T16:46:17.960Z",
+      "name": "ft_select",
+      "slug": "ft_select",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "35": {
+      "id": 35,
+      "created_at": "2014-12-23T15:36:11.653Z",
+      "updated_at": "2024-03-25T16:46:18.449Z",
+      "name": "42sh",
+      "slug": "42sh",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "36": {
+      "id": 36,
+      "created_at": "2014-12-23T15:39:15.491Z",
+      "updated_at": "2024-03-25T16:46:17.241Z",
+      "name": "Malloc",
+      "slug": "malloc",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "37": {
+      "id": 37,
+      "created_at": "2014-12-23T15:48:27.750Z",
+      "updated_at": "2024-03-25T16:46:17.688Z",
+      "name": "Nm-otool",
+      "slug": "nm-otool",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "38": {
+      "id": 38,
+      "created_at": "2014-12-23T15:49:31.824Z",
+      "updated_at": "2024-03-25T16:46:16.083Z",
+      "name": "ft_script",
+      "slug": "ft_script",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "40": {
+      "id": 40,
+      "created_at": "2014-12-23T15:54:58.274Z",
+      "updated_at": "2024-03-25T16:46:16.141Z",
+      "name": "ft_p",
+      "slug": "ft_p",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "41": {
+      "id": 41,
+      "created_at": "2014-12-23T15:56:56.737Z",
+      "updated_at": "2024-03-25T16:46:18.420Z",
+      "name": "IRC",
+      "slug": "irc",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "43": {
+      "id": 43,
+      "created_at": "2014-12-23T16:08:01.384Z",
+      "updated_at": "2024-03-25T16:46:18.353Z",
+      "name": "Zappy",
+      "slug": "zappy",
+      "experience": 600,
+      "exam": false,
+      "parent": null
+    },
+    "48": {
+      "id": 48,
+      "created_at": "2014-12-29T11:55:04.667Z",
+      "updated_at": "2024-03-25T16:46:17.288Z",
+      "name": "Piscine PHP",
+      "slug": "piscine-php",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "49": {
+      "id": 49,
+      "created_at": "2014-12-29T11:58:54.020Z",
+      "updated_at": "2024-03-25T16:46:12.943Z",
+      "name": "Day 00",
+      "slug": "42-piscine-c-formation-piscine-php-day-00",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 48,
+        "name": "Piscine PHP",
+        "slug": "piscine-php"
+      }
+    },
+    "50": {
+      "id": 50,
+      "created_at": "2014-12-29T11:59:42.526Z",
+      "updated_at": "2024-03-25T16:46:12.913Z",
+      "name": "Day 01",
+      "slug": "42-piscine-c-formation-piscine-php-day-01",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 48,
+        "name": "Piscine PHP",
+        "slug": "piscine-php"
+      }
+    },
+    "51": {
+      "id": 51,
+      "created_at": "2014-12-29T12:00:40.288Z",
+      "updated_at": "2024-03-25T16:46:12.956Z",
+      "name": "Day 02",
+      "slug": "42-piscine-c-formation-piscine-php-day-02",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 48,
+        "name": "Piscine PHP",
+        "slug": "piscine-php"
+      }
+    },
+    "52": {
+      "id": 52,
+      "created_at": "2014-12-29T12:01:21.788Z",
+      "updated_at": "2024-03-25T16:46:13.062Z",
+      "name": "Day 03",
+      "slug": "42-piscine-c-formation-piscine-php-day-03",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 48,
+        "name": "Piscine PHP",
+        "slug": "piscine-php"
+      }
+    },
+    "53": {
+      "id": 53,
+      "created_at": "2014-12-29T12:02:06.283Z",
+      "updated_at": "2024-03-25T16:46:12.790Z",
+      "name": "Day 04",
+      "slug": "42-piscine-c-formation-piscine-php-day-04",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 48,
+        "name": "Piscine PHP",
+        "slug": "piscine-php"
+      }
+    },
+    "54": {
+      "id": 54,
+      "created_at": "2014-12-29T12:03:34.214Z",
+      "updated_at": "2024-03-25T16:46:13.937Z",
+      "name": "Day 05",
+      "slug": "42-piscine-c-formation-piscine-php-day-05",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 48,
+        "name": "Piscine PHP",
+        "slug": "piscine-php"
+      }
+    },
+    "55": {
+      "id": 55,
+      "created_at": "2014-12-29T12:04:44.931Z",
+      "updated_at": "2024-03-25T16:46:13.913Z",
+      "name": "Day 06",
+      "slug": "42-piscine-c-formation-piscine-php-day-06",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 48,
+        "name": "Piscine PHP",
+        "slug": "piscine-php"
+      }
+    },
+    "56": {
+      "id": 56,
+      "created_at": "2014-12-29T12:05:34.741Z",
+      "updated_at": "2024-03-25T16:46:14.787Z",
+      "name": "Day 07",
+      "slug": "42-piscine-c-formation-piscine-php-day-07",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 48,
+        "name": "Piscine PHP",
+        "slug": "piscine-php"
+      }
+    },
+    "57": {
+      "id": 57,
+      "created_at": "2014-12-29T12:06:07.904Z",
+      "updated_at": "2024-03-25T16:46:13.493Z",
+      "name": "Day 08",
+      "slug": "42-piscine-c-formation-piscine-php-day-08",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 48,
+        "name": "Piscine PHP",
+        "slug": "piscine-php"
+      }
+    },
+    "58": {
+      "id": 58,
+      "created_at": "2014-12-29T12:06:22.473Z",
+      "updated_at": "2024-03-25T16:46:13.789Z",
+      "name": "Day 09",
+      "slug": "42-piscine-c-formation-piscine-php-day-09",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 48,
+        "name": "Piscine PHP",
+        "slug": "piscine-php"
+      }
+    },
+    "59": {
+      "id": 59,
+      "created_at": "2014-12-29T12:07:24.722Z",
+      "updated_at": "2024-03-25T16:46:15.987Z",
+      "name": "Rush00",
+      "slug": "piscine-php-rush00",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 48,
+        "name": "Piscine PHP",
+        "slug": "piscine-php"
+      }
+    },
+    "60": {
+      "id": 60,
+      "created_at": "2014-12-29T12:08:36.345Z",
+      "updated_at": "2024-03-25T16:46:16.706Z",
+      "name": "Rush01",
+      "slug": "piscine-php-rush01",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 48,
+        "name": "Piscine PHP",
+        "slug": "piscine-php"
+      }
+    },
+    "61": {
+      "id": 61,
+      "created_at": "2014-12-29T15:13:55.573Z",
+      "updated_at": "2024-03-25T16:46:25.436Z",
+      "name": "Rushes",
+      "slug": "rushes",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "79": {
+      "id": 79,
+      "created_at": "2015-01-20T11:36:11.221Z",
+      "updated_at": "2024-03-25T16:46:17.057Z",
+      "name": "LibftASM",
+      "slug": "libftasm",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "80": {
+      "id": 80,
+      "created_at": "2015-01-21T17:52:06.538Z",
+      "updated_at": "2024-03-25T16:46:16.039Z",
+      "name": "Abstract VM",
+      "slug": "abstract-vm",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "107": {
+      "id": 107,
+      "created_at": "2015-03-06T14:27:53.769Z",
+      "updated_at": "2024-03-25T16:46:20.280Z",
+      "name": "Gomoku",
+      "slug": "gomoku",
+      "experience": 600,
+      "exam": false,
+      "parent": null
+    },
+    "179": {
+      "id": 179,
+      "created_at": "2015-05-18T12:11:21.337Z",
+      "updated_at": "2024-03-25T16:46:20.219Z",
+      "name": "strace",
+      "slug": "strace",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "410": {
+      "id": 410,
+      "created_at": "2015-07-02T17:30:04.458Z",
+      "updated_at": "2024-03-25T16:46:19.447Z",
+      "name": "Bomberman",
+      "slug": "bomberman",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "523": {
+      "id": 523,
+      "created_at": "2015-10-07T17:39:35.663Z",
+      "updated_at": "2024-03-25T16:46:12.136Z",
+      "name": "21sh",
+      "slug": "21sh",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "596": {
+      "id": 596,
+      "created_at": "2015-11-23T15:04:24.379Z",
+      "updated_at": "2024-03-25T16:46:21.270Z",
+      "name": "Matcha",
+      "slug": "matcha",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "597": {
+      "id": 597,
+      "created_at": "2015-11-23T15:09:06.083Z",
+      "updated_at": "2024-03-25T16:46:18.641Z",
+      "name": "Hypertube",
+      "slug": "hypertube",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "687": {
+      "id": 687,
+      "created_at": "2016-02-26T14:26:01.220Z",
+      "updated_at": "2024-03-25T16:46:21.732Z",
+      "name": "init",
+      "slug": "init",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "688": {
+      "id": 688,
+      "created_at": "2016-02-26T14:36:54.500Z",
+      "updated_at": "2024-03-25T16:46:21.751Z",
+      "name": "roger-skyline-2",
+      "slug": "roger-skyline-2",
+      "experience": 375,
+      "exam": false,
+      "parent": null
+    },
+    "847": {
+      "id": 847,
+      "created_at": "2017-03-13T15:16:37.229Z",
+      "updated_at": "2024-03-25T16:46:24.210Z",
+      "name": "docker-1",
+      "slug": "docker-1",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "914": {
+      "id": 914,
+      "created_at": "2017-05-29T18:42:28.803Z",
+      "updated_at": "2020-04-08T03:16:58.994Z",
+      "name": "KIFT",
+      "slug": "kift",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "980": {
+      "id": 980,
+      "created_at": "2017-08-24T00:34:36.946Z",
+      "updated_at": "2020-09-08T21:41:21.490Z",
+      "name": "Walking Marvin",
+      "slug": "walking-marvin",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "985": {
+      "id": 985,
+      "created_at": "2017-08-31T01:52:36.277Z",
+      "updated_at": "2024-03-25T16:46:12.226Z",
+      "name": "ft_ssl_des",
+      "slug": "ft_ssl_des",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "1023": {
+      "id": 1023,
+      "created_at": "2017-10-24T00:43:09.107Z",
+      "updated_at": "2020-04-08T03:16:42.743Z",
+      "name": "ft_debut",
+      "slug": "ft_debut",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1037": {
+      "id": 1037,
+      "created_at": "2017-11-09T18:18:14.266Z",
+      "updated_at": "2019-09-06T21:51:57.700Z",
+      "name": "Bistromatic",
+      "slug": "bistromatic",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1058": {
+      "id": 1058,
+      "created_at": "2017-12-04T17:03:49.564Z",
+      "updated_at": "2019-09-07T16:58:21.167Z",
+      "name": "Grimly",
+      "slug": "grimly",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1112": {
+      "id": 1112,
+      "created_at": "2018-01-25T23:01:22.304Z",
+      "updated_at": "2020-04-08T03:16:39.079Z",
+      "name": "ft_tar",
+      "slug": "rushes-ft_tar",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    }
+  }
+}

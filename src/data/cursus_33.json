@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "id": 33,
+    "created_at": "2020-09-09T10:29:18.846Z",
+    "kind": "external",
+    "name": "42tokyo-playground",
+    "slug": "42tokyo-playground"
+  },
+  "projects": {
+    "1674": {
+      "id": 1674,
+      "created_at": "2019-11-20T06:47:51.357Z",
+      "updated_at": "2021-03-30T14:15:56.225Z",
+      "name": "Discovery-Pedagogy",
+      "slug": "discovery-pedagogy",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    }
+  }
+}

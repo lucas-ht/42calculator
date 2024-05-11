@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "id": 67,
+    "created_at": "2023-03-22T07:11:41.847Z",
+    "kind": "external",
+    "name": "42 events",
+    "slug": "42-events"
+  },
+  "projects": {
+    "2348": {
+      "id": 2348,
+      "created_at": "2023-03-11T07:49:58.890Z",
+      "updated_at": "2024-03-25T16:46:11.320Z",
+      "name": "[Event]April_2023",
+      "slug": "event-april_2023",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    }
+  }
+}

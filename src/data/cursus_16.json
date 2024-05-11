@@ -1,0 +1,111 @@
+{
+  "meta": {
+    "id": 16,
+    "created_at": "2017-06-06T21:13:39.178Z",
+    "kind": "external_deprecated",
+    "name": "X-Mansion-Namido",
+    "slug": "x-mansion-namido"
+  },
+  "projects": {
+    "919": {
+      "id": 919,
+      "created_at": "2017-05-29T22:48:35.475Z",
+      "updated_at": "2017-06-29T19:01:42.342Z",
+      "name": "D00",
+      "slug": "x-mansion-x-mansion-namido-d00",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "920": {
+      "id": 920,
+      "created_at": "2017-05-29T22:49:27.481Z",
+      "updated_at": "2017-06-29T19:02:19.067Z",
+      "name": "D01",
+      "slug": "x-mansion-x-mansion-namido-d01",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "921": {
+      "id": 921,
+      "created_at": "2017-05-29T22:51:12.055Z",
+      "updated_at": "2017-06-29T19:02:46.209Z",
+      "name": "D02",
+      "slug": "x-mansion-x-mansion-namido-d02",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "922": {
+      "id": 922,
+      "created_at": "2017-05-29T22:51:37.015Z",
+      "updated_at": "2017-06-29T19:03:09.088Z",
+      "name": "D03",
+      "slug": "x-mansion-x-mansion-namido-d03",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "923": {
+      "id": 923,
+      "created_at": "2017-05-29T22:52:15.972Z",
+      "updated_at": "2017-06-29T18:38:26.706Z",
+      "name": "D04 Advanced",
+      "slug": "x-mansion-x-mansion-namido-d04-advanced",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "924": {
+      "id": 924,
+      "created_at": "2017-05-29T22:56:22.250Z",
+      "updated_at": "2017-06-29T19:03:53.177Z",
+      "name": "D05",
+      "slug": "x-mansion-x-mansion-namido-d05",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "925": {
+      "id": 925,
+      "created_at": "2017-05-29T22:57:22.973Z",
+      "updated_at": "2017-06-29T19:04:11.016Z",
+      "name": "D06",
+      "slug": "x-mansion-x-mansion-namido-d06",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "926": {
+      "id": 926,
+      "created_at": "2017-05-29T22:58:08.639Z",
+      "updated_at": "2017-06-29T20:40:57.019Z",
+      "name": "D07",
+      "slug": "x-mansion-x-mansion-namido-d07",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "927": {
+      "id": 927,
+      "created_at": "2017-05-29T22:59:02.699Z",
+      "updated_at": "2017-06-29T06:05:18.526Z",
+      "name": "D08",
+      "slug": "x-mansion-x-mansion-namido-d08",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "933": {
+      "id": 933,
+      "created_at": "2017-06-23T06:52:33.847Z",
+      "updated_at": "2017-06-29T19:03:33.586Z",
+      "name": "D04 Basics",
+      "slug": "x-mansion-x-mansion-namido-d04-basics",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    }
+  }
+}

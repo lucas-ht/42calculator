@@ -1,0 +1,751 @@
+{
+  "meta": {
+    "id": 5,
+    "created_at": "2015-09-20T13:27:03.918Z",
+    "kind": "external",
+    "name": "42partnerships",
+    "slug": "42partnerships"
+  },
+  "projects": {
+    "14": {
+      "id": 14,
+      "created_at": "2014-12-04T14:16:43.396Z",
+      "updated_at": "2022-12-30T15:33:10.085Z",
+      "name": "Introduction to Wordpress",
+      "slug": "rushes-introduction-to-wordpress",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 61,
+        "name": "Rushes",
+        "slug": "rushes"
+      }
+    },
+    "154": {
+      "id": 154,
+      "created_at": "2015-05-01T20:04:00.540Z",
+      "updated_at": "2024-03-25T16:46:19.584Z",
+      "name": "Day 00",
+      "slug": "piscine-c-day-00",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "155": {
+      "id": 155,
+      "created_at": "2015-05-01T20:12:10.639Z",
+      "updated_at": "2024-03-25T16:46:21.032Z",
+      "name": "Day 01",
+      "slug": "piscine-c-day-01",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "156": {
+      "id": 156,
+      "created_at": "2015-05-01T20:16:49.187Z",
+      "updated_at": "2024-03-25T16:46:20.814Z",
+      "name": "Day 02",
+      "slug": "piscine-c-day-02",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "157": {
+      "id": 157,
+      "created_at": "2015-05-01T20:30:13.467Z",
+      "updated_at": "2024-03-25T16:46:20.742Z",
+      "name": "Day 03",
+      "slug": "piscine-c-day-03",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "158": {
+      "id": 158,
+      "created_at": "2015-05-01T20:32:02.406Z",
+      "updated_at": "2024-03-25T16:46:20.188Z",
+      "name": "Day 04",
+      "slug": "piscine-c-day-04",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "159": {
+      "id": 159,
+      "created_at": "2015-05-01T20:33:26.757Z",
+      "updated_at": "2024-03-25T16:46:20.769Z",
+      "name": "Day 05",
+      "slug": "piscine-c-day-05",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "160": {
+      "id": 160,
+      "created_at": "2015-05-01T20:37:20.980Z",
+      "updated_at": "2024-03-25T16:46:20.791Z",
+      "name": "Day 06",
+      "slug": "piscine-c-day-06",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "161": {
+      "id": 161,
+      "created_at": "2015-05-01T20:39:17.477Z",
+      "updated_at": "2024-03-25T16:46:20.019Z",
+      "name": "Day 07",
+      "slug": "piscine-c-day-07",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "162": {
+      "id": 162,
+      "created_at": "2015-05-01T20:40:39.381Z",
+      "updated_at": "2024-03-25T16:46:19.000Z",
+      "name": "Day 08",
+      "slug": "piscine-c-day-08",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "168": {
+      "id": 168,
+      "created_at": "2015-05-01T21:27:01.212Z",
+      "updated_at": "2024-03-25T16:46:20.039Z",
+      "name": "Rush 00",
+      "slug": "piscine-c-rush-00",
+      "experience": 25,
+      "exam": false,
+      "parent": null
+    },
+    "171": {
+      "id": 171,
+      "created_at": "2015-05-01T21:38:22.888Z",
+      "updated_at": "2024-03-25T16:46:21.009Z",
+      "name": "Sastantua",
+      "slug": "piscine-c-sastantua",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "506": {
+      "id": 506,
+      "created_at": "2015-09-28T06:51:13.019Z",
+      "updated_at": "2024-03-25T16:46:18.687Z",
+      "name": "Initiation Ruby",
+      "slug": "42partnerships-initiation-ruby",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "507": {
+      "id": 507,
+      "created_at": "2015-09-28T06:58:28.944Z",
+      "updated_at": "2024-03-25T16:46:14.863Z",
+      "name": "Day 00 - Shell",
+      "slug": "42partnerships-initiation-ruby-day-00-shell",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 506,
+        "name": "Initiation Ruby",
+        "slug": "42partnerships-initiation-ruby"
+      }
+    },
+    "508": {
+      "id": 508,
+      "created_at": "2015-09-28T10:23:07.383Z",
+      "updated_at": "2024-03-25T16:46:14.974Z",
+      "name": "Day 01 - Ruby",
+      "slug": "42partnerships-initiation-ruby-day-01-ruby",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 506,
+        "name": "Initiation Ruby",
+        "slug": "42partnerships-initiation-ruby"
+      }
+    },
+    "509": {
+      "id": 509,
+      "created_at": "2015-09-28T10:23:27.322Z",
+      "updated_at": "2024-03-25T16:46:13.695Z",
+      "name": "Day 02 - Ruby",
+      "slug": "42partnerships-initiation-ruby-day-02-ruby",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 506,
+        "name": "Initiation Ruby",
+        "slug": "42partnerships-initiation-ruby"
+      }
+    },
+    "510": {
+      "id": 510,
+      "created_at": "2015-09-28T10:23:40.021Z",
+      "updated_at": "2024-03-25T16:46:12.896Z",
+      "name": "Day 03 - Ruby",
+      "slug": "42partnerships-initiation-ruby-day-03-ruby",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 506,
+        "name": "Initiation Ruby",
+        "slug": "42partnerships-initiation-ruby"
+      }
+    },
+    "512": {
+      "id": 512,
+      "created_at": "2015-09-28T10:24:21.860Z",
+      "updated_at": "2024-03-25T16:46:14.438Z",
+      "name": "Rush 00 - rpg_txt",
+      "slug": "42partnerships-initiation-ruby-rush-00-rpg_txt",
+      "experience": 25,
+      "exam": false,
+      "parent": {
+        "id": 506,
+        "name": "Initiation Ruby",
+        "slug": "42partnerships-initiation-ruby"
+      }
+    },
+    "513": {
+      "id": 513,
+      "created_at": "2015-09-29T12:04:09.553Z",
+      "updated_at": "2024-03-25T16:46:14.931Z",
+      "name": "Day 00 - Shell",
+      "slug": "42partnerships-initiation-web-day-00-shell",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 519,
+        "name": "Initiation Web",
+        "slug": "42partnerships-initiation-web"
+      }
+    },
+    "519": {
+      "id": 519,
+      "created_at": "2015-09-29T12:04:13.096Z",
+      "updated_at": "2024-03-25T16:46:18.608Z",
+      "name": "Initiation Web",
+      "slug": "42partnerships-initiation-web",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "520": {
+      "id": 520,
+      "created_at": "2015-09-29T12:16:17.166Z",
+      "updated_at": "2024-03-25T16:46:12.881Z",
+      "name": "Day 01 - HTML & CSS",
+      "slug": "42partnerships-initiation-web-day-01-html-css",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 519,
+        "name": "Initiation Web",
+        "slug": "42partnerships-initiation-web"
+      }
+    },
+    "521": {
+      "id": 521,
+      "created_at": "2015-09-29T12:16:32.396Z",
+      "updated_at": "2024-03-25T16:46:13.670Z",
+      "name": "Day 02 - PHP",
+      "slug": "42partnerships-initiation-web-day-02-php",
+      "experience": 100,
+      "exam": false,
+      "parent": {
+        "id": 519,
+        "name": "Initiation Web",
+        "slug": "42partnerships-initiation-web"
+      }
+    },
+    "791": {
+      "id": 791,
+      "created_at": "2016-10-26T12:56:06.551Z",
+      "updated_at": "2024-03-25T16:46:23.464Z",
+      "name": "Piscine Ruby on Rails",
+      "slug": "piscine-ruby-on-rails",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "792": {
+      "id": 792,
+      "created_at": "2016-10-26T13:12:16.982Z",
+      "updated_at": "2024-03-25T16:46:23.129Z",
+      "name": "Day 00",
+      "slug": "piscine-ruby-on-rails-day-00",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 791,
+        "name": "Piscine Ruby on Rails",
+        "slug": "piscine-ruby-on-rails"
+      }
+    },
+    "793": {
+      "id": 793,
+      "created_at": "2016-10-26T13:12:51.224Z",
+      "updated_at": "2024-03-25T16:46:23.156Z",
+      "name": "Day 01",
+      "slug": "piscine-ruby-on-rails-day-01",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 791,
+        "name": "Piscine Ruby on Rails",
+        "slug": "piscine-ruby-on-rails"
+      }
+    },
+    "794": {
+      "id": 794,
+      "created_at": "2016-10-26T13:12:56.823Z",
+      "updated_at": "2024-03-25T16:46:23.193Z",
+      "name": "Day 02",
+      "slug": "piscine-ruby-on-rails-day-02",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 791,
+        "name": "Piscine Ruby on Rails",
+        "slug": "piscine-ruby-on-rails"
+      }
+    },
+    "795": {
+      "id": 795,
+      "created_at": "2016-10-26T13:13:03.030Z",
+      "updated_at": "2024-03-25T16:46:23.216Z",
+      "name": "Day 03",
+      "slug": "piscine-ruby-on-rails-day-03",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 791,
+        "name": "Piscine Ruby on Rails",
+        "slug": "piscine-ruby-on-rails"
+      }
+    },
+    "796": {
+      "id": 796,
+      "created_at": "2016-10-26T13:13:09.083Z",
+      "updated_at": "2024-03-25T16:46:23.251Z",
+      "name": "Day 04",
+      "slug": "piscine-ruby-on-rails-day-04",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 791,
+        "name": "Piscine Ruby on Rails",
+        "slug": "piscine-ruby-on-rails"
+      }
+    },
+    "798": {
+      "id": 798,
+      "created_at": "2016-10-26T13:13:24.620Z",
+      "updated_at": "2024-03-25T16:46:23.305Z",
+      "name": "Day 05",
+      "slug": "piscine-ruby-on-rails-day-05",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 791,
+        "name": "Piscine Ruby on Rails",
+        "slug": "piscine-ruby-on-rails"
+      }
+    },
+    "799": {
+      "id": 799,
+      "created_at": "2016-10-26T13:13:30.796Z",
+      "updated_at": "2024-03-25T16:46:23.338Z",
+      "name": "Day 06",
+      "slug": "piscine-ruby-on-rails-day-06",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 791,
+        "name": "Piscine Ruby on Rails",
+        "slug": "piscine-ruby-on-rails"
+      }
+    },
+    "800": {
+      "id": 800,
+      "created_at": "2016-10-26T13:13:36.904Z",
+      "updated_at": "2024-03-25T16:46:23.360Z",
+      "name": "Day 07",
+      "slug": "piscine-ruby-on-rails-day-07",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 791,
+        "name": "Piscine Ruby on Rails",
+        "slug": "piscine-ruby-on-rails"
+      }
+    },
+    "801": {
+      "id": 801,
+      "created_at": "2016-10-26T13:13:43.032Z",
+      "updated_at": "2024-03-25T16:46:23.385Z",
+      "name": "Day 08",
+      "slug": "piscine-ruby-on-rails-day-08",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 791,
+        "name": "Piscine Ruby on Rails",
+        "slug": "piscine-ruby-on-rails"
+      }
+    },
+    "802": {
+      "id": 802,
+      "created_at": "2016-10-26T13:13:50.828Z",
+      "updated_at": "2024-03-25T16:46:23.416Z",
+      "name": "Day 09",
+      "slug": "piscine-ruby-on-rails-day-09",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 791,
+        "name": "Piscine Ruby on Rails",
+        "slug": "piscine-ruby-on-rails"
+      }
+    },
+    "803": {
+      "id": 803,
+      "created_at": "2016-10-26T13:13:56.458Z",
+      "updated_at": "2024-03-25T16:46:23.455Z",
+      "name": "Rush01",
+      "slug": "piscine-ruby-on-rails-rush01",
+      "experience": 0,
+      "exam": false,
+      "parent": {
+        "id": 791,
+        "name": "Piscine Ruby on Rails",
+        "slug": "piscine-ruby-on-rails"
+      }
+    },
+    "1059": {
+      "id": 1059,
+      "created_at": "2017-12-07T16:46:30.530Z",
+      "updated_at": "2024-03-25T16:46:24.954Z",
+      "name": "Shell 0",
+      "slug": "shell-0",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1060": {
+      "id": 1060,
+      "created_at": "2017-12-07T16:50:30.323Z",
+      "updated_at": "2024-03-25T16:46:24.973Z",
+      "name": "Shell 1",
+      "slug": "shell-1",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1061": {
+      "id": 1061,
+      "created_at": "2017-12-07T16:54:01.923Z",
+      "updated_at": "2024-03-25T16:46:24.988Z",
+      "name": "Shell 2",
+      "slug": "shell-2",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1062": {
+      "id": 1062,
+      "created_at": "2017-12-07T16:56:00.335Z",
+      "updated_at": "2024-03-25T16:46:25.005Z",
+      "name": "Shell 3",
+      "slug": "shell-3",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1063": {
+      "id": 1063,
+      "created_at": "2017-12-07T16:58:13.708Z",
+      "updated_at": "2024-03-25T16:46:25.030Z",
+      "name": "Ruby 00",
+      "slug": "ruby-00",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1064": {
+      "id": 1064,
+      "created_at": "2017-12-07T17:00:07.849Z",
+      "updated_at": "2024-03-25T16:46:25.044Z",
+      "name": "Ruby 01",
+      "slug": "ruby-01",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1065": {
+      "id": 1065,
+      "created_at": "2017-12-07T17:02:02.319Z",
+      "updated_at": "2024-03-25T16:46:25.073Z",
+      "name": "Ruby 02",
+      "slug": "ruby-02",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1066": {
+      "id": 1066,
+      "created_at": "2017-12-07T17:04:02.627Z",
+      "updated_at": "2024-03-25T16:46:25.104Z",
+      "name": "Ruby 03",
+      "slug": "ruby-03",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1067": {
+      "id": 1067,
+      "created_at": "2017-12-07T17:07:44.714Z",
+      "updated_at": "2024-03-25T16:46:25.133Z",
+      "name": "Ruby 04",
+      "slug": "ruby-04",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1068": {
+      "id": 1068,
+      "created_at": "2017-12-07T17:23:20.858Z",
+      "updated_at": "2024-03-25T16:46:25.156Z",
+      "name": "Ruby 05",
+      "slug": "ruby-05",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1070": {
+      "id": 1070,
+      "created_at": "2017-12-07T17:30:49.888Z",
+      "updated_at": "2024-03-25T16:46:25.199Z",
+      "name": "Ruby 06",
+      "slug": "ruby-06",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1071": {
+      "id": 1071,
+      "created_at": "2017-12-07T17:34:31.815Z",
+      "updated_at": "2024-03-25T16:46:25.225Z",
+      "name": "Ruby 07",
+      "slug": "ruby-07",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1072": {
+      "id": 1072,
+      "created_at": "2017-12-07T18:00:27.179Z",
+      "updated_at": "2024-03-25T16:46:25.260Z",
+      "name": "Projet Ruby",
+      "slug": "projet-ruby",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1073": {
+      "id": 1073,
+      "created_at": "2017-12-07T18:02:48.172Z",
+      "updated_at": "2024-03-25T16:46:25.288Z",
+      "name": "Web 00",
+      "slug": "web-00",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1074": {
+      "id": 1074,
+      "created_at": "2017-12-07T18:06:32.560Z",
+      "updated_at": "2024-03-25T16:46:25.303Z",
+      "name": "Web 01",
+      "slug": "web-01",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1075": {
+      "id": 1075,
+      "created_at": "2017-12-07T18:11:46.730Z",
+      "updated_at": "2024-03-25T16:46:25.331Z",
+      "name": "Web 02",
+      "slug": "web-02",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1076": {
+      "id": 1076,
+      "created_at": "2017-12-07T18:13:50.115Z",
+      "updated_at": "2024-03-25T16:46:25.359Z",
+      "name": "Web 03",
+      "slug": "web-03",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1077": {
+      "id": 1077,
+      "created_at": "2017-12-07T18:15:45.980Z",
+      "updated_at": "2024-03-25T16:46:25.381Z",
+      "name": "Web 04",
+      "slug": "web-04",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1078": {
+      "id": 1078,
+      "created_at": "2017-12-07T18:17:43.356Z",
+      "updated_at": "2024-03-25T16:46:25.396Z",
+      "name": "Web 05",
+      "slug": "web-05",
+      "experience": 100,
+      "exam": false,
+      "parent": null
+    },
+    "1079": {
+      "id": 1079,
+      "created_at": "2017-12-07T18:20:16.379Z",
+      "updated_at": "2024-03-25T16:46:25.412Z",
+      "name": "Projet Web",
+      "slug": "projet-web",
+      "experience": 225,
+      "exam": false,
+      "parent": null
+    },
+    "1209": {
+      "id": 1209,
+      "created_at": "2018-10-05T16:36:52.662Z",
+      "updated_at": "2024-03-25T16:46:12.016Z",
+      "name": "Piscine Python Django Day00",
+      "slug": "piscine-python-django-day00",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1210": {
+      "id": 1210,
+      "created_at": "2018-10-05T16:45:10.748Z",
+      "updated_at": "2024-03-25T16:46:12.002Z",
+      "name": "Piscine Python Django Day01",
+      "slug": "piscine-python-django-day01",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1211": {
+      "id": 1211,
+      "created_at": "2018-10-05T16:56:25.849Z",
+      "updated_at": "2024-03-25T16:46:11.985Z",
+      "name": "Piscine Python Django Day02",
+      "slug": "piscine-python-django-day02",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1212": {
+      "id": 1212,
+      "created_at": "2018-10-05T16:57:21.474Z",
+      "updated_at": "2024-03-25T16:46:11.958Z",
+      "name": "Piscine Python Django Day03",
+      "slug": "piscine-python-django-day03",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1213": {
+      "id": 1213,
+      "created_at": "2018-10-05T16:59:30.020Z",
+      "updated_at": "2024-03-25T16:46:11.932Z",
+      "name": "Piscine Python Django Day04",
+      "slug": "piscine-python-django-day04",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1214": {
+      "id": 1214,
+      "created_at": "2018-10-05T17:01:06.318Z",
+      "updated_at": "2024-03-25T16:46:11.902Z",
+      "name": "piscine-python-django-rush-00",
+      "slug": "piscine-python-django-rush-00",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1215": {
+      "id": 1215,
+      "created_at": "2018-10-05T17:01:57.810Z",
+      "updated_at": "2024-03-25T16:46:11.866Z",
+      "name": "Piscine Python Django Day05",
+      "slug": "piscine-python-django-day05",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1216": {
+      "id": 1216,
+      "created_at": "2018-10-05T17:02:54.438Z",
+      "updated_at": "2024-03-25T16:46:11.841Z",
+      "name": "Piscine Python Django Day06",
+      "slug": "piscine-python-django-day06",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1217": {
+      "id": 1217,
+      "created_at": "2018-10-05T17:03:35.456Z",
+      "updated_at": "2024-03-25T16:46:11.815Z",
+      "name": "Piscine Python Django Day07",
+      "slug": "piscine-python-django-day07",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1218": {
+      "id": 1218,
+      "created_at": "2018-10-05T17:04:37.227Z",
+      "updated_at": "2024-03-25T16:46:11.799Z",
+      "name": "Piscine Python Django Day08",
+      "slug": "piscine-python-django-day08",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1219": {
+      "id": 1219,
+      "created_at": "2018-10-05T17:05:09.785Z",
+      "updated_at": "2024-03-25T16:46:11.772Z",
+      "name": "Day 09",
+      "slug": "day-09",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    },
+    "1220": {
+      "id": 1220,
+      "created_at": "2018-10-05T17:06:00.073Z",
+      "updated_at": "2024-03-25T16:46:11.746Z",
+      "name": "Piscine Python Django Rush 01",
+      "slug": "piscine-python-django-rush-01",
+      "experience": 0,
+      "exam": false,
+      "parent": null
+    }
+  }
+}
