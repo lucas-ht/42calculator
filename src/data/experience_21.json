@@ -1,0 +1,197 @@
+{
+  "meta": {
+    "id": 21,
+    "created_at": "2019-07-29T08:45:17.896Z",
+    "kind": "main",
+    "name": "42cursus",
+    "slug": "42cursus"
+  },
+  "levels": [
+    {
+      "id": 620,
+      "level": 0,
+      "experience": 0,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 590,
+      "level": 1,
+      "experience": 462,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 591,
+      "level": 2,
+      "experience": 2688,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 592,
+      "level": 3,
+      "experience": 5885,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 593,
+      "level": 4,
+      "experience": 11777,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 594,
+      "level": 5,
+      "experience": 29217,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 595,
+      "level": 6,
+      "experience": 46255,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 596,
+      "level": 7,
+      "experience": 63559,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 597,
+      "level": 8,
+      "experience": 74340,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 598,
+      "level": 9,
+      "experience": 85483,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 599,
+      "level": 10,
+      "experience": 95000,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 600,
+      "level": 11,
+      "experience": 105630,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 601,
+      "level": 12,
+      "experience": 124446,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 602,
+      "level": 13,
+      "experience": 145782,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 603,
+      "level": 14,
+      "experience": 169932,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 604,
+      "level": 15,
+      "experience": 197316,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 605,
+      "level": 16,
+      "experience": 228354,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 606,
+      "level": 17,
+      "experience": 263508,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 607,
+      "level": 18,
+      "experience": 303366,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 608,
+      "level": 19,
+      "experience": 348516,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 609,
+      "level": 20,
+      "experience": 399672,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 610,
+      "level": 21,
+      "experience": 457632,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 611,
+      "level": 22,
+      "experience": 523320,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 612,
+      "level": 23,
+      "experience": 597786,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 613,
+      "level": 24,
+      "experience": 682164,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 614,
+      "level": 25,
+      "experience": 777756,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 615,
+      "level": 26,
+      "experience": 886074,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 616,
+      "level": 27,
+      "experience": 1008798,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 617,
+      "level": 28,
+      "experience": 1147902,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 618,
+      "level": 29,
+      "experience": 1305486,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    },
+    {
+      "id": 619,
+      "level": 30,
+      "experience": 1484070,
+      "created_at": "2019-07-29T08:45:11.000Z"
+    }
+  ]
+}
