@@ -21,14 +21,15 @@ function SignIn() {
 export default async function Home() {
   const session = await auth()
 
-  // if (session != null)
-  //   return <div>Already signed in</div>
+  if (session == null) {
+    return (
+      <main className="flex h-full items-center justify-center p-24">
+        <SignIn />
+      </main>
+    )
+  }
 
-  console.log(`page: ${JSON.stringify(session?.user)}`)
+  console.log(`session.user: ${JSON.stringify(session?.user)}`)
 
-  return (
-    <main className="flex flex-col items-center justify-between p-24">
-      <SignIn />
-    </main>
-  )
+  return null
 }

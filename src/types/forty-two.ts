@@ -10,12 +10,16 @@ export interface FortyTwoProject {
   bonus_coalition: boolean | undefined
 }
 
-export interface FortyTwoCursusProject
-  extends Omit<FortyTwoProject, 'name' | 'experience' | 'bonus_coalition'> {}
+export interface FortyTwoLevel {
+  level: number
+  experience: number
+}
 
 export interface FortyTwoCursus {
   id: number
+  name: string
+  slug: string
   level: number
   experience: number | undefined
-  projects: FortyTwoCursusProject[]
+  projects: FortyTwoProject[]
 }

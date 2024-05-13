@@ -1,41 +1,21 @@
-import {
-  FortyTwoCursus,
-  FortyTwoCursusId,
-  FortyTwoCursusProject
-} from '@/types/forty-two'
+import { FortyTwoCursus, FortyTwoCursusId } from '@/types/forty-two'
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
-export const ParseCursus = (
-  cursus_user: Array<any>,
-  projects_users: Array<any>
-): FortyTwoCursus => {
-  const cursus: FortyTwoCursus = {
-    id: FortyTwoCursusId.MAIN,
-    level: 0,
-    experience: undefined,
-    projects: []
-  }
-
-  console.log('cursus_user:', cursus_user)
-  console.log('projects_users:', projects_users)
-
-  for (const cu of cursus_user) {
-    if (cu.cursus_id === FortyTwoCursusId.MAIN) {
-      cursus.level = cu.level
-      break
-    }
-  }
-
-  for (const pu of projects_users) {
-    if (!pu.cursus_ids.includes(FortyTwoCursusId.MAIN)) {
+export const parseCursus = (profile: any): undefined | FortyTwoCursus => {
+  for (const cursus of profile.cursus_users) {
+    if (cursus.cursus_id !== FortyTwoCursusId.MAIN) {
       continue
     }
 
-    cursus.projects.push({
-      id: pu.project.id,
-      final_mark: pu.final_mark
-    } as FortyTwoCursusProject)
+    return {
+      id: cursus.cursus_id,
+      name: cursus.cursus.name,
+      slug: cursus.cursus.slug,
+      level: cursus.level,
+      experience: 0,
+      projects: []
+    }
   }
 
-  return cursus
+  return undefined
 }

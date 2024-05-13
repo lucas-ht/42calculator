@@ -1,7 +1,7 @@
 import NextAuth from 'next-auth'
 import FortyTwo from 'next-auth/providers/42-school'
 
-import { ParseCursus } from '@/lib/forty-two'
+import { parseCursus } from '@/lib/forty-two'
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   basePath: '/auth',
@@ -18,8 +18,8 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       profile(profile) {
         return {
           name: profile.login,
-          image: profile.image_url,
-          cursus: ParseCursus(profile.cursus_users, profile.projects_users)
+          image: profile.image.link,
+          cursus: parseCursus(profile)
         }
       }
     })

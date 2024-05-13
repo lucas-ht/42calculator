@@ -1,14 +1,20 @@
-import { FortyTwoCursus } from 'forty-two'
 import 'next-auth'
+import 'next-auth/jwt'
+
+import { FortyTwoCursus } from '@/types/forty-two'
 
 declare module 'next-auth' {
-  interface Session {
-    user: {
-      cursus: FortyTwoCursus
-    } & DefaultSession['user']
+  interface User {
+    cursus?: FortyTwoCursus
   }
 
-  interface User {
-    cursus: FortyTwoCursus
+  interface Session {
+    user: User
+  }
+}
+
+declare module 'next-auth/jwt' {
+  interface JWT {
+    cursus?: FortyTwoCursus
   }
 }
