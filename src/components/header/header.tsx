@@ -1,8 +1,7 @@
-'use client'
-
 import Link from 'next/link'
 
 import ThemeToggle from './theme-toggle'
+import UserManagement from './user-management'
 
 export function Header() {
   return (
@@ -12,8 +11,9 @@ export function Header() {
           <h1 className="font-bold">42Calculator</h1>
         </Link>
 
-        <div className="ml-auto">
+        <div className="ml-auto flex items-center gap-x-4">
           <ThemeToggle />
+          <UserManagement />
         </div>
       </div>
     </header>

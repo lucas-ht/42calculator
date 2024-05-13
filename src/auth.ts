@@ -18,7 +18,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       profile(profile) {
         return {
           name: profile.login,
-          image: profile.image.link,
+          image: profile.image.versions.small,
           cursus: parseCursus(profile)
         }
       }
