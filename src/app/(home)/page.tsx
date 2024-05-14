@@ -1,6 +1,7 @@
 import { auth, signIn } from '@/auth'
 import FortyTwo from '@/components/icons/FortyTwo'
 import { Button } from '@/components/ui/button'
+import Calculator from '../(calculator)/calculator'
 
 function SignIn() {
   return (
@@ -29,7 +30,9 @@ export default async function Home() {
     )
   }
 
-  console.log(`session.user: ${JSON.stringify(session?.user)}`)
-
-  return null
+  return (
+    <main className="container flex h-full items-center justify-center p-24">
+      <Calculator />
+    </main>
+  )
 }

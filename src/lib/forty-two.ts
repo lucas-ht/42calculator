@@ -11,9 +11,7 @@ export const parseCursus = (profile: any): undefined | FortyTwoCursus => {
       id: cursus.cursus_id,
       name: cursus.cursus.name,
       slug: cursus.cursus.slug,
-      level: cursus.level,
-      experience: 0,
-      projects: []
+      level: cursus.level
     }
   }
 

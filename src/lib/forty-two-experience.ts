@@ -1,11 +1,23 @@
+'use server'
+
+import { FortyTwoCursusId, FortyTwoLevel } from '@/types/forty-two'
 import fs from 'fs'
 import path from 'path'
 
-import { FortyTwoCursusId, FortyTwoLevel } from '@/types/forty-two'
+let FortyTwoLevels: Record<number, FortyTwoLevel> = {}
 
-export let FortyTwoLevels: Record<number, FortyTwoLevel> = {}
+export async function calculateExperience(
+  experience: number,
+  grade: number,
+  bonus: boolean
+): Promise<number> {
+  const bonusMultiplier = bonus ? 1.042 : 1
+  const gradeMultiplier = grade / 100
 
-export function getExperience(level: number): number {
+  return experience * gradeMultiplier * bonusMultiplier
+}
+
+export async function getExperience(level: number): Promise<number> {
   const integerLevel = Math.floor(level)
   const decimalLevel = level - integerLevel
 
@@ -18,7 +30,7 @@ export function getExperience(level: number): number {
   )
 }
 
-export function getLevel(experience: number): number {
+export async function getLevel(experience: number): Promise<number> {
   let level = 0
   let nextLevelExperience = 0
 
