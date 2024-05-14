@@ -1,0 +1,13 @@
+documentation:
+- changed-files:
+  - any-glob-to-any-file: '**/*.md'
+
+source:
+- all:
+  - changed-files:
+    - any-glob-to-any-file: 'src/**/*'
+
+scripts:
+- all:
+  - changed-files:
+    - any-glob-to-any-file: 'scripts/**/*'
