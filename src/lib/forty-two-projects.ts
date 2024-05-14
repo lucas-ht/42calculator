@@ -1,7 +1,7 @@
-'use server'
-
 import { FortyTwoCursusId, FortyTwoProject } from '@/types/forty-two'
 import { list } from '@vercel/blob'
+
+export const runtime = 'edge'
 
 let FortyTwoProjects: Record<number, FortyTwoProject> = {}
 
