@@ -1,60 +1,14 @@
-'use server'
-
 import { FortyTwoCursusId, FortyTwoLevel } from '@/types/forty-two'
 import { list } from '@vercel/blob'
 
+export const runtime = 'edge'
+
 let FortyTwoLevels: Record<number, FortyTwoLevel> = {}
 
-export async function calculateExperience(
-  experience: number,
-  grade: number,
-  bonus: boolean
-): Promise<number> {
-  const bonusMultiplier = bonus ? 1.042 : 1
-  const gradeMultiplier = grade / 100
-
-  return experience * gradeMultiplier * bonusMultiplier
-}
-
-export async function getExperience(level: number): Promise<number> {
-  const integerLevel = Math.floor(level)
-  const decimalLevel = level - integerLevel
-
-  const currentLevel = FortyTwoLevels[integerLevel]
-  const nextLevel = FortyTwoLevels[integerLevel + 1]
-
-  if (currentLevel == undefined || nextLevel == undefined) {
-    return 0
-  }
-
-  return (
-    currentLevel.experience +
-    (nextLevel.experience - currentLevel.experience) * decimalLevel
-  )
-}
-
-export async function getLevel(experience: number): Promise<number> {
-  let level = 0
-  let nextLevelExperience = 0
-
-  for (const [key, value] of Object.entries(FortyTwoLevels)) {
-    if (experience < value.experience) {
-      nextLevelExperience = value.experience
-      break
-    }
-    level = Number(key)
-  }
-
-  const currentLevel = FortyTwoLevels[level]
-  if (currentLevel == undefined) {
-    return 0
-  }
-
-  const currentLevelExp = currentLevel.experience
-  const decimalLevel =
-    (experience - currentLevelExp) / (nextLevelExperience - currentLevelExp)
-
-  return level + decimalLevel
+export async function getFortyTwoLevels(): Promise<
+  Record<number, FortyTwoLevel>
+> {
+  return FortyTwoLevels
 }
 
 /* eslint-disable @typescript-eslint/no-explicit-any */

@@ -9,24 +9,19 @@ import {
   TableHeader,
   TableRow
 } from '@/components/ui/table'
-import { useCalculatorStore } from '@/stores/calculator'
+import { useCalculatorStore } from '@/providers/calculator-store-provider'
 import { FortyTwoProject } from '@/types/forty-two'
-import { useEffect } from 'react'
 import { AddProject } from './add-project'
 import { Project } from './project'
 
 export function CalculatorTable({
-  level,
   projects_data
 }: {
-  level: number
   projects_data: Array<FortyTwoProject>
 }) {
-  const { projects, level: predictedLevel, setLevel } = useCalculatorStore()
-
-  useEffect(() => {
-    setLevel(level)
-  })
+  const { projects, level: predictedLevel } = useCalculatorStore(
+    (state) => state
+  )
 
   return (
     <Table className="table-fixed">

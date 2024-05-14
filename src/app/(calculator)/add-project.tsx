@@ -19,12 +19,12 @@ import {
   PopoverTrigger
 } from '@/components/ui/popover'
 import { ScrollArea } from '@/components/ui/scroll-area'
-import { useCalculatorStore } from '@/stores/calculator'
+import { useCalculatorStore } from '@/providers/calculator-store-provider'
 
 export function AddProject({ projects }: { projects: Array<FortyTwoProject> }) {
   const [open, setOpen] = useState(false)
   const [, setValue] = useState('')
-  const { addProject } = useCalculatorStore()
+  const { addProject } = useCalculatorStore((state) => state)
 
   if (!projects) {
     return null
