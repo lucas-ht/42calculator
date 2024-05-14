@@ -1,8 +1,7 @@
 'use server'
 
 import { FortyTwoCursusId, FortyTwoLevel } from '@/types/forty-two'
-import fs from 'fs'
-import path from 'path'
+import { list } from '@vercel/blob'
 
 let FortyTwoLevels: Record<number, FortyTwoLevel> = {}
 
@@ -63,15 +62,13 @@ function parseExperience(experience: any): Record<number, FortyTwoLevel> {
   return levels
 }
 
-function loadExperience() {
-  const filePath = path.join(
-    process.cwd(),
-    'src',
-    'data',
-    `experience_${FortyTwoCursusId.MAIN}.json`
-  )
-  const fileContent = fs.readFileSync(filePath, 'utf-8')
-  const jsonData = JSON.parse(fileContent)
+async function loadExperience() {
+  const { blobs } = await list({
+    prefix: `experience_${FortyTwoCursusId.MAIN}`
+  })
+
+  const fileContent = await fetch(blobs[0].url)
+  const jsonData = await fileContent.json()
 
   FortyTwoLevels = parseExperience(jsonData)
 }
