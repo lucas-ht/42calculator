@@ -1,37 +1,20 @@
-import { auth, signIn } from '@/auth'
-import FortyTwo from '@/components/icons/FortyTwo'
-import { Button } from '@/components/ui/button'
+import { auth } from '@/auth'
 import Calculator from '../(calculator)/calculator'
-
-function SignIn() {
-  return (
-    <form
-      action={async () => {
-        'use server'
-        await signIn('42-school')
-      }}
-    >
-      <Button variant="secondary">
-        <FortyTwo className="mr-4 h-6" />
-        Sign in with 42
-      </Button>
-    </form>
-  )
-}
+import SignIn from './sign-in'
 
 export default async function Home() {
   const session = await auth()
 
   if (session == null) {
     return (
-      <main className="flex h-full items-center justify-center p-24">
+      <main className="container flex items-center justify-center p-4 lg:p-24">
         <SignIn />
       </main>
     )
   }
 
   return (
-    <main className="container flex h-full items-center justify-center p-24">
+    <main className="container flex items-center justify-center p-4 lg:p-24">
       <Calculator />
     </main>
   )

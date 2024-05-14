@@ -45,7 +45,12 @@ export async function getLevel(experience: number): Promise<number> {
     level = Number(key)
   }
 
-  const currentLevelExp = FortyTwoLevels[level].experience
+  const currentLevel = FortyTwoLevels[level]
+  if (currentLevel == undefined) {
+    return 0
+  }
+
+  const currentLevelExp = currentLevel.experience
   const decimalLevel =
     (experience - currentLevelExp) / (nextLevelExperience - currentLevelExp)
 

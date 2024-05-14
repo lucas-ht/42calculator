@@ -3,7 +3,6 @@
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
   TableFooter,
   TableHead,
@@ -27,21 +26,18 @@ export function CalculatorTable({
 
   useEffect(() => {
     setLevel(level)
-  }, [setLevel, level])
+  })
 
   return (
-    <Table>
-      <TableCaption>
-        Calculate your level based on your future 42 projects.
-      </TableCaption>
+    <Table className="table-fixed">
       <TableHeader>
         <TableRow>
-          <TableHead className="w-1/4">
+          <TableHead className="w-16 px-2 text-center">
             <AddProject projects={projects_data} />
           </TableHead>
-          <TableHead className="w-1/4">Project</TableHead>
-          <TableHead className="w-1/4">Grade</TableHead>
-          <TableHead className="w-1/4">Coalition Bonus</TableHead>
+          <TableHead>Project</TableHead>
+          <TableHead>Grade</TableHead>
+          <TableHead>Coalition Bonus</TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>
@@ -52,7 +48,7 @@ export function CalculatorTable({
       <TableFooter>
         <TableRow>
           <TableCell colSpan={3}>Level</TableCell>
-          <TableCell className="text-right">
+          <TableCell className="text-right font-medium">
             {predictedLevel.toFixed(2)}
           </TableCell>
         </TableRow>

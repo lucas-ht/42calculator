@@ -50,10 +50,10 @@ function ProjectGrade({ project }: { project: FortyTwoProject }) {
 
   return (
     <Input
-      className="w-[200px]"
       value={inputValue ?? ''}
       onChange={handleInputChange}
       placeholder="100"
+      className="max-w-[100px]"
     />
   )
 }
@@ -78,7 +78,9 @@ export function Project({ project }: { project: FortyTwoProject }) {
         <RemoveProject project={project} />
       </TableCell>
 
-      <TableCell className="font-medium">{project.name}</TableCell>
+      <TableCell className="overflow-hidden text-ellipsis font-medium">
+        {project.name}
+      </TableCell>
 
       <TableCell>
         <ProjectGrade project={project} />
