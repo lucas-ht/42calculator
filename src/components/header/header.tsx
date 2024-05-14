@@ -1,5 +1,4 @@
 import Link from 'next/link'
-
 import ThemeToggle from './theme-toggle'
 import UserManagement from './user-management'
 

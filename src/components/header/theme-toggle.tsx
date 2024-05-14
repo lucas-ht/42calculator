@@ -1,8 +1,5 @@
 'use client'
 
-import { Moon, Sun } from 'lucide-react'
-import { useTheme } from 'next-themes'
-
 import { Button } from '@/components/ui/button'
 import {
   DropdownMenu,
@@ -10,9 +7,26 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger
 } from '@/components/ui/dropdown-menu'
+import { Moon, Sun } from 'lucide-react'
+import { useTheme } from 'next-themes'
+import { useEffect, useState } from 'react'
+import { Skeleton } from '../ui/skeleton'
 
 export function ThemeToggle() {
+  const [mounted, setMounted] = useState(false)
   const { setTheme } = useTheme()
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
+  if (!mounted) {
+    return (
+      <div className="flex size-10 items-center justify-center">
+        <Skeleton className="h-[1.2rem] w-[1.2rem] rounded-full" />
+      </div>
+    )
+  }
 
   return (
     <DropdownMenu>
