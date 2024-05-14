@@ -22,6 +22,6 @@
     "package-lock.json",
     "scripts/**",
     "/src/components/ui/**",
-    "src/data/*"
+    "data/*"
   ]
 }
