@@ -11,7 +11,7 @@ function SignIn() {
         await signIn('42-school')
       }}
     >
-      <Button>
+      <Button variant="secondary">
         <FortyTwo className="mr-4 h-6" />
         Sign in with 42
       </Button>
