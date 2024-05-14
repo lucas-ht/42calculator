@@ -1,12 +1,12 @@
-import type { Metadata } from 'next'
-import { Inter as FontSans } from 'next/font/google'
-import React from 'react'
-
+import Header from '@/components/header'
 import { ThemeProvider } from '@/components/theme-provider'
 import { cn } from '@/lib/utils'
 import '@/styles/globals.css'
-
-import Header from '@/components/header'
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
+import type { Metadata } from 'next'
+import { Inter as FontSans } from 'next/font/google'
+import React from 'react'
 
 const fontSans = FontSans({
   subsets: ['latin'],
@@ -39,6 +39,8 @@ export default function RootLayout({
         >
           <Header />
           {children}
+          <Analytics />
+          <SpeedInsights />
         </ThemeProvider>
       </body>
     </html>
