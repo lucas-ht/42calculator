@@ -1,8 +1,7 @@
 'use server'
 
 import { FortyTwoCursusId, FortyTwoProject } from '@/types/forty-two'
-import fs from 'fs'
-import path from 'path'
+import { list } from '@vercel/blob'
 
 let FortyTwoProjects: Record<number, FortyTwoProject> = {}
 
@@ -27,15 +26,13 @@ function parseProjects(projects_data: any): Record<number, FortyTwoProject> {
   return projects
 }
 
-function loadProjects() {
-  const filePath = path.join(
-    process.cwd(),
-    'src',
-    'data',
-    `projects_${FortyTwoCursusId.MAIN}.json`
-  )
-  const fileContent = fs.readFileSync(filePath, 'utf-8')
-  const jsonData = JSON.parse(fileContent)
+async function loadProjects() {
+  const { blobs } = await list({
+    prefix: `projects_${FortyTwoCursusId.MAIN}`
+  })
+
+  const fileContent = await fetch(blobs[0].url)
+  const jsonData = await fileContent.json()
 
   FortyTwoProjects = parseProjects(jsonData)
 }
