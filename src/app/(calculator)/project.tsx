@@ -4,14 +4,14 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Switch } from '@/components/ui/switch'
 import { TableCell, TableRow } from '@/components/ui/table'
-import { useCalculatorStore } from '@/stores/calculator'
+import { useCalculatorStore } from '@/providers/calculator-store-provider'
 import { FortyTwoProject } from '@/types/forty-two'
 import { Trash2 } from 'lucide-react'
 import React, { useState } from 'react'
 import { z } from 'zod'
 
 function RemoveProject({ project }: { project: FortyTwoProject }) {
-  const { removeProject } = useCalculatorStore()
+  const { removeProject } = useCalculatorStore((state) => state)
 
   return (
     <Button
@@ -31,7 +31,7 @@ function ProjectGrade({ project }: { project: FortyTwoProject }) {
   const [inputValue, setInputValue] = useState<number | null>(
     project.final_mark ?? null
   )
-  const { updateProject } = useCalculatorStore()
+  const { updateProject } = useCalculatorStore((state) => state)
   const gradeSchema = z.number().min(0).max(125)
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -59,7 +59,7 @@ function ProjectGrade({ project }: { project: FortyTwoProject }) {
 }
 
 function ProjectBonus({ project }: { project: FortyTwoProject }) {
-  const { updateProject } = useCalculatorStore()
+  const { updateProject } = useCalculatorStore((state) => state)
 
   return (
     <Switch

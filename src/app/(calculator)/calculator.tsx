@@ -6,14 +6,17 @@ import {
   CardHeader,
   CardTitle
 } from '@/components/ui/card'
+import { getFortyTwoLevels } from '@/lib/forty-two-experience'
 import { getFortyTwoProjects } from '@/lib/forty-two-projects'
+import { CalculatorStoreProvider } from '@/providers/calculator-store-provider'
 import CalculatorTable from './calculator-table'
 
 export async function Calculator() {
   const session = await auth()
   const level = session?.user?.cursus?.level ?? 0
 
-  const projects_data = await getFortyTwoProjects()
+  const projects = await getFortyTwoProjects()
+  const levels = await getFortyTwoLevels()
 
   return (
     <Card className="w-full">
@@ -24,10 +27,9 @@ export async function Calculator() {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <CalculatorTable
-          projects_data={Object.values(projects_data)}
-          level={level}
-        />
+        <CalculatorStoreProvider level={level} levels={levels}>
+          <CalculatorTable projects_data={Object.values(projects)} />
+        </CalculatorStoreProvider>
       </CardContent>
     </Card>
   )
