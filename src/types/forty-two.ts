@@ -6,8 +6,8 @@ export interface FortyTwoProject {
   id: number
   name: string
   experience: number
-  final_mark: number | undefined
-  bonus_coalition: boolean | undefined
+  final_mark?: number
+  bonus_coalition?: boolean
 }
 
 export interface FortyTwoLevel {
@@ -20,6 +20,4 @@ export interface FortyTwoCursus {
   name: string
   slug: string
   level: number
-  experience: number | undefined
-  projects: FortyTwoProject[]
 }
