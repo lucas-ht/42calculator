@@ -24,9 +24,10 @@ export function CalculatorTable({
 }) {
   const { projects, level: predictedLevel, setLevel } = useCalculatorStore()
 
+  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     setLevel(level)
-  })
+  }, [])
 
   return (
     <Table className="table-fixed">
