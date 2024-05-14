@@ -16,10 +16,13 @@ PROJECT_ID_END      = 3000
 DIRECTORY           = 'data'
 PROJECTS_ENDPOINT   = 'https://api.intra.42.fr/v2/projects'
 
-def process_project(project_data: dict) -> dict:
+def process_project(project_data: dict) -> dict | None:
     """
     Processes the project data and returns a dictionary.
     """
+
+    if project_data['exam'] is True:
+        return None
 
     project = {
         'id':                   project_data['id'],
@@ -28,12 +31,6 @@ def process_project(project_data: dict) -> dict:
         'name':                 project_data['name'],
         'slug':                 project_data['slug'],
         'experience':           project_data['difficulty'],
-        'exam':                 project_data['exam'],
-        'parent': project_data['parent'] and {
-            'id':               project_data['parent']['id'],
-            'name':             project_data['parent']['name'],
-            'slug':             project_data['parent']['slug']
-        },
     }
 
     cursus = {
@@ -45,9 +42,9 @@ def process_project(project_data: dict) -> dict:
                 'name':             cursus_data['name'],
                 'slug':             cursus_data['slug'],
             },
-            'projects': {
-                project['id']: project
-            }
+            'projects': [
+                project
+            ]
         } for cursus_data in project_data['cursus']
     }
 
@@ -61,7 +58,7 @@ def save_cursus(cursus: dict) -> None:
 
     for _, (cursus_id, projects) in enumerate(cursus.items()):
 
-        filename = os.path.join(DIRECTORY, f"cursus_{cursus_id}.json")
+        filename = os.path.join(DIRECTORY, f"projects_{cursus_id}.json")
         os.makedirs(os.path.dirname(filename), exist_ok=True)
 
         try:
@@ -101,10 +98,12 @@ def main() -> None:
         logging.debug('%s', project_data)
 
         project_cursus = process_project(project_data)
+        if project_cursus is None:
+            continue
 
         for cursus_id, cursus_data in project_cursus.items():
             if cursus_id in cursus:
-                cursus[cursus_id]['projects'] |= cursus_data['projects']
+                cursus[cursus_id]['projects'] += cursus_data['projects']
             else:
                 cursus[cursus_id] = cursus_data
 
