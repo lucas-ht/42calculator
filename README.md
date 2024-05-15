@@ -21,14 +21,14 @@
 assisting students in strategically planning and making informed decisions regarding project selection and progression within the 42 curriculum.
 
 
-## Accessing the Application
+## Accessing the application
 
 You can access the live version of 42calculator at https://42calculator.vercel.app.
 
 
 ## Running 42calculator locally
 
-Follow the instructions in the [running locally guide](https://github.com/lucas-ht/42calculator/blob/documentation/docs/running.md).
+Follow the instructions in the [running locally guide](https://github.com/lucas-ht/42calculator/blob/main/docs/running.md).
 
 
 ## Contributing
