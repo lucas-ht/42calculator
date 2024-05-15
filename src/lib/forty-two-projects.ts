@@ -3,12 +3,16 @@ import { list } from '@vercel/blob'
 
 export const runtime = 'edge'
 
-let FortyTwoProjects: Record<number, FortyTwoProject> = {}
+let FortyTwoProjects: Record<number, FortyTwoProject> | null = null
 
 export async function getFortyTwoProjects(): Promise<
   Record<number, FortyTwoProject>
 > {
-  return FortyTwoProjects
+  if (FortyTwoProjects === null) {
+    await loadProjects()
+  }
+
+  return FortyTwoProjects ?? {}
 }
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
@@ -36,5 +40,3 @@ async function loadProjects() {
 
   FortyTwoProjects = parseProjects(jsonData)
 }
-
-loadProjects()
