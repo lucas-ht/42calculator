@@ -10,15 +10,10 @@ import {
   TableRow
 } from '@/components/ui/table'
 import { useCalculatorStore } from '@/providers/calculator-store-provider'
-import { FortyTwoProject } from '@/types/forty-two'
 import { AddProject } from './add-project'
 import { Project } from './project'
 
-export function CalculatorTable({
-  projects_data
-}: {
-  projects_data: Array<FortyTwoProject>
-}) {
+export function CalculatorTable() {
   const { projects, level: predictedLevel } = useCalculatorStore(
     (state) => state
   )
@@ -28,7 +23,7 @@ export function CalculatorTable({
       <TableHeader>
         <TableRow>
           <TableHead className="w-16 px-2 text-center">
-            <AddProject projects={projects_data} />
+            <AddProject />
           </TableHead>
           <TableHead>Project</TableHead>
           <TableHead>Grade</TableHead>

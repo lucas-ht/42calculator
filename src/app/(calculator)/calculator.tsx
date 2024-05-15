@@ -18,6 +18,8 @@ export async function Calculator() {
   const projects = await getFortyTwoProjects()
   const levels = await getFortyTwoLevels()
 
+  console.log('projects', Object.values(projects).length)
+
   return (
     <Card className="w-full">
       <CardHeader>
@@ -27,8 +29,12 @@ export async function Calculator() {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <CalculatorStoreProvider level={level} levels={levels}>
-          <CalculatorTable projects_data={Object.values(projects)} />
+        <CalculatorStoreProvider
+          level={level}
+          levels={levels}
+          projects={projects}
+        >
+          <CalculatorTable />
         </CalculatorStoreProvider>
       </CardContent>
     </Card>

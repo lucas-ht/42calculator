@@ -20,12 +20,13 @@ export interface CalculatorStoreProviderProps extends CalculatorStoreInitProps {
 export const CalculatorStoreProvider = ({
   level,
   levels,
+  projects,
   children
 }: CalculatorStoreProviderProps) => {
   const storeRef = useRef<StoreApi<CalculatorStore>>()
   if (!storeRef.current) {
     storeRef.current = createCalculatorStore(
-      initCalculatorStore({ level, levels })
+      initCalculatorStore({ level, levels, projects })
     )
   }
 

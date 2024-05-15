@@ -1,7 +1,5 @@
 'use client'
 
-import { FortyTwoProject } from '@/types/forty-two'
-
 import { CirclePlus } from 'lucide-react'
 import { useState } from 'react'
 
@@ -21,14 +19,12 @@ import {
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { useCalculatorStore } from '@/providers/calculator-store-provider'
 
-export function AddProject({ projects }: { projects: Array<FortyTwoProject> }) {
+export function AddProject() {
   const [open, setOpen] = useState(false)
   const [, setValue] = useState('')
-  const { addProject } = useCalculatorStore((state) => state)
-
-  if (!projects) {
-    return null
-  }
+  const { addProject, projectsAvailable: projects } = useCalculatorStore(
+    (state) => state
+  )
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
@@ -48,7 +44,7 @@ export function AddProject({ projects }: { projects: Array<FortyTwoProject> }) {
           <CommandEmpty>No projects found.</CommandEmpty>
           <CommandGroup>
             <ScrollArea className="h-[400px]">
-              {projects.map((project) => (
+              {Object.values(projects).map((project) => (
                 <CommandItem
                   key={project.id}
                   value={project.name}
