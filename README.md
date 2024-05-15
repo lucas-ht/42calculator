@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <img src=https://img.shields.io/badge/typescript-%23007ACC.svg?logo=typescript&logoColor=white>
+  &nbsp;
+  <img src=https://img.shields.io/badge/Next-black?logo=next.js&logoColor=white>
+  &nbsp;
+  <img src=https://img.shields.io/badge/vercel-%23000000.svg?logo=vercel&logoColor=white>
+  &nbsp;
+  <img src=https://img.shields.io/badge/github%20actions-%232671E5.svg?logo=githubactions&logoColor=white>
+  &nbsp;
+  <img src=https://github.com/lucas-ht/42calculator/actions/workflows/eslint.yaml/badge.svg?branch=main>
+  &nbsp;
+  <img src=https://github.com/lucas-ht/42calculator/actions/workflows/prettier.yaml/badge.svg?branch=main>
+  &nbsp;
+  <img src=https://github.com/lucas-ht/42calculator/actions/workflows/spellcheck.yaml/badge.svg?branch=main>
+</div>
 
-## Getting Started
 
-First, run the development server:
+# 42calculator
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+42calculator is a simple yet powerful tool designed to determine the experience provided for completing projects,
+assisting students in strategically planning and making informed decisions regarding project selection and progression within the 42 curriculum.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Accessing the Application
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+You can access the live version of 42calculator at https://42calculator.vercel.app.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Running 42calculator locally
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Follow the instructions in the [running locally guide](https://github.com/lucas-ht/42calculator/blob/documentation/docs/running.md).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+We welcome contributions from the community to help improve 42calculator. If you have suggestions, find bugs, or want to add features, feel free to contribute by:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Opening an issue to report a bug or suggest a new feature.
+- Submitting a pull request to fix a bug or add a new feature.
