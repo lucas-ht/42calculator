@@ -10,8 +10,9 @@ import {
 export type CalculatorState = {
   level: number
   experience: number
-  projects: Record<number, FortyTwoProject>
   levels: Record<number, FortyTwoLevel>
+  projects: Record<number, FortyTwoProject>
+  projectsAvailable: Record<number, FortyTwoProject>
 }
 
 export type CalculatorActions = {
@@ -25,21 +26,30 @@ export type CalculatorStore = CalculatorState & CalculatorActions
 export type CalculatorStoreInitProps = {
   level: number
   levels: Record<number, FortyTwoLevel>
+  projects: Record<number, FortyTwoProject>
 }
 
 export const initCalculatorStore = ({
   level,
-  levels
+  levels,
+  projects
 }: CalculatorStoreInitProps): CalculatorState => {
   const experience = getExperience(level, levels)
-  return { ...defaultInitState, level, levels, experience }
+  return {
+    ...defaultInitState,
+    level,
+    levels,
+    experience,
+    projectsAvailable: projects
+  }
 }
 
 export const defaultInitState: CalculatorState = {
   level: 0,
   experience: 0,
+  levels: {},
   projects: {},
-  levels: {}
+  projectsAvailable: {}
 }
 
 export const createCalculatorStore = (

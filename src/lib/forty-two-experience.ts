@@ -3,12 +3,16 @@ import { list } from '@vercel/blob'
 
 export const runtime = 'edge'
 
-let FortyTwoLevels: Record<number, FortyTwoLevel> = {}
+let FortyTwoLevels: Record<number, FortyTwoLevel> | null = null
 
 export async function getFortyTwoLevels(): Promise<
   Record<number, FortyTwoLevel>
 > {
-  return FortyTwoLevels
+  if (FortyTwoLevels === null) {
+    await loadExperience()
+  }
+
+  return FortyTwoLevels ?? {}
 }
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
@@ -35,5 +39,3 @@ async function loadExperience() {
 
   FortyTwoLevels = parseExperience(jsonData)
 }
-
-loadExperience()
