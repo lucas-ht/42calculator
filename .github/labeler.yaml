@@ -1,13 +1,14 @@
 documentation:
 - changed-files:
-  - any-glob-to-any-file: '**/*.md'
+  - any-glob-to-any-file:
+    - '*.md'
+    - 'docs/**/*'
+    - 'assets/**/*'
 
 source:
 - all:
   - changed-files:
-    - any-glob-to-any-file: 'src/**/*'
-
-scripts:
-- all:
-  - changed-files:
-    - any-glob-to-any-file: 'scripts/**/*'
+    - any-glob-to-any-file:
+      - 'src/**/*'
+      - '__tests__/**/*'
+      - 'scripts/**/*'
