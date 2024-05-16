@@ -7,9 +7,7 @@
   &nbsp;
   <img src=https://img.shields.io/badge/github%20actions-%232671E5.svg?logo=githubactions&logoColor=white>
   &nbsp;
-  <img src=https://github.com/lucas-ht/42calculator/actions/workflows/eslint.yaml/badge.svg?branch=main>
-  &nbsp;
-  <img src=https://github.com/lucas-ht/42calculator/actions/workflows/prettier.yaml/badge.svg?branch=main>
+  <img src=https://github.com/lucas-ht/42calculator/actions/workflows/checks.yaml/badge.svg?branch=main>
   &nbsp;
   <img src=https://github.com/lucas-ht/42calculator/actions/workflows/spellcheck.yaml/badge.svg?branch=main>
 </div>

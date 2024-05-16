@@ -29,7 +29,7 @@ git clone https://github.com/lucas-ht/42calculator.git
 
 ## 4. Configure environment variables
 
-Create a `.env` file using the provided `.env.example` template and fill it accordingly:
+Create a `.env.local` file using the provided `.env.example` template and fill it accordingly:
 * `AUTH_SECRET`: A randomly generated string.
 * `AUTH_42_SCHOOL_ID`: Your 42 API's UID.
 * `AUTH_42_SCHOOL_SECRET`: Your 42 API's secret.
@@ -44,7 +44,7 @@ npm install
 ```
 
 
-## 6. Run the Application
+## 6. Run the application
 
 With everything set up, you can now run the application:
 
