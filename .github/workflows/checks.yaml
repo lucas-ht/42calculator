@@ -1,0 +1,45 @@
+name: 'Code Quality Checks'
+
+on:
+  push:
+    paths-ignore:
+      - 'assets/**'
+      - 'README.md'
+      - 'LICENSE.md'
+      - 'scripts/**'
+      - 'docs/*'
+      - 'data/*'
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - uses: ./.github/actions/setup
+
+    - name: 'Run tests'
+      run: npx jest
+
+  format:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - uses: ./.github/actions/setup
+
+    - name: 'Run formatting checks'
+      run: npx prettier --check ./src
+
+  lintintg:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - uses: ./.github/actions/setup
+
+    - name: 'Run linting checks'
+      run: npx eslint ./src
