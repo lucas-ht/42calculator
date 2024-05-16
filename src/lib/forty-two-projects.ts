@@ -1,5 +1,6 @@
 import { FortyTwoCursusId, FortyTwoProject } from '@/types/forty-two'
 import { list } from '@vercel/blob'
+import { stderr } from 'process'
 
 export const runtime = 'edge'
 
@@ -9,7 +10,11 @@ export async function getFortyTwoProjects(): Promise<
   Record<number, FortyTwoProject>
 > {
   if (FortyTwoProjects === null) {
-    await loadProjects()
+    try {
+      await loadProjects()
+    } catch (error) {
+      stderr.write(`Error loading projects: ${error}`)
+    }
   }
 
   return FortyTwoProjects ?? {}
@@ -35,8 +40,12 @@ async function loadProjects() {
     prefix: `projects_${FortyTwoCursusId.MAIN}`
   })
 
-  const fileContent = await fetch(blobs[0].url)
-  const jsonData = await fileContent.json()
+  const response = await fetch(blobs[0].url)
+  if (response.ok == false) {
+    throw new Error('Failed to load experience data')
+  }
+
+  const jsonData = await response.json()
 
   FortyTwoProjects = parseProjects(jsonData)
 }
