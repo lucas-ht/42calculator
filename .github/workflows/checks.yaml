@@ -10,6 +10,14 @@ on:
       - 'docs/*'
       - 'data/*'
 
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+    branches:
+      - main
+
 permissions:
   contents: read
 
@@ -34,7 +42,7 @@ jobs:
     - name: 'Run formatting checks'
       run: npx prettier --check ./src
 
-  lintintg:
+  linting:
     runs-on: ubuntu-latest
 
     steps:
