@@ -70,7 +70,10 @@ export const columns: ColumnDef<ExpandedFortyTwoProject>[] = [
   {
     id: 'base experience',
     header: 'Base Experience',
-    accessorKey: 'experience.base',
+    cell: ({ row }) => {
+      const project = row.original
+      return <>{project.experience.base.toFixed(0)}</>
+    },
     meta: {
       visible: false
     }
@@ -78,7 +81,10 @@ export const columns: ColumnDef<ExpandedFortyTwoProject>[] = [
   {
     id: 'gained experience',
     header: 'Gained Experience',
-    accessorKey: 'experience.gained',
+    cell: ({ row }) => {
+      const project = row.original
+      return <>{project.experience.gained.toFixed(0)}</>
+    },
     meta: {
       visible: false
     }
@@ -86,7 +92,10 @@ export const columns: ColumnDef<ExpandedFortyTwoProject>[] = [
   {
     id: 'level',
     header: 'Level',
-    accessorKey: 'level',
+    cell: ({ row }) => {
+      const project = row.original
+      return <>{project.level.toFixed(2)}</>
+    },
     meta: {
       className: 'w-max-[40px] text-right'
     }

@@ -73,7 +73,11 @@ export function AddProject() {
   )
 }
 
-export function RemoveProject({ project }: { project: ExpandedFortyTwoProject }) {
+export function RemoveProject({
+  project
+}: {
+  project: ExpandedFortyTwoProject
+}) {
   const { removeProject } = useCalculatorStore((state) => state)
 
   return (
@@ -91,7 +95,11 @@ export function RemoveProject({ project }: { project: ExpandedFortyTwoProject })
   )
 }
 
-export function ProjectGrade({ project }: { project: ExpandedFortyTwoProject }) {
+export function ProjectGrade({
+  project
+}: {
+  project: ExpandedFortyTwoProject
+}) {
   const [inputValue, setInputValue] = useState<number | null>(
     project.mark ?? null
   )
@@ -123,7 +131,11 @@ export function ProjectGrade({ project }: { project: ExpandedFortyTwoProject }) 
   )
 }
 
-export function ProjectBonus({ project }: { project: ExpandedFortyTwoProject }) {
+export function ProjectBonus({
+  project
+}: {
+  project: ExpandedFortyTwoProject
+}) {
   const { updateProject } = useCalculatorStore((state) => state)
 
   return (

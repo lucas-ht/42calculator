@@ -8,7 +8,8 @@ export interface FortyTwoProject {
   experience: number
 }
 
-export interface ExpandedFortyTwoProject extends Omit<FortyTwoProject, 'experience'> {
+export interface ExpandedFortyTwoProject
+  extends Omit<FortyTwoProject, 'experience'> {
   addedAt: number
   experience: {
     base: number

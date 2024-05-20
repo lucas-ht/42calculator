@@ -1,4 +1,8 @@
-import { FortyTwoLevel, FortyTwoProject, ExpandedFortyTwoProject } from '@/types/forty-two'
+import {
+  ExpandedFortyTwoProject,
+  FortyTwoLevel,
+  FortyTwoProject
+} from '@/types/forty-two'
 import { createStore } from 'zustand/vanilla'
 
 import {
@@ -78,7 +82,6 @@ export const createCalculatorStore = (
   initState: CalculatorState = defaultInitState
 ) => {
   return createStore<CalculatorStore>()((set, get) => {
-
     const recalculateLevels = () => {
       const state = get()
       let experience = state.experience.start
@@ -96,7 +99,7 @@ export const createCalculatorStore = (
           projects: {
             ...state.projects,
             [project.id]: { ...project, level }
-          },
+          }
         }))
       }
 
@@ -140,7 +143,7 @@ export const createCalculatorStore = (
           addedAt: Date.now(),
           experience: {
             base: newProject.experience,
-            gained: experience_gained,
+            gained: experience_gained
           },
           level: new_level,
           mark: 100,
