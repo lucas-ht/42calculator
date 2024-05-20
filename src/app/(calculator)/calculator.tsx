@@ -9,7 +9,7 @@ import {
 import { getFortyTwoLevels } from '@/lib/forty-two-experience'
 import { getFortyTwoProjects } from '@/lib/forty-two-projects'
 import { CalculatorStoreProvider } from '@/providers/calculator-store-provider'
-import CalculatorTable from './calculator-table'
+import CalculatorTable from './(table)/table'
 
 export async function Calculator() {
   const session = await auth()
@@ -18,12 +18,10 @@ export async function Calculator() {
   const projects = await getFortyTwoProjects()
   const levels = await getFortyTwoLevels()
 
-  console.log('projects', Object.values(projects).length)
-
   return (
     <Card className="w-full">
       <CardHeader>
-        <CardTitle>Calculator</CardTitle>
+        <CardTitle tag="h1">Calculator</CardTitle>
         <CardDescription>
           Calculate your level based on your future 42 projects.
         </CardDescription>

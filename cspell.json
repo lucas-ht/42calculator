@@ -11,6 +11,7 @@
     "levelname",
     "lucide",
     "zustand",
+    "tanstack",
   ],
   "useGitignore": true,
   "ignorePaths": [
