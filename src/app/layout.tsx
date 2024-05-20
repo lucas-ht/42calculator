@@ -6,7 +6,7 @@ import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata } from 'next'
 import { Inter as FontSans } from 'next/font/google'
-import React from 'react'
+import React, { StrictMode } from 'react'
 
 const fontSans = FontSans({
   subsets: ['latin'],
@@ -37,8 +37,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Header />
-          {children}
+          <StrictMode>
+            <Header />
+            {children}
+          </StrictMode>
         </ThemeProvider>
 
         <Analytics />

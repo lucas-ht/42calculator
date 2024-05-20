@@ -1,4 +1,8 @@
-import { FortyTwoLevel, FortyTwoProject } from '@/types/forty-two'
+import {
+  ExpandedFortyTwoProject,
+  FortyTwoLevel,
+  FortyTwoProject
+} from '@/types/forty-two'
 import { createStore } from 'zustand/vanilla'
 
 import {
@@ -8,16 +12,24 @@ import {
 } from '@/lib/forty-two-calculator'
 
 export type CalculatorState = {
-  level: number
-  experience: number
+  level: {
+    start: number
+    end: number
+  }
+  experience: {
+    start: number
+    end: number
+  }
+  projects: Record<number, ExpandedFortyTwoProject>
+
   levels: Record<number, FortyTwoLevel>
-  projects: Record<number, FortyTwoProject>
   projectsAvailable: Record<number, FortyTwoProject>
 }
 
 export type CalculatorActions = {
-  addProject: (project: FortyTwoProject) => void
-  updateProject: (project: FortyTwoProject) => void
+  getProjects: () => Array<ExpandedFortyTwoProject>
+  addProject: (newProject: FortyTwoProject) => void
+  updateProject: (updateProject: ExpandedFortyTwoProject) => void
   removeProject: (projectId: number) => void
 }
 
@@ -37,102 +49,164 @@ export const initCalculatorStore = ({
   const experience = getExperience(level, levels)
   return {
     ...defaultInitState,
-    level,
+    level: {
+      start: level,
+      end: level
+    },
+    experience: {
+      start: experience,
+      end: experience
+    },
+
     levels,
-    experience,
     projectsAvailable: projects
   }
 }
 
 export const defaultInitState: CalculatorState = {
-  level: 0,
-  experience: 0,
-  levels: {},
+  level: {
+    start: 0,
+    end: 0
+  },
+  experience: {
+    start: 0,
+    end: 0
+  },
   projects: {},
+
+  levels: {},
   projectsAvailable: {}
 }
 
 export const createCalculatorStore = (
   initState: CalculatorState = defaultInitState
 ) => {
-  return createStore<CalculatorStore>()((set, get) => ({
-    ...initState,
-
-    addProject: (project) => {
+  return createStore<CalculatorStore>()((set, get) => {
+    const recalculateLevels = () => {
       const state = get()
+      let experience = state.experience.start
+      let level = state.level.start
 
-      const experience =
-        state.experience +
-        calculateExperience(
-          project.experience,
-          project.final_mark ?? 0,
-          project.bonus_coalition ?? false
-        )
+      const projects = Object.values(state.projects).sort(
+        (a, b) => a.addedAt - b.addedAt
+      )
 
-      const level = getLevel(experience, state.levels)
+      for (const project of projects) {
+        experience += project.experience.gained
+        level = getLevel(experience, state.levels)
 
-      set(() => ({
-        experience,
-        level,
-        projects: { ...state.projects, [project.id]: project }
-      }))
-    },
-
-    updateProject: (project) => {
-      const state = get()
-
-      const previousProject = state.projects[project.id]
-      if (previousProject == null) {
-        return
+        set(() => ({
+          projects: {
+            ...state.projects,
+            [project.id]: { ...project, level }
+          }
+        }))
       }
 
-      const experience =
-        state.experience -
-        calculateExperience(
-          previousProject.experience,
-          previousProject.final_mark ?? 0,
-          previousProject.bonus_coalition ?? false
-        ) +
-        calculateExperience(
-          project.experience,
-          project.final_mark ?? 0,
-          project.bonus_coalition ?? false
-        )
-
-      const level = getLevel(experience, state.levels)
-
       set(() => ({
-        experience,
-        level,
-        projects: { ...state.projects, [project.id]: project }
-      }))
-    },
-
-    removeProject: (projectID) => {
-      const state = get()
-
-      const project = state.projects[projectID]
-      if (project == null) {
-        return
-      }
-
-      const experience =
-        state.experience -
-        calculateExperience(
-          project.experience,
-          project.final_mark ?? 0,
-          project.bonus_coalition ?? false
-        )
-
-      const level = getLevel(experience, state.levels)
-
-      delete state.projects[projectID]
-
-      set(() => ({
-        experience,
-        level,
-        projects: { ...state.projects }
+        experience: { ...state.experience, end: experience },
+        level: { ...state.level, end: level }
       }))
     }
-  }))
+
+    return {
+      ...initState,
+
+      getProjects: () => {
+        const state = get()
+
+        return Object.values(state.projects).sort(
+          (a, b) => a.addedAt - b.addedAt
+        )
+      },
+
+      addProject: (newProject: FortyTwoProject) => {
+        const state = get()
+
+        if (state.projects[newProject.id] != null) {
+          return
+        }
+
+        const experience_gained = calculateExperience(
+          newProject.experience,
+          100,
+          false
+        )
+
+        const new_level = getLevel(
+          state.experience.end + experience_gained,
+          state.levels
+        )
+
+        const project: ExpandedFortyTwoProject = {
+          ...newProject,
+          addedAt: Date.now(),
+          experience: {
+            base: newProject.experience,
+            gained: experience_gained
+          },
+          level: new_level,
+          mark: 100,
+          bonus: false
+        }
+
+        set(() => ({
+          level: {
+            ...state.level,
+            end: new_level
+          },
+          experience: {
+            ...state.experience,
+            end: state.experience.end + experience_gained
+          },
+          projects: { ...state.projects, [project.id]: project }
+        }))
+      },
+
+      updateProject: (updatedProject: ExpandedFortyTwoProject) => {
+        const state = get()
+
+        if (state.projects[updatedProject.id] == null) {
+          return
+        }
+
+        const experience_gained = calculateExperience(
+          updatedProject.experience.base,
+          updatedProject.mark,
+          updatedProject.bonus
+        )
+
+        const project: ExpandedFortyTwoProject = {
+          ...updatedProject,
+          experience: {
+            ...updatedProject.experience,
+            gained: experience_gained
+          }
+        }
+
+        set(() => ({
+          projects: { ...state.projects, [project.id]: project }
+        }))
+
+        recalculateLevels()
+      },
+
+      removeProject: (projectID: number) => {
+        const state = get()
+
+        const project = state.projects[projectID]
+        if (project == null) {
+          return
+        }
+
+        delete state.projects[projectID]
+
+        set(() => ({
+          projects: { ...state.projects }
+        }))
+
+        recalculateLevels()
+      }
+    }
+  })
 }
