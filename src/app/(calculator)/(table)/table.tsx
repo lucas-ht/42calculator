@@ -203,9 +203,9 @@ export function CalculatorTable() {
       </div>
       <div className="rounded-md border">
         <Table>
-          <CalculatorHeader table={table} levelStart={level} />
+          <CalculatorHeader table={table} levelStart={level.start} />
           <CalculatorBody table={table} />
-          <CalculatorFooter table={table} levelEnd={level} />
+          <CalculatorFooter table={table} levelEnd={level.end} />
         </Table>
       </div>
     </>

@@ -6,8 +6,17 @@ export interface FortyTwoProject {
   id: number
   name: string
   experience: number
-  final_mark?: number
-  bonus_coalition?: boolean
+}
+
+export interface ExpandedFortyTwoProject extends Omit<FortyTwoProject, 'experience'> {
+  addedAt: number
+  experience: {
+    base: number
+    gained: number
+  }
+  level: number
+  mark: number
+  bonus: boolean
 }
 
 export interface FortyTwoLevel {

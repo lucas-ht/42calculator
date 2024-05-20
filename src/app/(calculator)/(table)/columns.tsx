@@ -1,6 +1,6 @@
 'use client'
 
-import { FortyTwoProject } from '@/types/forty-two'
+import { ExpandedFortyTwoProject } from '@/types/forty-two'
 import { ColumnDef } from '@tanstack/react-table'
 import {
   AddProject,
@@ -9,7 +9,7 @@ import {
   RemoveProject
 } from './actions'
 
-export const columns: ColumnDef<FortyTwoProject>[] = [
+export const columns: ColumnDef<ExpandedFortyTwoProject>[] = [
   {
     id: 'remove',
     header: () => {
@@ -70,7 +70,7 @@ export const columns: ColumnDef<FortyTwoProject>[] = [
   {
     id: 'base experience',
     header: 'Base Experience',
-    accessorKey: 'experience',
+    accessorKey: 'experience.base',
     meta: {
       visible: false
     }
@@ -78,7 +78,7 @@ export const columns: ColumnDef<FortyTwoProject>[] = [
   {
     id: 'gained experience',
     header: 'Gained Experience',
-    accessorKey: 'experience',
+    accessorKey: 'experience.gained',
     meta: {
       visible: false
     }
@@ -86,7 +86,7 @@ export const columns: ColumnDef<FortyTwoProject>[] = [
   {
     id: 'level',
     header: 'Level',
-    accessorKey: 'experience',
+    accessorKey: 'level',
     meta: {
       className: 'w-max-[40px] text-right'
     }

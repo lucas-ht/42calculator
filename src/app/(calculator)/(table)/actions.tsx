@@ -17,7 +17,7 @@ import {
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { Switch } from '@/components/ui/switch'
 import { useCalculatorStore } from '@/providers/calculator-store-provider'
-import { FortyTwoProject } from '@/types/forty-two'
+import { ExpandedFortyTwoProject } from '@/types/forty-two'
 import { CirclePlus, Trash2 } from 'lucide-react'
 import React, { useState } from 'react'
 import { z } from 'zod'
@@ -54,11 +54,7 @@ export function AddProject() {
                   key={project.id}
                   value={project.name}
                   onSelect={() => {
-                    addProject({
-                      ...project,
-                      final_mark: 100,
-                      bonus_coalition: false
-                    })
+                    addProject(project)
 
                     setValue('')
                     setOpen(false)
@@ -77,7 +73,7 @@ export function AddProject() {
   )
 }
 
-export function RemoveProject({ project }: { project: FortyTwoProject }) {
+export function RemoveProject({ project }: { project: ExpandedFortyTwoProject }) {
   const { removeProject } = useCalculatorStore((state) => state)
 
   return (
@@ -95,9 +91,9 @@ export function RemoveProject({ project }: { project: FortyTwoProject }) {
   )
 }
 
-export function ProjectGrade({ project }: { project: FortyTwoProject }) {
+export function ProjectGrade({ project }: { project: ExpandedFortyTwoProject }) {
   const [inputValue, setInputValue] = useState<number | null>(
-    project.final_mark ?? null
+    project.mark ?? null
   )
   const { updateProject } = useCalculatorStore((state) => state)
   const gradeSchema = z.number().min(0).max(125)
@@ -105,14 +101,14 @@ export function ProjectGrade({ project }: { project: FortyTwoProject }) {
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.value === '') {
       setInputValue(null)
-      updateProject({ ...project, final_mark: 0 })
+      updateProject({ ...project, mark: 0 })
       return
     }
 
     const newValue = Number(event.target.value)
     if (gradeSchema.safeParse(newValue).success) {
       setInputValue(newValue)
-      updateProject({ ...project, final_mark: newValue })
+      updateProject({ ...project, mark: newValue })
     }
   }
 
@@ -127,14 +123,14 @@ export function ProjectGrade({ project }: { project: FortyTwoProject }) {
   )
 }
 
-export function ProjectBonus({ project }: { project: FortyTwoProject }) {
+export function ProjectBonus({ project }: { project: ExpandedFortyTwoProject }) {
   const { updateProject } = useCalculatorStore((state) => state)
 
   return (
     <Switch
-      checked={project.bonus_coalition}
+      checked={project.bonus}
       onCheckedChange={(checked) => {
-        updateProject({ ...project, bonus_coalition: checked })
+        updateProject({ ...project, bonus: checked })
       }}
       aria-label="Project bonus"
     />
