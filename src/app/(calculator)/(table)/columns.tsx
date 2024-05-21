@@ -29,14 +29,17 @@ export const columns: ColumnDef<ExpandedFortyTwoProject>[] = [
       )
     },
     meta: {
-      className: 'w-14 px-2'
+      className: 'w-10 md:w-14 px-0 md:px-2'
     }
   },
   {
     id: 'name',
     header: 'Name',
     accessorKey: 'name',
-    enableHiding: false
+    enableHiding: false,
+    meta: {
+      className: 'max-w-[100px] md:max-w-[250px] lg:max-w-none'
+    }
   },
   {
     id: 'mark',
@@ -51,7 +54,7 @@ export const columns: ColumnDef<ExpandedFortyTwoProject>[] = [
       )
     },
     meta: {
-      className: 'min-w-[52px]'
+      className: 'max-w-[60px] md:max-w-[100px] lg:max-w-none items-center'
     }
   },
   {
@@ -65,6 +68,9 @@ export const columns: ColumnDef<ExpandedFortyTwoProject>[] = [
           <ProjectBonus project={project} />
         </>
       )
+    },
+    meta: {
+      className: 'max-w-[60px] md:max-w-[100px] lg:max-w-none items-center'
     }
   },
   {
@@ -75,7 +81,8 @@ export const columns: ColumnDef<ExpandedFortyTwoProject>[] = [
       return <>{project.experience.base.toFixed(0)}</>
     },
     meta: {
-      visible: false
+      visible: false,
+      className: 'max-w-[120px] xl:max-w-none'
     }
   },
   {
@@ -86,7 +93,8 @@ export const columns: ColumnDef<ExpandedFortyTwoProject>[] = [
       return <>{project.experience.gained.toFixed(0)}</>
     },
     meta: {
-      visible: false
+      visible: false,
+      className: 'max-w-[120px] xl:max-w-none'
     }
   },
   {
@@ -97,7 +105,7 @@ export const columns: ColumnDef<ExpandedFortyTwoProject>[] = [
       return <>{project.level.toFixed(2)}</>
     },
     meta: {
-      className: 'w-max-[40px] text-right'
+      className: 'max-w-[44px] md:max-w-[80px] lg:max-w-none text-right text-clip'
     }
   }
 ]

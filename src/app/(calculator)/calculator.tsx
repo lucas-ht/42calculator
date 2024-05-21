@@ -19,14 +19,14 @@ export async function Calculator() {
   const levels = await getFortyTwoLevels()
 
   return (
-    <Card className="w-full">
+    <Card className="w-full bg-card/5 backdrop-blur">
       <CardHeader>
         <CardTitle tag="h1">Calculator</CardTitle>
         <CardDescription>
           Calculate your level based on your future 42 projects.
         </CardDescription>
       </CardHeader>
-      <CardContent>
+      <CardContent className='p-0 md:p-6'>
         <CalculatorStoreProvider
           level={level}
           levels={levels}

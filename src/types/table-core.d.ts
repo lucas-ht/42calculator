@@ -6,4 +6,9 @@ declare module '@tanstack/table-core' {
     className?: string
     visible?: boolean
   }
+
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  interface TableMeta<TData extends RowData> {
+    className?: string
+  }
 }

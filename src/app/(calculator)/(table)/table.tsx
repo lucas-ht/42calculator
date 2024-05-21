@@ -16,7 +16,6 @@ import {
   TableHeader,
   TableRow
 } from '@/components/ui/table'
-import { useBreakpoint } from '@/lib/breakpoint'
 import { useCalculatorStore } from '@/providers/calculator-store-provider'
 import {
   Column as ColumnInstance,
@@ -27,8 +26,9 @@ import {
   useReactTable
 } from '@tanstack/react-table'
 import { Ellipsis } from 'lucide-react'
-import { useEffect, useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 import { columns } from './columns'
+import { cn } from '@/lib/utils'
 
 function ColumnVisibility<TData>({
   columns
@@ -70,12 +70,21 @@ function CalculatorHeader<TData>({
       <TableHeader className="bg-muted/50">
         <TableRow>
           <TableHead
-            colSpan={table.getVisibleFlatColumns().length - 1}
-            className="text-inherit"
+            colSpan={table.getVisibleFlatColumns().length - 2}
+            className={cn(
+              table.options.meta?.className,
+              "text-inherit"
+            )}
           >
             Start level
           </TableHead>
-          <TableHead className="text-right font-semibold text-inherit">
+          <TableHead
+            colSpan={2}
+            className={cn(
+              table.options.meta?.className,
+              "text-right font-semibold text-inherit"
+            )}
+          >
             {levelStart.toFixed(2)}
           </TableHead>
         </TableRow>
@@ -88,7 +97,10 @@ function CalculatorHeader<TData>({
               return (
                 <TableHead
                   key={header.id}
-                  className={header.column.columnDef.meta?.className}
+                  className={cn(
+                    table.options.meta?.className,
+                    header.column.columnDef.meta?.className
+                  )}
                 >
                   {header.isPlaceholder
                     ? null
@@ -115,7 +127,10 @@ function CalculatorBody<TData>({ table }: { table: TableInstance<TData> }) {
             {row.getVisibleCells().map((cell) => (
               <TableCell
                 key={cell.id}
-                className={cell.column.columnDef.meta?.className}
+                className={cn(
+                  table.options.meta?.className,
+                  cell.column.columnDef.meta?.className
+                )}
               >
                 {flexRender(cell.column.columnDef.cell, cell.getContext())}
               </TableCell>
@@ -143,10 +158,15 @@ function CalculatorFooter<TData>({
   return (
     <TableFooter>
       <TableRow>
-        <TableCell colSpan={table.getVisibleFlatColumns().length - 1}>
+        <TableCell
+          colSpan={table.getVisibleFlatColumns().length - 2}
+        >
           End level
         </TableCell>
-        <TableCell className="text-right font-semibold">
+        <TableCell
+          colSpan={2}
+          className="text-right font-semibold"
+        >
           {levelEnd.toFixed(2)}
         </TableCell>
       </TableRow>
@@ -175,24 +195,11 @@ export function CalculatorTable() {
     onColumnVisibilityChange: setColumnVisibility,
     state: {
       columnVisibility
+    },
+    meta: {
+      className: 'px-2 md:px-4 truncate'
     }
   })
-
-  // This is necessary because of the table width calculation
-  const { isAboveLg } = useBreakpoint('lg')
-
-  useEffect(() => {
-    if (isAboveLg) {
-      return
-    }
-
-    for (const column of table.getAllColumns()) {
-      if (column.getCanHide()) {
-        column.toggleVisibility(false)
-      }
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isAboveLg])
 
   return (
     <>
@@ -201,7 +208,7 @@ export function CalculatorTable() {
           columns={table.getAllColumns().filter((col) => col.getCanHide())}
         />
       </div>
-      <div className="rounded-md border">
+      <div className="md:rounded-md border-t md:border">
         <Table>
           <CalculatorHeader table={table} levelStart={level.start} />
           <CalculatorBody table={table} />
