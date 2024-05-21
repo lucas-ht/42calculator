@@ -12,6 +12,14 @@ import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
 import { Skeleton } from '../ui/skeleton'
 
+function ThemeSkeleton() {
+  return (
+    <div className="flex size-10 items-center justify-center">
+      <Skeleton className="h-[1.2rem] w-[1.2rem] rounded-full" />
+    </div>
+  )
+}
+
 export function ThemeToggle() {
   const [mounted, setMounted] = useState(false)
   const { setTheme } = useTheme()
@@ -21,11 +29,7 @@ export function ThemeToggle() {
   }, [])
 
   if (!mounted) {
-    return (
-      <div className="flex size-10 items-center justify-center">
-        <Skeleton className="h-[1.2rem] w-[1.2rem] rounded-full" />
-      </div>
-    )
+    return <ThemeSkeleton />
   }
 
   return (
