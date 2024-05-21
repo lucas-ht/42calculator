@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          'flex min-h-screen flex-col bg-background font-sans antialiased',
+          "flex min-h-screen flex-col bg-background bg-[url('/hero-pattern.svg')] bg-[length:100px_100px] font-sans antialiased",
           fontSans.variable
         )}
       >

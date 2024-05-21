@@ -7,14 +7,14 @@ export default async function Home() {
 
   if (session == null) {
     return (
-      <main className="container flex items-center justify-center p-4 lg:p-24">
+      <main className="container flex grow items-start justify-center p-4 md:p-12 lg:p-24">
         <SignIn />
       </main>
     )
   }
 
   return (
-    <main className="container flex items-center justify-center p-4 lg:p-24">
+    <main className="container grow justify-center p-4 md:p-12 lg:p-24">
       <Calculator />
     </main>
   )
