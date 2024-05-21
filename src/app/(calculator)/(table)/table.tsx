@@ -16,6 +16,7 @@ import {
   TableHeader,
   TableRow
 } from '@/components/ui/table'
+import { cn } from '@/lib/utils'
 import { useCalculatorStore } from '@/providers/calculator-store-provider'
 import {
   Column as ColumnInstance,
@@ -28,7 +29,6 @@ import {
 import { Ellipsis } from 'lucide-react'
 import { useMemo, useState } from 'react'
 import { columns } from './columns'
-import { cn } from '@/lib/utils'
 
 function ColumnVisibility<TData>({
   columns
@@ -71,10 +71,7 @@ function CalculatorHeader<TData>({
         <TableRow>
           <TableHead
             colSpan={table.getVisibleFlatColumns().length - 2}
-            className={cn(
-              table.options.meta?.className,
-              "text-inherit"
-            )}
+            className={cn(table.options.meta?.className, 'text-inherit')}
           >
             Start level
           </TableHead>
@@ -82,7 +79,7 @@ function CalculatorHeader<TData>({
             colSpan={2}
             className={cn(
               table.options.meta?.className,
-              "text-right font-semibold text-inherit"
+              'text-right font-semibold text-inherit'
             )}
           >
             {levelStart.toFixed(2)}
@@ -158,15 +155,10 @@ function CalculatorFooter<TData>({
   return (
     <TableFooter>
       <TableRow>
-        <TableCell
-          colSpan={table.getVisibleFlatColumns().length - 2}
-        >
+        <TableCell colSpan={table.getVisibleFlatColumns().length - 2}>
           End level
         </TableCell>
-        <TableCell
-          colSpan={2}
-          className="text-right font-semibold"
-        >
+        <TableCell colSpan={2} className="text-right font-semibold">
           {levelEnd.toFixed(2)}
         </TableCell>
       </TableRow>
@@ -175,8 +167,11 @@ function CalculatorFooter<TData>({
 }
 
 export function CalculatorTable() {
-  const { projects, level } = useCalculatorStore((state) => state)
-  const data = useMemo(() => Object.values(projects), [projects])
+  const { projects, getProjects, level } = useCalculatorStore((state) => state)
+
+  // eslint-disable-next-line react-compiler/react-compiler
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const data = useMemo(() => getProjects(), [projects])
 
   const [columnVisibility, setColumnVisibility] = useState<VisibilityState>(
     columns.reduce((acc, column) => {
@@ -208,7 +203,7 @@ export function CalculatorTable() {
           columns={table.getAllColumns().filter((col) => col.getCanHide())}
         />
       </div>
-      <div className="md:rounded-md border-t md:border">
+      <div className="border-t md:rounded-md md:border">
         <Table>
           <CalculatorHeader table={table} levelStart={level.start} />
           <CalculatorBody table={table} />

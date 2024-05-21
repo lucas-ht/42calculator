@@ -26,7 +26,7 @@ export async function Calculator() {
           Calculate your level based on your future 42 projects.
         </CardDescription>
       </CardHeader>
-      <CardContent className='p-0 md:p-6'>
+      <CardContent className="p-0 md:p-6">
         <CalculatorStoreProvider
           level={level}
           levels={levels}

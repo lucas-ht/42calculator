@@ -1,3 +1,4 @@
+import Footer from '@/components/footer/footer'
 import Header from '@/components/header'
 import { ThemeProvider } from '@/components/theme-provider'
 import { cn } from '@/lib/utils'
@@ -27,7 +28,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          'min-h-screen bg-background font-sans antialiased',
+          'flex min-h-screen flex-col bg-background font-sans antialiased',
           fontSans.variable
         )}
       >
@@ -40,6 +41,7 @@ export default function RootLayout({
           <StrictMode>
             <Header />
             {children}
+            <Footer />
           </StrictMode>
         </ThemeProvider>
 

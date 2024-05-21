@@ -38,7 +38,7 @@ export const columns: ColumnDef<ExpandedFortyTwoProject>[] = [
     accessorKey: 'name',
     enableHiding: false,
     meta: {
-      className: 'max-w-[100px] md:max-w-[250px] lg:max-w-none'
+      className: 'max-w-[60px] md:max-w-[200px] xl:max-w-none'
     }
   },
   {
@@ -54,7 +54,7 @@ export const columns: ColumnDef<ExpandedFortyTwoProject>[] = [
       )
     },
     meta: {
-      className: 'max-w-[60px] md:max-w-[100px] lg:max-w-none items-center'
+      className: 'max-w-[60px] md:max-w-[100px] xl:max-w-none items-center'
     }
   },
   {
@@ -70,7 +70,7 @@ export const columns: ColumnDef<ExpandedFortyTwoProject>[] = [
       )
     },
     meta: {
-      className: 'max-w-[60px] md:max-w-[100px] lg:max-w-none items-center'
+      className: 'max-w-[60px] md:max-w-[100px] xl:max-w-none items-center'
     }
   },
   {
@@ -105,7 +105,8 @@ export const columns: ColumnDef<ExpandedFortyTwoProject>[] = [
       return <>{project.level.toFixed(2)}</>
     },
     meta: {
-      className: 'max-w-[44px] md:max-w-[80px] lg:max-w-none text-right text-clip'
+      className:
+        'max-w-[44px] md:max-w-[80px] lg:max-w-none text-right text-clip'
     }
   }
 ]
