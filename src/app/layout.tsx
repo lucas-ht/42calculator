@@ -15,7 +15,7 @@ const fontSans = FontSans({
 })
 
 export const metadata: Metadata = {
-  title: '42Calculator',
+  title: '42calculator',
   description: 'A calculator for the 42 curriculum'
 }
 
