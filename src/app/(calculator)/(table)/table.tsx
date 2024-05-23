@@ -28,6 +28,7 @@ import {
 } from '@tanstack/react-table'
 import { Ellipsis } from 'lucide-react'
 import { useMemo, useState } from 'react'
+import { StartLevel } from './actions'
 import { columns } from './columns'
 
 function ColumnVisibility<TData>({
@@ -58,13 +59,7 @@ function ColumnVisibility<TData>({
   )
 }
 
-function CalculatorHeader<TData>({
-  table,
-  levelStart
-}: {
-  table: TableInstance<TData>
-  levelStart: number
-}) {
+function CalculatorHeader<TData>({ table }: { table: TableInstance<TData> }) {
   return (
     <>
       <TableHeader className="bg-muted/50">
@@ -79,10 +74,10 @@ function CalculatorHeader<TData>({
             colSpan={2}
             className={cn(
               table.options.meta?.className,
-              'text-right font-semibold text-inherit'
+              'text-right font-semibold text-inherit md:px-1'
             )}
           >
-            {levelStart.toFixed(2)}
+            <StartLevel />
           </TableHead>
         </TableRow>
       </TableHeader>
@@ -153,16 +148,18 @@ function CalculatorFooter<TData>({
   levelEnd: number
 }) {
   return (
-    <TableFooter>
-      <TableRow>
-        <TableCell colSpan={table.getVisibleFlatColumns().length - 2}>
-          End level
-        </TableCell>
-        <TableCell colSpan={2} className="text-right font-semibold">
-          {levelEnd.toFixed(2)}
-        </TableCell>
-      </TableRow>
-    </TableFooter>
+    <>
+      <TableFooter>
+        <TableRow>
+          <TableCell colSpan={table.getVisibleFlatColumns().length - 2}>
+            End level
+          </TableCell>
+          <TableCell colSpan={2} className="text-right font-semibold">
+            {levelEnd.toFixed(2)}
+          </TableCell>
+        </TableRow>
+      </TableFooter>
+    </>
   )
 }
 
@@ -205,7 +202,7 @@ export function CalculatorTable() {
       </div>
       <div className="border-t md:rounded-md md:border">
         <Table>
-          <CalculatorHeader table={table} levelStart={level.start} />
+          <CalculatorHeader table={table} />
           <CalculatorBody table={table} />
           <CalculatorFooter table={table} levelEnd={level.end} />
         </Table>
