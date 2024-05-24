@@ -19,8 +19,45 @@ import { Switch } from '@/components/ui/switch'
 import { useCalculatorStore } from '@/providers/calculator-store-provider'
 import { ExpandedFortyTwoProject } from '@/types/forty-two'
 import { CirclePlus, Trash2 } from 'lucide-react'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { z } from 'zod'
+
+export function StartLevel() {
+  const { level, setLevel } = useCalculatorStore((state) => state)
+  const [inputValue, setInputValue] = useState<string | null>(
+    level.start.toFixed(2)
+  )
+
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    if (event.target.value === '') {
+      setInputValue(null)
+      setLevel(0)
+      return
+    }
+
+    const regex = /^\d{1,2}(\.\d{0,2})?$/
+    const newValue = Number(event.target.value)
+
+    if (newValue > 30.0) {
+      return
+    }
+
+    if (regex.test(event.target.value)) {
+      setInputValue(event.target.value)
+      setLevel(newValue)
+    }
+  }
+
+  return (
+    <Input
+      value={inputValue ?? ''}
+      onChange={handleInputChange}
+      placeholder="1.00"
+      className="inline-flex max-w-[64px] flex-none "
+      aria-label="Level"
+    />
+  )
+}
 
 export function AddProject() {
   const [open, setOpen] = useState(false)
@@ -105,6 +142,10 @@ export function ProjectGrade({
   )
   const { updateProject } = useCalculatorStore((state) => state)
   const gradeSchema = z.number().min(0).max(125)
+
+  useEffect(() => {
+    setInputValue(project.mark ?? null)
+  }, [project.mark])
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.value === '') {

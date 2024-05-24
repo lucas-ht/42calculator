@@ -1,3 +1,4 @@
+import Footer from '@/components/footer/footer'
 import Header from '@/components/header'
 import { ThemeProvider } from '@/components/theme-provider'
 import { cn } from '@/lib/utils'
@@ -14,7 +15,7 @@ const fontSans = FontSans({
 })
 
 export const metadata: Metadata = {
-  title: '42Calculator',
+  title: '42calculator',
   description: 'A calculator for the 42 curriculum'
 }
 
@@ -27,7 +28,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          'min-h-screen bg-background font-sans antialiased',
+          "flex min-h-screen flex-col bg-background bg-[url('/hero-pattern.svg')] bg-[length:100px_100px] font-sans antialiased",
           fontSans.variable
         )}
       >
@@ -40,6 +41,7 @@ export default function RootLayout({
           <StrictMode>
             <Header />
             {children}
+            <Footer />
           </StrictMode>
         </ThemeProvider>
 

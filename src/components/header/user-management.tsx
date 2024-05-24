@@ -9,12 +9,17 @@ import {
 } from '@/components/ui/dropdown-menu'
 import { Skeleton } from '@/components/ui/skeleton'
 
+export function UserSkeleton() {
+  return <Skeleton className="size-10 rounded-full" />
+}
+
 function UserAvatar({ imageUrl }: { imageUrl: string }) {
   return (
-    <Avatar className="size-10 cursor-pointer">
-      <AvatarImage src={imageUrl} alt="User avatar" />
+    <Avatar className="size-10 cursor-pointer" role="button" tabIndex={0}>
+      <span className="sr-only">Toggle user settings</span>
+      <AvatarImage src={imageUrl} alt="User's avatar" />
       <AvatarFallback asChild>
-        <Skeleton className="size-full rounded-full" />
+        <UserSkeleton />
       </AvatarFallback>
     </Avatar>
   )
@@ -24,7 +29,7 @@ export async function UserManagement() {
   const session = await auth()
 
   if (session == null) {
-    return null
+    return <span className="size-10 rounded-full" />
   }
 
   return (

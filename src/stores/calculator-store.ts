@@ -28,6 +28,7 @@ export type CalculatorState = {
 
 export type CalculatorActions = {
   getProjects: () => Array<ExpandedFortyTwoProject>
+  setLevel: (level: number) => void
   addProject: (newProject: FortyTwoProject) => void
   updateProject: (updateProject: ExpandedFortyTwoProject) => void
   removeProject: (projectId: number) => void
@@ -85,27 +86,30 @@ export const createCalculatorStore = (
     const recalculateLevels = () => {
       const state = get()
       let experience = state.experience.start
-      let level = state.level.start
 
       const projects = Object.values(state.projects).sort(
         (a, b) => a.addedAt - b.addedAt
       )
 
-      for (const project of projects) {
+      const updatedProjects = projects.map((project) => {
         experience += project.experience.gained
-        level = getLevel(experience, state.levels)
+        const level = getLevel(experience, state.levels)
 
-        set(() => ({
-          projects: {
-            ...state.projects,
-            [project.id]: { ...project, level }
+        return {
+          [project.id]: {
+            ...project,
+            level: level
           }
-        }))
-      }
+        }
+      })
 
       set(() => ({
+        projects: {
+          ...state.projects,
+          ...Object.assign({}, ...updatedProjects)
+        },
         experience: { ...state.experience, end: experience },
-        level: { ...state.level, end: level }
+        level: { ...state.level, end: getLevel(experience, state.levels) }
       }))
     }
 
@@ -118,6 +122,27 @@ export const createCalculatorStore = (
         return Object.values(state.projects).sort(
           (a, b) => a.addedAt - b.addedAt
         )
+      },
+
+      setLevel: (level: number) => {
+        const state = get()
+
+        if (state.level.start === level) {
+          return
+        }
+
+        set(() => ({
+          level: {
+            ...state.level,
+            start: level
+          },
+          experience: {
+            ...state.experience,
+            start: getExperience(level, state.levels)
+          }
+        }))
+
+        recalculateLevels()
       },
 
       addProject: (newProject: FortyTwoProject) => {

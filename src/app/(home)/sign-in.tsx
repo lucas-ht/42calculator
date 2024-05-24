@@ -11,7 +11,7 @@ import {
 
 export function SignIn() {
   return (
-    <Card>
+    <Card className="w-[350px]">
       <CardHeader>
         <CardTitle>Welcome</CardTitle>
         <CardDescription>

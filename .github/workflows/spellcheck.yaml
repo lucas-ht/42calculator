@@ -1,7 +1,18 @@
-name: 'Spelling Check'
+name: 'Code Quality Checks'
 
 on:
   push:
+    paths-ignore:
+      - 'data/**'
+      - 'public/**'
+
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+    branches:
+      - main
 
 permissions:
   contents: read
