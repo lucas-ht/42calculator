@@ -1,5 +1,3 @@
-'use client'
-
 import { FortyTwoLevel } from '@/types/forty-two'
 
 export function calculateExperience(
