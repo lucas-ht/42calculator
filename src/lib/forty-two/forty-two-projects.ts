@@ -1,17 +1,28 @@
+import { BlobStorageService } from '@/lib/storage/blob-storage'
+import { LocalStorageService } from '@/lib/storage/local-storage'
 import { FortyTwoCursusId, FortyTwoProject } from '@/types/forty-two'
-import { list } from '@vercel/blob'
+import { StorageService } from '@/types/storage'
 import { stderr } from 'process'
 
 export const runtime = 'edge'
 
 let FortyTwoProjects: Record<number, FortyTwoProject> | null = null
 
+const hasBlobToken = process.env.BLOB_READ_WRITE_TOKEN != undefined
+const storageService: StorageService = hasBlobToken
+  ? new BlobStorageService()
+  : new LocalStorageService()
+
 export async function getFortyTwoProjects(): Promise<
   Record<number, FortyTwoProject>
 > {
   if (FortyTwoProjects === null) {
     try {
-      await loadProjects()
+      console.log(`fetching projects_${FortyTwoCursusId.MAIN}`)
+      const data = await storageService.load(
+        `projects_${FortyTwoCursusId.MAIN}`
+      )
+      FortyTwoProjects = parseProjects(data)
     } catch (error) {
       stderr.write(`Error loading projects: ${error}`)
     }
@@ -33,19 +44,4 @@ function parseProjects(projects_data: any): Record<number, FortyTwoProject> {
   }
 
   return projects
-}
-
-async function loadProjects() {
-  const { blobs } = await list({
-    prefix: `projects_${FortyTwoCursusId.MAIN}`
-  })
-
-  const response = await fetch(blobs[0].url)
-  if (response.ok == false) {
-    throw new Error('Failed to load experience data')
-  }
-
-  const jsonData = await response.json()
-
-  FortyTwoProjects = parseProjects(jsonData)
 }
