@@ -9,7 +9,7 @@ import {
   calculateExperience,
   getExperience,
   getLevel
-} from '@/lib/forty-two-calculator'
+} from '@/lib/forty-two/forty-two-calculator'
 
 export type CalculatorState = {
   level: {

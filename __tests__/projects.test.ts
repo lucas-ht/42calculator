@@ -1,4 +1,4 @@
-import { getFortyTwoProjects } from '@/lib/forty-two-projects';
+import { getFortyTwoProjects } from '@/lib/forty-two/forty-two-projects';
 
 jest.mock('@vercel/blob', () => ({
   list: jest.fn(() => Promise.resolve({ blobs: [{ url: 'url' }] })),

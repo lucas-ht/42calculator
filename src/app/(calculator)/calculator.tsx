@@ -6,8 +6,8 @@ import {
   CardHeader,
   CardTitle
 } from '@/components/ui/card'
-import { getFortyTwoLevels } from '@/lib/forty-two-experience'
-import { getFortyTwoProjects } from '@/lib/forty-two-projects'
+import { getFortyTwoLevels } from '@/lib/forty-two/forty-two-experience'
+import { getFortyTwoProjects } from '@/lib/forty-two/forty-two-projects'
 import { CalculatorStoreProvider } from '@/providers/calculator-store-provider'
 import CalculatorTable from './(table)/table'
 
