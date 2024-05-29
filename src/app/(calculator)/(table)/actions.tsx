@@ -70,22 +70,22 @@ export function AddProject() {
     <Popover open={open} onOpenChange={setOpen}>
       <PopoverTrigger asChild>
         <Button
-          variant="ghost"
+          variant="secondary"
           role="combobox"
-          size="icon"
           aria-expanded={open}
           aria-haspopup="listbox"
           aria-label="Add project"
         >
-          <CirclePlus className="size-4" />
+          Add a project
+          <CirclePlus className="ml-2 size-4" />
         </Button>
       </PopoverTrigger>
-      <PopoverContent className="w-[200px] p-0" align="start">
+      <PopoverContent className="w-[200px] p-0" align="center">
         <Command>
           <CommandInput placeholder="Search projects..." />
           <CommandEmpty>No projects found.</CommandEmpty>
           <CommandGroup>
-            <ScrollArea className="h-[350px]">
+            <ScrollArea className="h-[250px]">
               {Object.values(projects).map((project) => (
                 <CommandItem
                   key={project.id}
