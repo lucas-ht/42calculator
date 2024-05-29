@@ -28,7 +28,7 @@ import {
 } from '@tanstack/react-table'
 import { Ellipsis } from 'lucide-react'
 import { useMemo, useState } from 'react'
-import { StartLevel } from './actions'
+import { AddProject, StartLevel } from './actions'
 import { columns } from './columns'
 
 function ColumnVisibility<TData>({
@@ -113,29 +113,26 @@ function CalculatorHeader<TData>({ table }: { table: TableInstance<TData> }) {
 function CalculatorBody<TData>({ table }: { table: TableInstance<TData> }) {
   return (
     <TableBody>
-      {table.getRowModel().rows?.length ? (
-        table.getRowModel().rows.map((row) => (
-          <TableRow key={row.id}>
-            {row.getVisibleCells().map((cell) => (
-              <TableCell
-                key={cell.id}
-                className={cn(
-                  table.options.meta?.className,
-                  cell.column.columnDef.meta?.className
-                )}
-              >
-                {flexRender(cell.column.columnDef.cell, cell.getContext())}
-              </TableCell>
-            ))}
-          </TableRow>
-        ))
-      ) : (
-        <TableRow className="hover:bg-inherit">
-          <TableCell colSpan={columns.length} className="h-24 text-center">
-            Add a project to get started.
-          </TableCell>
+      {table.getRowModel().rows.map((row) => (
+        <TableRow key={row.id}>
+          {row.getVisibleCells().map((cell) => (
+            <TableCell
+              key={cell.id}
+              className={cn(
+                table.options.meta?.className,
+                cell.column.columnDef.meta?.className
+              )}
+            >
+              {flexRender(cell.column.columnDef.cell, cell.getContext())}
+            </TableCell>
+          ))}
         </TableRow>
-      )}
+      ))}
+      <TableRow className="hover:bg-inherit">
+        <TableCell colSpan={columns.length} className="h-24 text-center">
+          <AddProject />
+        </TableCell>
+      </TableRow>
     </TableBody>
   )
 }

@@ -2,23 +2,11 @@
 
 import { ExpandedFortyTwoProject } from '@/types/forty-two'
 import { ColumnDef } from '@tanstack/react-table'
-import {
-  AddProject,
-  ProjectBonus,
-  ProjectGrade,
-  RemoveProject
-} from './actions'
+import { ProjectBonus, ProjectGrade, RemoveProject } from './actions'
 
 export const columns: ColumnDef<ExpandedFortyTwoProject>[] = [
   {
     id: 'remove',
-    header: () => {
-      return (
-        <>
-          <AddProject />
-        </>
-      )
-    },
     enableHiding: false,
     cell: ({ row }) => {
       const project = row.original
