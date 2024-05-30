@@ -4,6 +4,8 @@ import { list } from '@vercel/blob'
 export class BlobStorageService implements StorageService {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   async load(prefix: string): Promise<any> {
+    process.stdout.write(`Loading ${prefix} from blob storage\n`)
+
     const { blobs } = await list({
       token: process.env.BLOB_READ_WRITE_TOKEN,
       prefix: prefix
