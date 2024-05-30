@@ -41,7 +41,6 @@ export async function UserManagement() {
         <form
           action={async () => {
             'use server'
-            console.log('signing out')
             await signOut()
           }}
         >

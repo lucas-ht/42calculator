@@ -2,7 +2,6 @@ import { BlobStorageService } from '@/lib/storage/blob-storage'
 import { LocalStorageService } from '@/lib/storage/local-storage'
 import { FortyTwoCursusId, FortyTwoLevel } from '@/types/forty-two'
 import { StorageService } from '@/types/storage'
-import { stderr } from 'process'
 
 export const runtime = 'edge'
 
@@ -18,13 +17,13 @@ export async function getFortyTwoLevels(): Promise<
 > {
   if (FortyTwoLevels === null) {
     try {
-      console.log(`fetching experience_${FortyTwoCursusId.MAIN}`)
       const data = await storageService.load(
         `experience_${FortyTwoCursusId.MAIN}`
       )
+
       FortyTwoLevels = parseExperience(data)
     } catch (error) {
-      stderr.write(`Error loading experience: ${error}`)
+      process.stderr.write(`Error loading experience: ${error}\n`)
     }
   }
 

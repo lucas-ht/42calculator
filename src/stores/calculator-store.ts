@@ -1,15 +1,11 @@
 import {
-  ExpandedFortyTwoProject,
-  FortyTwoLevel,
-  FortyTwoProject
-} from '@/types/forty-two'
-import { createStore } from 'zustand/vanilla'
-
-import {
   calculateExperience,
   getExperience,
   getLevel
 } from '@/lib/forty-two/forty-two-calculator'
+import { fortyTwoStore } from '@/providers/forty-two-store-provider'
+import { ExpandedFortyTwoProject, FortyTwoProject } from '@/types/forty-two'
+import { createStore } from 'zustand/vanilla'
 
 export type CalculatorState = {
   level: {
@@ -21,9 +17,6 @@ export type CalculatorState = {
     end: number
   }
   projects: Record<number, ExpandedFortyTwoProject>
-
-  levels: Record<number, FortyTwoLevel>
-  projectsAvailable: Record<number, FortyTwoProject>
 }
 
 export type CalculatorActions = {
@@ -38,16 +31,14 @@ export type CalculatorStore = CalculatorState & CalculatorActions
 
 export type CalculatorStoreInitProps = {
   level: number
-  levels: Record<number, FortyTwoLevel>
-  projects: Record<number, FortyTwoProject>
 }
 
 export const initCalculatorStore = ({
-  level,
-  levels,
-  projects
+  level
 }: CalculatorStoreInitProps): CalculatorState => {
+  const { levels } = fortyTwoStore.getState()
   const experience = getExperience(level, levels)
+
   return {
     ...defaultInitState,
     level: {
@@ -57,10 +48,7 @@ export const initCalculatorStore = ({
     experience: {
       start: experience,
       end: experience
-    },
-
-    levels,
-    projectsAvailable: projects
+    }
   }
 }
 
@@ -73,10 +61,7 @@ export const defaultInitState: CalculatorState = {
     start: 0,
     end: 0
   },
-  projects: {},
-
-  levels: {},
-  projectsAvailable: {}
+  projects: {}
 }
 
 export const createCalculatorStore = (
@@ -85,6 +70,8 @@ export const createCalculatorStore = (
   return createStore<CalculatorStore>()((set, get) => {
     const recalculateLevels = () => {
       const state = get()
+      const { levels } = fortyTwoStore.getState()
+
       let experience = state.experience.start
 
       const projects = Object.values(state.projects).sort(
@@ -93,7 +80,7 @@ export const createCalculatorStore = (
 
       const updatedProjects = projects.map((project) => {
         experience += project.experience.gained
-        const level = getLevel(experience, state.levels)
+        const level = getLevel(experience, levels)
 
         return {
           [project.id]: {
@@ -109,7 +96,7 @@ export const createCalculatorStore = (
           ...Object.assign({}, ...updatedProjects)
         },
         experience: { ...state.experience, end: experience },
-        level: { ...state.level, end: getLevel(experience, state.levels) }
+        level: { ...state.level, end: getLevel(experience, levels) }
       }))
     }
 
@@ -126,6 +113,7 @@ export const createCalculatorStore = (
 
       setLevel: (level: number) => {
         const state = get()
+        const { levels } = fortyTwoStore.getState()
 
         if (state.level.start === level) {
           return
@@ -138,7 +126,7 @@ export const createCalculatorStore = (
           },
           experience: {
             ...state.experience,
-            start: getExperience(level, state.levels)
+            start: getExperience(level, levels)
           }
         }))
 
@@ -147,6 +135,7 @@ export const createCalculatorStore = (
 
       addProject: (newProject: FortyTwoProject) => {
         const state = get()
+        const { levels } = fortyTwoStore.getState()
 
         if (state.projects[newProject.id] != null) {
           return
@@ -160,7 +149,7 @@ export const createCalculatorStore = (
 
         const new_level = getLevel(
           state.experience.end + experience_gained,
-          state.levels
+          levels
         )
 
         const project: ExpandedFortyTwoProject = {

@@ -18,13 +18,13 @@ export async function getFortyTwoProjects(): Promise<
 > {
   if (FortyTwoProjects === null) {
     try {
-      console.log(`fetching projects_${FortyTwoCursusId.MAIN}`)
       const data = await storageService.load(
         `projects_${FortyTwoCursusId.MAIN}`
       )
+
       FortyTwoProjects = parseProjects(data)
     } catch (error) {
-      stderr.write(`Error loading projects: ${error}`)
+      stderr.write(`Error loading projects: ${error}\n`)
     }
   }
 

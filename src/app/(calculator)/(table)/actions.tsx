@@ -17,6 +17,7 @@ import {
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { Switch } from '@/components/ui/switch'
 import { useCalculatorStore } from '@/providers/calculator-store-provider'
+import { useFortyTwoStore } from '@/providers/forty-two-store-provider'
 import { ExpandedFortyTwoProject } from '@/types/forty-two'
 import { CirclePlus, Trash2 } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
@@ -62,9 +63,8 @@ export function StartLevel() {
 export function AddProject() {
   const [open, setOpen] = useState(false)
   const [, setValue] = useState('')
-  const { addProject, projectsAvailable: projects } = useCalculatorStore(
-    (state) => state
-  )
+  const { addProject } = useCalculatorStore((state) => state)
+  const { projects } = useFortyTwoStore((state) => state)
 
   return (
     <Popover open={open} onOpenChange={setOpen}>

@@ -1,6 +1,8 @@
 import '@testing-library/jest-dom'
 import { initCalculatorStore, createCalculatorStore } from '@/stores/calculator-store';
 import { FortyTwoProject, ExpandedFortyTwoProject } from '@/types/forty-two';
+import { initFortyTwoStore } from '@/stores/forty-two-store';
+import { fortyTwoStore } from '@/providers/forty-two-store-provider';
 
 describe('Calculator Store', () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -24,26 +26,28 @@ describe('Calculator Store', () => {
     bonus: false
   };
 
-  beforeEach(() => {
-    const levels = {
-      1: {
-        level: 1,
-        experience: 100,
-      },
-      2: {
-        level: 2,
-        experience: 200,
-      },
-      3: {
-        level: 3,
-        experience: 300,
-      }
+  const levels = {
+    1: {
+      level: 1,
+      experience: 100,
+    },
+    2: {
+      level: 2,
+      experience: 200,
+    },
+    3: {
+      level: 3,
+      experience: 300,
     }
+  }
 
+  fortyTwoStore.setState(
+    initFortyTwoStore({ levels, projects: {} })
+  )
+
+  beforeEach(() => {
     const initState = initCalculatorStore({
       level: 1.00,
-      levels: levels,
-      projects: {}
     });
 
     store = createCalculatorStore(initState);

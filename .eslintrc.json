@@ -11,6 +11,7 @@
     "eslint-plugin-react-compiler"
   ],
   "rules": {
+    "no-console": "warn",
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/no-dynamic-delete": "off",
     "react-compiler/react-compiler": "warn"
