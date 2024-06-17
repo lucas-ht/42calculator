@@ -8,14 +8,14 @@ import {
 } from '@/components/ui/card'
 import Link from 'next/link'
 
-export default function NotFound() {
+export default function AuthErrorPage() {
   return (
     <main className="container flex grow items-start justify-center p-4 md:p-12 lg:p-24">
-      <Card className="w-[350px]">
+      <Card className="w-[400px]">
         <CardHeader>
-          <CardTitle tag="h1">Not Found</CardTitle>
+          <CardTitle tag="h1">Something went wrong</CardTitle>
           <CardDescription>
-            Could not find the requested resource.
+            There was a problem when trying to authenticate.
           </CardDescription>
         </CardHeader>
         <CardContent className="flex items-center justify-center">
