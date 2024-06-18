@@ -5,6 +5,7 @@ import { cn } from '@/lib/utils'
 import '@/styles/globals.css'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { VercelToolbar } from '@vercel/toolbar/next'
 import type { Metadata } from 'next'
 import { Inter as FontSans } from 'next/font/google'
 import React, { StrictMode } from 'react'
@@ -24,6 +25,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const shouldInjectToolbar = process.env.NODE_ENV === 'development'
   return (
     <html lang="en" suppressHydrationWarning>
       <body
@@ -47,6 +49,7 @@ export default function RootLayout({
 
         <Analytics />
         <SpeedInsights />
+        {shouldInjectToolbar && <VercelToolbar />}
       </body>
     </html>
   )
