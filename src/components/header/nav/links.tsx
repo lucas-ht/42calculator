@@ -15,5 +15,5 @@ export const navLinks: Array<NavLink> = [
     text: 'Calculator',
     href: '/calculator',
     isProtected: true
-  },
+  }
 ]
