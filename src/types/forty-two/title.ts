@@ -18,4 +18,7 @@ export interface FortyTwoTitle {
   numberOfSuite: number
 
   options: FortyTwoTitleOption[]
+
+  suite: FortyTwoProject[]
+  experience: FortyTwoProject[]
 }
