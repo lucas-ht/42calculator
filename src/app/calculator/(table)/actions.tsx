@@ -18,7 +18,7 @@ import { ScrollArea } from '@/components/ui/scroll-area'
 import { Switch } from '@/components/ui/switch'
 import { useCalculatorStore } from '@/providers/calculator-store-provider'
 import { useFortyTwoStore } from '@/providers/forty-two-store-provider'
-import { ExpandedFortyTwoProject } from '@/types/forty-two'
+import { FortyTwoProjectCalculator } from '@/types/forty-two'
 import { CirclePlus, Trash2 } from 'lucide-react'
 import React, { useEffect, useState } from 'react'
 import { z } from 'zod'
@@ -113,7 +113,7 @@ export function AddProject() {
 export function RemoveProject({
   project
 }: {
-  project: ExpandedFortyTwoProject
+  project: FortyTwoProjectCalculator
 }) {
   const { removeProject } = useCalculatorStore((state) => state)
 
@@ -135,7 +135,7 @@ export function RemoveProject({
 export function ProjectGrade({
   project
 }: {
-  project: ExpandedFortyTwoProject
+  project: FortyTwoProjectCalculator
 }) {
   const [inputValue, setInputValue] = useState<number | null>(
     project.mark ?? null
@@ -175,7 +175,7 @@ export function ProjectGrade({
 export function ProjectBonus({
   project
 }: {
-  project: ExpandedFortyTwoProject
+  project: FortyTwoProjectCalculator
 }) {
   const { updateProject } = useCalculatorStore((state) => state)
 
