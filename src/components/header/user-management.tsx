@@ -1,4 +1,5 @@
-import { auth, signOut } from '@/auth'
+import { signOut } from '@/auth'
+import { Session } from 'next-auth'
 
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import {
@@ -9,7 +10,7 @@ import {
 } from '@/components/ui/dropdown-menu'
 import { Skeleton } from '@/components/ui/skeleton'
 
-export function UserSkeleton() {
+function UserSkeleton() {
   return <Skeleton className="size-10 rounded-full" />
 }
 
@@ -25,9 +26,11 @@ function UserAvatar({ imageUrl }: { imageUrl: string }) {
   )
 }
 
-export async function UserManagement() {
-  const session = await auth()
+export type UserManagementProps = {
+  session: Session | null
+}
 
+export function UserManagement({ session }: UserManagementProps) {
   if (session == null) {
     return <span className="size-10 rounded-full" />
   }
