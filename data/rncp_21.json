@@ -1,0 +1,273 @@
+{
+  "meta": {
+    "id": 21,
+    "created_at": "2019-07-29T08:45:17.896Z",
+    "kind": "main",
+    "name": "42cursus",
+    "slug": "42cursus"
+  },
+  "rncp": [
+    {
+      "type": "RNCP 6",
+      "title": "Développement web et mobile",
+      "level": 17.0,
+      "number_of_events": 10,
+      "number_of_experiences": 2,
+      "number_of_suite": 1,
+      "options": [
+        {
+          "title": "Web",
+          "experience": 150000.0,
+          "number_of_projects": 2,
+          "projects": [
+            1481,
+            2198,
+            1482,
+            1396,
+            1401,
+            1402,
+            1428,
+            1405,
+            1429,
+            2485
+          ]
+        },
+        {
+          "title": "Mobile",
+          "experience": 100000.0,
+          "number_of_projects": 2,
+          "projects": [
+            1379,
+            1395,
+            1406,
+            2360
+          ]
+        }
+      ]
+    },
+    {
+      "type": "RNCP 6",
+      "title": "Développement applicatif",
+      "level": 17.0,
+      "number_of_events": 10,
+      "number_of_experiences": 2,
+      "number_of_suite": 1,
+      "options": [
+        {
+          "title": "Object Oriented Programming",
+          "experience": 100000.0,
+          "number_of_projects": 2,
+          "projects": [
+            1389,
+            1386,
+            1481,
+            2198,
+            1482,
+            1396,
+            1401,
+            1402,
+            1428,
+            1405,
+            1429,
+            2360,
+            1379,
+            1395,
+            1406,
+            1435,
+            1436,
+            1437,
+            2370
+          ]
+        },
+        {
+          "title": "Functional programming",
+          "experience": 100000.0,
+          "number_of_projects": 2,
+          "projects": [
+            1403,
+            1407,
+            1429
+          ]
+        },
+        {
+          "title": "Imperative programming",
+          "experience": 100000.0,
+          "number_of_projects": 2,
+          "projects": [
+            1330,
+            1463,
+            1411,
+            1415,
+            1416,
+            1381,
+            1388,
+            1468,
+            1420,
+            1467,
+            1464,
+            1425,
+            1424,
+            1840,
+            1451,
+            1405,
+            1404,
+            1417,
+            1448,
+            1446,
+            1447,
+            1419,
+            1430,
+            1443
+          ]
+        }
+      ]
+    },
+    {
+      "type": "RNCP 7",
+      "title": "Système d'information et réseaux",
+      "level": 21.0,
+      "number_of_events": 15,
+      "number_of_experiences": 2,
+      "number_of_suite": 1,
+      "options": [
+        {
+          "title": "Unix/Kernel",
+          "experience": 300000.0,
+          "number_of_projects": 2,
+          "projects": [
+            1330,
+            1463,
+            1411,
+            1415,
+            1416,
+            1381,
+            1388,
+            1468,
+            1420,
+            1467,
+            1464,
+            1425,
+            1424,
+            1426,
+            1431,
+            1432,
+            1438,
+            1439,
+            1440,
+            1441,
+            1442
+          ]
+        },
+        {
+          "title": "System administration",
+          "experience": 500000.0,
+          "number_of_projects": 3,
+          "projects": [
+            1414,
+            2064,
+            1381,
+            1397,
+            1399,
+            1400,
+            2520,
+            2521,
+            2522,
+            2523
+          ]
+        },
+        {
+          "title": "Security",
+          "experience": 500000.0,
+          "number_of_projects": 3,
+          "projects": [
+            1840,
+            1451,
+            1405,
+            1404,
+            1417,
+            1448,
+            1446,
+            1447,
+            1419,
+            1430,
+            1443,
+            2345,
+            2393,
+            2395,
+            2527,
+            2529
+          ]
+        }
+      ]
+    },
+    {
+      "type": "RNCP 7",
+      "title": "Architecture des bases de données et data",
+      "level": 21.0,
+      "number_of_events": 15,
+      "number_of_experiences": 2,
+      "number_of_suite": 1,
+      "options": [
+        {
+          "title": "Web - Database",
+          "experience": 500000.0,
+          "number_of_projects": 2,
+          "projects": [
+            1481,
+            2198,
+            1482,
+            1396,
+            1401,
+            1402,
+            1428,
+            1405,
+            1429,
+            2485
+          ]
+        },
+        {
+          "title": "Artificial Intelligence",
+          "experience": 700000.0,
+          "number_of_projects": 3,
+          "projects": [
+            1391,
+            1453,
+            1457,
+            1383,
+            1460,
+            1384,
+            1392,
+            2077,
+            2076,
+            2372,
+            2317,
+            2272
+          ]
+        }
+      ]
+    }
+  ],
+  "suite": {
+    "projects": [
+      1854,
+      1458,
+      2064,
+      1394,
+      1424,
+      1448,
+      1443,
+      1855,
+      1460
+    ]
+  },
+  "experience": {
+    "projects": [
+      1638,
+      1644,
+      1662,
+      1880,
+      1864,
+      1872
+    ]
+  }
+}
