@@ -7,7 +7,8 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   basePath: '/auth',
   pages: {
     signIn: '/',
-    signOut: '/'
+    signOut: '/',
+    error: '/auth/'
   },
 
   providers: [

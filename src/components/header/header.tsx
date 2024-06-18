@@ -1,21 +1,21 @@
-import Link from 'next/link'
-import { Suspense } from 'react'
+import { auth } from '@/auth'
+import { MainNav } from './nav/main-nav'
+import { MobileNav } from './nav/mobile-nav'
 import ThemeToggle from './theme-toggle'
-import UserManagement, { UserSkeleton } from './user-management'
+import UserManagement from './user-management'
 
-export function Header() {
+export async function Header() {
+  const session = await auth()
+
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background md:bg-background/95 md:backdrop-blur md:supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 max-w-screen-2xl items-center">
-        <Link href="/">
-          <h1 className="font-semibold">42calculator</h1>
-        </Link>
+        <MainNav session={session} />
+        <MobileNav session={session} />
 
         <div className="ml-auto flex items-center gap-x-4">
           <ThemeToggle />
-          <Suspense fallback={<UserSkeleton />}>
-            <UserManagement />
-          </Suspense>
+          <UserManagement session={session} />
         </div>
       </div>
     </header>

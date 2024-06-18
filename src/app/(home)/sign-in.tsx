@@ -22,7 +22,7 @@ export function SignIn() {
         <form
           action={async () => {
             'use server'
-            await signIn('42-school')
+            await signIn('42-school', { redirectTo: '/calculator' })
           }}
         >
           <Button variant="secondary">
