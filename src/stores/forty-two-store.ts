@@ -1,31 +1,40 @@
-import { FortyTwoLevel, FortyTwoProject } from '@/types/forty-two'
+import {
+  FortyTwoLevel,
+  FortyTwoProject,
+  FortyTwoTitle
+} from '@/types/forty-two'
 import { createStore } from 'zustand/vanilla'
 
 export type FortyTwoState = {
   levels: Record<number, FortyTwoLevel>
   projects: Record<number, FortyTwoProject>
+  titles: Array<FortyTwoTitle>
 }
 
 export type FortyTwoStore = FortyTwoState
 
 export type FortyTwoStoreInitProps = {
-  levels: Record<number, FortyTwoLevel>
-  projects: Record<number, FortyTwoProject>
+  levels?: Record<number, FortyTwoLevel>
+  projects?: Record<number, FortyTwoProject>
+  titles?: Array<FortyTwoTitle>
 }
 
 export const initFortyTwoStore = ({
   levels,
-  projects
+  projects,
+  titles
 }: FortyTwoStoreInitProps): FortyTwoState => {
   return {
-    levels,
-    projects
+    levels: levels ?? {},
+    projects: projects ?? {},
+    titles: titles ?? []
   }
 }
 
 export const defaultInitState: FortyTwoState = {
   levels: {},
-  projects: {}
+  projects: {},
+  titles: []
 }
 
 export const createFortyTwoStore = (

@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom'
 import { initCalculatorStore, createCalculatorStore } from '@/stores/calculator-store';
-import { FortyTwoProject, ExpandedFortyTwoProject } from '@/types/forty-two';
+import { FortyTwoProject, FortyTwoProjectCalculator } from '@/types/forty-two';
 import { initFortyTwoStore } from '@/stores/forty-two-store';
 import { fortyTwoStore } from '@/providers/forty-two-store-provider';
 
@@ -14,7 +14,7 @@ describe('Calculator Store', () => {
     experience: 100,
   }
 
-  const expandedProject: ExpandedFortyTwoProject = {
+  const expandedProject: FortyTwoProjectCalculator = {
     ...project,
     addedAt: 0,
     experience: {
@@ -61,7 +61,7 @@ describe('Calculator Store', () => {
   });
 
   it('should update a project correctly', () => {
-    const updatedProject: ExpandedFortyTwoProject = {
+    const updatedProject: FortyTwoProjectCalculator = {
       ...expandedProject,
       mark: 125
     };
