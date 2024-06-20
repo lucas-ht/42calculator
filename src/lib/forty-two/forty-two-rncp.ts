@@ -87,9 +87,9 @@ async function parseTitles(titles_data: any): Promise<Array<FortyTwoTitle>> {
       title: title.title,
       level: title.level,
 
-      numberOfEvents: title.numberOfEvents,
-      numberOfExperiences: title.numberOfExperiences,
-      numberOfSuite: title.numberOfSuite,
+      numberOfEvents: title.number_of_events,
+      numberOfExperiences: title.number_of_experiences,
+      numberOfSuite: title.number_of_suite,
 
       options: await parseOptions(title.options),
 
