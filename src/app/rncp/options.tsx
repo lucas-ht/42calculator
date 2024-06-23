@@ -2,34 +2,53 @@ import { Badge } from '@/components/ui/badge'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { cn } from '@/lib/utils'
+import { fortyTwoStore } from '@/providers/forty-two-store-provider'
 import {
   FortyTwoProject,
   FortyTwoTitle,
   FortyTwoTitleOption
 } from '@/types/forty-two'
-import { CircleCheckBig, CircleDashed } from 'lucide-react'
+import { CircleCheck, CircleDashed } from 'lucide-react'
 
-function ProjectList({ projects }: { projects: Array<FortyTwoProject> }) {
+function ProjectList({
+  projects
+}: {
+  projects: Record<number, FortyTwoProject>
+}) {
+  const { cursus } = fortyTwoStore.getState()
+
   return (
     <ScrollArea className="h-[400px]">
       <div className="space-y-2">
-        {projects.map((project) => (
-          <div key={project.id} className="flex items-center text-sm">
-            {true ? (
-              <CircleDashed className="mr-2 h-4 w-4" />
-            ) : (
-              <CircleCheckBig className="mr-2 h-4 w-4" />
-            )}
+        {Object.values(projects).map((project) => {
+          const isCompleted: boolean = cursus.projects[project.id] !== undefined
 
-            <div>
-              <p className="ml-1 truncate">{project.name}</p>
+          return (
+            <div key={project.id} className="flex items-center text-sm">
+              {isCompleted ? (
+                <CircleCheck className="mr-2 h-4 w-4 text-primary" />
+              ) : (
+                <CircleDashed className="mr-2 h-4 w-4" />
+              )}
 
-              <Badge className="rounded-lg" variant="secondary">
-                {project.experience?.toLocaleString() ?? 0} XP
-              </Badge>
+              <div>
+                <p className="ml-1 truncate">{project.name}</p>
+
+                <div className="space-x-2">
+                  <Badge className="rounded-lg" variant="secondary">
+                    {project.experience?.toLocaleString() ?? 0} XP
+                  </Badge>
+
+                  {isCompleted && (
+                    <Badge className="rounded-lg">
+                      {cursus.projects[project.id].mark}
+                    </Badge>
+                  )}
+                </div>
+              </div>
             </div>
-          </div>
-        ))}
+          )
+        })}
       </div>
     </ScrollArea>
   )

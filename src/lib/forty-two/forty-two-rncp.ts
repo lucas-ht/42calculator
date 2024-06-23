@@ -35,9 +35,9 @@ export async function getFortyTwoTitles(): Promise<Array<FortyTwoTitle>> {
 /* eslint-disable @typescript-eslint/no-explicit-any */
 async function parseProjects(
   projects_data: any
-): Promise<Array<FortyTwoProject>> {
+): Promise<Record<number, FortyTwoProject>> {
   const fortyTwoProjects = await getFortyTwoProjects()
-  const projects: Array<FortyTwoProject> = []
+  const projects: Record<number, FortyTwoProject> = {}
 
   for (const project_id of projects_data) {
     const project = fortyTwoProjects[project_id]
@@ -45,11 +45,11 @@ async function parseProjects(
       continue
     }
 
-    projects.push({
+    projects[project_id] = {
       id: project.id,
       name: project.name,
       experience: project.experience
-    })
+    }
   }
 
   return projects

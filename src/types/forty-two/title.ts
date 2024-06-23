@@ -5,7 +5,7 @@ export interface FortyTwoTitleOption {
   experience: number
   numberOfProjects: number
 
-  projects: FortyTwoProject[]
+  projects: Record<number, FortyTwoProject>
 }
 
 export interface FortyTwoTitle {
@@ -17,8 +17,8 @@ export interface FortyTwoTitle {
   numberOfExperiences: number
   numberOfSuite: number
 
-  options: FortyTwoTitleOption[]
+  options: Array<FortyTwoTitleOption>
 
-  suite: FortyTwoProject[]
-  experience: FortyTwoProject[]
+  suite: Record<number, FortyTwoProject>
+  experience: Record<number, FortyTwoProject>
 }

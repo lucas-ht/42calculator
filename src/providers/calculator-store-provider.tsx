@@ -3,8 +3,7 @@
 import {
   createCalculatorStore,
   initCalculatorStore,
-  type CalculatorStore,
-  type CalculatorStoreInitProps
+  type CalculatorStore
 } from '@/stores/calculator-store'
 import { createContext, useContext, useRef, type ReactNode } from 'react'
 import { useStore, type StoreApi } from 'zustand'
@@ -12,17 +11,16 @@ import { useStore, type StoreApi } from 'zustand'
 export const CalculatorStoreContext =
   createContext<StoreApi<CalculatorStore> | null>(null)
 
-export interface CalculatorStoreProviderProps extends CalculatorStoreInitProps {
+export interface CalculatorStoreProviderProps {
   children: ReactNode
 }
 
 export const CalculatorStoreProvider = ({
-  level,
   children
 }: CalculatorStoreProviderProps) => {
   const storeRef = useRef<StoreApi<CalculatorStore>>()
   if (!storeRef.current) {
-    storeRef.current = createCalculatorStore(initCalculatorStore({ level }))
+    storeRef.current = createCalculatorStore(initCalculatorStore())
   }
 
   return (

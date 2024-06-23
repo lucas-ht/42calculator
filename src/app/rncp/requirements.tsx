@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Progress } from '@/components/ui/progress'
-import { FortyTwoTitle } from '@/types/forty-two'
+import { fortyTwoStore } from '@/providers/forty-two-store-provider'
+import { FortyTwoProject, FortyTwoTitle } from '@/types/forty-two'
 
 interface TitleRequirementProps {
   name: string
@@ -35,6 +36,16 @@ export function TitleRequirements({
   title,
   className
 }: TitleRequirementsProps) {
+  const { cursus } = fortyTwoStore.getState()
+
+  const experiences: Array<FortyTwoProject> = []
+  for (const project of Object.values(cursus.projects)) {
+    const isExperience: boolean = title.experience[project.id] !== undefined
+    if (isExperience) {
+      experiences.push(project)
+    }
+  }
+
   return (
     <Card className={className}>
       <CardHeader className="pb-4">
@@ -45,17 +56,17 @@ export function TitleRequirements({
       <CardContent className="grid grid-cols-3 space-x-6">
         <TitleRequirement
           name={'Level required'}
-          value={10}
+          value={cursus.level}
           max={title.level}
         />
         <TitleRequirement
           name={'Number of events'}
-          value={8}
+          value={cursus.events}
           max={title.numberOfEvents}
         />
         <TitleRequirement
           name={'Number of experiences'}
-          value={1}
+          value={experiences.length}
           max={title.numberOfExperiences}
         />
       </CardContent>

@@ -30,14 +30,12 @@ async function Calculator() {
     process.stderr.write(`Error getting cursus: ${error}\n`)
   }
 
-  const level = cursus?.level ?? 0
-
   const projects = await getFortyTwoProjects()
   const levels = await getFortyTwoLevels()
 
   return (
     <FortyTwoStoreProvider cursus={cursus} levels={levels} projects={projects}>
-      <CalculatorStoreProvider level={level}>
+      <CalculatorStoreProvider>
         <CalculatorTable />
       </CalculatorStoreProvider>
     </FortyTwoStoreProvider>

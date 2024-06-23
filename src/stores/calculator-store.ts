@@ -29,14 +29,11 @@ export type CalculatorActions = {
 
 export type CalculatorStore = CalculatorState & CalculatorActions
 
-export type CalculatorStoreInitProps = {
-  level: number
-}
-
-export const initCalculatorStore = ({
-  level
-}: CalculatorStoreInitProps): CalculatorState => {
-  const { levels } = fortyTwoStore.getState()
+export const initCalculatorStore = (): CalculatorState => {
+  const {
+    cursus: { level: level },
+    levels
+  } = fortyTwoStore.getState()
   const experience = getExperience(level, levels)
 
   return {
