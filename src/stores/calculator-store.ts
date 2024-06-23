@@ -142,7 +142,7 @@ export const createCalculatorStore = (
         }
 
         const experience_gained = calculateExperience(
-          newProject.experience,
+          newProject.experience ?? 0,
           100,
           false
         )
@@ -156,7 +156,7 @@ export const createCalculatorStore = (
           ...newProject,
           addedAt: Date.now(),
           experience: {
-            base: newProject.experience,
+            base: newProject.experience ?? 0,
             gained: experience_gained
           },
           level: new_level,

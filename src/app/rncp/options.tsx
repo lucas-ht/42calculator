@@ -25,7 +25,7 @@ function ProjectList({ projects }: { projects: Array<FortyTwoProject> }) {
               <p className="ml-1 truncate">{project.name}</p>
 
               <Badge className="rounded-lg" variant="secondary">
-                {project.experience.toLocaleString()} XP
+                {project.experience?.toLocaleString() ?? 0} XP
               </Badge>
             </div>
           </div>

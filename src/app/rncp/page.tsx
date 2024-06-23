@@ -22,10 +22,9 @@ function TitleSkeleton() {
 async function Title() {
   const session = await auth()
 
-  let cursus: FortyTwoCursus | null = null
+  let cursus: FortyTwoCursus | undefined = undefined
   try {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    cursus = await kv.get(`cursus:${session?.user.login}`)
+    cursus = (await kv.get(`cursus:${session?.user.login}`)) ?? undefined
   } catch (error) {
     process.stderr.write(`Error getting cursus: ${error}\n`)
   }
@@ -34,7 +33,7 @@ async function Title() {
   const titles = await getFortyTwoTitles()
 
   return (
-    <FortyTwoStoreProvider titles={titles} projects={projects}>
+    <FortyTwoStoreProvider cursus={cursus} titles={titles} projects={projects}>
       <Titles />
     </FortyTwoStoreProvider>
   )

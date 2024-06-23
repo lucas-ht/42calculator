@@ -23,9 +23,9 @@ function CalculatorSkeleton() {
 async function Calculator() {
   const session = await auth()
 
-  let cursus: FortyTwoCursus | null = null
+  let cursus: FortyTwoCursus | undefined = undefined
   try {
-    cursus = await kv.get(`cursus:${session?.user.login}`)
+    cursus = (await kv.get(`cursus:${session?.user.login}`)) ?? undefined
   } catch (error) {
     process.stderr.write(`Error getting cursus: ${error}\n`)
   }
@@ -36,7 +36,7 @@ async function Calculator() {
   const levels = await getFortyTwoLevels()
 
   return (
-    <FortyTwoStoreProvider levels={levels} projects={projects}>
+    <FortyTwoStoreProvider cursus={cursus} levels={levels} projects={projects}>
       <CalculatorStoreProvider level={level}>
         <CalculatorTable />
       </CalculatorStoreProvider>
