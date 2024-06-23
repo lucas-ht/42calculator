@@ -36,7 +36,7 @@ function TitleSelector({
   )
 }
 
-export function Test() {
+export function Titles() {
   const { titles } = fortyTwoStore.getState()
   const [activeTitle, setActiveTitle] = useState<FortyTwoTitle | null>(
     titles[0] ?? null

@@ -11,6 +11,8 @@ import { getFortyTwoLevels } from '@/lib/forty-two/forty-two-experience'
 import { getFortyTwoProjects } from '@/lib/forty-two/forty-two-projects'
 import { CalculatorStoreProvider } from '@/providers/calculator-store-provider'
 import { FortyTwoStoreProvider } from '@/providers/forty-two-store-provider'
+import { FortyTwoCursus } from '@/types/forty-two'
+import { kv } from '@vercel/kv'
 import { Suspense } from 'react'
 import CalculatorTable from './(table)/table'
 
@@ -20,7 +22,15 @@ function CalculatorSkeleton() {
 
 async function Calculator() {
   const session = await auth()
-  const level = session?.user?.cursus?.level ?? 0
+
+  let cursus: FortyTwoCursus | null = null
+  try {
+    cursus = await kv.get(`cursus:${session?.user.login}`)
+  } catch (error) {
+    process.stderr.write(`Error getting cursus: ${error}\n`)
+  }
+
+  const level = cursus?.level ?? 0
 
   const projects = await getFortyTwoProjects()
   const levels = await getFortyTwoLevels()

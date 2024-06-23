@@ -1,8 +1,10 @@
 export interface FortyTwoProject {
   id: number
   name: string
-  experience: number
 
+  experience?: number
+
+  finishedAt?: number
   mark?: number
   bonus?: boolean
 }
