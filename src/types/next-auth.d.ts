@@ -1,11 +1,10 @@
 import 'next-auth'
+import { type DefaultUser } from 'next-auth'
 import 'next-auth/jwt'
 
-import { FortyTwoCursus } from '@/types/forty-two'
-
 declare module 'next-auth' {
-  interface User {
-    cursus?: FortyTwoCursus
+  interface User extends DefaultUser {
+    login: string
   }
 
   interface Session {
@@ -15,6 +14,6 @@ declare module 'next-auth' {
 
 declare module 'next-auth/jwt' {
   interface JWT {
-    cursus?: FortyTwoCursus
+    login: string
   }
 }

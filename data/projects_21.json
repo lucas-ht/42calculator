@@ -1312,6 +1312,14 @@
       "experience": 3475
     },
     {
+      "id": 2189,
+      "created_at": "2022-06-23T11:53:57.824Z",
+      "updated_at": "2024-04-12T12:33:35.781Z",
+      "name": "Piscine Django",
+      "slug": "piscine-django",
+      "experience": 9450
+    },
+    {
       "id": 2192,
       "created_at": "2022-06-23T11:58:08.716Z",
       "updated_at": "2024-03-25T16:46:05.456Z",
@@ -1382,6 +1390,14 @@
       "name": "Ftl_quantum",
       "slug": "ftl_quantum",
       "experience": 6500
+    },
+    {
+      "id": 2267,
+      "created_at": "2022-12-07T10:38:39.136Z",
+      "updated_at": "2024-03-25T16:46:11.225Z",
+      "name": "Python for Data Science",
+      "slug": "python-for-data-science",
+      "experience": 4725
     },
     {
       "id": 2268,
@@ -1478,6 +1494,14 @@
       "name": "Unity - 4 - Animations and Sound",
       "slug": "unity-4-animations-and-sound",
       "experience": 1000
+    },
+    {
+      "id": 2295,
+      "created_at": "2023-01-13T16:27:52.142Z",
+      "updated_at": "2024-04-12T13:42:54.996Z",
+      "name": "Piscine Data Science",
+      "slug": "piscine-data-science",
+      "experience": 4725
     },
     {
       "id": 2306,
@@ -1632,6 +1656,14 @@
       "experience": 1350
     },
     {
+      "id": 2346,
+      "created_at": "2023-03-09T11:40:59.191Z",
+      "updated_at": "2024-04-12T12:28:37.676Z",
+      "name": "Cybersecurity",
+      "slug": "cybersecurity",
+      "experience": 9450
+    },
+    {
       "id": 2347,
       "created_at": "2023-03-09T22:09:55.549Z",
       "updated_at": "2023-06-10T17:29:09.012Z",
@@ -1680,6 +1712,14 @@
       "experience": 500
     },
     {
+      "id": 2355,
+      "created_at": "2023-03-19T17:10:18.762Z",
+      "updated_at": "2024-03-25T16:46:11.295Z",
+      "name": "Mobile",
+      "slug": "mobile",
+      "experience": 9450
+    },
+    {
       "id": 2356,
       "created_at": "2023-03-19T17:20:58.829Z",
       "updated_at": "2024-03-25T16:46:11.275Z",
@@ -1718,6 +1758,14 @@
       "name": "Mobile - 5 - Manage data and display",
       "slug": "mobile-5-manage-data-and-display",
       "experience": 3000
+    },
+    {
+      "id": 2364,
+      "created_at": "2023-03-28T13:57:43.655Z",
+      "updated_at": "2024-04-12T12:34:34.329Z",
+      "name": "Piscine Object",
+      "slug": "piscine-object",
+      "experience": 9450
     },
     {
       "id": 2365,

@@ -19,11 +19,13 @@ export interface FortyTwoStoreProviderProps extends FortyTwoStoreInitProps {
 const store = createFortyTwoStore()
 
 export const FortyTwoStoreProvider = ({
+  cursus,
   levels,
   projects,
+  titles,
   children
 }: FortyTwoStoreProviderProps) => {
-  store.setState(initFortyTwoStore({ levels, projects }))
+  store.setState(initFortyTwoStore({ cursus, levels, projects, titles }))
 
   return (
     <FortyTwoStoreContext.Provider value={store}>

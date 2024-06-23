@@ -5,6 +5,7 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
+      - "43214:43214"
     develop:
       watch:
         - action: sync

@@ -1,9 +1,15 @@
-import NextAuth from 'next-auth'
-import FortyTwo from 'next-auth/providers/42-school'
-
 import { parseCursus } from '@/lib/forty-two/forty-two'
+import { kv } from '@vercel/kv'
+import NextAuth, { type User } from 'next-auth'
+import FortyTwo, { FortyTwoProfile } from 'next-auth/providers/42-school'
 
-export const { handlers, signIn, signOut, auth } = NextAuth({
+export const {
+  handlers,
+  signIn,
+  signOut,
+  auth,
+  unstable_update: update
+} = NextAuth({
   basePath: '/auth',
   pages: {
     signIn: '/',
@@ -16,11 +22,19 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       clientId: process.env.AUTH_42_SCHOOL_ID,
       clientSecret: process.env.AUTH_42_SCHOOL_SECRET,
 
-      profile(profile) {
+      async profile(profile: FortyTwoProfile, tokens): Promise<User> {
+        const cursus = await parseCursus(profile, tokens.access_token as string)
+
+        try {
+          await kv.set(`cursus:${profile.login}`, cursus, {})
+        } catch (error) {
+          process.stderr.write(`Error setting cursus: ${error}\n`)
+          return Promise.reject(error)
+        }
+
         return {
-          name: profile.login,
-          image: profile.image.versions.small,
-          cursus: parseCursus(profile)
+          login: profile.login,
+          image: profile.image.versions.small
         }
       }
     })
@@ -29,7 +43,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
   callbacks: {
     jwt({ token, user }) {
       if (user) {
-        token.cursus = user.cursus
+        token.login = user.login
       }
 
       return token
@@ -37,7 +51,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
 
     session({ session, token }) {
       if (session.user) {
-        session.user.cursus = token.cursus
+        session.user.login = token.login
       }
 
       return session

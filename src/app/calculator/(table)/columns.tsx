@@ -1,10 +1,10 @@
 'use client'
 
-import { ExpandedFortyTwoProject } from '@/types/forty-two'
+import { FortyTwoProjectCalculator } from '@/types/forty-two'
 import { ColumnDef } from '@tanstack/react-table'
 import { ProjectBonus, ProjectGrade, RemoveProject } from './actions'
 
-export const columns: ColumnDef<ExpandedFortyTwoProject>[] = [
+export const columns: ColumnDef<FortyTwoProjectCalculator>[] = [
   {
     id: 'remove',
     enableHiding: false,

@@ -7,11 +7,13 @@
     "clsx",
     "fortytwo",
     "cursus",
+    "rncp",
     "dotenv",
     "levelname",
     "lucide",
     "zustand",
     "tanstack",
+    "embla",
   ],
   "useGitignore": true,
   "ignorePaths": [
