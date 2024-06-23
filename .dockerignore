@@ -1,0 +1,21 @@
+# docker files
+Dockerfile
+.dockerignore
+
+# node modules
+node_modules
+
+# build files
+.next
+
+# git related files
+.git
+.github
+.husky
+
+# env file
+.env
+
+# miscellaneous
+scripts
+docs
