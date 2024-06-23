@@ -25,5 +25,8 @@
     "/src/components/ui/**",
     "data/*",
     "public/*",
+    ".dockerignore",
+    "Dockerfile",
+    "compose.yaml",
   ]
 }
