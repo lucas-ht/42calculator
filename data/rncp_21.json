@@ -17,11 +17,11 @@
       "options": [
         {
           "title": "Web",
-          "experience": 150000.0,
+          "experience": 15000.0,
           "number_of_projects": 2,
           "projects": [
             1481,
-            2198,
+            2189,
             1482,
             1396,
             1401,
@@ -34,13 +34,13 @@
         },
         {
           "title": "Mobile",
-          "experience": 100000.0,
+          "experience": 10000.0,
           "number_of_projects": 2,
           "projects": [
             1379,
             1395,
             1406,
-            2360
+            2355
           ]
         }
       ]
@@ -55,13 +55,13 @@
       "options": [
         {
           "title": "Object Oriented Programming",
-          "experience": 100000.0,
+          "experience": 10000.0,
           "number_of_projects": 2,
           "projects": [
             1389,
             1386,
             1481,
-            2198,
+            2189,
             1482,
             1396,
             1401,
@@ -69,19 +69,19 @@
             1428,
             1405,
             1429,
-            2360,
+            2355,
             1379,
             1395,
             1406,
             1435,
             1436,
             1437,
-            2370
+            2364
           ]
         },
         {
           "title": "Functional programming",
-          "experience": 100000.0,
+          "experience": 10000.0,
           "number_of_projects": 2,
           "projects": [
             1403,
@@ -91,7 +91,7 @@
         },
         {
           "title": "Imperative programming",
-          "experience": 100000.0,
+          "experience": 10000.0,
           "number_of_projects": 2,
           "projects": [
             1330,
@@ -132,7 +132,7 @@
       "options": [
         {
           "title": "Unix/Kernel",
-          "experience": 300000.0,
+          "experience": 30000.0,
           "number_of_projects": 2,
           "projects": [
             1330,
@@ -160,7 +160,7 @@
         },
         {
           "title": "System administration",
-          "experience": 500000.0,
+          "experience": 50000.0,
           "number_of_projects": 3,
           "projects": [
             1414,
@@ -177,7 +177,7 @@
         },
         {
           "title": "Security",
-          "experience": 500000.0,
+          "experience": 50000.0,
           "number_of_projects": 3,
           "projects": [
             1840,
@@ -191,7 +191,7 @@
             1419,
             1430,
             1443,
-            2345,
+            2346,
             2393,
             2395,
             2527,
@@ -210,11 +210,11 @@
       "options": [
         {
           "title": "Web - Database",
-          "experience": 500000.0,
+          "experience": 50000.0,
           "number_of_projects": 2,
           "projects": [
             1481,
-            2198,
+            2189,
             1482,
             1396,
             1401,
@@ -227,7 +227,7 @@
         },
         {
           "title": "Artificial Intelligence",
-          "experience": 700000.0,
+          "experience": 70000.0,
           "number_of_projects": 3,
           "projects": [
             1391,
@@ -240,8 +240,8 @@
             2077,
             2076,
             2372,
-            2317,
-            2272
+            2295,
+            2267
           ]
         }
       ]

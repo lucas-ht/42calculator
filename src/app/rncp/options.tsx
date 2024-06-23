@@ -9,6 +9,7 @@ import {
   FortyTwoTitleOption
 } from '@/types/forty-two'
 import { CircleCheck, CircleDashed } from 'lucide-react'
+import { TitleOptionRequirements } from './requirements'
 
 function ProjectList({
   projects
@@ -18,7 +19,7 @@ function ProjectList({
   const { cursus } = fortyTwoStore.getState()
 
   return (
-    <ScrollArea className="h-[400px]">
+    <ScrollArea className="h-[442px]">
       <div className="space-y-2">
         {Object.values(projects).map((project) => {
           const isCompleted: boolean = cursus.projects[project.id] !== undefined
@@ -58,9 +59,10 @@ function TitleOption({ option }: { option: FortyTwoTitleOption }) {
   return (
     <Card>
       <CardHeader className="pb-4">
-        <CardTitle tag="h3" className="text-xl">
+        <CardTitle tag="h3" className="truncate text-xl">
           {option.title}
         </CardTitle>
+        <TitleOptionRequirements option={option} />
       </CardHeader>
       <CardContent className="p-0 md:p-6 md:pt-0">
         <ProjectList projects={option.projects} />
@@ -78,13 +80,22 @@ export function TitleOptions({ title, className }: TitleOptionsProps) {
   return (
     <div
       className={cn(
-        'grid grid-cols-1 space-x-4 md:grid-cols-2 lg:grid-cols-3',
+        'grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3',
         className
       )}
     >
       {title.options.map((option) => (
         <TitleOption key={option.title} option={option} />
       ))}
+
+      <TitleOption
+        option={{
+          title: 'Suite',
+          experience: 0,
+          numberOfProjects: title.numberOfSuite,
+          projects: title.suite
+        }}
+      />
     </div>
   )
 }

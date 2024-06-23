@@ -65,7 +65,7 @@ async function parseOptions(
     options.push({
       title: option.title,
       experience: option.experience,
-      numberOfProjects: option.numberOfProjects,
+      numberOfProjects: option.number_of_projects,
 
       projects: await parseProjects(option.projects)
     })
