@@ -8,7 +8,7 @@
   },
   "rncp": [
     {
-      "type": "RNCP 6",
+      "type": "rncp-6",
       "title": "Développement web et mobile",
       "level": 17.0,
       "number_of_events": 10,
@@ -46,7 +46,7 @@
       ]
     },
     {
-      "type": "RNCP 6",
+      "type": "rncp-6",
       "title": "Développement applicatif",
       "level": 17.0,
       "number_of_events": 10,
@@ -123,7 +123,7 @@
       ]
     },
     {
-      "type": "RNCP 7",
+      "type": "rncp-7",
       "title": "Système d'information et réseaux",
       "level": 21.0,
       "number_of_events": 15,
@@ -201,7 +201,7 @@
       ]
     },
     {
-      "type": "RNCP 7",
+      "type": "rncp-7",
       "title": "Architecture des bases de données et data",
       "level": 21.0,
       "number_of_events": 15,

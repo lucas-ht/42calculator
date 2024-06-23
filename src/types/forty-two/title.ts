@@ -1,5 +1,10 @@
 import { FortyTwoProject } from './project'
 
+export enum FortyTwoTitleType {
+  RNCP_6 = 'rncp-6',
+  RNCP_7 = 'rncp-7'
+}
+
 export interface FortyTwoTitleOption {
   title: string
   experience: number

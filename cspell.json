@@ -13,6 +13,7 @@
     "lucide",
     "zustand",
     "tanstack",
+    "embla",
   ],
   "useGitignore": true,
   "ignorePaths": [

@@ -1,5 +1,12 @@
 import { Badge } from '@/components/ui/badge'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious
+} from '@/components/ui/carousel'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { cn } from '@/lib/utils'
 import { fortyTwoStore } from '@/providers/forty-two-store-provider'
@@ -8,6 +15,7 @@ import {
   FortyTwoTitle,
   FortyTwoTitleOption
 } from '@/types/forty-two'
+import { WheelGesturesPlugin } from 'embla-carousel-wheel-gestures'
 import { CircleCheck, CircleDashed } from 'lucide-react'
 import { TitleOptionRequirements } from './requirements'
 
@@ -57,14 +65,14 @@ function ProjectList({
 
 function TitleOption({ option }: { option: FortyTwoTitleOption }) {
   return (
-    <Card>
+    <Card className="min-h-[638px]">
       <CardHeader className="pb-4">
         <CardTitle tag="h3" className="truncate text-xl">
           {option.title}
         </CardTitle>
         <TitleOptionRequirements option={option} />
       </CardHeader>
-      <CardContent className="p-0 md:p-6 md:pt-0">
+      <CardContent className="p-4 md:p-6 md:pt-0">
         <ProjectList projects={option.projects} />
       </CardContent>
     </Card>
@@ -77,25 +85,36 @@ export interface TitleOptionsProps {
 }
 
 export function TitleOptions({ title, className }: TitleOptionsProps) {
-  return (
-    <div
-      className={cn(
-        'grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3',
-        className
-      )}
-    >
-      {title.options.map((option) => (
-        <TitleOption key={option.title} option={option} />
-      ))}
+  const options: Array<FortyTwoTitleOption> = [
+    ...title.options,
+    {
+      title: 'Suite',
+      experience: 0,
+      numberOfProjects: title.numberOfSuite,
+      projects: title.suite
+    }
+  ]
 
-      <TitleOption
-        option={{
-          title: 'Suite',
-          experience: 0,
-          numberOfProjects: title.numberOfSuite,
-          projects: title.suite
-        }}
-      />
-    </div>
+  return (
+    <Carousel
+      opts={{
+        align: 'start'
+      }}
+      className={cn('w-full px-8', className)}
+      plugins={[WheelGesturesPlugin()]}
+    >
+      <CarouselContent>
+        {options.map((option) => (
+          <CarouselItem
+            key={option.title}
+            className="md:basis-1/2 xl:basis-1/3"
+          >
+            <TitleOption option={option} />
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+      <CarouselPrevious className="-left-2 md:-left-3" />
+      <CarouselNext className="-right-2 md:-right-3" />
+    </Carousel>
   )
 }

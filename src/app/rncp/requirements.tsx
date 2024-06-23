@@ -25,8 +25,8 @@ function TitleRequirement({ name, value, max, unit }: TitleRequirementProps) {
   return (
     <div className="space-y-1">
       <div className="flex items-center justify-between px-1 text-sm">
-        <p>{name}</p>
-        <p className="font-medium">
+        <p className="truncate">{name}</p>
+        <p className="min-w-[66px] text-right font-medium">
           {formatValue(value)} / {formatValue(max)} {unit}
         </p>
       </div>
@@ -65,7 +65,7 @@ export function TitleRequirements({
           Requirements
         </CardTitle>
       </CardHeader>
-      <CardContent className="grid grid-cols-3 space-x-6">
+      <CardContent className="grid grid-cols-1 gap-x-6 gap-y-4 md:grid-cols-3">
         <TitleRequirement
           name={'Level required'}
           value={cursus.level}
@@ -77,7 +77,7 @@ export function TitleRequirements({
           max={title.numberOfEvents}
         />
         <TitleRequirement
-          name={'Number of experiences'}
+          name={'Professional experiences'}
           value={experiences.length}
           max={title.numberOfExperiences}
         />

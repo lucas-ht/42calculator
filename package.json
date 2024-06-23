@@ -31,6 +31,8 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "cmdk": "^0.2.1",
+    "embla-carousel-react": "^8.1.5",
+    "embla-carousel-wheel-gestures": "^8.0.1",
     "lucide-react": "^0.378.0",
     "next": "14.2.3",
     "next-auth": "^5.0.0-beta.19",
