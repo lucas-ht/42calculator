@@ -18,7 +18,7 @@ export const {
   },
   session: {
     strategy: 'jwt',
-    maxAge: 24 * 60 * 60, // (24 hours)
+    maxAge: 24 * 60 * 60 // (24 hours)
   },
 
   providers: [
@@ -30,7 +30,7 @@ export const {
         const cursus = await parseCursus(profile, tokens.access_token as string)
 
         try {
-          await kv.set(`cursus:${profile.login}`, cursus, {})
+          await kv.set(`cursus:${profile.login}`, cursus, { ex: 24 * 60 * 60 })
         } catch (error) {
           process.stderr.write(`Error setting cursus: ${error}\n`)
           return Promise.reject(error)
