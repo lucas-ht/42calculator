@@ -6,6 +6,10 @@ import FortyTwo, { type FortyTwoProfile } from 'next-auth/providers/42-school'
 import Credentials from 'next-auth/providers/credentials'
 import { FortyTwoCursusId, type FortyTwoCursus } from './types/forty-two'
 
+export const isDevelopment =
+  process.env.VERCEL_ENV === 'development' ||
+  process.env.VERCEL_ENV === 'preview'
+
 const SESSION_MAX_AGE = 24 * 60 * 60 // (24 hours)
 
 const providers: Array<Provider> = [
@@ -31,7 +35,7 @@ const providers: Array<Provider> = [
   })
 ]
 
-if (process.env.NODE_ENV === 'development') {
+if (isDevelopment) {
   providers.push(
     Credentials({
       id: 'credentials',

@@ -16,6 +16,7 @@ services:
         - action: rebuild
           path: package.json
     environment:
+      VERCEL_ENV: "development"
       AUTH_SECRET: "${AUTH_SECRET}"
       AUTH_42_SCHOOL_ID: "${AUTH_42_SCHOOL_ID}"
       AUTH_42_SCHOOL_SECRET: "${AUTH_42_SCHOOL_SECRET}"

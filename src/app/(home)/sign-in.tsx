@@ -1,4 +1,4 @@
-import { signIn } from '@/auth'
+import { isDevelopment, signIn } from '@/auth'
 import FortyTwo from '@/components/icons/FortyTwo'
 import { Button } from '@/components/ui/button'
 import {
@@ -33,7 +33,7 @@ export function SignIn() {
           </Button>
         </form>
 
-        {process.env.NODE_ENV === 'development' && (
+        {isDevelopment && (
           <form
             action={async () => {
               'use server'
