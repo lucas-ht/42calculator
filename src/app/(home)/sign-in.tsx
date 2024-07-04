@@ -8,6 +8,7 @@ import {
   CardHeader,
   CardTitle
 } from '@/components/ui/card'
+import { DraftingCompass } from 'lucide-react'
 
 export function SignIn() {
   return (
@@ -18,18 +19,34 @@ export function SignIn() {
           Access the calculator with your 42 account.
         </CardDescription>
       </CardHeader>
-      <CardContent className="flex items-center justify-center">
+      <CardContent className="flex flex-col items-center justify-center space-y-4">
         <form
           action={async () => {
             'use server'
-            await signIn('42-school', { redirectTo: '/calculator' })
+            await signIn('42', { redirectTo: '/calculator' })
           }}
+          className="w-full"
         >
-          <Button variant="secondary">
+          <Button variant="secondary" className="w-full">
             <FortyTwo className="mr-4 h-6" />
             Sign in with 42
           </Button>
         </form>
+
+        {process.env.NODE_ENV === 'development' && (
+          <form
+            action={async () => {
+              'use server'
+              await signIn('credentials', { redirectTo: '/calculator' })
+            }}
+            className="w-full"
+          >
+            <Button variant="secondary" className="w-full">
+              <DraftingCompass className="mr-2 h-6" />
+              Developer sign in
+            </Button>
+          </form>
+        )}
       </CardContent>
     </Card>
   )

@@ -2,7 +2,7 @@ import { auth } from '@/auth'
 import { MainNav } from './nav/main-nav'
 import { MobileNav } from './nav/mobile-nav'
 import ThemeToggle from './theme-toggle'
-import UserManagement from './user-management'
+import UserMenu from './user-menu'
 
 export async function Header() {
   const session = await auth()
@@ -15,7 +15,7 @@ export async function Header() {
 
         <div className="ml-auto flex items-center gap-x-4">
           <ThemeToggle />
-          <UserManagement session={session} />
+          <UserMenu session={session} />
         </div>
       </div>
     </header>
