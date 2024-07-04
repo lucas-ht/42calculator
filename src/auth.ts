@@ -20,7 +20,6 @@ const providers: Array<Provider> = [
       try {
         await kv.set(`cursus:${profile.login}`, cursus, { ex: SESSION_MAX_AGE })
       } catch (error) {
-        process.stderr.write(`Error setting cursus: ${error}\n`)
         return Promise.reject(error)
       }
 
@@ -53,7 +52,6 @@ if (process.env.NODE_ENV === 'development') {
         try {
           await kv.set('cursus:developer', cursus, { ex: SESSION_MAX_AGE })
         } catch (error) {
-          process.stderr.write(`Error setting cursus: ${error}\n`)
           return Promise.reject(error)
         }
 
