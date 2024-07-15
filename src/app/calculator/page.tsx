@@ -1,4 +1,3 @@
-import { auth } from '@/auth'
 import {
   Card,
   CardContent,
@@ -7,12 +6,11 @@ import {
   CardTitle
 } from '@/components/ui/card'
 import { Skeleton } from '@/components/ui/skeleton'
+import { getFortyTwoCursus } from '@/lib/forty-two/cursus'
 import { getFortyTwoLevels } from '@/lib/forty-two/forty-two-experience'
 import { getFortyTwoProjects } from '@/lib/forty-two/forty-two-projects'
 import { CalculatorStoreProvider } from '@/providers/calculator-store-provider'
 import { FortyTwoStoreProvider } from '@/providers/forty-two-store-provider'
-import { FortyTwoCursus } from '@/types/forty-two'
-import { kv } from '@vercel/kv'
 import { Suspense } from 'react'
 import CalculatorTable from './(table)/table'
 
@@ -21,15 +19,7 @@ function CalculatorSkeleton() {
 }
 
 async function Calculator() {
-  const session = await auth()
-
-  let cursus: FortyTwoCursus | undefined = undefined
-  try {
-    cursus = (await kv.get(`cursus:${session?.user.login}`)) ?? undefined
-  } catch (error) {
-    process.stderr.write(`Error getting cursus: ${error}\n`)
-  }
-
+  const cursus = await getFortyTwoCursus()
   const projects = await getFortyTwoProjects()
   const levels = await getFortyTwoLevels()
 

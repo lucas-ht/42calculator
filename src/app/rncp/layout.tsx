@@ -1,4 +1,3 @@
-import { auth } from '@/auth'
 import {
   Card,
   CardContent,
@@ -7,11 +6,10 @@ import {
   CardTitle
 } from '@/components/ui/card'
 import { Skeleton } from '@/components/ui/skeleton'
+import { getFortyTwoCursus } from '@/lib/forty-two/cursus'
 import { getFortyTwoProjects } from '@/lib/forty-two/forty-two-projects'
 import { getFortyTwoTitles } from '@/lib/forty-two/forty-two-rncp'
 import { FortyTwoStoreProvider } from '@/providers/forty-two-store-provider'
-import { FortyTwoCursus } from '@/types/forty-two'
-import { kv } from '@vercel/kv'
 import { Suspense } from 'react'
 
 function TitlesSkeleton() {
@@ -23,16 +21,7 @@ async function TitlesProvider({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const session = await auth()
-
-  let cursus: FortyTwoCursus | undefined = undefined
-  try {
-    cursus = (await kv.get(`cursus:${session?.user.login}`)) ?? undefined
-  } catch (error) {
-    // eslint-disable-next-line no-console
-    console.error(`Error getting cursus: ${error}`)
-  }
-
+  const cursus = await getFortyTwoCursus()
   const projects = await getFortyTwoProjects()
   const titles = await getFortyTwoTitles()
 
