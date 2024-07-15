@@ -1,0 +1,34 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+      - "43214:43214"
+    develop:
+      watch:
+        - action: sync
+          path: .
+          target: /app
+          ignore:
+            - node_modules
+        - action: rebuild
+          path: package.json
+    environment:
+      VERCEL_ENV: "development"
+      AUTH_SECRET: "${AUTH_SECRET}"
+      AUTH_42_SCHOOL_ID: "${AUTH_42_SCHOOL_ID}"
+      AUTH_42_SCHOOL_SECRET: "${AUTH_42_SCHOOL_SECRET}"
+      KV_REST_API_URL: "${KV_REST_API_URL}"
+      KV_REST_API_TOKEN: "${KV_REST_API_TOKEN}"
+
+  redis:
+    image: redis
+
+  redis-http:
+    image: hiett/serverless-redis-http:latest
+    environment:
+      SRH_MODE: "env"
+      SRH_TOKEN: "${KV_REST_API_TOKEN}"
+      SRH_CONNECTION_STRING: "redis://redis:6379"

@@ -7,44 +7,48 @@ import {
 } from '@/components/ui/card'
 import { Skeleton } from '@/components/ui/skeleton'
 import { getFortyTwoCursus } from '@/lib/forty-two/cursus'
-import { getFortyTwoLevels } from '@/lib/forty-two/forty-two-experience'
 import { getFortyTwoProjects } from '@/lib/forty-two/forty-two-projects'
-import { CalculatorStoreProvider } from '@/providers/calculator-store-provider'
+import { getFortyTwoTitles } from '@/lib/forty-two/forty-two-rncp'
 import { FortyTwoStoreProvider } from '@/providers/forty-two-store-provider'
 import { Suspense } from 'react'
-import CalculatorTable from './(table)/table'
 
-function CalculatorSkeleton() {
+function TitlesSkeleton() {
   return <Skeleton className="h-[246.5px] w-full" />
 }
 
-async function Calculator() {
+async function TitlesProvider({
+  children
+}: Readonly<{
+  children: React.ReactNode
+}>) {
   const cursus = await getFortyTwoCursus()
   const projects = await getFortyTwoProjects()
-  const levels = await getFortyTwoLevels()
+  const titles = await getFortyTwoTitles()
 
   return (
-    <FortyTwoStoreProvider cursus={cursus} levels={levels} projects={projects}>
-      <CalculatorStoreProvider>
-        <CalculatorTable />
-      </CalculatorStoreProvider>
+    <FortyTwoStoreProvider cursus={cursus} titles={titles} projects={projects}>
+      {children}
     </FortyTwoStoreProvider>
   )
 }
 
-export default function CalculatorPage() {
+export default function TitlesLayout({
+  children
+}: Readonly<{
+  children: React.ReactNode
+}>) {
   return (
     <main className="container flex grow items-start justify-center p-4 md:p-12 lg:p-24">
       <Card className="w-full bg-card/5 backdrop-blur">
         <CardHeader>
-          <CardTitle tag="h1">Calculator</CardTitle>
+          <CardTitle tag="h1">RNCP</CardTitle>
           <CardDescription>
             Calculate your level based on your future 42 projects.
           </CardDescription>
         </CardHeader>
-        <CardContent className="p-0 md:p-6">
-          <Suspense fallback={<CalculatorSkeleton />}>
-            <Calculator />
+        <CardContent className="p-4 md:p-6">
+          <Suspense fallback={<TitlesSkeleton />}>
+            <TitlesProvider>{children}</TitlesProvider>
           </Suspense>
         </CardContent>
       </Card>

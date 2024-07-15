@@ -1,16 +1,7 @@
-<div align="center">
-  <img src=https://img.shields.io/badge/typescript-%23007ACC.svg?logo=typescript&logoColor=white>
-  &nbsp;
-  <img src=https://img.shields.io/badge/Next-black?logo=next.js&logoColor=white>
-  &nbsp;
-  <img src=https://img.shields.io/badge/vercel-%23000000.svg?logo=vercel&logoColor=white>
-  &nbsp;
-  <img src=https://img.shields.io/badge/github%20actions-%232671E5.svg?logo=githubactions&logoColor=white>
-  &nbsp;
-  <img src=https://github.com/lucas-ht/42calculator/actions/workflows/checks.yaml/badge.svg?branch=main>
-  &nbsp;
-  <img src=https://github.com/lucas-ht/42calculator/actions/workflows/spellcheck.yaml/badge.svg?branch=main>
-</div>
+![TypeScript logo](https://img.shields.io/badge/typescript-%23007ACC.svg?logo=typescript&logoColor=white)
+![Next.JS logo](https://img.shields.io/badge/Next-black?logo=next.js&logoColor=white)
+![Vercel logo](https://img.shields.io/badge/vercel-%23000000.svg?logo=vercel&logoColor=white)
+![Code Quality logo](https://github.com/lucas-ht/42calculator/actions/workflows/checks.yaml/badge.svg?branch=main)
 
 
 # 42calculator
@@ -19,9 +10,15 @@
 assisting students in strategically planning and making informed decisions regarding project selection and progression within the 42 curriculum.
 
 
+## Features
+
+* Calculate your future experience.
+* Plan your RNCP journey.
+
+
 ## Accessing the application
 
-You can access the live version of 42calculator at https://42calculator.vercel.app.
+You can access the live version of 42calculator at https://42calculator.fr.
 
 
 ## Running 42calculator locally

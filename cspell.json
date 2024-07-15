@@ -7,11 +7,13 @@
     "clsx",
     "fortytwo",
     "cursus",
+    "rncp",
     "dotenv",
     "levelname",
     "lucide",
     "zustand",
     "tanstack",
+    "embla",
   ],
   "useGitignore": true,
   "ignorePaths": [
@@ -25,5 +27,8 @@
     "/src/components/ui/**",
     "data/*",
     "public/*",
+    ".dockerignore",
+    "Dockerfile",
+    "compose.yaml",
   ]
 }
