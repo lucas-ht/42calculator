@@ -20,7 +20,7 @@ export async function DeleteUser({ session }: SignOutProps) {
       <Button
         type="submit"
         variant="ghost"
-        className="size-full justify-start text-destructive"
+        className="size-full justify-start text-destructive hover:text-destructive"
       >
         Delete my information
       </Button>
