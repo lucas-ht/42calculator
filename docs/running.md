@@ -9,7 +9,7 @@ Before you begin, ensure you have the following installed on your system:
 
 ## 1. Create a 42 API key
 
-To use 42 OAuth and retrieve user projects, you need to create an API key from the 42 intra.
+To use 42 OAuth and retrieve user projects, you must create an API key from the 42 intra.
 
 1. Visit the 42 API [OAuth page](https://profile.intra.42.fr/oauth/applications).
 
@@ -26,7 +26,7 @@ Create a `.env` file using the provided `.env.example` template and fill it acco
 
 ### Example `.env` file:
 
-```makefile
+```env
 # A randomly generated string used in the authentication process
 AUTH_SECRET="secret"
 
