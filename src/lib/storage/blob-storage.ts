@@ -1,10 +1,10 @@
 import { StorageService } from '@/types/storage'
 import { list } from '@vercel/blob'
 
-export class BlobStorageService implements StorageService {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  async load(prefix: string): Promise<any> {
-    process.stdout.write(`Loading ${prefix} from blob storage\n`)
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+async function loadData(prefix: string): Promise<any> {
+  'use server'
+  process.stdout.write(`Loading ${prefix} from blob storage\n`)
 
     const { blobs } = await list({
       token: process.env.BLOB_READ_WRITE_TOKEN,
@@ -17,5 +17,11 @@ export class BlobStorageService implements StorageService {
     }
 
     return await response.json()
+}
+
+export class BlobStorageService implements StorageService {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  async load(prefix: string): Promise<any> {
+    return loadData(prefix)
   }
 }
