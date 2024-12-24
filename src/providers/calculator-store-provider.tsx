@@ -18,7 +18,7 @@ export interface CalculatorStoreProviderProps {
 export const CalculatorStoreProvider = ({
   children,
 }: CalculatorStoreProviderProps) => {
-  const storeRef = useRef<StoreApi<CalculatorStore>>();
+  const storeRef = useRef<StoreApi<CalculatorStore>>(null);
   if (!storeRef.current) {
     storeRef.current = createCalculatorStore(initCalculatorStore());
   }
