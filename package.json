@@ -5,8 +5,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "test": "jest",
-    "prepare": "husky"
+    "test": "jest"
   },
   "dependencies": {
     "@radix-ui/react-avatar": "1.1.2",
@@ -52,7 +51,6 @@
     "@types/node": "22.10.2",
     "@types/react": "19.0.2",
     "@types/react-dom": "19.0.2",
-    "husky": "9.1.7",
     "jest": "29.7.0",
     "jest-environment-jsdom": "29.7.0",
     "postcss": "8.4.49",
