@@ -1,16 +1,16 @@
-import { FortyTwoProject } from './project'
+import type { FortyTwoProject } from "./project";
 
 export enum FortyTwoCursusId {
-  MAIN = 21
+  MAIN = 21,
 }
 
 export interface FortyTwoCursus {
-  id: number
-  name: string
-  slug: string
+  id: number;
+  name: string;
+  slug: string;
 
-  level: number
+  level: number;
 
-  events: number
-  projects: Record<number, FortyTwoProject>
+  events: number;
+  projects: Record<number, FortyTwoProject>;
 }

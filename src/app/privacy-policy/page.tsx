@@ -1,4 +1,4 @@
-import { Card, CardContent } from '@/components/ui/card'
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function PrivacyPolicy() {
   return (
@@ -98,5 +98,5 @@ export default function PrivacyPolicy() {
         </CardContent>
       </Card>
     </main>
-  )
+  );
 }

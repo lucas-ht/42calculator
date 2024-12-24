@@ -1,14 +1,14 @@
-import '@tanstack/table-core'
+// biome-ignore lint: This file is a declaration file and does not need to be linted for dependencies
+import "@tanstack/table-core";
 
-declare module '@tanstack/table-core' {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+declare module "@tanstack/table-core" {
   interface ColumnMeta<TData, TValue> {
-    className?: string
-    visible?: boolean
+    className?: string;
+    visible?: boolean;
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  // biome-ignore lint: This file is a declaration file and does not need to be linted for dependencies
   interface TableMeta<TData extends RowData> {
-    className?: string
+    className?: string;
   }
 }
