@@ -12,7 +12,6 @@ import {
 import '@testing-library/jest-dom'
 
 describe('Calculator Store', () => {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   let store: any
 
   const project: FortyTwoProject = {

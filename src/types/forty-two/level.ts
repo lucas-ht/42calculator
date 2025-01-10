@@ -1,4 +1,4 @@
 export interface FortyTwoLevel {
-  level: number
-  experience: number
+  level: number;
+  experience: number;
 }

@@ -1,0 +1,41 @@
+name: Code Quality
+
+on:
+  push:
+    paths-ignore:
+      - 'assets/**'
+      - 'README.md'
+      - 'LICENSE.md'
+      - 'scripts/**'
+      - 'docs/*'
+      - 'data/*'
+
+permissions:
+  contents: read
+
+jobs:
+
+  format:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup Biome
+      uses: biomejs/setup-biome@v2
+
+    - name: Format Checking
+      run: biome format . --verbose
+
+
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Setup Biome
+      uses: biomejs/setup-biome@v2
+
+    - name: Lint Checking
+      run: biome lint . --verbose

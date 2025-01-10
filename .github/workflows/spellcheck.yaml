@@ -6,14 +6,6 @@ on:
       - 'data/**'
       - 'public/**'
 
-  pull_request:
-    types:
-      - opened
-      - reopened
-      - synchronize
-    branches:
-      - main
-
 permissions:
   contents: read
 

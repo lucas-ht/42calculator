@@ -1,5 +1,5 @@
-import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import {
   Select,
   SelectContent,
@@ -7,20 +7,20 @@ import {
   SelectItem,
   SelectLabel,
   SelectTrigger,
-  SelectValue
-} from '@/components/ui/select'
-import { FortyTwoTitle } from '@/types/forty-two'
+  SelectValue,
+} from "@/components/ui/select";
+import type { FortyTwoTitle } from "@/types/forty-two";
 
 interface MainSelectorProps {
-  titles: FortyTwoTitle[]
-  activeTitle: FortyTwoTitle
-  setActiveTitle: (title: FortyTwoTitle) => void
+  titles: FortyTwoTitle[];
+  activeTitle: FortyTwoTitle;
+  setActiveTitle: (title: FortyTwoTitle) => void;
 }
 
 function MainSelector({
   titles,
   activeTitle,
-  setActiveTitle
+  setActiveTitle,
 }: MainSelectorProps) {
   return (
     <div className="hidden w-full grid-cols-4 space-x-4 lg:grid">
@@ -28,9 +28,9 @@ function MainSelector({
         <Button
           key={title.title}
           value={title.title}
-          variant={activeTitle.title === title.title ? 'default' : 'secondary'}
+          variant={activeTitle.title === title.title ? "default" : "secondary"}
           className="relative flex h-[88px] items-center justify-center truncate"
-          data-state={activeTitle.title === title.title ? 'active' : 'inactive'}
+          data-state={activeTitle.title === title.title ? "active" : "inactive"}
           onClick={() => setActiveTitle(title)}
           aria-label={title.title}
         >
@@ -39,29 +39,31 @@ function MainSelector({
           </h2>
           <Badge
             variant={
-              activeTitle.title === title.title ? 'secondary' : 'default'
+              activeTitle.title === title.title ? "secondary" : "default"
             }
-            className="absolute left-0 top-0 rounded-none rounded-br-md rounded-tl-md"
+            className="absolute top-0 left-0 rounded-none rounded-tl-md rounded-br-md"
           >
-            {title.type === 'rncp-6' ? 'RNCP 6' : 'RNCP 7'}
+            {title.type === "rncp-6" ? "RNCP 6" : "RNCP 7"}
           </Badge>
         </Button>
       ))}
     </div>
-  )
+  );
 }
 
 interface MobileSelectorProps {
-  titles: FortyTwoTitle[]
-  setActiveTitle: (title: FortyTwoTitle) => void
+  titles: FortyTwoTitle[];
+  setActiveTitle: (title: FortyTwoTitle) => void;
 }
 
 function MobileSelector({ titles, setActiveTitle }: MobileSelectorProps) {
   return (
     <div className="lg:hidden">
       <Select
-        defaultValue={'0'}
-        onValueChange={(index) => setActiveTitle(titles[parseInt(index)])}
+        defaultValue={"0"}
+        onValueChange={(index) =>
+          setActiveTitle(titles[Number.parseInt(index)])
+        }
       >
         <SelectTrigger aria-label="Select a title">
           <SelectValue />
@@ -70,48 +72,54 @@ function MobileSelector({ titles, setActiveTitle }: MobileSelectorProps) {
           <SelectGroup>
             <SelectLabel>RNCP 6</SelectLabel>
             {titles.map((title, index) => {
-              if (title.type !== 'rncp-6') {
-                return null
+              if (title.type !== "rncp-6") {
+                return null;
               }
 
               return (
-                <SelectItem key={index} value={index.toString()}>
+                <SelectItem
+                  key={title.title}
+                  value={index.toString()}
+                >
                   <h2>{title.title}</h2>
                 </SelectItem>
-              )
+              );
             })}
           </SelectGroup>
 
           <SelectGroup>
             <SelectLabel>RNCP 7</SelectLabel>
             {titles.map((title, index) => {
-              if (title.type !== 'rncp-7') {
-                return null
+              if (title.type !== "rncp-7") {
+                return null;
               }
 
               return (
-                <SelectItem key={index} value={index.toString()}>
+                <SelectItem
+                  key={title.title}
+                  value={index.toString()}
+                >
                   {title.title}
                 </SelectItem>
-              )
+              );
             })}
           </SelectGroup>
         </SelectContent>
       </Select>
     </div>
-  )
+  );
 }
 
 export interface TitleSelectorProps {
-  titles: FortyTwoTitle[]
-  activeTitle: FortyTwoTitle
-  setActiveTitle: (title: FortyTwoTitle) => void
+  titles: FortyTwoTitle[];
+  activeTitle: FortyTwoTitle;
+  setActiveTitle: (title: FortyTwoTitle) => void;
 }
 
 export function TitleSelector({
   titles,
   activeTitle,
-  setActiveTitle
+  setActiveTitle,
 }: TitleSelectorProps) {
   return (
     <>
@@ -120,7 +128,10 @@ export function TitleSelector({
         activeTitle={activeTitle}
         setActiveTitle={setActiveTitle}
       />
-      <MobileSelector titles={titles} setActiveTitle={setActiveTitle} />
+      <MobileSelector
+        titles={titles}
+        setActiveTitle={setActiveTitle}
+      />
     </>
-  )
+  );
 }

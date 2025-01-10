@@ -1,19 +1,19 @@
-import { signOut } from '@/auth'
-import { Button } from '@/components/ui/button'
-import { kv } from '@vercel/kv'
-import { Session } from 'next-auth'
+import { signOut } from "@/auth";
+import { Button } from "@/components/ui/button";
+import { kv } from "@vercel/kv";
+import type { Session } from "next-auth";
 
 export interface SignOutProps {
-  session: Session
+  session: Session;
 }
 
-export async function DeleteUser({ session }: SignOutProps) {
+export function DeleteUser({ session }: SignOutProps) {
   return (
     <form
       action={async () => {
-        'use server'
-        await kv.del(`cursus:${session.user.login}`)
-        await signOut({ redirectTo: '/' })
+        "use server";
+        await kv.del(`cursus:${session.user.login}`);
+        await signOut({ redirectTo: "/" });
       }}
       className="size-full"
     >
@@ -25,5 +25,5 @@ export async function DeleteUser({ session }: SignOutProps) {
         Delete my information
       </Button>
     </form>
-  )
+  );
 }

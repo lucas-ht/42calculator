@@ -1,12 +1,12 @@
-'use client'
+"use client";
 
-import { Button } from '@/components/ui/button'
+import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
-  DropdownMenuTrigger
-} from '@/components/ui/dropdown-menu'
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import {
   Table,
   TableBody,
@@ -14,32 +14,35 @@ import {
   TableFooter,
   TableHead,
   TableHeader,
-  TableRow
-} from '@/components/ui/table'
-import { cn } from '@/lib/utils'
-import { useCalculatorStore } from '@/providers/calculator-store-provider'
+  TableRow,
+} from "@/components/ui/table";
+import { cn } from "@/lib/utils";
+import { useCalculatorStore } from "@/providers/calculator-store-provider";
 import {
-  Column as ColumnInstance,
-  Table as TableInstance,
-  VisibilityState,
+  type Column as ColumnInstance,
+  type Table as TableInstance,
+  type VisibilityState,
   flexRender,
   getCoreRowModel,
-  useReactTable
-} from '@tanstack/react-table'
-import { Ellipsis } from 'lucide-react'
-import { useMemo, useState } from 'react'
-import { AddProject, StartLevel } from './actions'
-import { columns } from './columns'
+  useReactTable,
+} from "@tanstack/react-table";
+import { Ellipsis } from "lucide-react";
+import { useMemo, useState } from "react";
+import { AddProject, StartLevel } from "./actions";
+import { columns } from "./columns";
 
 function ColumnVisibility<TData>({
-  columns
+  columns,
 }: {
-  columns: ColumnInstance<TData>[]
+  columns: ColumnInstance<TData>[];
 }) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="icon">
+        <Button
+          variant="ghost"
+          size="icon"
+        >
           <Ellipsis className="size-5" />
         </Button>
       </DropdownMenuTrigger>
@@ -56,7 +59,7 @@ function ColumnVisibility<TData>({
         ))}
       </DropdownMenuContent>
     </DropdownMenu>
-  )
+  );
 }
 
 function CalculatorHeader<TData>({ table }: { table: TableInstance<TData> }) {
@@ -66,7 +69,7 @@ function CalculatorHeader<TData>({ table }: { table: TableInstance<TData> }) {
         <TableRow>
           <TableHead
             colSpan={table.getVisibleFlatColumns().length - 2}
-            className={cn(table.options.meta?.className, 'text-inherit')}
+            className={cn(table.options.meta?.className, "text-inherit")}
           >
             Start level
           </TableHead>
@@ -74,7 +77,7 @@ function CalculatorHeader<TData>({ table }: { table: TableInstance<TData> }) {
             colSpan={2}
             className={cn(
               table.options.meta?.className,
-              'text-right font-semibold text-inherit md:px-1'
+              "text-right font-semibold text-inherit md:px-1",
             )}
           >
             <StartLevel />
@@ -91,23 +94,23 @@ function CalculatorHeader<TData>({ table }: { table: TableInstance<TData> }) {
                   key={header.id}
                   className={cn(
                     table.options.meta?.className,
-                    header.column.columnDef.meta?.className
+                    header.column.columnDef.meta?.className,
                   )}
                 >
                   {header.isPlaceholder
                     ? null
                     : flexRender(
                         header.column.columnDef.header,
-                        header.getContext()
+                        header.getContext(),
                       )}
                 </TableHead>
-              )
+              );
             })}
           </TableRow>
         ))}
       </TableHeader>
     </>
-  )
+  );
 }
 
 function CalculatorBody<TData>({ table }: { table: TableInstance<TData> }) {
@@ -120,7 +123,7 @@ function CalculatorBody<TData>({ table }: { table: TableInstance<TData> }) {
               key={cell.id}
               className={cn(
                 table.options.meta?.className,
-                cell.column.columnDef.meta?.className
+                cell.column.columnDef.meta?.className,
               )}
             >
               {flexRender(cell.column.columnDef.cell, cell.getContext())}
@@ -129,20 +132,23 @@ function CalculatorBody<TData>({ table }: { table: TableInstance<TData> }) {
         </TableRow>
       ))}
       <TableRow className="hover:bg-inherit">
-        <TableCell colSpan={columns.length} className="h-24 text-center">
+        <TableCell
+          colSpan={columns.length}
+          className="h-24 text-center"
+        >
           <AddProject />
         </TableCell>
       </TableRow>
     </TableBody>
-  )
+  );
 }
 
 function CalculatorFooter<TData>({
   table,
-  levelEnd
+  levelEnd,
 }: {
-  table: TableInstance<TData>
-  levelEnd: number
+  table: TableInstance<TData>;
+  levelEnd: number;
 }) {
   return (
     <>
@@ -151,31 +157,33 @@ function CalculatorFooter<TData>({
           <TableCell colSpan={table.getVisibleFlatColumns().length - 2}>
             End level
           </TableCell>
-          <TableCell colSpan={2} className="text-right font-semibold">
+          <TableCell
+            colSpan={2}
+            className="text-right font-semibold"
+          >
             {levelEnd.toFixed(2)}
           </TableCell>
         </TableRow>
       </TableFooter>
     </>
-  )
+  );
 }
 
 export function CalculatorTable() {
-  const { projects, getProjects, level } = useCalculatorStore((state) => state)
+  const { projects, getProjects, level } = useCalculatorStore((state) => state);
 
-  // eslint-disable-next-line react-compiler/react-compiler
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const data = useMemo(() => getProjects(), [projects])
+  //biome-ignore lint: The getProjects dependency is not needed here
+  const data = useMemo(() => getProjects(), [projects]);
 
   const [columnVisibility, setColumnVisibility] = useState<VisibilityState>(
     columns.reduce((acc, column) => {
-      if (column.id != undefined) {
-        acc[column.id] = column.meta?.visible ?? true
+      if (column.id !== undefined) {
+        acc[column.id] = column.meta?.visible ?? true;
       }
 
-      return acc
-    }, {} as VisibilityState)
-  )
+      return acc;
+    }, {} as VisibilityState),
+  );
 
   const table = useReactTable({
     data,
@@ -183,12 +191,12 @@ export function CalculatorTable() {
     getCoreRowModel: getCoreRowModel(),
     onColumnVisibilityChange: setColumnVisibility,
     state: {
-      columnVisibility
+      columnVisibility,
     },
     meta: {
-      className: 'px-2 md:px-4 truncate'
-    }
-  })
+      className: "px-2 md:px-4 truncate",
+    },
+  });
 
   return (
     <>
@@ -201,11 +209,14 @@ export function CalculatorTable() {
         <Table>
           <CalculatorHeader table={table} />
           <CalculatorBody table={table} />
-          <CalculatorFooter table={table} levelEnd={level.end} />
+          <CalculatorFooter
+            table={table}
+            levelEnd={level.end}
+          />
         </Table>
       </div>
     </>
-  )
+  );
 }
 
-export default CalculatorTable
+export default CalculatorTable;

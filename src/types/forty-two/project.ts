@@ -1,20 +1,20 @@
 export interface FortyTwoProject {
-  id: number
-  name: string
+  id: number;
+  name: string;
 
-  experience?: number
+  experience?: number;
 
-  finishedAt?: number
-  mark?: number
-  bonus?: boolean
+  finishedAt?: number;
+  mark?: number;
+  bonus?: boolean;
 }
 
 export interface FortyTwoProjectCalculator
-  extends Omit<FortyTwoProject, 'experience'> {
-  addedAt: number
+  extends Omit<FortyTwoProject, "experience"> {
+  addedAt: number;
   experience: {
-    base: number
-    gained: number
-  }
-  level: number
+    base: number;
+    gained: number;
+  };
+  level: number;
 }
