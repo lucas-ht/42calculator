@@ -1,25 +1,18 @@
-import { BlobStorageService } from "@/lib/storage/blob-storage";
-import { LocalStorageService } from "@/lib/storage/local-storage";
-import { FortyTwoCursusId, type FortyTwoLevel } from "@/types/forty-two";
-import type { StorageService } from "@/types/storage";
+"use server";
 
-export const runtime = "edge";
+import { loadLocalData } from "@/lib/storage/local-storage";
+import { FortyTwoCursusId, type FortyTwoLevel } from "@/types/forty-two";
 
 let FortyTwoLevels: Record<number, FortyTwoLevel> | null = null;
-
-const hasBlobToken = process.env.BLOB_READ_WRITE_TOKEN !== undefined;
-const storageService: StorageService = hasBlobToken
-  ? new BlobStorageService()
-  : new LocalStorageService();
 
 export async function getFortyTwoLevels(): Promise<
   Record<number, FortyTwoLevel>
 > {
+  "use cache";
+
   if (FortyTwoLevels === null) {
     try {
-      const data = await storageService.load(
-        `experience_${FortyTwoCursusId.MAIN}`,
-      );
+      const data = await loadLocalData(`experience_${FortyTwoCursusId.MAIN}`);
 
       FortyTwoLevels = parseExperience(data);
     } catch (error) {

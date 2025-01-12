@@ -4,7 +4,7 @@ import NextAuth, { type User } from "next-auth";
 import type { Provider } from "next-auth/providers";
 import FortyTwo, { type FortyTwoProfile } from "next-auth/providers/42-school";
 import Credentials from "next-auth/providers/credentials";
-import { FortyTwoCursusId, type FortyTwoCursus } from "./types/forty-two";
+import { type FortyTwoCursus, FortyTwoCursusId } from "./types/forty-two";
 
 export const isDevelopment =
   process.env.VERCEL_ENV === "development" ||

@@ -1,12 +1,12 @@
 "use client";
 
 import {
+  type CalculatorStore,
   createCalculatorStore,
   initCalculatorStore,
-  type CalculatorStore,
 } from "@/stores/calculator-store";
-import { createContext, useContext, useRef, type ReactNode } from "react";
-import { useStore, type StoreApi } from "zustand";
+import { type ReactNode, createContext, useContext, useRef } from "react";
+import { type StoreApi, useStore } from "zustand";
 
 export const CalculatorStoreContext =
   createContext<StoreApi<CalculatorStore> | null>(null);

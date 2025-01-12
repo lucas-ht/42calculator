@@ -1,13 +1,13 @@
 "use client";
 
 import {
-  createFortyTwoStore,
-  initFortyTwoStore,
   type FortyTwoStore,
   type FortyTwoStoreInitProps,
+  createFortyTwoStore,
+  initFortyTwoStore,
 } from "@/stores/forty-two-store";
-import { createContext, useContext, type ReactNode } from "react";
-import { useStore, type StoreApi } from "zustand";
+import { type ReactNode, createContext, useContext } from "react";
+import { type StoreApi, useStore } from "zustand";
 
 export const FortyTwoStoreContext =
   createContext<StoreApi<FortyTwoStore> | null>(null);

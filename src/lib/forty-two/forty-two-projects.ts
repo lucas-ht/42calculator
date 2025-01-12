@@ -1,25 +1,18 @@
-import { BlobStorageService } from "@/lib/storage/blob-storage";
-import { LocalStorageService } from "@/lib/storage/local-storage";
-import { FortyTwoCursusId, type FortyTwoProject } from "@/types/forty-two";
-import type { StorageService } from "@/types/storage";
+"use server";
 
-export const runtime = "edge";
+import { loadLocalData } from "@/lib/storage/local-storage";
+import { FortyTwoCursusId, type FortyTwoProject } from "@/types/forty-two";
 
 let FortyTwoProjects: Record<number, FortyTwoProject> | null = null;
-
-const hasBlobToken = process.env.BLOB_READ_WRITE_TOKEN !== undefined;
-const storageService: StorageService = hasBlobToken
-  ? new BlobStorageService()
-  : new LocalStorageService();
 
 export async function getFortyTwoProjects(): Promise<
   Record<number, FortyTwoProject>
 > {
+  "use cache";
+
   if (FortyTwoProjects === null) {
     try {
-      const data = await storageService.load(
-        `projects_${FortyTwoCursusId.MAIN}`,
-      );
+      const data = await loadLocalData(`projects_${FortyTwoCursusId.MAIN}`);
 
       FortyTwoProjects = parseProjects(data);
     } catch (error) {
