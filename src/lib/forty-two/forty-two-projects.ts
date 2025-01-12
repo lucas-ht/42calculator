@@ -38,7 +38,7 @@ function parseProjects(projectsData: any): Record<number, FortyTwoProject> {
     projects[project.id] = {
       id: project.id,
       name: project.name,
-      experience: project.experience,
+      experience: project.difficulty,
     };
   }
 
