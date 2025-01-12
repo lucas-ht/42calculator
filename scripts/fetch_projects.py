@@ -118,6 +118,8 @@ def main() -> None:
     projects = get_projects(ftc)
 
     projects_with_stats = []
+
+    # Resume fetched projects if the script was interrupted
     try:
         filename = os.path.join(DIRECTORY, f"projects_{CURSUS_ID}.pkl")
         if os.path.exists(filename):
@@ -137,6 +139,7 @@ def main() -> None:
             FortyTwoProjectWithStats(project, project_users)
         )
 
+        # Save projects to pickle file to resume fetching if the script is interrupted
         try:
             filename = os.path.join(DIRECTORY, f"projects_{CURSUS_ID}.pkl")
             os.makedirs(os.path.dirname(filename), exist_ok=True)
@@ -146,6 +149,7 @@ def main() -> None:
         except IOError as e:
             logging.error('Failed to save projects to %s: %s.', filename, e)
 
+    # The projects are not pre sorted, so we sort them by id
     projects_with_stats.sort(key=lambda p: p.project.id)
 
     try:
