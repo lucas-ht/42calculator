@@ -1,4 +1,4 @@
-name: 'Code Quality Checks'
+name: Code Quality
 
 on:
   push:
@@ -16,7 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: 'Run spelling check'
+    - name: Run spelling check
       uses: streetsidesoftware/cspell-action@v6
       with:
         incremental_files_only: false
