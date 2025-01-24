@@ -1,4 +1,4 @@
-import { auth } from "@/auth";
+import { auth, signOut } from "@/auth";
 import type { FortyTwoCursus } from "@/types/forty-two";
 import { kv } from "@vercel/kv";
 
@@ -11,6 +11,7 @@ export async function getFortyTwoCursus(): Promise<FortyTwoCursus | undefined> {
     cursus = (await kv.get(`cursus:${session?.user.login}`)) ?? undefined;
   } catch (error) {
     process.stderr.write(`Error getting cursus: ${error}\n`);
+    await signOut();
   }
 
   return cursus;

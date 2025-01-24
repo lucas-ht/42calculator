@@ -1,18 +1,18 @@
 "use client";
 
-import type { FortyTwoProjectCalculator } from "@/types/forty-two";
+import type { CalculatorEntry } from "@/types/forty-two";
 import type { ColumnDef } from "@tanstack/react-table";
 import { ProjectBonus, ProjectGrade, RemoveProject } from "./actions";
 
-export const columns: ColumnDef<FortyTwoProjectCalculator>[] = [
+export const columns: ColumnDef<CalculatorEntry>[] = [
   {
     id: "remove",
     enableHiding: false,
     cell: ({ row }) => {
-      const project = row.original;
+      const entry = row.original;
       return (
         <>
-          <RemoveProject project={project} />
+          <RemoveProject entry={entry} />
         </>
       );
     },
@@ -23,7 +23,7 @@ export const columns: ColumnDef<FortyTwoProjectCalculator>[] = [
   {
     id: "name",
     header: "Name",
-    accessorKey: "name",
+    accessorKey: "project.name",
     enableHiding: false,
     meta: {
       className: "max-w-[60px] md:max-w-[200px] xl:max-w-none",
@@ -34,10 +34,10 @@ export const columns: ColumnDef<FortyTwoProjectCalculator>[] = [
     header: "Mark",
     enableHiding: false,
     cell: ({ row }) => {
-      const project = row.original;
+      const entry = row.original;
       return (
         <>
-          <ProjectGrade project={project} />
+          <ProjectGrade entry={entry} />
         </>
       );
     },
@@ -50,10 +50,10 @@ export const columns: ColumnDef<FortyTwoProjectCalculator>[] = [
     header: "Coalition Bonus",
     enableHiding: false,
     cell: ({ row }) => {
-      const project = row.original;
+      const entry = row.original;
       return (
         <>
-          <ProjectBonus project={project} />
+          <ProjectBonus entry={entry} />
         </>
       );
     },
@@ -65,8 +65,8 @@ export const columns: ColumnDef<FortyTwoProjectCalculator>[] = [
     id: "base experience",
     header: "Base Experience",
     cell: ({ row }) => {
-      const project = row.original;
-      return <>{project.experience.base.toFixed(0)}</>;
+      const entry = row.original;
+      return <>{entry.project.experience?.toFixed(0) ?? 0}</>;
     },
     meta: {
       visible: false,
@@ -77,8 +77,8 @@ export const columns: ColumnDef<FortyTwoProjectCalculator>[] = [
     id: "gained experience",
     header: "Gained Experience",
     cell: ({ row }) => {
-      const project = row.original;
-      return <>{project.experience.gained.toFixed(0)}</>;
+      const entry = row.original;
+      return <>{entry.experience.toFixed(0)}</>;
     },
     meta: {
       visible: false,
@@ -89,8 +89,8 @@ export const columns: ColumnDef<FortyTwoProjectCalculator>[] = [
     id: "level",
     header: "Level",
     cell: ({ row }) => {
-      const project = row.original;
-      return <>{project.level.toFixed(2)}</>;
+      const entry = row.original;
+      return <>{entry.level.toFixed(2)}</>;
     },
     meta: {
       className:

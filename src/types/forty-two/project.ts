@@ -2,6 +2,7 @@ export interface FortyTwoProject {
   id: number;
   name: string;
 
+  children?: FortyTwoProject[];
   experience?: number;
 
   finishedAt?: number;
@@ -9,12 +10,10 @@ export interface FortyTwoProject {
   bonus?: boolean;
 }
 
-export interface FortyTwoProjectCalculator
-  extends Omit<FortyTwoProject, "experience"> {
+export interface CalculatorEntry {
+  project: FortyTwoProject;
   addedAt: number;
-  experience: {
-    base: number;
-    gained: number;
-  };
+
+  experience: number;
   level: number;
 }

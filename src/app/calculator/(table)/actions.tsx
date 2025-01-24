@@ -16,9 +16,9 @@ import {
 } from "@/components/ui/popover";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Switch } from "@/components/ui/switch";
-import { useCalculatorStore } from "@/providers/calculator-store-provider";
+import { useCalculatorStore } from "@/stores/use-calculator-store";
 import { useFortyTwoStore } from "@/providers/forty-two-store-provider";
-import type { FortyTwoProjectCalculator } from "@/types/forty-two";
+import type { CalculatorEntry } from "@/types/forty-two";
 import { CirclePlus, Trash2 } from "lucide-react";
 import type React from "react";
 import { useEffect, useState } from "react";
@@ -120,9 +120,9 @@ export function AddProject() {
 }
 
 export function RemoveProject({
-  project,
+  entry,
 }: {
-  project: FortyTwoProjectCalculator;
+  entry: CalculatorEntry;
 }) {
   const { removeProject } = useCalculatorStore((state) => state);
 
@@ -132,7 +132,7 @@ export function RemoveProject({
       size="icon"
       className="group"
       onClick={() => {
-        removeProject(project.id);
+        removeProject(entry.project.id);
       }}
       aria-label="Remove project"
     >
@@ -142,31 +142,43 @@ export function RemoveProject({
 }
 
 export function ProjectGrade({
-  project,
+  entry,
 }: {
-  project: FortyTwoProjectCalculator;
+  entry: CalculatorEntry;
 }) {
   const [inputValue, setInputValue] = useState<number | null>(
-    project.mark ?? null,
+    entry.project.mark ?? null,
   );
   const { updateProject } = useCalculatorStore((state) => state);
   const gradeSchema = z.number().min(0).max(125);
 
   useEffect(() => {
-    setInputValue(project.mark ?? null);
-  }, [project.mark]);
+    setInputValue(entry.project.mark ?? null);
+  }, [entry.project.mark]);
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     if (event.target.value === "") {
       setInputValue(null);
-      updateProject({ ...project, mark: 0 });
+      updateProject({
+        ...entry,
+        project: {
+          ...entry.project,
+          mark: 0,
+        },
+      });
       return;
     }
 
     const newValue = Number(event.target.value);
     if (gradeSchema.safeParse(newValue).success) {
       setInputValue(newValue);
-      updateProject({ ...project, mark: newValue });
+      updateProject({
+        ...entry,
+        project: {
+          ...entry.project,
+          mark: newValue,
+        },
+      });
     }
   };
 
@@ -182,17 +194,23 @@ export function ProjectGrade({
 }
 
 export function ProjectBonus({
-  project,
+  entry,
 }: {
-  project: FortyTwoProjectCalculator;
+  entry: CalculatorEntry;
 }) {
   const { updateProject } = useCalculatorStore((state) => state);
 
   return (
     <Switch
-      checked={project.bonus}
+      checked={entry.project.bonus}
       onCheckedChange={(checked) => {
-        updateProject({ ...project, bonus: checked });
+        updateProject({
+          ...entry,
+          project: {
+            ...entry.project,
+            bonus: checked,
+          },
+        });
       }}
       aria-label="Project bonus"
     />

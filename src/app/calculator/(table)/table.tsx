@@ -17,7 +17,10 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { cn } from "@/lib/utils";
-import { useCalculatorStore } from "@/providers/calculator-store-provider";
+import {
+  useCalculatorStore,
+  useCalculatorStoreHydrator,
+} from "@/stores/use-calculator-store";
 import {
   type Column as ColumnInstance,
   type Table as TableInstance,
@@ -170,10 +173,16 @@ function CalculatorFooter<TData>({
 }
 
 export function CalculatorTable() {
-  const { projects, getProjects, level } = useCalculatorStore((state) => state);
+  useCalculatorStoreHydrator();
+
+  const {
+    entries: nodes,
+    getProjects,
+    level,
+  } = useCalculatorStore((state) => state);
 
   //biome-ignore lint: The getProjects dependency is not needed here
-  const data = useMemo(() => getProjects(), [projects]);
+  const data = useMemo(() => getProjects(), [nodes]);
 
   const [columnVisibility, setColumnVisibility] = useState<VisibilityState>(
     columns.reduce((acc, column) => {
