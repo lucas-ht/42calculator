@@ -9,42 +9,33 @@ import {
 } from "@/types/forty-two";
 import { getFortyTwoProjects } from "./forty-two-projects";
 
-let FortyTwoTitles: FortyTwoTitle[] | null = null;
-
 export async function getFortyTwoTitles(): Promise<FortyTwoTitle[]> {
   "use cache";
 
-  if (FortyTwoTitles === null) {
-    try {
-      const data = await loadLocalData(`rncp_${FortyTwoCursusId.MAIN}`);
+  try {
+    const titles = await loadLocalData(`rncp_${FortyTwoCursusId.MAIN}`);
 
-      FortyTwoTitles = await parseTitles(data);
-    } catch (error) {
-      process.stderr.write(`Error loading rncp: ${error}\n`);
-    }
+    return await parseTitles(titles);
+  } catch (error) {
+    process.stderr.write(`Error loading rncp: ${error}\n`);
   }
 
-  return FortyTwoTitles ?? [];
+  return [];
 }
 
 async function parseProjects(
-  // biome-ignore lint: The any type is used here because the return type is JSON
-  projectsData: any,
+  projectIds: number[],
 ): Promise<Record<number, FortyTwoProject>> {
   const fortyTwoProjects = await getFortyTwoProjects();
   const projects: Record<number, FortyTwoProject> = {};
 
-  for (const projectId of projectsData) {
+  for (const projectId of projectIds) {
     const project = fortyTwoProjects[projectId];
     if (project === undefined) {
       continue;
     }
 
-    projects[projectId] = {
-      id: project.id,
-      name: project.name,
-      experience: project.experience,
-    };
+    projects[projectId] = project;
   }
 
   return projects;

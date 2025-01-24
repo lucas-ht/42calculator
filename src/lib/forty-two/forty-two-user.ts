@@ -8,6 +8,30 @@ import type {
   ProjectUser,
 } from "next-auth/providers/42-school";
 
+export async function parseCursus(
+  profile: FortyTwoProfile,
+  accessToken: string,
+): Promise<FortyTwoCursus | null> {
+  for (const cursus of profile.cursus_users) {
+    if (cursus.cursus_id !== FortyTwoCursusId.MAIN) {
+      continue;
+    }
+
+    return {
+      id: cursus.cursus_id,
+      name: cursus.cursus.name,
+      slug: cursus.cursus.slug,
+
+      level: cursus.level,
+
+      events: await getEvents(profile, accessToken),
+      projects: parseProjects(profile.projects_users),
+    };
+  }
+
+  return null;
+}
+
 async function getEvents(
   profile: FortyTwoProfile,
   accessToken: string,
@@ -50,34 +74,18 @@ function parseProjects(
       id: projectData.project.id,
       name: projectData.project.name,
 
-      finishedAt: Date.parse(projectData.marked_at as string),
+      experience: 0,
+      children: [],
+
+      completions: 0,
+      duration: 0,
+
+      createdAt: Date.parse(projectData.created_at as string),
+      updatedAt: Date.parse(projectData.updated_at as string),
+
       mark: projectData.final_mark as number,
     };
   }
 
   return projects;
-}
-
-export async function parseCursus(
-  profile: FortyTwoProfile,
-  accessToken: string,
-): Promise<FortyTwoCursus | null> {
-  for (const cursus of profile.cursus_users) {
-    if (cursus.cursus_id !== FortyTwoCursusId.MAIN) {
-      continue;
-    }
-
-    return {
-      id: cursus.cursus_id,
-      name: cursus.cursus.name,
-      slug: cursus.cursus.slug,
-
-      level: cursus.level,
-
-      events: await getEvents(profile, accessToken),
-      projects: parseProjects(profile.projects_users),
-    };
-  }
-
-  return null;
 }

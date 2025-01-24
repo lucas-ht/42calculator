@@ -9,10 +9,9 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { getFortyTwoCursus } from "@/lib/forty-two/cursus";
 import { getFortyTwoLevels } from "@/lib/forty-two/forty-two-experience";
 import { getFortyTwoProjects } from "@/lib/forty-two/forty-two-projects";
-import { CalculatorStoreProvider } from "@/providers/calculator-store-provider";
 import { FortyTwoStoreProvider } from "@/providers/forty-two-store-provider";
 import { Suspense } from "react";
-import CalculatorTable from "./(table)/table";
+import CalculatorTable from "./table";
 
 function CalculatorSkeleton() {
   return <Skeleton className="h-[246.5px] w-full" />;
@@ -29,9 +28,7 @@ async function Calculator() {
       levels={levels}
       projects={projects}
     >
-      <CalculatorStoreProvider>
-        <CalculatorTable />
-      </CalculatorStoreProvider>
+      <CalculatorTable />
     </FortyTwoStoreProvider>
   );
 }

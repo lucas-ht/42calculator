@@ -7,8 +7,8 @@
   },
   "files": {
     "ignoreUnknown": true,
-    "ignore": ["./src/components/ui/"],
-    "include": ["./src/"]
+    "ignore": ["src/components/ui/**/*.tsx"],
+    "include": ["src/**/*.ts", "src/**/*.tsx"]
   },
   "formatter": {
     "enabled": true,
