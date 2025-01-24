@@ -46,9 +46,7 @@ export default function TitlesLayout({
       <Card className="w-full bg-card/5 backdrop-blur">
         <CardHeader>
           <CardTitle tag="h1">RNCP</CardTitle>
-          <CardDescription>
-            Calculate your level based on your future 42 projects.
-          </CardDescription>
+          <CardDescription>Track your RNCP progress.</CardDescription>
         </CardHeader>
         <CardContent className="p-4 md:p-6">
           <Suspense fallback={<TitlesSkeleton />}>
