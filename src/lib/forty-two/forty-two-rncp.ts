@@ -1,87 +1,71 @@
-import { BlobStorageService } from '@/lib/storage/blob-storage'
-import { LocalStorageService } from '@/lib/storage/local-storage'
+"use server";
+
+import { loadLocalData } from "@/lib/storage/local-storage";
 import {
   FortyTwoCursusId,
-  FortyTwoProject,
-  FortyTwoTitle,
-  FortyTwoTitleOption
-} from '@/types/forty-two'
-import { StorageService } from '@/types/storage'
-import { getFortyTwoProjects } from './forty-two-projects'
+  type FortyTwoProject,
+  type FortyTwoTitle,
+  type FortyTwoTitleOption,
+} from "@/types/forty-two";
+import { getFortyTwoProjects } from "./forty-two-projects";
 
-export const runtime = 'edge'
+export async function getFortyTwoTitles(): Promise<FortyTwoTitle[]> {
+  "use cache";
 
-let FortyTwoTitles: Array<FortyTwoTitle> | null = null
+  try {
+    const titles = await loadLocalData(`rncp_${FortyTwoCursusId.MAIN}`);
 
-const hasBlobToken = process.env.BLOB_READ_WRITE_TOKEN != undefined
-const storageService: StorageService = hasBlobToken
-  ? new BlobStorageService()
-  : new LocalStorageService()
-
-export async function getFortyTwoTitles(): Promise<Array<FortyTwoTitle>> {
-  if (FortyTwoTitles === null) {
-    try {
-      const data = await storageService.load(`rncp_${FortyTwoCursusId.MAIN}`)
-
-      FortyTwoTitles = await parseTitles(data)
-    } catch (error) {
-      process.stderr.write(`Error loading rncp: ${error}\n`)
-    }
+    return await parseTitles(titles);
+  } catch (error) {
+    process.stderr.write(`Error loading rncp: ${error}\n`);
   }
 
-  return FortyTwoTitles ?? []
+  return [];
 }
 
-/* eslint-disable @typescript-eslint/no-explicit-any */
 async function parseProjects(
-  projects_data: any
+  projectIds: number[],
 ): Promise<Record<number, FortyTwoProject>> {
-  const fortyTwoProjects = await getFortyTwoProjects()
-  const projects: Record<number, FortyTwoProject> = {}
+  const fortyTwoProjects = await getFortyTwoProjects();
+  const projects: Record<number, FortyTwoProject> = {};
 
-  for (const project_id of projects_data) {
-    const project = fortyTwoProjects[project_id]
+  for (const projectId of projectIds) {
+    const project = fortyTwoProjects[projectId];
     if (project === undefined) {
-      continue
+      continue;
     }
 
-    projects[project_id] = {
-      id: project.id,
-      name: project.name,
-      experience: project.experience
-    }
+    projects[projectId] = project;
   }
 
-  return projects
+  return projects;
 }
 
-/* eslint-disable @typescript-eslint/no-explicit-any */
-async function parseOptions(
-  options_data: any
-): Promise<Array<FortyTwoTitleOption>> {
-  const options: Array<FortyTwoTitleOption> = []
+// biome-ignore lint: The any type is used here because the return type is JSON
+async function parseOptions(optionsData: any): Promise<FortyTwoTitleOption[]> {
+  const options: FortyTwoTitleOption[] = [];
 
-  for (const option of options_data) {
+  for (const option of optionsData) {
     options.push({
       title: option.title,
       experience: option.experience,
       numberOfProjects: option.number_of_projects,
 
-      projects: await parseProjects(option.projects)
-    })
+      projects: await parseProjects(option.projects),
+    });
   }
 
-  return options
+  return options;
 }
 
-/* eslint-disable @typescript-eslint/no-explicit-any */
-async function parseTitles(titles_data: any): Promise<Array<FortyTwoTitle>> {
-  const titles: Array<FortyTwoTitle> = []
+// biome-ignore lint: The any type is used here because the return type is JSON
+async function parseTitles(titlesData: any): Promise<FortyTwoTitle[]> {
+  const titles: FortyTwoTitle[] = [];
 
-  const suite = await parseProjects(titles_data.suite.projects)
-  const experience = await parseProjects(titles_data.experience.projects)
+  const suite = await parseProjects(titlesData.suite.projects);
+  const experience = await parseProjects(titlesData.experience.projects);
 
-  for (const title of titles_data.rncp) {
+  for (const title of titlesData.rncp) {
     titles.push({
       type: title.type,
       title: title.title,
@@ -94,9 +78,9 @@ async function parseTitles(titles_data: any): Promise<Array<FortyTwoTitle>> {
       options: await parseOptions(title.options),
 
       suite,
-      experience
-    })
+      experience,
+    });
   }
 
-  return titles
+  return titles;
 }

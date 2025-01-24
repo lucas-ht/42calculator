@@ -1,12 +1,12 @@
-import { Button } from '@/components/ui/button'
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
-  CardTitle
-} from '@/components/ui/card'
-import Link from 'next/link'
+  CardTitle,
+} from "@/components/ui/card";
+import Link from "next/link";
 
 export default function NotFound() {
   return (
@@ -19,11 +19,14 @@ export default function NotFound() {
           </CardDescription>
         </CardHeader>
         <CardContent className="flex items-center justify-center">
-          <Button variant="secondary" asChild>
+          <Button
+            variant="secondary"
+            asChild
+          >
             <Link href="/">Go back home</Link>
           </Button>
         </CardContent>
       </Card>
     </main>
-  )
+  );
 }

@@ -1,18 +1,10 @@
-name: 'Code Quality Checks'
+name: Code Quality
 
 on:
   push:
     paths-ignore:
       - 'data/**'
       - 'public/**'
-
-  pull_request:
-    types:
-      - opened
-      - reopened
-      - synchronize
-    branches:
-      - main
 
 permissions:
   contents: read
@@ -24,7 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: 'Run spelling check'
+    - name: Run spelling check
       uses: streetsidesoftware/cspell-action@v6
       with:
         incremental_files_only: false

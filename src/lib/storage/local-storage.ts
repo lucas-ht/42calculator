@@ -1,16 +1,16 @@
-import { StorageService } from '@/types/storage'
-import { promises as fs } from 'fs'
-import * as path from 'path'
+"use server";
 
-export class LocalStorageService implements StorageService {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  async load(prefix: string): Promise<any> {
-    'use server'
-    process.stdout.write(`Loading ${prefix} from local storage\n`)
+// biome-ignore lint: The nodes functions are only used in the Node.js environment
+import { promises as fs } from "node:fs";
+// biome-ignore lint: The nodes functions are only used in the Node.js environment
+import * as path from "node:path";
 
-    const filePath = path.join(process.cwd(), 'data', `${prefix}.json`)
+// biome-ignore lint: The any type is used here because the return type is JSON
+export async function loadLocalData(prefix: string): Promise<any> {
+  "use server";
 
-    const data = await fs.readFile(filePath, 'utf-8')
-    return JSON.parse(data)
-  }
+  const filePath = path.join(process.cwd(), "data", `${prefix}.json`);
+  const data = await fs.readFile(filePath, "utf-8");
+
+  return JSON.parse(data);
 }

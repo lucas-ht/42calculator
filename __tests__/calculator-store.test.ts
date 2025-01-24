@@ -2,7 +2,7 @@ import { fortyTwoStore } from '@/providers/forty-two-store-provider'
 import {
   createCalculatorStore,
   initCalculatorStore
-} from '@/stores/calculator-store'
+} from '@/stores/use-calculator-store'
 import { initFortyTwoStore } from '@/stores/forty-two-store'
 import {
   FortyTwoCursus,
@@ -12,7 +12,6 @@ import {
 import '@testing-library/jest-dom'
 
 describe('Calculator Store', () => {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   let store: any
 
   const project: FortyTwoProject = {

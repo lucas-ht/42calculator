@@ -11,4 +11,15 @@ source:
     - any-glob-to-any-file:
       - 'src/**/*'
       - '__tests__/**/*'
+
+scripts:
+- all:
+  - changed-files:
+    - any-glob-to-any-file:
       - 'scripts/**/*'
+
+ci/cd:
+- all:
+  - changed-files:
+    - any-glob-to-any-file:
+      - '.github/**/*'

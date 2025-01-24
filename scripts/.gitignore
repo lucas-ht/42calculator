@@ -1,5 +1,8 @@
 ### Python ###
 
+# Project specific
+*.pkl
+
 # VS Code settings
 .vscode/
 

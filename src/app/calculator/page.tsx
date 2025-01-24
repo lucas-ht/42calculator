@@ -3,33 +3,34 @@ import {
   CardContent,
   CardDescription,
   CardHeader,
-  CardTitle
-} from '@/components/ui/card'
-import { Skeleton } from '@/components/ui/skeleton'
-import { getFortyTwoCursus } from '@/lib/forty-two/cursus'
-import { getFortyTwoLevels } from '@/lib/forty-two/forty-two-experience'
-import { getFortyTwoProjects } from '@/lib/forty-two/forty-two-projects'
-import { CalculatorStoreProvider } from '@/providers/calculator-store-provider'
-import { FortyTwoStoreProvider } from '@/providers/forty-two-store-provider'
-import { Suspense } from 'react'
-import CalculatorTable from './(table)/table'
+  CardTitle,
+} from "@/components/ui/card";
+import { Skeleton } from "@/components/ui/skeleton";
+import { getFortyTwoCursus } from "@/lib/forty-two/cursus";
+import { getFortyTwoLevels } from "@/lib/forty-two/forty-two-experience";
+import { getFortyTwoProjects } from "@/lib/forty-two/forty-two-projects";
+import { FortyTwoStoreProvider } from "@/providers/forty-two-store-provider";
+import { Suspense } from "react";
+import CalculatorTable from "./table";
 
 function CalculatorSkeleton() {
-  return <Skeleton className="h-[246.5px] w-full" />
+  return <Skeleton className="h-[246.5px] w-full" />;
 }
 
 async function Calculator() {
-  const cursus = await getFortyTwoCursus()
-  const projects = await getFortyTwoProjects()
-  const levels = await getFortyTwoLevels()
+  const cursus = await getFortyTwoCursus();
+  const projects = await getFortyTwoProjects();
+  const levels = await getFortyTwoLevels();
 
   return (
-    <FortyTwoStoreProvider cursus={cursus} levels={levels} projects={projects}>
-      <CalculatorStoreProvider>
-        <CalculatorTable />
-      </CalculatorStoreProvider>
+    <FortyTwoStoreProvider
+      cursus={cursus}
+      levels={levels}
+      projects={projects}
+    >
+      <CalculatorTable />
     </FortyTwoStoreProvider>
-  )
+  );
 }
 
 export default function CalculatorPage() {
@@ -49,5 +50,5 @@ export default function CalculatorPage() {
         </CardContent>
       </Card>
     </main>
-  )
+  );
 }

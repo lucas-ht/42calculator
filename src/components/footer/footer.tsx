@@ -1,13 +1,13 @@
-import { Separator } from '@/components/ui/separator'
-import Link from 'next/link'
-import GitHub from '../icons/GitHub'
+import { Separator } from "@/components/ui/separator";
+import Link from "next/link";
+import GitHub from "../icons/GitHub";
 
 export function Footer() {
   return (
-    <footer className="w-full border-t border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <footer className="w-full border-border/40 border-t bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-10 max-w-screen-2xl items-center justify-center gap-4 py-2">
         <Link href="/privacy-policy">
-          <div className="truncate text-xs text-muted-foreground transition-colors hover:text-foreground">
+          <div className="truncate text-muted-foreground text-xs transition-colors hover:text-foreground">
             Privacy Policy
           </div>
         </Link>
@@ -20,7 +20,7 @@ export function Footer() {
         </Link>
       </div>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

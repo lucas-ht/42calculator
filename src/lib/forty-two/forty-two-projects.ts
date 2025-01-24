@@ -1,47 +1,73 @@
-import { BlobStorageService } from '@/lib/storage/blob-storage'
-import { LocalStorageService } from '@/lib/storage/local-storage'
-import { FortyTwoCursusId, FortyTwoProject } from '@/types/forty-two'
-import { StorageService } from '@/types/storage'
-import { stderr } from 'process'
+"use server";
 
-export const runtime = 'edge'
-
-let FortyTwoProjects: Record<number, FortyTwoProject> | null = null
-
-const hasBlobToken = process.env.BLOB_READ_WRITE_TOKEN != undefined
-const storageService: StorageService = hasBlobToken
-  ? new BlobStorageService()
-  : new LocalStorageService()
+import { loadLocalData } from "@/lib/storage/local-storage";
+import { FortyTwoCursusId, type FortyTwoProject } from "@/types/forty-two";
 
 export async function getFortyTwoProjects(): Promise<
   Record<number, FortyTwoProject>
 > {
-  if (FortyTwoProjects === null) {
-    try {
-      const data = await storageService.load(
-        `projects_${FortyTwoCursusId.MAIN}`
-      )
+  "use cache";
 
-      FortyTwoProjects = parseProjects(data)
-    } catch (error) {
-      stderr.write(`Error loading projects: ${error}\n`)
-    }
+  try {
+    const projects = await loadLocalData(`projects_${FortyTwoCursusId.MAIN}`);
+
+    return parseProjects(projects);
+  } catch (error) {
+    process.stderr.write(`Error loading projects: ${error}\n`);
   }
 
-  return FortyTwoProjects ?? {}
+  return {};
 }
 
-/* eslint-disable @typescript-eslint/no-explicit-any */
-function parseProjects(projects_data: any): Record<number, FortyTwoProject> {
-  const projects: Record<number, FortyTwoProject> = {}
+// biome-ignore lint: The any type is used here because the return type is JSON
+function parseProject(projectData: any): FortyTwoProject {
+  const project: FortyTwoProject = {
+    id: projectData.id,
+    name: projectData.name,
 
-  for (const project of projects_data.projects) {
-    projects[project.id] = {
-      id: project.id,
-      name: project.name,
-      experience: project.experience
-    }
+    experience: projectData.difficulty,
+
+    parentId: projectData.parent?.id,
+    children: [],
+
+    completions: projectData.completions,
+    duration: projectData.duration,
+  };
+
+  if (projectData.children != null) {
+    project.children = projectData.children.map(parseProject);
   }
 
-  return projects
+  return project;
+}
+
+// biome-ignore lint: The any type is used here because the return type is JSON
+function parseProjects(projectsData: any): Record<number, FortyTwoProject> {
+  const projects: Record<number, FortyTwoProject> = {};
+
+  for (const projectData of projectsData.projects) {
+    if (projectData.exam === true) {
+      continue;
+    }
+
+    const project = parseProject(projectData);
+    projects[project.id] = project;
+  }
+
+  // This is necessary because the children does not contains the full project by default
+  for (const project of Object.values(projects)) {
+    if (project.children.length === 0) {
+      continue;
+    }
+
+    const children: FortyTwoProject[] = [];
+    for (const child of project.children) {
+      children.push(projects[child.id]);
+      delete projects[child.id];
+    }
+
+    project.children = children;
+  }
+
+  return projects;
 }
