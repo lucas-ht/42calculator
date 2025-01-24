@@ -2,18 +2,28 @@ export interface FortyTwoProject {
   id: number;
   name: string;
 
-  children?: FortyTwoProject[];
-  experience?: number;
+  experience: number;
 
-  finishedAt?: number;
-  mark?: number;
-  bonus?: boolean;
+  parentId?: number | undefined;
+  children: FortyTwoProject[];
+
+  completions: number;
+  duration: number;
+
+  createdAt?: number;
+  updatedAt?: number;
+
+  mark?: number | undefined;
+  bonus?: boolean | undefined;
 }
 
 export interface CalculatorEntry {
   project: FortyTwoProject;
-  addedAt: number;
+  order: number;
 
   experience: number;
   level: number;
+
+  parentId?: number | undefined;
+  children: CalculatorEntry[];
 }

@@ -74,7 +74,15 @@ function parseProjects(
       id: projectData.project.id,
       name: projectData.project.name,
 
-      finishedAt: Date.parse(projectData.marked_at as string),
+      experience: 0,
+      children: [],
+
+      completions: 0,
+      duration: 0,
+
+      createdAt: Date.parse(projectData.created_at as string),
+      updatedAt: Date.parse(projectData.updated_at as string),
+
       mark: projectData.final_mark as number,
     };
   }

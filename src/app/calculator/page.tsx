@@ -11,7 +11,7 @@ import { getFortyTwoLevels } from "@/lib/forty-two/forty-two-experience";
 import { getFortyTwoProjects } from "@/lib/forty-two/forty-two-projects";
 import { FortyTwoStoreProvider } from "@/providers/forty-two-store-provider";
 import { Suspense } from "react";
-import CalculatorTable from "./(table)/table";
+import CalculatorTable from "./table";
 
 function CalculatorSkeleton() {
   return <Skeleton className="h-[246.5px] w-full" />;

@@ -22,6 +22,7 @@ export type CalculatorState = {
     end: number;
   };
   entries: Record<number, CalculatorEntry>;
+  nextOrder: number;
 };
 
 export type CalculatorActions = {
@@ -30,6 +31,7 @@ export type CalculatorActions = {
   addProject: (project: FortyTwoProject) => void;
   updateProject: (entry: CalculatorEntry) => void;
   removeProject: (projectId: number) => void;
+  resetProjects: () => void;
   // recalculateLevels needs to be exposed for the rehydration process
   recalculateLevels: () => void;
 };
@@ -47,31 +49,37 @@ export const useCalculatorStore = create<CalculatorStore>()(
       const initialExperience = getExperience(initialLevel, levels);
 
       // Helper to recalculate experience & levels
-      const recalculateLevels = () => {
+      function recalculateLevels() {
         const state = get();
         const { levels } = fortyTwoStore.getState();
 
         let experience = state.experience.start;
-        const entries = Object.values(state.entries).sort(
-          (a, b) => a.addedAt - b.addedAt,
+
+        function recalculateEntry(entry: CalculatorEntry): CalculatorEntry {
+          entry.children = entry.children
+            .sort((a, b) => a.order - b.order)
+            .map((child) => recalculateEntry(child));
+
+          experience += entry.experience;
+          entry.level = getLevel(experience, levels);
+
+          return entry;
+        }
+
+        const sortedEntries = Object.values(state.entries).sort(
+          (a, b) => a.order - b.order,
         );
 
-        const updatedNodes = entries.map((entry) => {
-          experience += entry.experience;
-          const newLevel = getLevel(experience, levels);
-
-          return {
-            [entry.project.id]: {
-              ...entry,
-              level: newLevel,
-            },
-          };
-        });
+        const updatedEntries: Record<number, CalculatorEntry> = {};
+        for (let entry of sortedEntries) {
+          entry = recalculateEntry(entry);
+          updatedEntries[entry.project.id] = entry;
+        }
 
         set(() => ({
           entries: {
             ...state.entries,
-            ...Object.assign({}, ...updatedNodes),
+            ...updatedEntries,
           },
           experience: {
             ...state.experience,
@@ -82,7 +90,7 @@ export const useCalculatorStore = create<CalculatorStore>()(
             end: getLevel(experience, levels),
           },
         }));
-      };
+      }
 
       return {
         level: { start: initialLevel, end: initialLevel },
@@ -91,14 +99,13 @@ export const useCalculatorStore = create<CalculatorStore>()(
           end: initialExperience,
         },
         entries: {},
+        nextOrder: 0,
 
         recalculateLevels,
 
         getProjects: () => {
           const state = get();
-          return Object.values(state.entries).sort(
-            (a, b) => a.addedAt - b.addedAt,
-          );
+          return Object.values(state.entries).sort((a, b) => a.order - b.order);
         },
 
         setLevel: (level: number) => {
@@ -124,66 +131,95 @@ export const useCalculatorStore = create<CalculatorStore>()(
         },
 
         addProject: (project: FortyTwoProject) => {
-          const state = get();
-          const { levels } = fortyTwoStore.getState();
+          function getCalculatorEntry(
+            project: FortyTwoProject,
+          ): CalculatorEntry {
+            const state = get();
+            const entry: CalculatorEntry = {
+              project: {
+                ...project,
+                mark: 100,
+                bonus: false,
+              },
+              order: state.nextOrder,
 
-          if (state.entries[project.id]) {
-            return;
+              experience: project.experience,
+              level: 0,
+
+              children: [],
+            };
+
+            set(() => ({
+              nextOrder: state.nextOrder + 1,
+            }));
+
+            return entry;
           }
 
-          const experience = calculateExperience(
-            project.experience ?? 0,
-            100,
-            false,
-          );
-          const level = getLevel(state.experience.end + experience, levels);
+          const children: CalculatorEntry[] = [];
+          for (const child of project.children) {
+            const childEntry = getCalculatorEntry(child);
+            childEntry.parentId = project.id;
+            children.push(childEntry);
+          }
 
-          const node: CalculatorEntry = {
-            project: {
-              ...project,
-              mark: 100,
-              bonus: false,
-            },
-            addedAt: Date.now(),
-            experience: experience,
-            level: level,
-          };
+          const entry = getCalculatorEntry(project);
+          entry.children = children;
 
-          set(() => ({
-            level: {
-              ...state.level,
-              end: level,
-            },
-            experience: {
-              ...state.experience,
-              end: state.experience.end + experience,
-            },
+          set((state) => ({
             entries: {
               ...state.entries,
-              [node.project.id]: node,
+              [project.id]: entry,
             },
           }));
+
+          recalculateLevels();
         },
 
         updateProject: (entry: CalculatorEntry) => {
           const state = get();
-          if (!state.entries[entry.project.id]) {
-            return;
-          }
 
-          const experience = calculateExperience(
-            entry.project.experience ?? 0,
+          entry.experience = calculateExperience(
+            entry.project.experience,
             entry.project.mark ?? 0,
             entry.project.bonus ?? false,
           );
 
+          for (const child of entry.children) {
+            child.project.mark = entry.project.mark;
+            child.project.bonus = entry.project.bonus;
+
+            child.experience = calculateExperience(
+              child.project.experience,
+              child.project.mark ?? 0,
+              child.project.bonus ?? false,
+            );
+          }
+
+          if (entry.parentId && state.entries[entry.parentId]) {
+            const parent = state.entries[entry.parentId];
+            parent.children = parent.children.map((child) =>
+              child.project.id === entry.project.id ? entry : child,
+            );
+
+            set(() => ({
+              entries: {
+                ...state.entries,
+                [parent.project.id]: parent,
+              },
+            }));
+
+            return recalculateLevels();
+          }
+
+          if (!state.entries[entry.project.id]) {
+            return;
+          }
+
           set(() => ({
             entries: {
               ...state.entries,
-              [entry.project.id]: {
-                ...entry,
-                experience: experience,
-              },
+              [entry.project.id]: entry,
             },
           }));
 
@@ -205,6 +241,15 @@ export const useCalculatorStore = create<CalculatorStore>()(
 
           recalculateLevels();
         },
+
+        resetProjects: () => {
+          set(() => ({
+            entries: {},
+            nextOrder: 0,
+          }));
+
+          recalculateLevels();
+        },
       };
     },
     {
@@ -212,6 +257,7 @@ export const useCalculatorStore = create<CalculatorStore>()(
       skipHydration: true,
       partialize: (state: CalculatorStore) => ({
         entries: state.entries,
+        nextOrder: state.nextOrder,
       }),
       onRehydrateStorage:
         () => (state: CalculatorStore | undefined, error: unknown) => {

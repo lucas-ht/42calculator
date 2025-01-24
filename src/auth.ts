@@ -1,4 +1,4 @@
-import { parseCursus } from "@/lib/forty-two/forty-two";
+import { parseCursus } from "@/lib/forty-two/forty-two-user";
 import { kv } from "@vercel/kv";
 import NextAuth, { type User } from "next-auth";
 import type { Provider } from "next-auth/providers";

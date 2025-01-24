@@ -2,22 +2,36 @@
 
 import type { CalculatorEntry } from "@/types/forty-two";
 import type { ColumnDef } from "@tanstack/react-table";
-import { ProjectBonus, ProjectGrade, RemoveProject } from "./actions";
+import { ProjectBonus, RemoveProject } from "../(project)/project-actions";
+import { ProjectGrade } from "../(project)/project-grade";
+import { CornerDownRightIcon } from "lucide-react";
+import { ToggleExpand } from "./table-actions";
 
 export const columns: ColumnDef<CalculatorEntry>[] = [
   {
     id: "remove",
     enableHiding: false,
     cell: ({ row }) => {
-      const entry = row.original;
-      return (
-        <>
-          <RemoveProject entry={entry} />
-        </>
-      );
+      if (row.depth > 0) {
+        return null;
+      }
+      return <RemoveProject entry={row.original} />;
     },
     meta: {
-      className: "w-10 md:w-14 px-0 md:px-2",
+      className: "w-8 md:w-14 px-0 md:px-1",
+    },
+  },
+  {
+    id: "expand",
+    enableHiding: false,
+    cell: ({ row }) => {
+      if (!row.getCanExpand()) {
+        return null;
+      }
+      return <ToggleExpand row={row} />;
+    },
+    meta: {
+      className: "w-8 md:w-10 px-0 md:px-1",
     },
   },
   {
@@ -25,6 +39,17 @@ export const columns: ColumnDef<CalculatorEntry>[] = [
     header: "Name",
     accessorKey: "project.name",
     enableHiding: false,
+    cell: ({ row }) => {
+      const entry = row.original;
+      return (
+        <div className="flex items-center">
+          {row.depth > 0 && (
+            <CornerDownRightIcon className="mr-2 size-4 shrink-0 text-muted-foreground/50" />
+          )}
+          {entry.project.name}
+        </div>
+      );
+    },
     meta: {
       className: "max-w-[60px] md:max-w-[200px] xl:max-w-none",
     },
@@ -35,11 +60,7 @@ export const columns: ColumnDef<CalculatorEntry>[] = [
     enableHiding: false,
     cell: ({ row }) => {
       const entry = row.original;
-      return (
-        <>
-          <ProjectGrade entry={entry} />
-        </>
-      );
+      return <ProjectGrade entry={entry} />;
     },
     meta: {
       className: "max-w-[60px] md:max-w-[100px] xl:max-w-none items-center",
@@ -51,11 +72,7 @@ export const columns: ColumnDef<CalculatorEntry>[] = [
     enableHiding: false,
     cell: ({ row }) => {
       const entry = row.original;
-      return (
-        <>
-          <ProjectBonus entry={entry} />
-        </>
-      );
+      return <ProjectBonus entry={entry} />;
     },
     meta: {
       className: "max-w-[60px] md:max-w-[100px] xl:max-w-none items-center",
