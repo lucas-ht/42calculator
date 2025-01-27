@@ -1,7 +1,5 @@
 "use client";
 
-"use client";
-
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -15,13 +13,15 @@ import type { Column as ColumnInstance } from "@tanstack/react-table";
 import { Ellipsis } from "lucide-react";
 import type { Row } from "@tanstack/react-table";
 import { ChevronsUpDownIcon, Trash2 } from "lucide-react";
-import { useCalculatorStore } from "@/stores/use-calculator-store";
+import { useCalculatorStore } from "@/providers/calculator-store-provider";
 
 export function TableAction<TData>({
   columns,
 }: {
   columns: ColumnInstance<TData>[];
 }) {
+  const { resetProjects } = useCalculatorStore((state) => state);
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -34,9 +34,7 @@ export function TableAction<TData>({
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem
-          className="group pr-2 pl-8"
           onClick={() => {
-            const { resetProjects } = useCalculatorStore.getState();
             resetProjects();
           }}
         >

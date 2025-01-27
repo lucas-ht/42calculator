@@ -2,7 +2,7 @@ import { fortyTwoStore } from '@/providers/forty-two-store-provider'
 import {
   createCalculatorStore,
   initCalculatorStore
-} from '@/stores/use-calculator-store'
+} from '@/stores/calculator-store'
 import { initFortyTwoStore } from '@/stores/forty-two-store'
 import {
   FortyTwoCursus,

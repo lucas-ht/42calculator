@@ -9,27 +9,24 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { getFortyTwoCursus } from "@/lib/forty-two/cursus";
 import { getFortyTwoLevels } from "@/lib/forty-two/forty-two-experience";
 import { getFortyTwoProjects } from "@/lib/forty-two/forty-two-projects";
-import { FortyTwoStoreProvider } from "@/providers/forty-two-store-provider";
 import { Suspense } from "react";
-import CalculatorTable from "./table";
+import { Calculator } from "./table";
 
 function CalculatorSkeleton() {
   return <Skeleton className="h-[246.5px] w-full" />;
 }
 
-async function Calculator() {
+async function CalculatorLoader() {
   const cursus = await getFortyTwoCursus();
   const projects = await getFortyTwoProjects();
   const levels = await getFortyTwoLevels();
 
   return (
-    <FortyTwoStoreProvider
+    <Calculator
       cursus={cursus}
       levels={levels}
       projects={projects}
-    >
-      <CalculatorTable />
-    </FortyTwoStoreProvider>
+    />
   );
 }
 
@@ -45,7 +42,7 @@ export default function CalculatorPage() {
         </CardHeader>
         <CardContent className="p-0 md:p-6">
           <Suspense fallback={<CalculatorSkeleton />}>
-            <Calculator />
+            <CalculatorLoader />
           </Suspense>
         </CardContent>
       </Card>

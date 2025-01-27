@@ -14,7 +14,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { useCalculatorStore } from "@/stores/use-calculator-store";
+import { useCalculatorStore } from "@/providers/calculator-store-provider";
 import { useFortyTwoStore } from "@/providers/forty-two-store-provider";
 import { CirclePlus } from "lucide-react";
 import { useState } from "react";
