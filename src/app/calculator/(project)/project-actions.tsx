@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Switch } from "@/components/ui/switch";
-import { useCalculatorStore } from "@/stores/use-calculator-store";
+import { useCalculatorStore } from "@/providers/calculator-store-provider";
 import type { CalculatorEntry } from "@/types/forty-two";
 import { Trash2 } from "lucide-react";
 import type React from "react";

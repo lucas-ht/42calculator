@@ -1,10 +1,8 @@
 "use client";
 
 import { Table } from "@/components/ui/table";
-import {
-  useCalculatorStore,
-  useCalculatorStoreHydrator,
-} from "@/stores/use-calculator-store";
+import { CalculatorStoreProvider } from "@/providers/calculator-store-provider";
+import { useCalculatorStore } from "@/providers/calculator-store-provider";
 import {
   type VisibilityState,
   type ExpandedState,
@@ -17,10 +15,36 @@ import { columns } from "./(table)/table-columns";
 import { DataTableBody } from "./(table)/table-body";
 import { TableAction } from "./(table)/table-actions";
 import { DataTableHeader, DataTableFooter } from "./(table)/table-decoration";
+import { FortyTwoStoreProvider } from "@/providers/forty-two-store-provider";
+import type {
+  FortyTwoCursus,
+  FortyTwoLevel,
+  FortyTwoProject,
+} from "@/types/forty-two";
 
-export function CalculatorTable() {
-  useCalculatorStoreHydrator();
+export function Calculator({
+  cursus,
+  levels,
+  projects,
+}: {
+  cursus?: FortyTwoCursus;
+  levels?: Record<number, FortyTwoLevel>;
+  projects?: Record<number, FortyTwoProject>;
+}) {
+  return (
+    <FortyTwoStoreProvider
+      cursus={cursus}
+      levels={levels}
+      projects={projects}
+    >
+      <CalculatorStoreProvider>
+        <CalculatorTable />
+      </CalculatorStoreProvider>
+    </FortyTwoStoreProvider>
+  );
+}
 
+function CalculatorTable() {
   const { entries, getProjects, level } = useCalculatorStore((state) => state);
 
   //biome-ignore lint: The getProjects dependency is not needed here
@@ -74,5 +98,3 @@ export function CalculatorTable() {
     </>
   );
 }
-
-export default CalculatorTable;

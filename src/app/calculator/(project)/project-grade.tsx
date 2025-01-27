@@ -1,7 +1,7 @@
 "use client";
 
 import { Input } from "@/components/ui/input";
-import { useCalculatorStore } from "@/stores/use-calculator-store";
+import { useCalculatorStore } from "@/providers/calculator-store-provider";
 import type { CalculatorEntry } from "@/types/forty-two";
 import type React from "react";
 import { useEffect, useState } from "react";
