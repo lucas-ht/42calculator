@@ -34,6 +34,7 @@ export function TableAction<TData>({
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem
+          className="pr-2 pl-8"
           onClick={() => {
             resetProjects();
           }}
