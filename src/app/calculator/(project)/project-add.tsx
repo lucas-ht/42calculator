@@ -23,7 +23,9 @@ export function AddProject() {
   const [open, setOpen] = useState(false);
   const [, setValue] = useState("");
   const { addProject } = useCalculatorStore((state) => state);
-  const { projects } = useFortyTwoStore((state) => state);
+  let { projects } = useFortyTwoStore((state) => state);
+
+  projects = Object.values(projects).filter((project) => !project.parentId);
 
   return (
     <Popover
