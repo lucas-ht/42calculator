@@ -43,7 +43,7 @@ export default function TitlesLayout({
 }>) {
   return (
     <main className="container flex grow items-start justify-center p-4 md:p-12 lg:p-24">
-      <Card className="w-full bg-card/5 backdrop-blur">
+      <Card className="w-full bg-card/5 backdrop-blur-sm">
         <CardHeader>
           <CardTitle tag="h1">RNCP</CardTitle>
           <CardDescription>Track your RNCP progress.</CardDescription>
