@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 export default function PrivacyPolicy() {
   return (
     <main className="container grow justify-center p-4 md:p-12 lg:p-24">
-      <Card className="w-full bg-card/5 backdrop-blur">
+      <Card className="w-full bg-card/5 backdrop-blur-sm">
         <CardContent className="p-0 md:p-6">
           <article className="prose max-w-none text-justify prose-headings:text-foreground prose-p:text-muted-foreground">
             <h1>Privacy Policy</h1>
