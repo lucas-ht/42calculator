@@ -115,7 +115,6 @@ export const createCalculatorStore = (initState: CalculatorState) => {
 
       setLevel: (level: number) => {
         const state = get();
-        const { levels } = useFortyTwoStore((state) => state);
 
         if (state.level.start === level) {
           return;
