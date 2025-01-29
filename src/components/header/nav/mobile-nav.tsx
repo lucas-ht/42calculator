@@ -45,7 +45,7 @@ export function MobileNav({ session }: MobileNavProps) {
       <SheetContent
         side="left"
         hasCloseButton={false}
-        className="top-14 "
+        className="prevent-scroll top-14"
         onInteractOutside={(e) => {
           e.preventDefault();
         }}

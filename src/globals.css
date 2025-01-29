@@ -96,4 +96,9 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Fixes mobile navigation scrolling */
+  :root:has(.prevent-scroll) {
+    overflow: hidden;
+  }
 }
