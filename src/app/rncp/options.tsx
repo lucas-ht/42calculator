@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/carousel";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { cn } from "@/lib/utils";
-import { fortyTwoStore } from "@/providers/forty-two-store-provider";
+import { useFortyTwoStore } from "@/providers/forty-two-store-provider";
 import type {
   FortyTwoProject,
   FortyTwoTitle,
@@ -54,7 +54,7 @@ function Project({
   project,
   depth = 0,
 }: { project: FortyTwoProject; depth?: number }) {
-  const { cursus } = fortyTwoStore.getState();
+  const { cursus } = useFortyTwoStore((state) => state);
   const isCompleted: boolean = cursus.projects[project.id] !== undefined;
 
   return (
