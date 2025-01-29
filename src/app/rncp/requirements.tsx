@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import { fortyTwoStore } from "@/providers/forty-two-store-provider";
+import { useFortyTwoStore } from "@/providers/forty-two-store-provider";
 import type {
   FortyTwoProject,
   FortyTwoTitle,
@@ -48,7 +48,7 @@ export function TitleRequirements({
   title,
   className,
 }: TitleRequirementsProps) {
-  const { cursus } = fortyTwoStore.getState();
+  const { cursus } = useFortyTwoStore((state) => state);
 
   const experiences: FortyTwoProject[] = [];
   for (const project of Object.values(cursus.projects)) {
@@ -96,7 +96,7 @@ export interface TitleOptionRequirementsProps {
 export function TitleOptionRequirements({
   option,
 }: TitleOptionRequirementsProps) {
-  const { cursus } = fortyTwoStore.getState();
+  const { cursus } = useFortyTwoStore((state) => state);
 
   let projects = 0;
   let experience = 0;

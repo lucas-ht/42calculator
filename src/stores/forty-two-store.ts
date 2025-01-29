@@ -16,10 +16,10 @@ export type FortyTwoState = {
 export type FortyTwoStore = FortyTwoState;
 
 export type FortyTwoStoreInitProps = {
-  cursus?: FortyTwoCursus;
-  levels?: Record<number, FortyTwoLevel>;
-  projects?: Record<number, FortyTwoProject>;
-  titles?: FortyTwoTitle[];
+  cursus?: FortyTwoCursus | undefined;
+  levels?: Record<number, FortyTwoLevel> | undefined;
+  projects?: Record<number, FortyTwoProject> | undefined;
+  titles?: FortyTwoTitle[] | undefined;
 };
 
 export const initFortyTwoStore = ({
@@ -37,7 +37,14 @@ export const initFortyTwoStore = ({
 };
 
 export const defaultInitState: FortyTwoState = {
-  cursus: { id: 0, name: "", slug: "", level: 0, events: 0, projects: {} },
+  cursus: {
+    id: 0,
+    name: "",
+    slug: "",
+    level: 0,
+    events: 0,
+    projects: {},
+  },
   levels: {},
   projects: {},
   titles: [],
