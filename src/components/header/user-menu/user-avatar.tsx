@@ -30,6 +30,7 @@ export function UserAvatar({ imageUrl }: UserAvatarProps) {
     >
       <span className="sr-only">Toggle user settings</span>
       <AvatarImage
+        className="object-cover"
         src={imageUrl}
         alt="User's avatar"
         onLoadingStatusChange={(status: string) => {
