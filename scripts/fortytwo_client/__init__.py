@@ -14,6 +14,7 @@ from fortytwo_client.ressource.projects import (
     GetProjectsByCursus,
     GetProjectsById,
 )
+from fortytwo_client.ressource.user import FortyTwoUser, GetUserById, GetUsers
 
 __all__ = [
     'FortyTwoClient',
@@ -32,4 +33,7 @@ __all__ = [
     'GetProjects',
     'GetProjectsByCursus',
     'GetProjectsById',
+    'FortyTwoUser',
+    'GetUserById',
+    'GetUsers',
 ]
