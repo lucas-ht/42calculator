@@ -1,0 +1,44 @@
+name: Bug report
+description: Have you found a bug or issue? Create a bug report for this project.
+title: 'bug: '
+labels:
+  - bug
+assignees: 
+  - lucas-ht
+
+body:
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: I have tried to reproduce the issue on the [`:dev`](https://dev.42calculator.fr/) build and the issue persists.
+          required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Provide a clear and concise description of the issue, including what you expected to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Detail the steps taken to reproduce this error, and whether this issue can be reproduced consistently or if it is intermittent.
+      placeholder: |
+        1. Step 1...
+        2. Step 2...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Other libraries that might be involved, or any other relevant information you think would be useful.
+    validations:
+      required: false
