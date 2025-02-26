@@ -55,7 +55,7 @@ function Project({
   depth = 0,
 }: { project: FortyTwoProject; depth?: number }) {
   const { cursus } = fortyTwoStore.getState();
-  const isCompleted: boolean = cursus.projects[project.id] !== undefined;
+  const isCompleted: boolean = cursus.projects[project.id] !== undefined && cursus.projects[project.id].mark !== 0;
 
   return (
     <Collapsible>
