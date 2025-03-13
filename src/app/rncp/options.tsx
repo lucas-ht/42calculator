@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/carousel";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { cn } from "@/lib/utils";
-import { fortyTwoStore } from "@/providers/forty-two-store-provider";
+import { useFortyTwoStore } from "@/providers/forty-two-store-provider";
 import type {
   FortyTwoProject,
   FortyTwoTitle,
@@ -28,6 +28,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
+import { MarkDialog } from "./mark-dialog";
 
 function ProjectIcon({
   project,
@@ -54,7 +55,7 @@ function Project({
   project,
   depth = 0,
 }: { project: FortyTwoProject; depth?: number }) {
-  const { cursus } = fortyTwoStore.getState();
+  const cursus = useFortyTwoStore((state) => state.cursus);
   const isCompleted: boolean = cursus.projects[project.id] !== undefined;
 
   return (
@@ -85,10 +86,8 @@ function Project({
               {project.experience?.toLocaleString() ?? 0} XP
             </Badge>
 
-            {isCompleted && project.children.length === 0 && (
-              <Badge className="rounded-lg">
-                {cursus.projects[project.id].mark}
-              </Badge>
+            {project.children.length === 0 && (
+              <MarkDialog project={project} isCompleted={isCompleted} />
             )}
           </div>
         </div>
