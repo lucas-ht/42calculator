@@ -109,6 +109,19 @@ export function TitleOptionRequirements({
       experience +=
         (project.experience || 0) * ((cursusProject.mark || 0) / 100);
     }
+
+    // If the project has no experience, we need to add 
+    // the experience of its children (ie. piscines)
+    if (!project.experience) {
+      for (const child of project.children) {
+        const cursusChild: FortyTwoProject | undefined =
+          cursus.projects[child.id];
+        if (cursusChild) {
+          experience +=
+            (child.experience || 0) * ((cursusChild.mark || 0) / 100);
+        }
+      }
+    }
   }
 
   return (
