@@ -84,6 +84,7 @@ function parseProjects(
       updatedAt: Date.parse(projectData.updated_at as string),
 
       mark: projectData.final_mark as number,
+      is_validated: projectData["validated?"] as boolean,
     };
   }
 

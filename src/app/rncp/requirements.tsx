@@ -89,13 +89,9 @@ export function TitleRequirements({
   );
 }
 
-export interface TitleOptionRequirementsProps {
-  option: FortyTwoTitleOption;
-}
-
 export function TitleOptionRequirements({
   option,
-}: TitleOptionRequirementsProps) {
+}: { option: FortyTwoTitleOption }) {
   const { cursus } = useFortyTwoStore((state) => state);
 
   let projects = 0;
@@ -104,11 +100,12 @@ export function TitleOptionRequirements({
   for (const project of Object.values(option.projects)) {
     const cursusProject: FortyTwoProject | undefined =
       cursus.projects[project.id];
-    if (cursusProject) {
-      projects++;
-      experience +=
-        (project.experience || 0) * ((cursusProject.mark || 0) / 100);
+    if (!cursusProject?.is_validated) {
+      continue;
     }
+
+    projects++;
+    experience += (project.experience || 0) * ((cursusProject.mark || 0) / 100);
   }
 
   return (

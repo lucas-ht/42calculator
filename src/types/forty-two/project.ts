@@ -13,6 +13,7 @@ export interface FortyTwoProject {
   createdAt?: number;
   updatedAt?: number;
 
+  is_validated?: boolean | undefined;
   mark?: number | undefined;
   bonus?: boolean | undefined;
 }

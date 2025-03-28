@@ -55,7 +55,7 @@ function Project({
   depth = 0,
 }: { project: FortyTwoProject; depth?: number }) {
   const { cursus } = useFortyTwoStore((state) => state);
-  const isCompleted: boolean = cursus.projects[project.id] !== undefined;
+  const isValidated: boolean = cursus.projects[project.id]?.is_validated ?? false;
 
   return (
     <Collapsible>
@@ -63,7 +63,7 @@ function Project({
         key={project.id}
         className="flex items-center text-sm"
       >
-        {isCompleted ? (
+        {isValidated ? (
           <CircleCheck className="mr-2 size-4 text-primary" />
         ) : (
           <CircleDashed className="mr-2 size-4" />
@@ -85,7 +85,7 @@ function Project({
               {project.experience?.toLocaleString() ?? 0} XP
             </Badge>
 
-            {isCompleted && project.children.length === 0 && (
+            {isValidated && project.children.length === 0 && (
               <Badge className="rounded-lg">
                 {cursus.projects[project.id].mark}
               </Badge>
