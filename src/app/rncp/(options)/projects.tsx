@@ -1,41 +1,28 @@
 import { Badge } from "@/components/ui/badge";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { cn } from "@/lib/utils";
 import { useFortyTwoStore } from "@/providers/forty-two-store-provider";
-import type {
-  FortyTwoProject,
-  FortyTwoTitle,
-  FortyTwoTitleOption,
-} from "@/types/forty-two";
-import { WheelGesturesPlugin } from "embla-carousel-wheel-gestures";
+import type { FortyTwoProject } from "@/types/forty-two";
 import {
   CircleCheck,
   CircleDashed,
   ChevronsUpDownIcon,
   CornerDownRightIcon,
+  CircleXIcon,
+  CircleDotIcon
 } from "lucide-react";
-import { TitleOptionRequirements } from "./requirements";
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
 
-function ProjectIcon({
+function ProjectSideIcon({
   project,
   depth,
 }: { project: FortyTwoProject; depth: number }) {
   if (project.children.length > 0) {
     return (
-      <CollapsibleTrigger>
+      <CollapsibleTrigger className="cursor-pointer">
         <ChevronsUpDownIcon className="mr-2 size-4" />
       </CollapsibleTrigger>
     );
@@ -50,12 +37,37 @@ function ProjectIcon({
   return <span className="w-6" />;
 }
 
+function ProjectIcon({ project }: { project: FortyTwoProject }) {
+  const { cursus } = useFortyTwoStore((state) => state);
+  const userProject = cursus.projects[project.id];
+  const isValidated: boolean = userProject?.is_validated ?? false;
+
+  if (!userProject) {
+    return <CircleDashed className="mr-2 size-4" />;
+  }
+
+  if (isValidated) {
+    return <CircleCheck className="mr-2 size-4 text-primary" />;
+  }
+
+  if (userProject.status !== "finished") {
+    return <CircleDotIcon className="mr-2 size-4 text-muted-foreground" />;
+  }
+
+  if (!isValidated) {
+    return <CircleXIcon className="mr-2 size-4 text-destructive" />;
+  }
+
+  return <CircleDashed className="mr-2 size-4" />;
+}
+
 function Project({
   project,
   depth = 0,
 }: { project: FortyTwoProject; depth?: number }) {
   const { cursus } = useFortyTwoStore((state) => state);
-  const isValidated: boolean = cursus.projects[project.id]?.is_validated ?? false;
+  const userProject = cursus.projects[project.id];
+  const isValidated: boolean = userProject?.is_validated ?? false;
 
   return (
     <Collapsible>
@@ -63,13 +75,9 @@ function Project({
         key={project.id}
         className="flex items-center text-sm"
       >
-        {isValidated ? (
-          <CircleCheck className="mr-2 size-4 text-primary" />
-        ) : (
-          <CircleDashed className="mr-2 size-4" />
-        )}
+        <ProjectIcon project={project} />
 
-        <ProjectIcon
+        <ProjectSideIcon
           project={project}
           depth={depth}
         />
@@ -109,7 +117,7 @@ function Project({
   );
 }
 
-function ProjectList({
+export function ProjectList({
   projects,
 }: {
   projects: Record<number, FortyTwoProject>;
@@ -127,64 +135,5 @@ function ProjectList({
         })}
       </div>
     </ScrollArea>
-  );
-}
-
-function TitleOption({ option }: { option: FortyTwoTitleOption }) {
-  return (
-    <Card className="min-h-[638px]">
-      <CardHeader className="pb-4">
-        <CardTitle
-          tag="h3"
-          className="truncate text-xl"
-        >
-          {option.title}
-        </CardTitle>
-        <TitleOptionRequirements option={option} />
-      </CardHeader>
-      <CardContent className="p-4 md:p-6 md:pt-0">
-        <ProjectList projects={option.projects} />
-      </CardContent>
-    </Card>
-  );
-}
-
-export interface TitleOptionsProps {
-  title: FortyTwoTitle;
-  className?: string;
-}
-
-export function TitleOptions({ title, className }: TitleOptionsProps) {
-  const options: FortyTwoTitleOption[] = [
-    ...title.options,
-    {
-      title: "Suite",
-      experience: 0,
-      numberOfProjects: title.numberOfSuite,
-      projects: title.suite,
-    },
-  ];
-
-  return (
-    <Carousel
-      opts={{
-        align: "start",
-      }}
-      className={cn("w-full px-8", className)}
-      plugins={[WheelGesturesPlugin()]}
-    >
-      <CarouselContent>
-        {options.map((option) => (
-          <CarouselItem
-            key={option.title}
-            className="md:basis-1/2 xl:basis-1/3"
-          >
-            <TitleOption option={option} />
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-      <CarouselPrevious className="-left-2 md:-left-3" />
-      <CarouselNext className="-right-2 md:-right-3" />
-    </Carousel>
   );
 }

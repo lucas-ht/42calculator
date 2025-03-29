@@ -3,8 +3,8 @@
 import { useFortyTwoStore } from "@/providers/forty-two-store-provider";
 import type { FortyTwoTitle } from "@/types/forty-two";
 import { useState } from "react";
-import { TitleOptions } from "./options";
-import { TitleRequirements } from "./requirements";
+import { TitleOptions } from "./(options)/options";
+import { TitleRequirements } from "./(options)/requirements";
 import { TitleSelector } from "./selector";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
