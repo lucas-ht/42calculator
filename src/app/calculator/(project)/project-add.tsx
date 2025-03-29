@@ -2,17 +2,13 @@
 
 import { Button } from "@/components/ui/button";
 import {
-  Command,
+  CommandDialog,
   CommandEmpty,
   CommandGroup,
   CommandInput,
   CommandItem,
+  CommandList,
 } from "@/components/ui/command";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useCalculatorStore } from "@/providers/calculator-store-provider";
 import { useFortyTwoStore } from "@/providers/forty-two-store-provider";
@@ -28,31 +24,31 @@ export function AddProject() {
   projects = Object.values(projects).filter((project) => !project.parentId);
 
   return (
-    <Popover
-      open={open}
-      onOpenChange={setOpen}
-    >
-      <PopoverTrigger asChild>
-        <Button
-          variant="secondary"
-          // biome-ignore lint: The role attribute is fine
-          role="combobox"
-          aria-expanded={open}
-          aria-haspopup="listbox"
-          aria-label="Add project"
-        >
-          Add a project
-          <CirclePlus className="ml-2 size-4" />
-        </Button>
-      </PopoverTrigger>
-      <PopoverContent
-        className="w-[200px] p-0"
-        align="center"
+    <>
+      <Button
+        variant="secondary"
+        // biome-ignore lint: The role attribute is fine
+        role="combobox"
+        aria-expanded={open}
+        aria-haspopup="listbox"
+        aria-label="Add project"
+        onClick={() => {
+          setOpen((prev) => !prev);
+        }}
       >
-        <Command>
-          <CommandInput placeholder="Search projects..." />
+        Add a project
+        <CirclePlus className="ml-2 size-4" />
+      </Button>
+
+      <CommandDialog
+        open={open}
+        onOpenChange={setOpen}
+        title="Add a project"
+      >
+        <CommandInput placeholder="Search projects..." />
+        <CommandList>
           <CommandEmpty>No projects found.</CommandEmpty>
-          <CommandGroup>
+          <CommandGroup heading="Projects">
             <ScrollArea className="h-[250px]">
               {Object.values(projects).map((project) => (
                 <CommandItem
@@ -64,6 +60,7 @@ export function AddProject() {
                     setValue("");
                     setOpen(false);
                   }}
+                  className="h-8 cursor-pointer"
                   // biome-ignore lint: The role attribute is fine
                   role="option"
                   aria-label={`Select project ${project.name}`}
@@ -73,8 +70,8 @@ export function AddProject() {
               ))}
             </ScrollArea>
           </CommandGroup>
-        </Command>
-      </PopoverContent>
-    </Popover>
+        </CommandList>
+      </CommandDialog>
+    </>
   );
 }
