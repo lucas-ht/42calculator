@@ -14,6 +14,7 @@ import { useCalculatorStore } from "@/providers/calculator-store-provider";
 import { useFortyTwoStore } from "@/providers/forty-two-store-provider";
 import { CirclePlus } from "lucide-react";
 import { useState } from "react";
+import { track } from "@vercel/analytics";
 
 export function AddProject() {
   const [open, setOpen] = useState(false);
@@ -59,6 +60,10 @@ export function AddProject() {
 
                     setValue("");
                     setOpen(false);
+
+                    track("calculator-project-added", {
+                      project: project.name,
+                    });
                   }}
                   className="h-8 cursor-pointer"
                   // biome-ignore lint: The role attribute is fine

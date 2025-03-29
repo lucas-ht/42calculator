@@ -5,6 +5,8 @@ import type { Provider } from "next-auth/providers";
 import FortyTwo, { type FortyTwoProfile } from "next-auth/providers/42-school";
 import Credentials from "next-auth/providers/credentials";
 import { type FortyTwoCursus, FortyTwoCursusId } from "./types/forty-two";
+import { track } from "@vercel/analytics/server";
+import { after } from "next/server";
 
 export const isDevelopment =
   process.env.VERCEL_ENV === "development" ||
@@ -18,16 +20,21 @@ const providers: Provider[] = [
     clientId: process.env.AUTH_42_SCHOOL_ID,
     clientSecret: process.env.AUTH_42_SCHOOL_SECRET,
 
-    async profile(profile: FortyTwoProfile, tokens): Promise<User> {
-      const cursus = await parseCursus(profile, tokens.access_token as string);
+    profile(profile: FortyTwoProfile, tokens): User {
+      after(async () => {
+        const cursus = await parseCursus(
+          profile,
+          tokens.access_token as string,
+        );
 
-      try {
-        await kv.set(`cursus:${profile.login}`, cursus, {
-          ex: SESSION_MAX_AGE,
-        });
-      } catch (error) {
-        return Promise.reject(error);
-      }
+        try {
+          await kv.set(`cursus:${profile.login}`, cursus, {
+            ex: SESSION_MAX_AGE,
+          });
+        } catch (error) {
+          return Promise.reject(error);
+        }
+      });
 
       return {
         login: profile.login,
@@ -69,13 +76,7 @@ if (isDevelopment) {
   );
 }
 
-export const {
-  handlers,
-  signIn,
-  signOut,
-  auth,
-  unstable_update: update,
-} = NextAuth({
+export const { handlers, signIn, signOut, auth } = NextAuth({
   basePath: "/auth",
   pages: {
     signIn: "/",
@@ -104,6 +105,36 @@ export const {
       }
 
       return session;
+    },
+  },
+
+  events: {
+    signIn(params) {
+      if (!("user" in params && params.user)) {
+        return;
+      }
+      const { user } = params;
+
+      after(async () => {
+        await track("sign-in", {
+          login: user.login,
+        });
+      });
+    },
+
+    async signOut(params) {
+      if (!("token" in params && params.token?.login)) {
+        return;
+      }
+
+      const { token } = params;
+      await kv.del(`cursus:${token.login}`);
+
+      after(async () => {
+        await track("sign-out", {
+          login: token.login as string,
+        });
+      });
     },
   },
 });

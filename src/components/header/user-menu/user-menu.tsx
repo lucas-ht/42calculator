@@ -24,7 +24,7 @@ export function UserMenu({ session }: UserMenuProps) {
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem className="p-0">
-          <SignOut session={session} />
+          <SignOut />
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
