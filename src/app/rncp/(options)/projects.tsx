@@ -8,7 +8,7 @@ import {
   ChevronsUpDownIcon,
   CornerDownRightIcon,
   CircleXIcon,
-  CircleDotIcon
+  CircleDotIcon,
 } from "lucide-react";
 import {
   Collapsible,
@@ -61,19 +61,38 @@ function ProjectIcon({ project }: { project: FortyTwoProject }) {
   return <CircleDashed className="mr-2 size-4" />;
 }
 
-function Project({
-  project,
-  depth = 0,
-}: { project: FortyTwoProject; depth?: number }) {
+function ProjectExperience({ project }: { project: FortyTwoProject }) {
   const { cursus } = useFortyTwoStore((state) => state);
   const userProject = cursus.projects[project.id];
   const isValidated: boolean = userProject?.is_validated ?? false;
 
+  if (project.experience === 0) {
+    return null;
+  }
+
+  return (
+    <div className="space-x-2">
+      <Badge
+        className="rounded-lg"
+        variant="secondary"
+      >
+        {project.experience?.toLocaleString() ?? 0} XP
+      </Badge>
+
+      {isValidated && <Badge className="rounded-lg">{userProject.mark}</Badge>}
+    </div>
+  );
+}
+
+function Project({
+  project,
+  depth = 0,
+}: { project: FortyTwoProject; depth?: number }) {
   return (
     <Collapsible>
       <div
         key={project.id}
-        className="flex items-center text-sm"
+        className="flex min-h-[42px] items-center text-sm"
       >
         <ProjectIcon project={project} />
 
@@ -84,21 +103,7 @@ function Project({
 
         <div>
           <p className="ml-1 truncate">{project.name}</p>
-
-          <div className="space-x-2">
-            <Badge
-              className="rounded-lg"
-              variant="secondary"
-            >
-              {project.experience?.toLocaleString() ?? 0} XP
-            </Badge>
-
-            {isValidated && project.children.length === 0 && (
-              <Badge className="rounded-lg">
-                {cursus.projects[project.id].mark}
-              </Badge>
-            )}
-          </div>
+          <ProjectExperience project={project} />
         </div>
       </div>
 

@@ -113,8 +113,7 @@ function calculateExperience(
 
   if (userProject.is_validated) {
     projects++;
-    experience +=
-      (project.experience || 0) * ((userProject.mark || 0) / 100);
+    experience += (project.experience || 0) * ((userProject.mark || 0) / 100);
   }
 
   return { experience, projects };
