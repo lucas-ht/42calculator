@@ -8,12 +8,25 @@ import { TitleRequirements } from "./(options)/requirements";
 import { TitleSelector } from "./selector";
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
+import { track } from "@vercel/analytics";
 
 export default function Titles() {
   const { titles } = useFortyTwoStore((state) => state);
-  const [activeTitle, setActiveTitle] = useState<FortyTwoTitle | null>(
+  const [activeTitle, _setActiveTitle] = useState<FortyTwoTitle | null>(
     titles[0] ?? null,
   );
+
+  const setActiveTitle = (title: FortyTwoTitle | null) => {
+    if (!title) {
+      return;
+    }
+
+    _setActiveTitle(title);
+
+    track("rncp-title-switched", {
+      title: title?.title,
+    });
+  };
 
   if (!activeTitle) {
     return null;

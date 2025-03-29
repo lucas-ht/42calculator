@@ -8,6 +8,7 @@ import type { CalculatorEntry } from "@/types/forty-two";
 import { Trash2 } from "lucide-react";
 import type React from "react";
 import { useState } from "react";
+import { track } from "@vercel/analytics";
 
 const LEVEL_REGEX = /^\d{1,2}(\.\d{0,2})?$/;
 
@@ -60,6 +61,10 @@ export function RemoveProject({
       className="group"
       onClick={() => {
         removeProject(entry.project.id);
+
+        track("calculator-project-removed", {
+          project: entry.project.name,
+        });
       }}
       aria-label="Remove project"
     >
