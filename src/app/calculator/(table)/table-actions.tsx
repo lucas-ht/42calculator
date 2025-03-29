@@ -34,7 +34,7 @@ export function TableAction<TData>({
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuItem
-          className="pr-2 pl-8"
+          className="cursor-pointer pr-2 pl-8"
           onClick={() => {
             resetProjects();
           }}
@@ -50,7 +50,7 @@ export function TableAction<TData>({
         {columns.map((column) => (
           <DropdownMenuCheckboxItem
             key={column.id}
-            className="capitalize"
+            className="cursor-pointer capitalize"
             checked={column.getIsVisible()}
             onCheckedChange={(value) => column.toggleVisibility(value)}
           >

@@ -2,6 +2,7 @@ import {
   type FortyTwoCursus,
   FortyTwoCursusId,
   type FortyTwoProject,
+  type FortyTwoProjectStatus,
 } from "@/types/forty-two";
 import type {
   FortyTwoProfile,
@@ -63,9 +64,6 @@ function parseProjects(
   const projects: Record<number, FortyTwoProject> = {};
 
   for (const projectData of projectsData) {
-    if (projectData.status !== "finished") {
-      continue;
-    }
     if (projectData.cursus_ids[0] !== FortyTwoCursusId.MAIN) {
       continue;
     }
@@ -83,7 +81,9 @@ function parseProjects(
       createdAt: Date.parse(projectData.created_at as string),
       updatedAt: Date.parse(projectData.updated_at as string),
 
+      status: projectData.status as FortyTwoProjectStatus,
       mark: projectData.final_mark as number,
+      is_validated: projectData["validated?"] as boolean,
     };
   }
 

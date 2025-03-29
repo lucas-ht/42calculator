@@ -23,13 +23,14 @@ export function UserAvatar({ imageUrl }: UserAvatarProps) {
 
   return (
     <Avatar
-      className="size-10 cursor-pointer ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+      className="size-10 cursor-pointer ring-offset-background focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
       // biome-ignore lint: The role attribute is fine
       role="button"
       tabIndex={0}
     >
       <span className="sr-only">Toggle user settings</span>
       <AvatarImage
+        className="object-cover"
         src={imageUrl}
         alt="User's avatar"
         onLoadingStatusChange={(status: string) => {

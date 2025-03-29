@@ -1,7 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import { fortyTwoStore } from "@/providers/forty-two-store-provider";
+import { useFortyTwoStore } from "@/providers/forty-two-store-provider";
 import type {
+  FortyTwoCursus,
   FortyTwoProject,
   FortyTwoTitle,
   FortyTwoTitleOption,
@@ -48,12 +49,12 @@ export function TitleRequirements({
   title,
   className,
 }: TitleRequirementsProps) {
-  const { cursus } = fortyTwoStore.getState();
+  const { cursus } = useFortyTwoStore((state) => state);
 
   const experiences: FortyTwoProject[] = [];
   for (const project of Object.values(cursus.projects)) {
     const isExperience: boolean = title.experience[project.id] !== undefined;
-    if (isExperience) {
+    if (isExperience && project.is_validated) {
       experiences.push(project);
     }
   }
@@ -89,26 +90,49 @@ export function TitleRequirements({
   );
 }
 
-export interface TitleOptionRequirementsProps {
-  option: FortyTwoTitleOption;
+function calculateExperience(
+  project: FortyTwoProject,
+  cursus: FortyTwoCursus,
+): {
+  experience: number;
+  projects: number;
+} {
+  let projects = 0;
+  let experience = 0;
+
+  const userProject = cursus.projects[project.id];
+  if (!userProject) {
+    return { experience: 0, projects: 0 };
+  }
+
+  for (const child of userProject.children) {
+    const childExperience = calculateExperience(child, cursus);
+    projects += childExperience.projects;
+    experience += childExperience.experience;
+  }
+
+  if (userProject.is_validated) {
+    projects++;
+    experience += (project.experience || 0) * ((userProject.mark || 0) / 100);
+  }
+
+  return { experience, projects };
 }
 
 export function TitleOptionRequirements({
   option,
-}: TitleOptionRequirementsProps) {
-  const { cursus } = fortyTwoStore.getState();
+}: { option: FortyTwoTitleOption }) {
+  const { cursus } = useFortyTwoStore((state) => state);
 
   let projects = 0;
   let experience = 0;
 
   for (const project of Object.values(option.projects)) {
-    const cursusProject: FortyTwoProject | undefined =
-      cursus.projects[project.id];
-    if (cursusProject) {
-      projects++;
-      experience +=
-        (project.experience || 0) * ((cursusProject.mark || 0) / 100);
-    }
+    const { experience: projectExperience, projects: projectCount } =
+      calculateExperience(project, cursus);
+
+    projects += projectCount;
+    experience += projectExperience;
   }
 
   return (

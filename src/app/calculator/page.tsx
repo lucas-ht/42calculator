@@ -32,8 +32,8 @@ async function CalculatorLoader() {
 
 export default function CalculatorPage() {
   return (
-    <main className="container flex grow items-start justify-center p-4 md:p-12 lg:p-24">
-      <Card className="w-full bg-card/5 backdrop-blur">
+    <main className="@container flex grow items-start justify-center p-4 md:p-12 lg:p-24">
+      <Card className="@max-[1400px]:w-full @min-[1400px]:w-[1400px] bg-card/5 backdrop-blur-sm">
         <CardHeader>
           <CardTitle tag="h1">Calculator</CardTitle>
           <CardDescription>

@@ -2,7 +2,13 @@
 
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Sheet,
+  SheetHeader,
+  SheetTitle,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
 import type { Session } from "next-auth";
@@ -33,13 +39,17 @@ export function MobileNav({ session }: MobileNavProps) {
           <span className="sr-only">Toggle Menu</span>
         </Button>
       </SheetTrigger>
+      <SheetHeader className="sr-only">
+        <SheetTitle>Navigation Menu</SheetTitle>
+      </SheetHeader>
       <SheetContent
         side="left"
         hasCloseButton={false}
-        className="top-14 "
+        className="prevent-scroll top-14"
         onInteractOutside={(e) => {
           e.preventDefault();
         }}
+        aria-describedby={undefined}
       >
         <ScrollArea className="h-full">
           <div className="flex flex-col divide-y">

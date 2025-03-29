@@ -1,3 +1,10 @@
+export type FortyTwoProjectStatus =
+  | "in_progress"
+  | "finished"
+  | "searching_a_group"
+  | "creating_group"
+  | "waiting_for_correction";
+
 export interface FortyTwoProject {
   id: number;
   name: string;
@@ -13,6 +20,8 @@ export interface FortyTwoProject {
   createdAt?: number;
   updatedAt?: number;
 
+  status?: FortyTwoProjectStatus | undefined;
+  is_validated?: boolean | undefined;
   mark?: number | undefined;
   bonus?: boolean | undefined;
 }

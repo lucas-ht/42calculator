@@ -2,7 +2,7 @@ import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
-import "@/styles/globals.css";
+import "@/globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { VercelToolbar } from "@vercel/toolbar/next";

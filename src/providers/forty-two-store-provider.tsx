@@ -6,7 +6,7 @@ import {
   createFortyTwoStore,
   initFortyTwoStore,
 } from "@/stores/forty-two-store";
-import { type ReactNode, createContext, useContext } from "react";
+import { createContext, useContext, useRef, type ReactNode } from "react";
 import { type StoreApi, useStore } from "zustand";
 
 export const FortyTwoStoreContext =
@@ -16,8 +16,6 @@ export interface FortyTwoStoreProviderProps extends FortyTwoStoreInitProps {
   children: ReactNode;
 }
 
-const store = createFortyTwoStore();
-
 export const FortyTwoStoreProvider = ({
   cursus,
   levels,
@@ -25,10 +23,15 @@ export const FortyTwoStoreProvider = ({
   titles,
   children,
 }: FortyTwoStoreProviderProps) => {
-  store.setState(initFortyTwoStore({ cursus, levels, projects, titles }));
+  const storeRef = useRef<StoreApi<FortyTwoStore>>(null);
+  if (!storeRef.current) {
+    storeRef.current = createFortyTwoStore(
+      initFortyTwoStore({ cursus, levels, projects, titles }),
+    );
+  }
 
   return (
-    <FortyTwoStoreContext.Provider value={store}>
+    <FortyTwoStoreContext.Provider value={storeRef.current}>
       {children}
     </FortyTwoStoreContext.Provider>
   );
@@ -47,5 +50,3 @@ export const useFortyTwoStore = <T,>(
 
   return useStore(fortyTwoStoreContext, selector);
 };
-
-export { store as fortyTwoStore };

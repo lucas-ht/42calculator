@@ -11,8 +11,8 @@ export async function Header() {
   const session = await auth();
 
   return (
-    <header className="sticky top-0 z-50 w-full border-border/40 border-b bg-background md:bg-background/95 md:backdrop-blur-md md:supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 max-w-screen-2xl items-center">
+    <header className="@container sticky top-0 z-50 flex w-full items-start justify-center border-border/40 border-b bg-background md:bg-background/95 md:backdrop-blur-md md:supports-backdrop-filter:bg-background/60">
+      <div className="flex h-14 @max-[1400px]:w-full @min-[1400px]:w-[1400px] p-4">
         <MainNav session={session} />
         <MobileNav session={session} />
 
