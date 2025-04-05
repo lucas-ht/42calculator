@@ -44,7 +44,7 @@ export function Calculator({
   );
 }
 
-function CalculatorTable() {
+export function CalculatorTable() {
   const { entries, getProjects, level } = useCalculatorStore((state) => state);
 
   //biome-ignore lint: The getProjects dependency is not needed here

@@ -53,7 +53,10 @@ export function TitleRequirements({
   const calculatorStore = useCalculatorStore((state) => state);
 
   const experiences: FortyTwoProject[] = [];
-  for (const project of Object.values(cursus.projects)) {
+  for (const project of [
+    ...Object.values(cursus.projects),
+    ...Object.values(calculatorStore.entries).map((entry) => entry.project),
+  ]) {
     const isExperience: boolean = title.experience[project.id] !== undefined;
     if (isExperience) {
       experiences.push(project);

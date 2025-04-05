@@ -126,7 +126,7 @@ export function MarkDialog({ project, isCompleted }: MarkDialogProps) {
             </div>
           </div>
         </div>
-        <DialogFooter className="flex justify-between">
+        <DialogFooter className="flex justify-between gap-2">
           {calculatorStore.entries[project.id] && (
             <Button variant="destructive" onClick={handleRemove}>
               Remove
