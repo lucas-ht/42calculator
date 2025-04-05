@@ -1,5 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
+import { useCalculatorStore } from "@/providers/calculator-store-provider";
 import { useFortyTwoStore } from "@/providers/forty-two-store-provider";
 import type {
   FortyTwoProject,
@@ -16,7 +17,7 @@ interface TitleRequirementProps {
 
 function TitleRequirement({ name, value, max, unit }: TitleRequirementProps) {
   function formatValue(value: number) {
-    if (value > 1000) {
+    if (value >= 1000) {
       return `${(value / 1000).toFixed(1).toLocaleString()}K`;
     }
     return value.toLocaleString();
@@ -49,6 +50,7 @@ export function TitleRequirements({
   className,
 }: TitleRequirementsProps) {
   const cursus = useFortyTwoStore((state) => state.cursus);
+  const calculatorStore = useCalculatorStore((state) => state);
 
   const experiences: FortyTwoProject[] = [];
   for (const project of Object.values(cursus.projects)) {
@@ -61,17 +63,14 @@ export function TitleRequirements({
   return (
     <Card className={className}>
       <CardHeader className="pb-4">
-        <CardTitle
-          tag="h3"
-          className="text-xl"
-        >
+        <CardTitle tag="h3" className="text-xl">
           Requirements
         </CardTitle>
       </CardHeader>
       <CardContent className="grid grid-cols-1 gap-x-6 gap-y-4 md:grid-cols-3">
         <TitleRequirement
           name={"Level required"}
-          value={cursus.level}
+          value={calculatorStore.level.end}
           max={title.level}
         />
         <TitleRequirement
@@ -97,25 +96,26 @@ export function TitleOptionRequirements({
   option,
 }: TitleOptionRequirementsProps) {
   const cursus = useFortyTwoStore((state) => state.cursus);
+  const entries = useCalculatorStore((state) => state.entries);
 
   let projects = 0;
   let experience = 0;
 
   for (const project of Object.values(option.projects)) {
     const cursusProject: FortyTwoProject | undefined =
-      cursus.projects[project.id];
+      entries[project.id]?.project || cursus.projects[project.id];
     if (cursusProject) {
       projects++;
       experience +=
         (project.experience || 0) * ((cursusProject.mark || 0) / 100);
     }
 
-    // If the project has no experience, we need to add 
+    // If the project has no experience, we need to add
     // the experience of its children (ie. piscines)
     if (!project.experience) {
       for (const child of project.children) {
         const cursusChild: FortyTwoProject | undefined =
-          cursus.projects[child.id];
+          entries[child.id]?.project || cursus.projects[child.id];
         if (cursusChild) {
           experience +=
             (child.experience || 0) * ((cursusChild.mark || 0) / 100);

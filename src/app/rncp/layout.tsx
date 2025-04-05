@@ -7,8 +7,10 @@ import {
 } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import { getFortyTwoCursus } from "@/lib/forty-two/cursus";
+import { getFortyTwoLevels } from "@/lib/forty-two/forty-two-experience";
 import { getFortyTwoProjects } from "@/lib/forty-two/forty-two-projects";
 import { getFortyTwoTitles } from "@/lib/forty-two/forty-two-rncp";
+import { CalculatorStoreProvider } from "@/providers/calculator-store-provider";
 import { FortyTwoStoreProvider } from "@/providers/forty-two-store-provider";
 import { Suspense } from "react";
 
@@ -24,14 +26,15 @@ async function TitlesProvider({
   const cursus = await getFortyTwoCursus();
   const projects = await getFortyTwoProjects();
   const titles = await getFortyTwoTitles();
-
+  const levels = await getFortyTwoLevels();
   return (
     <FortyTwoStoreProvider
       cursus={cursus}
       titles={titles}
+      levels={levels}
       projects={projects}
     >
-      {children}
+      <CalculatorStoreProvider>{children}</CalculatorStoreProvider>
     </FortyTwoStoreProvider>
   );
 }

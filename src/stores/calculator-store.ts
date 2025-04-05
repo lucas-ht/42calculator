@@ -141,7 +141,7 @@ export const createCalculatorStore = (initState: CalculatorState) => {
           const entry: CalculatorEntry = {
             project: {
               ...project,
-              mark: 100,
+              mark: project.mark ?? 100,
               bonus: false,
             },
             order: state.nextOrder,

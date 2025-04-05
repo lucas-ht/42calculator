@@ -78,7 +78,7 @@ function Project({
         <div>
           <p className="ml-1 truncate">{project.name}</p>
 
-          <div className="space-x-2">
+          <div className="flex items-center gap-2">
             <Badge
               className="rounded-lg"
               variant="secondary"

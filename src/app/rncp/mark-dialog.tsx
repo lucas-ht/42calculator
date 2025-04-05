@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Plus } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -12,9 +12,10 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
-import { fortyTwoStore } from "@/providers/forty-two-store-provider";
-import { useFortyTwoStore } from "@/providers/forty-two-store-provider";
+import { useCalculatorStore } from "@/providers/calculator-store-provider";
 import type { FortyTwoProject } from "@/types/forty-two";
+import { cn } from "@/lib/utils";
+import { useFortyTwoStore } from "@/providers/forty-two-store-provider";
 
 interface MarkDialogProps {
   project: FortyTwoProject;
@@ -23,16 +24,19 @@ interface MarkDialogProps {
 
 export function MarkDialog({ project, isCompleted }: MarkDialogProps) {
   const [open, setOpen] = useState(false);
-  const [mark, setMark] = useState(isCompleted ? (project.mark || 100) : 100);
+  const [mark, setMark] = useState(isCompleted ? project.mark || 100 : 100);
   const cursus = useFortyTwoStore((state) => state.cursus);
-  
+  const calculatorStore = useCalculatorStore((state) => state);
+
   useEffect(() => {
-    if (open) {
-      setMark(isCompleted && cursus.projects[project.id] 
-        ? (cursus.projects[project.id].mark || 100) 
-        : 100);
-    }
-  }, [open, project.id, isCompleted, cursus.projects]);
+    setMark(
+      calculatorStore.entries[project.id]
+        ? calculatorStore.entries[project.id].project.mark || 100
+        : isCompleted && cursus.projects[project.id]
+        ? cursus.projects[project.id].mark || 100
+        : 100
+    );
+  }, [calculatorStore.entries[project.id], cursus.projects[project.id]]);
 
   const handleMarkChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const value = parseInt(e.target.value);
@@ -42,58 +46,55 @@ export function MarkDialog({ project, isCompleted }: MarkDialogProps) {
   };
 
   const handleSave = () => {
-    const store = fortyTwoStore.getState();
-    const updatedCursus = { ...store.cursus };
-    
-    if (isCompleted) {
-      updatedCursus.projects = {
-        ...updatedCursus.projects,
-        [project.id]: {
-          ...updatedCursus.projects[project.id],
+    if (calculatorStore.entries[project.id]) {
+      calculatorStore.updateProject({
+        ...calculatorStore.entries[project.id],
+        project: {
+          ...calculatorStore.entries[project.id].project,
           mark,
         },
-      };
+      });
     } else {
-      updatedCursus.projects = {
-        ...updatedCursus.projects,
-        [project.id]: {
-          ...project,
-          mark,
-        },
-      };
+      calculatorStore.addProject({ ...project, mark, bonus: false });
     }
-    
-    fortyTwoStore.setState({
-      ...store,
-      cursus: updatedCursus,
-    });
-    
+
     setOpen(false);
   };
 
   const handleRemove = () => {
-    if (!isCompleted) return;
-    
-    const store = fortyTwoStore.getState();
-    const updatedCursus = { ...store.cursus };
-    
-    const { [project.id]: _, ...remainingProjects } = updatedCursus.projects;
-    
-    updatedCursus.projects = remainingProjects;
-    
-    fortyTwoStore.setState({
-      ...store,
-      cursus: updatedCursus,
-    });
-    
+    if (!calculatorStore.entries[project.id]) return;
+
+    calculatorStore.removeProject(project.id);
     setOpen(false);
   };
+
+  if (
+    !calculatorStore.entries[project.id] &&
+    cursus.projects[project.id] &&
+    isCompleted
+  )
+    return (
+      <Badge className="rounded-lg hover:bg-primary/90" variant="default">
+        {cursus.projects[project.id].mark}
+      </Badge>
+    );
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
-        <Badge className="rounded-lg cursor-pointer hover:bg-primary/90" variant={isCompleted ? "default" : "secondary"}>
-          {isCompleted ? cursus.projects[project.id].mark : <Plus className="size-3" />}
+        <Badge
+          className={cn(
+            "rounded-lg cursor-pointer",
+            calculatorStore.entries[project.id]
+              ? "-outline-offset-2 outline-primary-foreground outline-2 outline-dashed bg-primary text-primary-foreground hover:bg-primary/80"
+              : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
+          )}
+        >
+          {calculatorStore.entries[project.id] ? (
+            calculatorStore.entries[project.id].project.mark
+          ) : (
+            <Plus className="size-4" />
+          )}
         </Badge>
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
@@ -126,7 +127,7 @@ export function MarkDialog({ project, isCompleted }: MarkDialogProps) {
           </div>
         </div>
         <DialogFooter className="flex justify-between">
-          {isCompleted && (
+          {calculatorStore.entries[project.id] && (
             <Button variant="destructive" onClick={handleRemove}>
               Remove
             </Button>
@@ -138,4 +139,4 @@ export function MarkDialog({ project, isCompleted }: MarkDialogProps) {
       </DialogContent>
     </Dialog>
   );
-} 
+}
