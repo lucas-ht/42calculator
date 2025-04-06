@@ -22,6 +22,7 @@ services:
       AUTH_42_SCHOOL_SECRET: "${AUTH_42_SCHOOL_SECRET}"
       KV_REST_API_URL: "${KV_REST_API_URL}"
       KV_REST_API_TOKEN: "${KV_REST_API_TOKEN}"
+      GITHUB_TOKEN: "${GITHUB_TOKEN}"
 
   redis:
     image: redis

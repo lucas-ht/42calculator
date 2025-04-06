@@ -1,6 +1,6 @@
 import { auth, signOut } from "@/auth";
 import type { FortyTwoCursus } from "@/types/forty-two";
-import { kv } from "@vercel/kv";
+import { redis } from "@/redis";
 
 export async function getFortyTwoCursus(): Promise<FortyTwoCursus | undefined> {
   "use server";
@@ -8,7 +8,7 @@ export async function getFortyTwoCursus(): Promise<FortyTwoCursus | undefined> {
 
   let cursus: FortyTwoCursus | undefined;
   try {
-    cursus = (await kv.get(`cursus:${session?.user.login}`)) ?? undefined;
+    cursus = (await redis.get(`cursus:${session?.user.login}`)) ?? undefined;
   } catch (error) {
     process.stderr.write(`Error getting cursus: ${error}\n`);
     await signOut();

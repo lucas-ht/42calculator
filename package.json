@@ -19,9 +19,10 @@
     "@radix-ui/react-separator": "1.1.1",
     "@radix-ui/react-slot": "1.1.1",
     "@radix-ui/react-switch": "1.1.2",
+    "@radix-ui/react-tooltip": "^1.1.8",
     "@tanstack/react-table": "8.20.6",
+    "@upstash/redis": "^1.34.6",
     "@vercel/analytics": "1.4.1",
-    "@vercel/kv": "^3.0.0",
     "@vercel/speed-insights": "1.1.0",
     "@vercel/toolbar": "0.1.30",
     "class-variance-authority": "0.7.1",
@@ -29,13 +30,14 @@
     "cmdk": "^1.1.1",
     "embla-carousel-react": "8.5.1",
     "embla-carousel-wheel-gestures": "8.0.1",
-    "lucide-react": "0.469.0",
+    "lucide-react": "^0.469.0",
     "next": "^15.2.0-canary.30",
     "next-auth": "5.0.0-beta.25",
     "next-themes": "0.4.4",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-responsive": "10.0.0",
+    "recharts": "^2.15.1",
     "tailwind-merge": "2.6.0",
     "tailwindcss-animate": "1.0.7",
     "zod": "3.24.1",
@@ -61,6 +63,7 @@
   },
   "overrides": {
     "next": "$next",
-    "react": "$react"
+    "react": "$react",
+    "react-dom": "$react-dom"
   }
 }

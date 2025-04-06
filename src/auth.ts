@@ -1,5 +1,4 @@
 import { parseCursus } from "@/lib/forty-two/forty-two-user";
-import { kv } from "@vercel/kv";
 import NextAuth, { type User } from "next-auth";
 import type { Provider } from "next-auth/providers";
 import FortyTwo, { type FortyTwoProfile } from "next-auth/providers/42-school";
@@ -7,6 +6,7 @@ import Credentials from "next-auth/providers/credentials";
 import { type FortyTwoCursus, FortyTwoCursusId } from "./types/forty-two";
 import { track } from "@vercel/analytics/server";
 import { after } from "next/server";
+import { redis } from "@/redis";
 
 export const isDevelopment =
   process.env.VERCEL_ENV === "development" ||
@@ -28,7 +28,7 @@ const providers: Provider[] = [
         );
 
         try {
-          await kv.set(`cursus:${profile.login}`, cursus, {
+          await redis.set(`cursus:${profile.login}`, cursus, {
             ex: SESSION_MAX_AGE,
           });
         } catch (error) {
@@ -63,7 +63,7 @@ if (isDevelopment) {
         };
 
         try {
-          await kv.set("cursus:developer", cursus, { ex: SESSION_MAX_AGE });
+          await redis.set("cursus:developer", cursus, { ex: SESSION_MAX_AGE });
         } catch (error) {
           return Promise.reject(error);
         }
@@ -128,7 +128,8 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       }
 
       const { token } = params;
-      await kv.del(`cursus:${token.login}`);
+
+      await redis.del(`cursus:${token.login}`);
 
       after(async () => {
         await track("sign-out", {
