@@ -128,6 +128,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       }
 
       const { token } = params;
+
       await redis.del(`cursus:${token.login}`);
 
       after(async () => {
