@@ -30,7 +30,7 @@
     "embla-carousel-react": "8.5.1",
     "embla-carousel-wheel-gestures": "8.0.1",
     "lucide-react": "0.469.0",
-    "next": "^15.5.7",
+    "next": "^16.1.0-canary.15",
     "next-auth": "5.0.0-beta.25",
     "next-themes": "0.4.4",
     "react": "19.0.0",
