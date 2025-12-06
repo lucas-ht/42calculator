@@ -3,8 +3,7 @@ import { withVercelToolbar } from '@vercel/toolbar/plugins/next'
 
 const nextConfig: NextConfig = {
   experimental: {
-    ppr: 'incremental',
-    dynamicIO: true,
+    cacheComponents: true,
   },
 }
 
