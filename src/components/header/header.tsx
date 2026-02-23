@@ -23,7 +23,11 @@ export async function Header() {
             size="sm"
             className="hidden md:flex"
           >
-            <Link href="https://github.com/lucas-ht/42calculator">
+            <Link
+              href="https://github.com/lucas-ht/42calculator"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <GitHub className="mr-2 size-6" />
               Star on GitHub
             </Link>
