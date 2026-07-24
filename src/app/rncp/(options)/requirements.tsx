@@ -1,7 +1,15 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CompletionBar } from "@/components/ui/completion-bar";
+import {
+  calculateExperience as gradedExperience,
+  getExperience,
+  getLevel,
+} from "@/lib/forty-two/forty-two-calculator";
 import { useFortyTwoStore } from "@/providers/forty-two-store-provider";
-import { usePlannedProjects } from "@/stores/planned-projects-store";
+import {
+  type PlannedProject,
+  usePlannedProjects,
+} from "@/stores/planned-projects-store";
 import type {
   FortyTwoCursus,
   FortyTwoProject,
@@ -76,7 +84,8 @@ export function TitleRequirements({
   title,
   className,
 }: TitleRequirementsProps) {
-  const { cursus } = useFortyTwoStore((state) => state);
+  const { cursus, levels, projects } = useFortyTwoStore((state) => state);
+  const planned = usePlannedProjects((state) => state.planned);
 
   const experiences: FortyTwoProject[] = [];
   for (const project of Object.values(cursus.projects)) {
@@ -85,6 +94,24 @@ export function TitleRequirements({
       experiences.push(project);
     }
   }
+
+  // Project the cursus level forward with the XP from every simulated project
+  // (graded by its mark/bonus), so "Level required" reflects the simulation.
+  let simulatedXp = 0;
+  for (const [id, config] of Object.entries(planned)) {
+    const project = projects[Number(id)];
+    if (!project) continue;
+    simulatedXp += gradedExperience(
+      project.experience || 0,
+      config.mark ?? 100,
+      config.bonus ?? false,
+    );
+  }
+  const projectedLevel = getLevel(
+    getExperience(cursus.level, levels) + simulatedXp,
+    levels,
+  );
+  const simulatedLevel = Math.max(0, projectedLevel - cursus.level);
 
   return (
     <Card className={className}>
@@ -100,6 +127,7 @@ export function TitleRequirements({
         <TitleRequirement
           name={"Level required"}
           value={cursus.level}
+          simulatedValue={simulatedLevel}
           max={title.level}
         />
         <TitleRequirement
@@ -127,7 +155,7 @@ interface Contribution {
 function calculateExperience(
   project: FortyTwoProject,
   cursus: FortyTwoCursus,
-  isSimulated: (projectId: number) => boolean,
+  plannedConfig: (projectId: number) => PlannedProject | undefined,
 ): Contribution {
   let projects = 0;
   let experience = 0;
@@ -137,21 +165,26 @@ function calculateExperience(
   const userProject = cursus.projects[project.id];
 
   for (const child of userProject?.children ?? []) {
-    const c = calculateExperience(child, cursus, isSimulated);
+    const c = calculateExperience(child, cursus, plannedConfig);
     projects += c.projects;
     experience += c.experience;
     simulatedProjects += c.simulatedProjects;
     simulatedExperience += c.simulatedExperience;
   }
 
+  const config = plannedConfig(project.id);
   if (userProject?.is_validated) {
     projects++;
     experience += (project.experience || 0) * ((userProject.mark || 0) / 100);
-  } else if (isSimulated(project.id)) {
-    // Simulated completion counts as a full pass (mark 100), tracked
-    // separately so the UI can show it is not real.
+  } else if (config) {
+    // Simulated completion, graded by the mark/bonus the user set (same as the
+    // calculator), tracked separately so the UI can show it is not real.
     simulatedProjects++;
-    simulatedExperience += project.experience || 0;
+    simulatedExperience += gradedExperience(
+      project.experience || 0,
+      config.mark ?? 100,
+      config.bonus ?? false,
+    );
   }
 
   return { experience, projects, simulatedExperience, simulatedProjects };
@@ -175,7 +208,7 @@ export function useTitleOptionProgress(
 ): TitleOptionProgress {
   const { cursus } = useFortyTwoStore((state) => state);
   const planned = usePlannedProjects((state) => state.planned);
-  const isSimulated = (projectId: number) => Boolean(planned[projectId]);
+  const plannedConfig = (projectId: number) => planned[projectId];
 
   let projects = 0;
   let experience = 0;
@@ -183,7 +216,7 @@ export function useTitleOptionProgress(
   let simulatedExperience = 0;
 
   for (const project of Object.values(option.projects)) {
-    const c = calculateExperience(project, cursus, isSimulated);
+    const c = calculateExperience(project, cursus, plannedConfig);
 
     projects += c.projects;
     experience += c.experience;

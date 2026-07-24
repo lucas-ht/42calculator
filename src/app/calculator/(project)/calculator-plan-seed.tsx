@@ -20,7 +20,7 @@ export function CalculatorPlanSeed() {
   useEffect(() => {
     for (const projectId of Object.keys(planned).map(Number)) {
       if (!entries[projectId] && projects[projectId]) {
-        addProject(projects[projectId]);
+        addProject(projects[projectId], planned[projectId]);
       }
     }
   }, [planned, entries, projects, addProject]);

@@ -1,8 +1,12 @@
 "use client";
 
+import { calculateExperience as gradedExperience } from "@/lib/forty-two/forty-two-calculator";
 import { cn } from "@/lib/utils";
 import { useFortyTwoStore } from "@/providers/forty-two-store-provider";
-import { usePlannedProjects } from "@/stores/planned-projects-store";
+import {
+  type PlannedProject,
+  usePlannedProjects,
+} from "@/stores/planned-projects-store";
 import type {
   FortyTwoCursus,
   FortyTwoProject,
@@ -170,7 +174,7 @@ interface OptionProgress {
 function optionProgress(
   option: FortyTwoTitleOption,
   cursus: FortyTwoCursus,
-  planned: Record<number, unknown>,
+  planned: Record<number, PlannedProject>,
 ): OptionProgress {
   let projects = 0;
   let simulatedProjects = 0;
@@ -182,8 +186,13 @@ function optionProgress(
       projects++;
       experience += (project.experience || 0) * ((userProject.mark || 0) / 100);
     } else if (planned[project.id]) {
+      const config = planned[project.id];
       simulatedProjects++;
-      simulatedExperience += project.experience || 0;
+      simulatedExperience += gradedExperience(
+        project.experience || 0,
+        config.mark ?? 100,
+        config.bonus ?? false,
+      );
     }
   }
   const isComplete =
@@ -202,7 +211,7 @@ function optionProgress(
 function isOptionComplete(
   option: FortyTwoTitleOption,
   cursus: FortyTwoCursus,
-  planned: Record<number, unknown>,
+  planned: Record<number, PlannedProject>,
 ): boolean {
   return optionProgress(option, cursus, planned).isComplete;
 }

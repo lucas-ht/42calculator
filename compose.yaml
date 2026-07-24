@@ -6,15 +6,13 @@ services:
     ports:
       - "3000:3000"
       - "43214:43214"
-    develop:
-      watch:
-        - action: sync
-          path: .
-          target: /app
-          ignore:
-            - node_modules
-        - action: rebuild
-          path: package.json
+    # Bind-mount source for live reload under plain `docker compose up`.
+    # Anonymous volumes keep the image's own node_modules/.next (owned by the
+    # nextjs user) instead of shadowing them with the host's.
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
     environment:
       VERCEL_ENV: "development"
       AUTH_SECRET: "${AUTH_SECRET}"

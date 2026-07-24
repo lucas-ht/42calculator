@@ -83,6 +83,7 @@ export function ProjectBonus({
   entry: CalculatorEntry;
 }) {
   const { updateProject } = useCalculatorStore((state) => state);
+  const persistConfig = usePlannedProjects((state) => state.setConfig);
 
   return (
     <Switch
@@ -95,6 +96,7 @@ export function ProjectBonus({
             bonus: checked,
           },
         });
+        persistConfig(entry.project.id, { bonus: checked });
       }}
       aria-label="Project bonus"
     />

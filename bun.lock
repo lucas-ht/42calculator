@@ -1,5 +1,6 @@
 {
   "lockfileVersion": 1,
+  "configVersion": 0,
   "workspaces": {
     "": {
       "name": "42calculator",
@@ -58,8 +59,8 @@
     },
   },
   "overrides": {
-    "postcss": "8.5.16",
     "next": "16.2.10",
+    "postcss": "8.5.16",
     "react": "^19.2.1",
   },
   "packages": {

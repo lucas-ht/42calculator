@@ -29,7 +29,10 @@ export type CalculatorState = {
 export type CalculatorActions = {
   getProjects: () => CalculatorEntry[];
   setLevel: (level: number) => void;
-  addProject: (project: FortyTwoProject) => void;
+  addProject: (
+    project: FortyTwoProject,
+    config?: { mark?: number; bonus?: boolean },
+  ) => void;
   updateProject: (entry: CalculatorEntry) => void;
   removeProject: (projectId: number) => void;
   resetProjects: () => void;
@@ -137,18 +140,24 @@ export const createCalculatorStore = (
         recalculateLevels();
       },
 
-      addProject: (project: FortyTwoProject) => {
+      addProject: (
+        project: FortyTwoProject,
+        config?: { mark?: number; bonus?: boolean },
+      ) => {
+        const mark = config?.mark ?? 100;
+        const bonus = config?.bonus ?? false;
+
         function getCalculatorEntry(project: FortyTwoProject): CalculatorEntry {
           const state = get();
           const entry: CalculatorEntry = {
             project: {
               ...project,
-              mark: 100,
-              bonus: false,
+              mark,
+              bonus,
             },
             order: state.nextOrder,
 
-            experience: project.experience,
+            experience: calculateExperience(project.experience, mark, bonus),
             level: 0,
 
             children: [],

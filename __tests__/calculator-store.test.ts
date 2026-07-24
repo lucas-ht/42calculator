@@ -58,6 +58,16 @@ describe('Calculator Store', () => {
     expect(store.getState().level.end).toEqual(2.25)
   })
 
+  it('should seed a project with a stored config (survives reload)', () => {
+    // Mirrors CalculatorPlanSeed re-seeding from the persisted plan: a stored
+    // mark must be applied instead of resetting to 100.
+    store.getState().addProject(project, { mark: 125, bonus: false })
+
+    expect(store.getState().entries[project.id].project.mark).toEqual(125)
+    expect(store.getState().experience.end).toEqual(225)
+    expect(store.getState().level.end).toEqual(2.25)
+  })
+
   it('should remove a project correctly', () => {
     store.getState().addProject(project)
     store.getState().removeProject(project.id)
