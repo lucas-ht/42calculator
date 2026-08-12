@@ -30,6 +30,9 @@ export function SignIn() {
           <Button
             variant="secondary"
             className="w-full"
+            // Captures sign-in attempts, including the ones that never come
+            // back from 42's OAuth flow. `trackAttributes` picks this up.
+            data-track="sign-in-clicked"
           >
             <FortyTwo className="mr-4 h-6" />
             Sign in with 42

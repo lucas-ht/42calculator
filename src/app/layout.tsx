@@ -3,6 +3,7 @@ import Header from "@/components/header/header";
 import { ThemeProvider } from "@/components/theme-provider";
 import { cn } from "@/lib/utils";
 import "@/globals.css";
+import { OpenPanelComponent } from "@openpanel/nextjs";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { VercelToolbar } from "@vercel/toolbar/next";
@@ -31,6 +32,7 @@ export default function RootLayout({
   // infrastructure; on other hosts (e.g. Coolify) they 404 and warn, so only
   // render them when actually running on Vercel.
   const isVercel = process.env.VERCEL === "1";
+  const openPanelClientId = process.env.NEXT_PUBLIC_OPENPANEL_CLIENT_ID;
   return (
     <html
       lang="en"
@@ -61,6 +63,15 @@ export default function RootLayout({
             <Footer />
           </StrictMode>
         </ThemeProvider>
+
+        {openPanelClientId && (
+          <OpenPanelComponent
+            clientId={openPanelClientId}
+            trackScreenViews
+            trackOutgoingLinks
+            trackAttributes
+          />
+        )}
 
         {isVercel && <Analytics />}
         {isVercel && <SpeedInsights />}

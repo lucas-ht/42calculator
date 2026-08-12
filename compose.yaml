@@ -22,6 +22,8 @@ services:
       # service name, not the host-facing localhost URL from .env.
       KV_REST_API_URL: "http://redis-http"
       KV_REST_API_TOKEN: "${KV_REST_API_TOKEN}"
+      NEXT_PUBLIC_OPENPANEL_CLIENT_ID: "${NEXT_PUBLIC_OPENPANEL_CLIENT_ID}"
+      OPENPANEL_CLIENT_SECRET: "${OPENPANEL_CLIENT_SECRET}"
 
   redis:
     image: redis

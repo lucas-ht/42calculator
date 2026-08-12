@@ -15,7 +15,7 @@ import { useFortyTwoStore } from "@/providers/forty-two-store-provider";
 import { usePlannedProjects } from "@/stores/planned-projects-store";
 import { CirclePlus } from "lucide-react";
 import { useState } from "react";
-import { track } from "@vercel/analytics";
+import { track } from "@/lib/analytics";
 
 export function AddProject() {
   const [open, setOpen] = useState(false);
