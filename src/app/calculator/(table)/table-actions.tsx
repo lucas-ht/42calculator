@@ -14,14 +14,13 @@ import { Ellipsis } from "lucide-react";
 import type { Row } from "@tanstack/react-table";
 import { ChevronsUpDownIcon, Trash2 } from "lucide-react";
 import { useCalculatorStore } from "@/providers/calculator-store-provider";
-import { track } from "@/lib/analytics";
 
 export function TableAction<TData>({
   columns,
 }: {
   columns: ColumnInstance<TData>[];
 }) {
-  const { resetProjects, entries } = useCalculatorStore((state) => state);
+  const { resetProjects } = useCalculatorStore((state) => state);
 
   return (
     <DropdownMenu>
@@ -37,9 +36,6 @@ export function TableAction<TData>({
         <DropdownMenuItem
           className="cursor-pointer pr-2 pl-8"
           onClick={() => {
-            track("calculator-projects-reset", {
-              projects: Object.keys(entries).length,
-            });
             resetProjects();
           }}
         >

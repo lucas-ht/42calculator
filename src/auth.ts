@@ -5,7 +5,7 @@ import type { Provider } from "next-auth/providers";
 import FortyTwo, { type FortyTwoProfile } from "next-auth/providers/42-school";
 import Credentials from "next-auth/providers/credentials";
 import { type FortyTwoCursus, FortyTwoCursusId } from "./types/forty-two";
-import { OpenPanel } from "@openpanel/sdk";
+import { track } from "@vercel/analytics/server";
 import { after } from "next/server";
 
 export const isDevelopment =
@@ -13,16 +13,6 @@ export const isDevelopment =
   process.env.VERCEL_ENV === "preview";
 
 const SESSION_MAX_AGE = 24 * 60 * 60; // (24 hours)
-
-// Sign-in/out happen in a server action, where `window.op` doesn't exist, so
-// these events go straight to the OpenPanel API instead of the browser SDK.
-// Left undefined when unconfigured so local/dev runs don't post anywhere.
-const analytics = process.env.NEXT_PUBLIC_OPENPANEL_CLIENT_ID
-  ? new OpenPanel({
-      clientId: process.env.NEXT_PUBLIC_OPENPANEL_CLIENT_ID,
-      clientSecret: process.env.OPENPANEL_CLIENT_SECRET,
-    })
-  : undefined;
 
 const providers: Provider[] = [
   FortyTwo({
@@ -137,7 +127,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       const { user } = params;
 
       after(async () => {
-        await analytics?.track("sign-in", {
+        await track("sign-in", {
           login: user.login,
         });
       });
@@ -152,7 +142,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       await kv.del(`cursus:${token.login}`);
 
       after(async () => {
-        await analytics?.track("sign-out", {
+        await track("sign-out", {
           login: token.login as string,
         });
       });

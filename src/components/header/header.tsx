@@ -1,5 +1,4 @@
 import { auth } from "@/auth";
-import { IdentifyComponent } from "@openpanel/nextjs";
 import { MainNav } from "./nav/main-nav";
 import { MobileNav } from "./nav/mobile-nav";
 import ThemeToggle from "./theme-toggle";
@@ -14,10 +13,6 @@ export async function Header() {
 
   return (
     <header className="@container sticky top-0 z-50 flex w-full items-start justify-center border-border/40 border-b bg-background md:bg-background/95 md:backdrop-blur-md md:supports-backdrop-filter:bg-background/60">
-      {session?.user?.login && (
-        <IdentifyComponent profileId={session.user.login} />
-      )}
-
       <div className="flex h-14 @max-[1400px]:w-full @min-[1400px]:w-[1400px] p-4">
         <MainNav session={session} />
         <MobileNav session={session} />

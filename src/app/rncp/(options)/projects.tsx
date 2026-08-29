@@ -1,6 +1,5 @@
 import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { track } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
 import { useFortyTwoStore } from "@/providers/forty-two-store-provider";
 import { usePlannedProjects } from "@/stores/planned-projects-store";
@@ -134,13 +133,7 @@ function Project({
         {isSimulatable ? (
           <button
             type="button"
-            onClick={() => {
-              toggle(project.id);
-              track("rncp-project-simulated", {
-                project: project.name,
-                simulated: !isSimulated,
-              });
-            }}
+            onClick={() => toggle(project.id)}
             aria-pressed={isSimulated}
             aria-label={`Simulate completing ${project.name}`}
             title="Click to simulate completing this project"

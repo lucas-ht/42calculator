@@ -15,7 +15,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 import { LayoutList, RotateCcw, Share2 } from "lucide-react";
-import { track } from "@/lib/analytics";
+import { track } from "@vercel/analytics";
 
 type RncpView = "list" | "graph";
 
@@ -115,10 +115,7 @@ function ViewToggle({
           variant={view === id ? "secondary" : "ghost"}
           size="sm"
           className={cn("gap-1.5", view !== id && "text-muted-foreground")}
-          onClick={() => {
-            setView(id);
-            track("rncp-view-switched", { view: id });
-          }}
+          onClick={() => setView(id)}
           aria-pressed={view === id}
         >
           <Icon className="size-4" />
@@ -142,10 +139,7 @@ function ResetSimulationButton() {
       variant="outline"
       size="sm"
       className="shrink-0"
-      onClick={() => {
-        clear();
-        track("rncp-simulation-reset", { projects: count });
-      }}
+      onClick={() => clear()}
     >
       <RotateCcw className="mr-2 size-4" />
       Reset ({count})
