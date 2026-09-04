@@ -6027,45 +6027,6 @@
       "children": []
     },
     {
-      "id": 2689,
-      "name": "Call Me Maybe",
-      "slug": "call-me-maybe",
-      "difficulty": 1764,
-      "completions": 0,
-      "duration": 0,
-      "created_at": "2025-12-04T14:44:23.671000+00:00",
-      "updated_at": "2026-08-31T10:20:05.212000+00:00",
-      "exam": false,
-      "parent": null,
-      "children": []
-    },
-    {
-      "id": 2700,
-      "name": "RAG against the machine",
-      "slug": "rag-against-the-machine",
-      "difficulty": 7717,
-      "completions": 0,
-      "duration": 0,
-      "created_at": "2025-12-04T14:45:05.381000+00:00",
-      "updated_at": "2026-08-24T13:00:18.831000+00:00",
-      "exam": false,
-      "parent": null,
-      "children": []
-    },
-    {
-      "id": 2703,
-      "name": "Agent Smith",
-      "slug": "agent-smith",
-      "difficulty": 10042,
-      "completions": 0,
-      "duration": 0,
-      "created_at": "2025-12-04T15:04:34.981000+00:00",
-      "updated_at": "2026-09-03T07:04:35.587000+00:00",
-      "exam": false,
-      "parent": null,
-      "children": []
-    },
-    {
       "id": 2743,
       "name": "Agent smith",
       "slug": "42cursus-agent-smith",
