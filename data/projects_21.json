@@ -5702,6 +5702,32 @@
       "children": []
     },
     {
+      "id": 2380,
+      "name": "ft_lex",
+      "slug": "ft_lex",
+      "difficulty": 15000,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2023-06-01T10:24:52.512000+00:00",
+      "updated_at": "2026-09-02T09:39:31.999000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2381,
+      "name": "ft_yacc",
+      "slug": "ft_yacc",
+      "difficulty": 20000,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2023-06-01T10:26:18.644000+00:00",
+      "updated_at": "2026-09-02T09:38:53.266000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
       "id": 2393,
       "name": "UnleashTheBox",
       "slug": "unleashthebox",
@@ -5996,32 +6022,6 @@
       "duration": 0,
       "created_at": "2024-12-26T16:17:49.682000+00:00",
       "updated_at": "2025-01-06T08:35:09.035000+00:00",
-      "exam": false,
-      "parent": null,
-      "children": []
-    },
-    {
-      "id": 2380,
-      "name": "ft_lex",
-      "slug": "ft_lex",
-      "difficulty": 15000,
-      "completions": 0,
-      "duration": 0,
-      "created_at": "2023-06-01T10:24:52.512000+00:00",
-      "updated_at": "2026-09-02T09:39:31.999000+00:00",
-      "exam": false,
-      "parent": null,
-      "children": []
-    },
-    {
-      "id": 2381,
-      "name": "ft_yacc",
-      "slug": "ft_yacc",
-      "difficulty": 20000,
-      "completions": 0,
-      "duration": 0,
-      "created_at": "2023-06-01T10:26:18.644000+00:00",
-      "updated_at": "2026-09-02T09:38:53.266000+00:00",
       "exam": false,
       "parent": null,
       "children": []
