@@ -12,7 +12,11 @@ export function Footer() {
           </div>
         </Link>
         <Separator orientation="vertical" />
-        <Link href="https://github.com/lucas-ht/42calculator">
+        <Link
+          href="https://github.com/lucas-ht/42calculator"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div className="inline-flex items-center text-muted-foreground transition-colors hover:text-foreground">
             <div className="truncate text-xs">Checkout the Code</div>
             <GitHub className="ml-2 h-4" />
