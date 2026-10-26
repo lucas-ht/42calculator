@@ -5,6 +5,7 @@ import { persist } from "zustand/middleware";
 export interface PlannedProject {
   mark: number;
   bonus: boolean;
+  children?: Record<number, PlannedProject>;
 }
 
 export interface PlannedProjectsStore {
@@ -13,7 +14,11 @@ export interface PlannedProjectsStore {
 
   isPlanned: (projectId: number) => boolean;
   toggle: (projectId: number) => void;
-  setConfig: (projectId: number, config: Partial<PlannedProject>) => void;
+  setConfig: (
+    projectId: number,
+    config: Partial<PlannedProject>,
+    parentId?: number,
+  ) => void;
   remove: (projectId: number) => void;
   clear: () => void;
   /**
@@ -52,16 +57,38 @@ export const usePlannedProjects = create<PlannedProjectsStore>()(
           return { planned: next };
         }),
 
-      setConfig: (projectId, config) =>
-        set((state) => ({
-          planned: {
-            ...state.planned,
-            [projectId]: {
-              ...(state.planned[projectId] ?? DEFAULT_CONFIG),
-              ...config,
+      setConfig: (projectId, config, parentId) =>
+        set((state) => {
+          if (parentId !== undefined) {
+            const parent = state.planned[parentId] ?? DEFAULT_CONFIG;
+            const child = parent.children?.[projectId] ?? {
+              mark: parent.mark,
+              bonus: parent.bonus,
+            };
+            return {
+              planned: {
+                ...state.planned,
+                [parentId]: {
+                  ...parent,
+                  children: {
+                    ...parent.children,
+                    [projectId]: { ...child, ...config },
+                  },
+                },
+              },
+            };
+          }
+          return {
+            planned: {
+              ...state.planned,
+              [projectId]: {
+                ...(state.planned[projectId] ?? DEFAULT_CONFIG),
+                ...config,
+                children: undefined,
+              },
             },
-          },
-        })),
+          };
+        }),
 
       remove: (projectId) =>
         set((state) => {

@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import {
   Card,
   CardContent,
@@ -11,7 +12,6 @@ import { getFortyTwoLevels } from "@/lib/forty-two/forty-two-experience";
 import { getFortyTwoProjects } from "@/lib/forty-two/forty-two-projects";
 import { getFortyTwoTitles } from "@/lib/forty-two/forty-two-rncp";
 import { FortyTwoStoreProvider } from "@/providers/forty-two-store-provider";
-import { Suspense } from "react";
 
 function TitlesSkeleton() {
   return (

@@ -1,15 +1,15 @@
 "use client";
 
+import { track } from "@vercel/analytics";
+import { Trash2 } from "lucide-react";
+import type React from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Switch } from "@/components/ui/switch";
 import { useCalculatorStore } from "@/providers/calculator-store-provider";
 import { usePlannedProjects } from "@/stores/planned-projects-store";
 import type { CalculatorEntry } from "@/types/forty-two";
-import { Trash2 } from "lucide-react";
-import type React from "react";
-import { useState } from "react";
-import { track } from "@vercel/analytics";
 
 const LEVEL_REGEX = /^\d{1,2}(\.\d{0,2})?$/;
 
@@ -48,13 +48,9 @@ export function StartLevel() {
   );
 }
 
-export function RemoveProject({
-  entry,
-}: {
-  entry: CalculatorEntry;
-}) {
+export function RemoveProject({ entry }: { entry: CalculatorEntry }) {
   const { removeProject } = useCalculatorStore((state) => state);
-  const unplan = usePlannedProjects((state) => state.remove);
+  const removePlannedProject = usePlannedProjects((state) => state.remove);
 
   return (
     <Button
@@ -64,7 +60,7 @@ export function RemoveProject({
       onClick={() => {
         removeProject(entry.project.id);
         // Keep the shared plan (RNCP + localStorage) in sync.
-        unplan(entry.project.id);
+        removePlannedProject(entry.project.id);
 
         track("calculator-project-removed", {
           project: entry.project.name,
@@ -77,16 +73,18 @@ export function RemoveProject({
   );
 }
 
-export function ProjectBonus({
-  entry,
-}: {
-  entry: CalculatorEntry;
-}) {
+export function ProjectBonus({ entry }: { entry: CalculatorEntry }) {
   const { updateProject } = useCalculatorStore((state) => state);
   const persistConfig = usePlannedProjects((state) => state.setConfig);
 
   return (
     <Switch
+      disabled={entry.alreadyEarned}
+      title={
+        entry.alreadyEarned
+          ? "Already included in your starting level"
+          : undefined
+      }
       checked={entry.project.bonus}
       onCheckedChange={(checked) => {
         updateProject({
@@ -96,7 +94,7 @@ export function ProjectBonus({
             bonus: checked,
           },
         });
-        persistConfig(entry.project.id, { bonus: checked });
+        persistConfig(entry.project.id, { bonus: checked }, entry.parentId);
       }}
       aria-label="Project bonus"
     />

@@ -1,13 +1,13 @@
 "use client";
 
+import { CornerDownRightIcon } from "lucide-react";
 import type { CalculatorEntry } from "@/types/forty-two";
-import type { ColumnDef } from "@tanstack/react-table";
 import { ProjectBonus, RemoveProject } from "../(project)/project-actions";
 import { ProjectGrade } from "../(project)/project-grade";
-import { CornerDownRightIcon } from "lucide-react";
+import type { CalculatorColumnDef } from "../table-config";
 import { ToggleExpand } from "./table-actions";
 
-export const columns: ColumnDef<CalculatorEntry>[] = [
+export const columns: CalculatorColumnDef<CalculatorEntry>[] = [
   {
     id: "remove",
     enableHiding: false,

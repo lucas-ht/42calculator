@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.6.3/schema.json",
   "vcs": {
     "enabled": true,
     "clientKind": "git",
@@ -7,8 +7,11 @@
   },
   "files": {
     "ignoreUnknown": true,
-    "ignore": ["src/components/ui/**/*.tsx"],
-    "include": ["src/**/*.ts", "src/**/*.tsx"]
+    "includes": [
+      "**/src/**/*.ts",
+      "**/src/**/*.tsx",
+      "!**/src/components/ui/**/*.tsx"
+    ]
   },
   "formatter": {
     "enabled": true,
@@ -16,20 +19,16 @@
     "attributePosition": "multiline",
     "useEditorconfig": true
   },
-  "organizeImports": {
-    "enabled": true
-  },
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
   "linter": {
     "enabled": true,
     "rules": {
-      "all": true,
       "nursery": {
-        "useSortedClasses": "info"
+        "useTailwindSortedClasses": "info"
       },
       "style": {
         "noDefaultExport": "off",
         "noImplicitBoolean": "off",
-        "noNamespaceImport": "off",
         "useNamingConvention": "off"
       },
       "suspicious": {
@@ -37,6 +36,9 @@
       },
       "correctness": {
         "useImportExtensions": "off"
+      },
+      "performance": {
+        "noNamespaceImport": "off"
       }
     }
   },

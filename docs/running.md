@@ -52,3 +52,36 @@ docker compose up --build
 ```
 
 Access 42calculator by navigating to http://localhost:3000 in your browser.
+
+## Running directly with Node.js
+
+Use Node.js 24. The `.nvmrc` pins the local version, and the Docker image uses
+the same release. With [nvm](https://github.com/nvm-sh/nvm) installed:
+
+```bash
+nvm install
+nvm use
+npm ci
+```
+
+Configure `.env` as above and start Redis and its HTTP proxy separately:
+
+```bash
+docker compose up -d redis redis-http
+```
+
+For an app running outside Docker, set `KV_REST_API_URL` to
+`http://localhost:8079` so it can reach the published proxy port.
+
+Then start the application:
+
+```bash
+npm run dev
+```
+
+## Vercel runtime
+
+`package.json` declares `engines.node: "24.x"`. Vercel uses this to select
+Node.js 24 for new deployments, overriding the project-level Node.js version.
+The version can also be selected under Settings > Build and Deployment >
+Node.js Version. See [Vercel's Node.js version documentation](https://vercel.com/docs/functions/runtimes/node-js/node-js-versions).

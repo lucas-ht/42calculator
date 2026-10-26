@@ -1,21 +1,23 @@
 "use client";
 
+import type { RowData } from "@tanstack/react-table";
+import { ChevronsUpDownIcon, Ellipsis, Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
-  DropdownMenuTrigger,
   DropdownMenuItem,
   DropdownMenuSeparator,
+  DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import type { Column as ColumnInstance } from "@tanstack/react-table";
-import { Ellipsis } from "lucide-react";
-import type { Row } from "@tanstack/react-table";
-import { ChevronsUpDownIcon, Trash2 } from "lucide-react";
 import { useCalculatorStore } from "@/providers/calculator-store-provider";
+import type {
+  CalculatorColumn as ColumnInstance,
+  CalculatorRow as Row,
+} from "../table-config";
 
-export function TableAction<TData>({
+export function TableAction<TData extends RowData>({
   columns,
 }: {
   columns: ColumnInstance<TData>[];
@@ -62,7 +64,11 @@ export function TableAction<TData>({
   );
 }
 
-export function ToggleExpand<TData>({ row }: { row: Row<TData> }) {
+export function ToggleExpand<TData extends RowData>({
+  row,
+}: {
+  row: Row<TData>;
+}) {
   return (
     <Button
       variant="ghost"

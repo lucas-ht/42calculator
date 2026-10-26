@@ -1,9 +1,9 @@
 "use client";
 
+import { useEffect } from "react";
 import { useCalculatorStore } from "@/providers/calculator-store-provider";
 import { useFortyTwoStore } from "@/providers/forty-two-store-provider";
 import { usePlannedProjects } from "@/stores/planned-projects-store";
-import { useEffect } from "react";
 
 /**
  * Seeds the (ephemeral, per-mount) calculator with the shared planned projects,
@@ -12,18 +12,22 @@ import { useEffect } from "react";
  * nothing.
  */
 export function CalculatorPlanSeed() {
-  const { projects } = useFortyTwoStore((state) => state);
+  const { projects, cursus } = useFortyTwoStore((state) => state);
   const planned = usePlannedProjects((state) => state.planned);
   const addProject = useCalculatorStore((state) => state.addProject);
   const entries = useCalculatorStore((state) => state.entries);
 
   useEffect(() => {
     for (const projectId of Object.keys(planned).map(Number)) {
-      if (!entries[projectId] && projects[projectId]) {
-        addProject(projects[projectId], planned[projectId]);
+      if (
+        !entries[projectId] &&
+        projects[projectId] &&
+        !projects[projectId].parentId
+      ) {
+        addProject(projects[projectId], planned[projectId], cursus.projects);
       }
     }
-  }, [planned, entries, projects, addProject]);
+  }, [planned, entries, projects, cursus, addProject]);
 
   return null;
 }

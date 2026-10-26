@@ -1,5 +1,8 @@
 "use client";
 
+import { track } from "@vercel/analytics";
+import { CirclePlus } from "lucide-react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import {
   CommandDialog,
@@ -13,9 +16,6 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { useCalculatorStore } from "@/providers/calculator-store-provider";
 import { useFortyTwoStore } from "@/providers/forty-two-store-provider";
 import { usePlannedProjects } from "@/stores/planned-projects-store";
-import { CirclePlus } from "lucide-react";
-import { useState } from "react";
-import { track } from "@vercel/analytics";
 
 export function AddProject() {
   const [open, setOpen] = useState(false);
@@ -75,7 +75,6 @@ export function AddProject() {
                   }}
                   className="h-8 cursor-pointer"
                   // biome-ignore lint: The role attribute is fine
-                  role="option"
                   aria-label={`Select project ${project.name}`}
                 >
                   {project.name}

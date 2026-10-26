@@ -1,17 +1,17 @@
 "use client";
 
 import { create } from "zustand";
-
 import {
   calculateExperience,
   getExperience,
   getLevel,
 } from "@/lib/forty-two/forty-two-calculator";
 import type {
-  FortyTwoProject,
-  FortyTwoLevel,
   CalculatorEntry,
+  FortyTwoLevel,
+  FortyTwoProject,
 } from "@/types/forty-two";
+import type { PlannedProject } from "./planned-projects-store";
 
 export type CalculatorState = {
   level: {
@@ -31,7 +31,8 @@ export type CalculatorActions = {
   setLevel: (level: number) => void;
   addProject: (
     project: FortyTwoProject,
-    config?: { mark?: number; bonus?: boolean },
+    config?: Partial<PlannedProject>,
+    completed?: Record<number, FortyTwoProject>,
   ) => void;
   updateProject: (entry: CalculatorEntry) => void;
   removeProject: (projectId: number) => void;
@@ -142,22 +143,33 @@ export const createCalculatorStore = (
 
       addProject: (
         project: FortyTwoProject,
-        config?: { mark?: number; bonus?: boolean },
+        config?: Partial<PlannedProject>,
+        completed?: Record<number, FortyTwoProject>,
       ) => {
         const mark = config?.mark ?? 100;
         const bonus = config?.bonus ?? false;
 
         function getCalculatorEntry(project: FortyTwoProject): CalculatorEntry {
           const state = get();
+          const earned = completed?.[project.id];
+          const alreadyEarned = earned?.is_validated === true;
+          const childConfig = config?.children?.[project.id];
+          const entryMark = alreadyEarned
+            ? (earned.mark ?? 100)
+            : (childConfig?.mark ?? mark);
+          const entryBonus = childConfig?.bonus ?? bonus;
           const entry: CalculatorEntry = {
+            alreadyEarned,
             project: {
               ...project,
-              mark,
-              bonus,
+              mark: entryMark,
+              bonus: entryBonus,
             },
             order: state.nextOrder,
 
-            experience: calculateExperience(project.experience, mark, bonus),
+            experience: alreadyEarned
+              ? 0
+              : calculateExperience(project.experience, entryMark, entryBonus),
             level: 0,
 
             children: [],
@@ -191,6 +203,7 @@ export const createCalculatorStore = (
       },
 
       updateProject: (entry: CalculatorEntry) => {
+        if (entry.alreadyEarned) return;
         const state = get();
 
         entry.experience = calculateExperience(
@@ -200,6 +213,7 @@ export const createCalculatorStore = (
         );
 
         for (const child of entry.children) {
+          if (child.alreadyEarned) continue;
           child.project.mark = entry.project.mark;
           child.project.bonus = entry.project.bonus;
 

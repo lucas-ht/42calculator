@@ -1,5 +1,4 @@
 import { Separator } from "@/components/ui/separator";
-import { GitFork } from "lucide-react";
 import Link from "next/link";
 import GitHub from "../icons/GitHub";
 
@@ -13,14 +12,9 @@ export function Footer() {
           </div>
         </Link>
         <Separator orientation="vertical" />
-        <Link
-          href="https://github.com/lucas-ht/42calculator"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <Link href="https://github.com/lucas-ht/42calculator">
           <div className="inline-flex items-center text-muted-foreground transition-colors hover:text-foreground">
-            <GitFork className="mr-1 h-3" />
-            <div className="truncate text-xs">Fork — Checkout the Code</div>
+            <div className="truncate text-xs">Checkout the Code</div>
             <GitHub className="ml-2 h-4" />
           </div>
         </Link>

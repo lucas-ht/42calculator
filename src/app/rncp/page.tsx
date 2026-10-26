@@ -1,21 +1,21 @@
 "use client";
 
+import { track } from "@vercel/analytics";
+import { LayoutList, RotateCcw, Share2 } from "lucide-react";
+import Link from "next/link";
+import { useState } from "react";
 import { PlannedProjectsSync } from "@/components/planned-projects-sync";
+import { Button } from "@/components/ui/button";
+import { Separator } from "@/components/ui/separator";
 import { useLocalStorage } from "@/hooks/use-local-storage";
 import { cn } from "@/lib/utils";
 import { useFortyTwoStore } from "@/providers/forty-two-store-provider";
 import { usePlannedProjects } from "@/stores/planned-projects-store";
 import type { FortyTwoTitle } from "@/types/forty-two";
-import { useState } from "react";
 import { RncpGraph } from "./(graph)/rncp-graph";
 import { TitleOptions } from "./(options)/options";
 import { TitleRequirements } from "./(options)/requirements";
 import { TitleSelector } from "./selector";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
-import { LayoutList, RotateCcw, Share2 } from "lucide-react";
-import { track } from "@vercel/analytics";
 
 type RncpView = "list" | "graph";
 
@@ -72,12 +72,13 @@ export default function Titles() {
             </h4>
 
             <p className="text-muted-foreground text-sm">
-              You must validate the 'Suite' tab, one of the option tabs, and the
-              requirements. Click a project to simulate completing it.{" "}
+              You must meet every category in the selected track, validate one
+              Suite project, and meet all general requirements. Click a project
+              to simulate completing it.{" "}
               <Link
                 className="underline underline-offset-1 transition-colors hover:text-foreground"
                 prefetch={false}
-                href="https://meta.intra.42.fr/articles/rncp-7-certificate"
+                href={`https://meta.intra.42.fr/articles/${activeTitle.type}-certificate`}
               >
                 Learn more.
               </Link>

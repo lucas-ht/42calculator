@@ -1,27 +1,32 @@
-import { Badge } from "@/components/ui/badge";
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { cn } from "@/lib/utils";
-import { useFortyTwoStore } from "@/providers/forty-two-store-provider";
-import { usePlannedProjects } from "@/stores/planned-projects-store";
-import type { FortyTwoProject } from "@/types/forty-two";
 import {
+  ChevronsUpDownIcon,
   CircleCheck,
   CircleDashed,
-  ChevronsUpDownIcon,
-  CornerDownRightIcon,
-  CircleXIcon,
   CircleDotIcon,
+  CircleXIcon,
+  CornerDownRightIcon,
 } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 import {
   Collapsible,
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { getBaseExperience } from "@/lib/rncp/general-progress";
+import { getProjectProgress } from "@/lib/rncp/project-progress";
+import { cn } from "@/lib/utils";
+import { useFortyTwoStore } from "@/providers/forty-two-store-provider";
+import { usePlannedProjects } from "@/stores/planned-projects-store";
+import type { FortyTwoProject } from "@/types/forty-two";
 
 function ProjectSideIcon({
   project,
   depth,
-}: { project: FortyTwoProject; depth: number }) {
+}: {
+  project: FortyTwoProject;
+  depth: number;
+}) {
   if (project.children.length > 0) {
     return (
       <CollapsibleTrigger className="cursor-pointer">
@@ -42,10 +47,13 @@ function ProjectSideIcon({
 function ProjectIcon({
   project,
   isSimulated,
-}: { project: FortyTwoProject; isSimulated: boolean }) {
+}: {
+  project: FortyTwoProject;
+  isSimulated: boolean;
+}) {
   const { cursus } = useFortyTwoStore((state) => state);
   const userProject = cursus.projects[project.id];
-  const isValidated: boolean = userProject?.is_validated ?? false;
+  const isValidated = getProjectProgress(project, cursus, {}).projects > 0;
 
   if (isValidated) {
     return <CircleCheck className="mr-2 size-4 text-primary" />;
@@ -68,10 +76,9 @@ function ProjectIcon({
 
 function ProjectExperience({ project }: { project: FortyTwoProject }) {
   const { cursus } = useFortyTwoStore((state) => state);
-  const userProject = cursus.projects[project.id];
-  const isValidated: boolean = userProject?.is_validated ?? false;
+  const isValidated = getProjectProgress(project, cursus, {}).projects > 0;
 
-  if (project.experience === 0) {
+  if (getBaseExperience(project) === 0) {
     return null;
   }
 
@@ -81,10 +88,14 @@ function ProjectExperience({ project }: { project: FortyTwoProject }) {
         className="rounded-lg"
         variant="secondary"
       >
-        {project.experience?.toLocaleString() ?? 0} XP
+        {getBaseExperience(project).toLocaleString()} XP
       </Badge>
 
-      {isValidated && <Badge className="rounded-lg">{userProject.mark}</Badge>}
+      {isValidated && (
+        <Badge className="rounded-lg">
+          {cursus.projects[project.completionProjectId ?? project.id]?.mark}
+        </Badge>
+      )}
     </div>
   );
 }
@@ -92,17 +103,20 @@ function ProjectExperience({ project }: { project: FortyTwoProject }) {
 function Project({
   project,
   depth = 0,
-}: { project: FortyTwoProject; depth?: number }) {
+}: {
+  project: FortyTwoProject;
+  depth?: number;
+}) {
   const { cursus } = useFortyTwoStore((state) => state);
   const toggle = usePlannedProjects((state) => state.toggle);
   const isSimulated = usePlannedProjects((state) =>
     Boolean(state.planned[project.id]),
   );
 
-  const isValidated = cursus.projects[project.id]?.is_validated ?? false;
+  const isValidated = getProjectProgress(project, cursus, {}).projects > 0;
   // Only top-level option projects feed the requirement bars, and an
   // already-validated project can't be improved by simulating it.
-  const isSimulatable = depth === 0 && !isValidated;
+  const canSimulate = depth === 0 && !isValidated;
 
   const content = (
     <>
@@ -130,7 +144,7 @@ function Project({
           depth={depth}
         />
 
-        {isSimulatable ? (
+        {canSimulate ? (
           <button
             type="button"
             onClick={() => toggle(project.id)}
