@@ -1,3 +1,4 @@
+import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Carousel,
@@ -9,19 +10,46 @@ import {
 import { cn } from "@/lib/utils";
 import type { FortyTwoTitle, FortyTwoTitleOption } from "@/types/forty-two";
 import { WheelGesturesPlugin } from "embla-carousel-wheel-gestures";
-import { TitleOptionRequirements } from "./requirements";
+import { CircleCheck } from "lucide-react";
+import { TitleOptionRequirements, useTitleOptionProgress } from "./requirements";
 import { ProjectList } from "./projects";
 
 function TitleOption({ option }: { option: FortyTwoTitleOption }) {
+  const { isComplete, completedViaSimulation } = useTitleOptionProgress(option);
+
   return (
-    <Card className="min-h-[638px]">
+    <Card
+      className={cn(
+        "min-h-[638px] transition-all duration-500",
+        isComplete &&
+          !completedViaSimulation &&
+          "border-primary/70 shadow-[0_0_24px_-6px] shadow-primary/60",
+        completedViaSimulation &&
+          "border-sky-500/70 shadow-[0_0_24px_-6px] shadow-sky-500/60",
+      )}
+    >
       <CardHeader className="pb-4">
-        <CardTitle
-          tag="h3"
-          className="truncate text-xl"
-        >
-          {option.title}
-        </CardTitle>
+        <div className="flex items-center justify-between gap-2">
+          <CardTitle
+            tag="h3"
+            className="truncate text-xl"
+          >
+            {option.title}
+          </CardTitle>
+          {isComplete && (
+            <Badge
+              className={cn(
+                "shrink-0 gap-1 whitespace-nowrap",
+                completedViaSimulation
+                  ? "bg-sky-500 text-white hover:bg-sky-500"
+                  : "bg-primary",
+              )}
+            >
+              <CircleCheck className="size-3.5" />
+              {completedViaSimulation ? "Simulated" : "Complete"}
+            </Badge>
+          )}
+        </div>
         <TitleOptionRequirements option={option} />
       </CardHeader>
       <CardContent className="p-4 md:p-6 md:pt-0">

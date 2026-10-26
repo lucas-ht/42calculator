@@ -1,10 +1,6 @@
 import type { NextConfig } from 'next'
 import { withVercelToolbar } from '@vercel/toolbar/plugins/next'
 
-const nextConfig: NextConfig = {
-  experimental: {
-    cacheComponents: true,
-  },
-}
+const nextConfig: NextConfig = {}
 
 export default withVercelToolbar()(nextConfig)

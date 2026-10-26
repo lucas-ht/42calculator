@@ -2,6 +2,7 @@
 
 import { Input } from "@/components/ui/input";
 import { useCalculatorStore } from "@/providers/calculator-store-provider";
+import { usePlannedProjects } from "@/stores/planned-projects-store";
 import type { CalculatorEntry } from "@/types/forty-two";
 import type React from "react";
 import { useEffect, useState } from "react";
@@ -16,6 +17,7 @@ export function ProjectGrade({
     entry.project.mark ?? null,
   );
   const { updateProject } = useCalculatorStore((state) => state);
+  const persistConfig = usePlannedProjects((state) => state.setConfig);
   const gradeSchema = z.number().min(0).max(125);
 
   useEffect(() => {
@@ -32,6 +34,7 @@ export function ProjectGrade({
           mark: 0,
         },
       });
+      persistConfig(entry.project.id, { mark: 0 });
       return;
     }
 
@@ -45,6 +48,7 @@ export function ProjectGrade({
           mark: newValue,
         },
       });
+      persistConfig(entry.project.id, { mark: newValue });
     }
   };
 

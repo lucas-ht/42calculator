@@ -14,7 +14,7 @@
       "completions": 37366,
       "duration": 2333506,
       "created_at": "2019-07-29T08:49:02.235000+00:00",
-      "updated_at": "2025-01-06T12:36:08.953000+00:00",
+      "updated_at": "2026-07-07T09:16:07.472000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -27,7 +27,7 @@
       "completions": 2496,
       "duration": 3145019,
       "created_at": "2019-07-29T08:53:52.718000+00:00",
-      "updated_at": "2024-12-30T09:29:52.295000+00:00",
+      "updated_at": "2026-07-06T08:07:30.071000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -40,7 +40,7 @@
       "completions": 32117,
       "duration": 2564922,
       "created_at": "2019-07-29T08:55:33.853000+00:00",
-      "updated_at": "2024-12-12T16:32:37.952000+00:00",
+      "updated_at": "2026-07-07T09:16:13.281000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -53,7 +53,7 @@
       "completions": 17692,
       "duration": 1045071,
       "created_at": "2019-07-29T09:05:05.890000+00:00",
-      "updated_at": "2025-01-07T13:36:21.488000+00:00",
+      "updated_at": "2026-05-15T12:16:04.131000+00:00",
       "exam": true,
       "parent": null,
       "children": []
@@ -66,7 +66,7 @@
       "completions": 14406,
       "duration": 1180456,
       "created_at": "2019-07-29T09:05:15.263000+00:00",
-      "updated_at": "2025-01-07T13:36:49.508000+00:00",
+      "updated_at": "2026-05-15T12:16:07.964000+00:00",
       "exam": true,
       "parent": null,
       "children": []
@@ -79,7 +79,7 @@
       "completions": 11133,
       "duration": 1599436,
       "created_at": "2019-07-29T09:05:24.256000+00:00",
-      "updated_at": "2025-01-07T13:37:11.631000+00:00",
+      "updated_at": "2026-05-15T12:16:11.975000+00:00",
       "exam": true,
       "parent": null,
       "children": []
@@ -92,7 +92,7 @@
       "completions": 7729,
       "duration": 1751444,
       "created_at": "2019-07-29T09:05:32.360000+00:00",
-      "updated_at": "2025-01-07T13:37:29.037000+00:00",
+      "updated_at": "2026-05-26T09:13:36.931000+00:00",
       "exam": true,
       "parent": null,
       "children": []
@@ -105,7 +105,7 @@
       "completions": 5912,
       "duration": 1362326,
       "created_at": "2019-07-29T09:05:39.838000+00:00",
-      "updated_at": "2025-01-07T13:37:47.297000+00:00",
+      "updated_at": "2026-05-15T12:16:21.360000+00:00",
       "exam": true,
       "parent": null,
       "children": []
@@ -118,7 +118,7 @@
       "completions": 12217,
       "duration": 2463934,
       "created_at": "2019-07-29T09:08:23.354000+00:00",
-      "updated_at": "2024-12-02T09:46:02.339000+00:00",
+      "updated_at": "2026-07-06T08:16:47.270000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -131,33 +131,7 @@
       "completions": 31645,
       "duration": 2671060,
       "created_at": "2019-07-29T09:23:58.939000+00:00",
-      "updated_at": "2025-01-06T09:32:12.817000+00:00",
-      "exam": false,
-      "parent": null,
-      "children": []
-    },
-    {
-      "id": 1328,
-      "name": "ft_server",
-      "slug": "ft_server",
-      "difficulty": 1722,
-      "completions": 3876,
-      "duration": 3754378,
-      "created_at": "2019-07-29T13:57:59.563000+00:00",
-      "updated_at": "2024-12-02T09:21:50.956000+00:00",
-      "exam": false,
-      "parent": null,
-      "children": []
-    },
-    {
-      "id": 1329,
-      "name": "ft_services",
-      "slug": "ft_services",
-      "difficulty": 10042,
-      "completions": 1451,
-      "duration": 4896952,
-      "created_at": "2019-07-29T14:00:36.865000+00:00",
-      "updated_at": "2024-12-02T09:21:26.686000+00:00",
+      "updated_at": "2026-07-07T09:16:19.971000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -170,7 +144,7 @@
       "completions": 2533,
       "duration": 3584621,
       "created_at": "2019-07-29T15:00:33.429000+00:00",
-      "updated_at": "2024-11-28T11:58:04.374000+00:00",
+      "updated_at": "2026-06-30T22:26:49.271000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -183,7 +157,7 @@
       "completions": 14632,
       "duration": 3076368,
       "created_at": "2019-07-29T15:05:14.659000+00:00",
-      "updated_at": "2025-01-10T12:58:47.328000+00:00",
+      "updated_at": "2026-07-07T13:14:46.296000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -196,7 +170,7 @@
       "completions": 5106,
       "duration": 3719951,
       "created_at": "2019-07-29T16:04:55.821000+00:00",
-      "updated_at": "2024-12-06T18:15:28.149000+00:00",
+      "updated_at": "2026-07-08T09:43:26.109000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -209,20 +183,7 @@
       "completions": 17529,
       "duration": 2638785,
       "created_at": "2019-07-30T08:57:37.211000+00:00",
-      "updated_at": "2024-12-25T15:04:51.105000+00:00",
-      "exam": false,
-      "parent": null,
-      "children": []
-    },
-    {
-      "id": 1335,
-      "name": "ft_containers",
-      "slug": "ft_containers",
-      "difficulty": 10042,
-      "completions": 3199,
-      "duration": 6151404,
-      "created_at": "2019-07-30T09:04:08.080000+00:00",
-      "updated_at": "2024-08-30T09:14:32.951000+00:00",
+      "updated_at": "2026-07-07T13:15:38.514000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -235,7 +196,7 @@
       "completions": 5246,
       "duration": 2017852,
       "created_at": "2019-07-30T09:07:36.877000+00:00",
-      "updated_at": "2024-12-25T15:07:16.059000+00:00",
+      "updated_at": "2026-07-09T12:30:39.823000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -248,7 +209,7 @@
       "completions": 6869,
       "duration": 3351398,
       "created_at": "2019-08-04T14:28:39.123000+00:00",
-      "updated_at": "2024-12-24T10:33:53.227000+00:00",
+      "updated_at": "2026-07-10T07:52:57.589000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -261,7 +222,7 @@
       "completions": 7222,
       "duration": 1717269,
       "created_at": "2019-08-04T14:37:38.762000+00:00",
-      "updated_at": "2025-01-09T14:55:50.381000+00:00",
+      "updated_at": "2026-07-07T09:16:36.220000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -274,7 +235,7 @@
       "completions": 9461,
       "duration": 688896,
       "created_at": "2019-08-04T14:38:11.505000+00:00",
-      "updated_at": "2025-01-09T15:00:31.618000+00:00",
+      "updated_at": "2026-07-07T09:16:38.619000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -287,7 +248,7 @@
       "completions": 6038,
       "duration": 644275,
       "created_at": "2019-08-04T14:39:46.614000+00:00",
-      "updated_at": "2025-01-09T15:01:13.982000+00:00",
+      "updated_at": "2026-07-07T09:16:41.293000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -300,7 +261,7 @@
       "completions": 8010,
       "duration": 516743,
       "created_at": "2019-08-04T14:52:34.481000+00:00",
-      "updated_at": "2025-01-09T15:02:33.581000+00:00",
+      "updated_at": "2026-07-07T09:16:44.030000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -313,7 +274,7 @@
       "completions": 7636,
       "duration": 575940,
       "created_at": "2019-08-04T14:52:52.073000+00:00",
-      "updated_at": "2025-01-09T15:03:52.567000+00:00",
+      "updated_at": "2026-07-07T09:16:46.693000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -326,7 +287,7 @@
       "completions": 11473,
       "duration": 1129011,
       "created_at": "2019-08-04T14:53:32.974000+00:00",
-      "updated_at": "2025-01-09T15:04:11.811000+00:00",
+      "updated_at": "2026-07-07T09:16:49.673000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -339,7 +300,7 @@
       "completions": 10726,
       "duration": 568547,
       "created_at": "2019-08-04T14:54:00.452000+00:00",
-      "updated_at": "2025-01-09T15:04:42.298000+00:00",
+      "updated_at": "2026-07-07T09:16:51.930000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -352,7 +313,7 @@
       "completions": 11167,
       "duration": 392103,
       "created_at": "2019-08-04T14:54:23.205000+00:00",
-      "updated_at": "2025-01-09T15:04:59.207000+00:00",
+      "updated_at": "2026-07-09T12:31:03.863000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -365,7 +326,7 @@
       "completions": 11096,
       "duration": 447447,
       "created_at": "2019-08-04T14:54:51.700000+00:00",
-      "updated_at": "2025-01-09T15:05:51.874000+00:00",
+      "updated_at": "2026-07-07T09:16:57.105000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -378,7 +339,7 @@
       "completions": 122,
       "duration": 3655926,
       "created_at": "2019-09-23T12:01:59.080000+00:00",
-      "updated_at": "2024-11-22T12:18:02.802000+00:00",
+      "updated_at": "2026-06-30T22:46:43.766000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -391,7 +352,7 @@
       "completions": 222,
       "duration": 2788641,
       "created_at": "2019-09-23T12:02:07.255000+00:00",
-      "updated_at": "2024-11-22T08:18:00.521000+00:00",
+      "updated_at": "2026-06-30T22:33:13.787000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -404,7 +365,7 @@
       "completions": 1083,
       "duration": 2698418,
       "created_at": "2019-09-23T12:02:10.475000+00:00",
-      "updated_at": "2024-11-25T09:19:00.275000+00:00",
+      "updated_at": "2026-07-01T00:09:52.119000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -417,7 +378,7 @@
       "completions": 238,
       "duration": 4232529,
       "created_at": "2019-09-23T12:02:13.896000+00:00",
-      "updated_at": "2024-12-23T11:33:30.003000+00:00",
+      "updated_at": "2026-07-09T12:30:42.116000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -430,7 +391,7 @@
       "completions": 396,
       "duration": 881922,
       "created_at": "2019-09-23T12:02:17.408000+00:00",
-      "updated_at": "2025-01-07T17:04:47.586000+00:00",
+      "updated_at": "2026-07-07T14:03:30.210000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -443,7 +404,7 @@
       "completions": 800,
       "duration": 1613039,
       "created_at": "2019-09-23T12:02:21.426000+00:00",
-      "updated_at": "2024-12-23T11:34:00.314000+00:00",
+      "updated_at": "2026-06-30T22:54:09.343000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -456,7 +417,7 @@
       "completions": 156,
       "duration": 442337,
       "created_at": "2019-09-23T12:02:25.074000+00:00",
-      "updated_at": "2024-11-22T08:15:09.198000+00:00",
+      "updated_at": "2026-06-30T22:58:49.210000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -469,7 +430,7 @@
       "completions": 31,
       "duration": 3286225,
       "created_at": "2019-09-23T12:02:29.198000+00:00",
-      "updated_at": "2024-12-17T10:49:06.917000+00:00",
+      "updated_at": "2026-06-30T22:32:30.598000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -482,7 +443,7 @@
       "completions": 69,
       "duration": 2227361,
       "created_at": "2019-09-23T12:02:32.944000+00:00",
-      "updated_at": "2024-11-22T08:15:47.269000+00:00",
+      "updated_at": "2026-06-30T22:29:17.021000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -495,7 +456,7 @@
       "completions": 42,
       "duration": 34559,
       "created_at": "2019-09-23T12:02:36.926000+00:00",
-      "updated_at": "2024-11-22T09:38:12.449000+00:00",
+      "updated_at": "2026-06-30T22:38:35.919000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -508,7 +469,7 @@
       "completions": 323,
       "duration": 5677751,
       "created_at": "2019-09-23T12:02:40.999000+00:00",
-      "updated_at": "2024-12-17T10:13:36.989000+00:00",
+      "updated_at": "2026-07-09T12:30:44.284000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -521,7 +482,7 @@
       "completions": 1111,
       "duration": 4594591,
       "created_at": "2019-09-23T12:02:44.744000+00:00",
-      "updated_at": "2024-12-23T11:32:36.649000+00:00",
+      "updated_at": "2026-06-30T23:44:30.996000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -534,7 +495,7 @@
       "completions": 66,
       "duration": 2753409,
       "created_at": "2019-09-23T12:02:48.548000+00:00",
-      "updated_at": "2025-01-07T17:14:19.957000+00:00",
+      "updated_at": "2026-06-30T22:51:59.207000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -547,7 +508,7 @@
       "completions": 161,
       "duration": 3438290,
       "created_at": "2019-09-23T12:02:52.476000+00:00",
-      "updated_at": "2024-11-23T07:46:09.366000+00:00",
+      "updated_at": "2026-06-30T23:00:28.627000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -560,7 +521,7 @@
       "completions": 66,
       "duration": 3726320,
       "created_at": "2019-09-23T12:02:56.089000+00:00",
-      "updated_at": "2024-11-22T09:37:15.329000+00:00",
+      "updated_at": "2026-06-30T22:30:05.225000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -573,7 +534,7 @@
       "completions": 423,
       "duration": 4604804,
       "created_at": "2019-09-23T12:02:58.998000+00:00",
-      "updated_at": "2024-12-23T11:34:07.152000+00:00",
+      "updated_at": "2026-06-30T22:47:46.586000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -586,7 +547,7 @@
       "completions": 742,
       "duration": 809047,
       "created_at": "2019-09-23T12:03:02.235000+00:00",
-      "updated_at": "2024-11-22T11:21:35.924000+00:00",
+      "updated_at": "2026-06-30T23:52:14.136000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -599,7 +560,7 @@
       "completions": 374,
       "duration": 5490432,
       "created_at": "2019-09-23T12:03:05.880000+00:00",
-      "updated_at": "2025-01-09T10:27:13.659000+00:00",
+      "updated_at": "2026-07-09T12:30:46.707000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -612,7 +573,7 @@
       "completions": 170,
       "duration": 2243423,
       "created_at": "2019-09-23T12:03:12.914000+00:00",
-      "updated_at": "2024-11-22T10:30:55.768000+00:00",
+      "updated_at": "2026-07-09T12:27:56.954000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -625,7 +586,7 @@
       "completions": 94,
       "duration": 3603212,
       "created_at": "2019-09-23T12:03:17.516000+00:00",
-      "updated_at": "2024-11-22T10:31:02.309000+00:00",
+      "updated_at": "2026-06-30T22:10:29.669000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -638,7 +599,7 @@
       "completions": 612,
       "duration": 1827297,
       "created_at": "2019-09-23T12:03:22.203000+00:00",
-      "updated_at": "2024-11-22T13:37:50.227000+00:00",
+      "updated_at": "2026-07-01T04:43:10.337000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -651,7 +612,7 @@
       "completions": 472,
       "duration": 559152,
       "created_at": "2019-09-23T12:03:27.427000+00:00",
-      "updated_at": "2024-11-22T11:22:29.500000+00:00",
+      "updated_at": "2026-07-01T04:43:04.254000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -664,7 +625,7 @@
       "completions": 127,
       "duration": 2817002,
       "created_at": "2019-09-23T12:03:31.641000+00:00",
-      "updated_at": "2024-12-05T10:48:59.677000+00:00",
+      "updated_at": "2026-06-30T22:24:50.583000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -677,7 +638,7 @@
       "completions": 2023,
       "duration": 2256482,
       "created_at": "2019-09-23T12:03:35.942000+00:00",
-      "updated_at": "2024-11-22T07:49:18.457000+00:00",
+      "updated_at": "2026-07-06T08:12:51.067000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -690,7 +651,7 @@
       "completions": 1074,
       "duration": 2668974,
       "created_at": "2019-09-23T12:03:39.464000+00:00",
-      "updated_at": "2024-11-22T13:38:38.562000+00:00",
+      "updated_at": "2026-07-07T14:03:34.444000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -703,7 +664,7 @@
       "completions": 195,
       "duration": 1761046,
       "created_at": "2019-09-23T12:03:43.462000+00:00",
-      "updated_at": "2024-12-05T10:54:34.886000+00:00",
+      "updated_at": "2026-07-01T00:01:06.231000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -716,7 +677,7 @@
       "completions": 45,
       "duration": 4277342,
       "created_at": "2019-09-23T12:03:47.114000+00:00",
-      "updated_at": "2024-12-05T10:49:33.318000+00:00",
+      "updated_at": "2026-06-30T22:59:41.911000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -729,7 +690,7 @@
       "completions": 17,
       "duration": 5142201,
       "created_at": "2019-09-23T12:03:50.824000+00:00",
-      "updated_at": "2024-11-22T09:50:25.574000+00:00",
+      "updated_at": "2026-06-30T22:12:38.534000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -742,7 +703,7 @@
       "completions": 160,
       "duration": 5662522,
       "created_at": "2019-09-23T12:03:54.006000+00:00",
-      "updated_at": "2024-11-22T09:49:21.779000+00:00",
+      "updated_at": "2026-07-07T14:03:36.412000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -755,7 +716,7 @@
       "completions": 37,
       "duration": 3267707,
       "created_at": "2019-09-23T12:03:56.947000+00:00",
-      "updated_at": "2024-11-22T09:38:40.257000+00:00",
+      "updated_at": "2026-06-30T22:38:23.572000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -768,7 +729,7 @@
       "completions": 50,
       "duration": 6909379,
       "created_at": "2019-09-23T12:04:01.808000+00:00",
-      "updated_at": "2024-12-06T13:54:08.226000+00:00",
+      "updated_at": "2026-07-07T10:37:03.759000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -781,7 +742,7 @@
       "completions": 297,
       "duration": 4041446,
       "created_at": "2019-09-23T12:04:14.370000+00:00",
-      "updated_at": "2025-01-09T10:29:26.362000+00:00",
+      "updated_at": "2026-07-07T09:20:56.234000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -794,7 +755,7 @@
       "completions": 275,
       "duration": 6388329,
       "created_at": "2019-09-23T12:04:17.657000+00:00",
-      "updated_at": "2024-12-23T11:32:53.457000+00:00",
+      "updated_at": "2026-07-01T00:10:03.798000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -807,7 +768,7 @@
       "completions": 120,
       "duration": 3747805,
       "created_at": "2019-09-23T12:04:21.116000+00:00",
-      "updated_at": "2024-11-22T08:03:26.700000+00:00",
+      "updated_at": "2026-06-30T23:09:07.112000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -820,7 +781,7 @@
       "completions": 1321,
       "duration": 2702502,
       "created_at": "2019-09-23T12:04:25.228000+00:00",
-      "updated_at": "2024-11-22T07:50:15.025000+00:00",
+      "updated_at": "2026-07-01T14:38:01.843000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -833,7 +794,7 @@
       "completions": 752,
       "duration": 1023629,
       "created_at": "2019-09-23T12:04:29.280000+00:00",
-      "updated_at": "2024-12-10T09:43:03.596000+00:00",
+      "updated_at": "2026-06-30T22:08:25.485000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -846,7 +807,7 @@
       "completions": 186,
       "duration": 2831809,
       "created_at": "2019-09-23T12:04:33.040000+00:00",
-      "updated_at": "2024-11-22T07:11:37.754000+00:00",
+      "updated_at": "2026-06-30T21:52:25.320000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -859,7 +820,7 @@
       "completions": 196,
       "duration": 967833,
       "created_at": "2019-09-23T12:04:36.657000+00:00",
-      "updated_at": "2024-11-22T08:18:16.732000+00:00",
+      "updated_at": "2026-06-30T22:34:19.227000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -872,7 +833,7 @@
       "completions": 25,
       "duration": 3411330,
       "created_at": "2019-09-23T12:04:40.602000+00:00",
-      "updated_at": "2024-11-22T08:04:49.979000+00:00",
+      "updated_at": "2026-06-30T22:37:41.382000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -885,7 +846,7 @@
       "completions": 30,
       "duration": 1039923,
       "created_at": "2019-09-23T12:04:44.133000+00:00",
-      "updated_at": "2024-11-22T08:04:15.900000+00:00",
+      "updated_at": "2026-06-30T22:29:57.035000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -898,7 +859,7 @@
       "completions": 4,
       "duration": 102740,
       "created_at": "2019-09-23T12:04:47.972000+00:00",
-      "updated_at": "2024-11-22T08:05:11.365000+00:00",
+      "updated_at": "2026-06-30T22:24:52.754000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -911,7 +872,7 @@
       "completions": 192,
       "duration": 1813342,
       "created_at": "2019-09-23T12:04:51.408000+00:00",
-      "updated_at": "2024-11-22T08:07:23.135000+00:00",
+      "updated_at": "2026-06-30T22:40:38.627000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -924,7 +885,7 @@
       "completions": 261,
       "duration": 2805937,
       "created_at": "2019-09-23T12:04:55.420000+00:00",
-      "updated_at": "2024-11-26T13:18:01.211000+00:00",
+      "updated_at": "2026-06-30T22:40:14.301000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -937,7 +898,7 @@
       "completions": 80,
       "duration": 2230906,
       "created_at": "2019-09-23T12:04:59.110000+00:00",
-      "updated_at": "2024-11-22T08:07:38.244000+00:00",
+      "updated_at": "2026-06-30T22:41:02.817000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -950,7 +911,7 @@
       "completions": 84,
       "duration": 5612128,
       "created_at": "2019-09-23T12:05:03.080000+00:00",
-      "updated_at": "2024-11-22T11:21:51.460000+00:00",
+      "updated_at": "2026-06-30T23:29:40.734000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -963,7 +924,7 @@
       "completions": 306,
       "duration": 3605218,
       "created_at": "2019-09-23T12:05:06.881000+00:00",
-      "updated_at": "2024-11-22T11:21:43.969000+00:00",
+      "updated_at": "2026-07-08T16:36:48.698000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -976,7 +937,7 @@
       "completions": 27,
       "duration": 10022109,
       "created_at": "2019-09-23T12:05:10.323000+00:00",
-      "updated_at": "2024-12-23T11:33:50.237000+00:00",
+      "updated_at": "2026-07-06T07:37:29.868000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -989,7 +950,7 @@
       "completions": 83,
       "duration": 3038896,
       "created_at": "2019-09-23T12:05:14.414000+00:00",
-      "updated_at": "2024-11-22T07:13:48.885000+00:00",
+      "updated_at": "2026-06-30T22:18:14.440000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1002,7 +963,7 @@
       "completions": 74,
       "duration": 1521580,
       "created_at": "2019-09-23T12:05:18.271000+00:00",
-      "updated_at": "2024-11-22T08:07:40.466000+00:00",
+      "updated_at": "2026-06-30T22:28:29.237000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1015,7 +976,7 @@
       "completions": 24,
       "duration": 3574688,
       "created_at": "2019-09-23T12:05:21.891000+00:00",
-      "updated_at": "2024-11-22T08:07:54.898000+00:00",
+      "updated_at": "2026-06-30T23:38:04.765000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1028,7 +989,7 @@
       "completions": 75,
       "duration": 3855252,
       "created_at": "2019-09-23T12:05:25.903000+00:00",
-      "updated_at": "2024-11-22T11:23:09.163000+00:00",
+      "updated_at": "2026-06-30T22:48:35.095000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1041,7 +1002,7 @@
       "completions": 461,
       "duration": 4004664,
       "created_at": "2019-09-23T12:05:34.040000+00:00",
-      "updated_at": "2024-11-22T08:29:41.001000+00:00",
+      "updated_at": "2026-06-30T23:26:13.770000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1054,7 +1015,7 @@
       "completions": 98,
       "duration": 5760461,
       "created_at": "2019-09-23T12:05:37.834000+00:00",
-      "updated_at": "2024-12-23T11:34:16.187000+00:00",
+      "updated_at": "2026-07-06T07:37:48.916000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1067,7 +1028,7 @@
       "completions": 38,
       "duration": 4844823,
       "created_at": "2019-09-23T12:05:41.394000+00:00",
-      "updated_at": "2024-11-22T08:30:31.484000+00:00",
+      "updated_at": "2026-07-06T07:38:55.295000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1080,7 +1041,7 @@
       "completions": 10,
       "duration": 4599405,
       "created_at": "2019-09-23T12:05:45.518000+00:00",
-      "updated_at": "2024-11-22T08:08:19.738000+00:00",
+      "updated_at": "2026-06-30T22:28:12.741000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1093,7 +1054,7 @@
       "completions": 10,
       "duration": 6761,
       "created_at": "2019-09-23T12:05:49.083000+00:00",
-      "updated_at": "2024-11-22T08:09:25.429000+00:00",
+      "updated_at": "2026-07-06T07:39:24.594000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1106,7 +1067,7 @@
       "completions": 7,
       "duration": 18339,
       "created_at": "2019-09-23T12:05:52.288000+00:00",
-      "updated_at": "2024-11-22T08:09:46.728000+00:00",
+      "updated_at": "2026-06-30T22:26:25.183000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1119,7 +1080,7 @@
       "completions": 8,
       "duration": 37965,
       "created_at": "2019-09-23T12:05:55.580000+00:00",
-      "updated_at": "2024-11-22T08:10:12.158000+00:00",
+      "updated_at": "2026-06-30T22:26:46.798000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1132,7 +1093,7 @@
       "completions": 7,
       "duration": 6671,
       "created_at": "2019-09-23T12:05:58.774000+00:00",
-      "updated_at": "2024-11-22T08:10:30.046000+00:00",
+      "updated_at": "2026-06-30T22:25:29.521000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1145,7 +1106,7 @@
       "completions": 56,
       "duration": 3033499,
       "created_at": "2019-09-23T12:06:02.311000+00:00",
-      "updated_at": "2024-11-22T07:17:57.160000+00:00",
+      "updated_at": "2026-06-30T22:16:40.353000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1158,7 +1119,7 @@
       "completions": 39,
       "duration": 389240,
       "created_at": "2019-09-23T12:06:06.244000+00:00",
-      "updated_at": "2024-11-22T07:18:59.077000+00:00",
+      "updated_at": "2026-06-30T22:07:12.994000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1171,7 +1132,7 @@
       "completions": 21,
       "duration": 1165159,
       "created_at": "2019-09-23T12:06:09.635000+00:00",
-      "updated_at": "2024-11-22T07:19:33.111000+00:00",
+      "updated_at": "2026-06-30T22:15:45.446000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1184,7 +1145,7 @@
       "completions": 822,
       "duration": 1778832,
       "created_at": "2019-09-23T12:06:13.394000+00:00",
-      "updated_at": "2024-11-22T07:50:10.271000+00:00",
+      "updated_at": "2026-06-30T22:45:31.204000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1197,7 +1158,7 @@
       "completions": 71,
       "duration": 2478801,
       "created_at": "2019-09-23T12:06:16.961000+00:00",
-      "updated_at": "2024-11-22T07:27:17.807000+00:00",
+      "updated_at": "2026-06-30T22:18:29.279000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1210,7 +1171,7 @@
       "completions": 980,
       "duration": 1790149,
       "created_at": "2019-09-23T12:06:20.863000+00:00",
-      "updated_at": "2024-11-25T09:31:20.932000+00:00",
+      "updated_at": "2026-07-06T08:09:23.613000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1223,7 +1184,7 @@
       "completions": 69,
       "duration": 3080333,
       "created_at": "2019-09-23T12:06:24.873000+00:00",
-      "updated_at": "2024-12-17T10:51:56.188000+00:00",
+      "updated_at": "2026-06-30T22:40:04.911000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1236,7 +1197,7 @@
       "completions": 23,
       "duration": 5287579,
       "created_at": "2019-09-23T12:06:29.279000+00:00",
-      "updated_at": "2024-11-22T10:31:22.266000+00:00",
+      "updated_at": "2026-06-30T22:12:30.580000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1249,7 +1210,7 @@
       "completions": 346,
       "duration": 2929332,
       "created_at": "2019-09-23T12:06:33.513000+00:00",
-      "updated_at": "2025-01-07T16:24:13.844000+00:00",
+      "updated_at": "2026-07-08T07:09:49.657000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1262,7 +1223,7 @@
       "completions": 71,
       "duration": 3467027,
       "created_at": "2019-09-23T12:06:36.910000+00:00",
-      "updated_at": "2024-12-23T11:33:11.766000+00:00",
+      "updated_at": "2026-06-30T22:13:25.490000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1275,7 +1236,7 @@
       "completions": 540,
       "duration": 3448128,
       "created_at": "2019-09-23T12:06:40.966000+00:00",
-      "updated_at": "2024-12-23T11:32:28.050000+00:00",
+      "updated_at": "2026-07-06T07:35:42.108000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1288,7 +1249,7 @@
       "completions": 15,
       "duration": 175272,
       "created_at": "2019-09-23T12:06:44.453000+00:00",
-      "updated_at": "2024-11-22T09:39:08.612000+00:00",
+      "updated_at": "2026-06-30T23:58:21.852000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1301,7 +1262,7 @@
       "completions": 7,
       "duration": 0,
       "created_at": "2019-09-23T12:06:47.971000+00:00",
-      "updated_at": "2024-11-22T09:12:02.687000+00:00",
+      "updated_at": "2026-06-30T22:36:23.760000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1314,7 +1275,7 @@
       "completions": 2,
       "duration": 6058094,
       "created_at": "2019-09-23T12:06:51.967000+00:00",
-      "updated_at": "2024-11-22T08:03:54.523000+00:00",
+      "updated_at": "2026-06-30T22:31:19.459000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1327,7 +1288,7 @@
       "completions": 175,
       "duration": 6816779,
       "created_at": "2019-09-23T12:06:55.308000+00:00",
-      "updated_at": "2024-12-05T11:01:12.826000+00:00",
+      "updated_at": "2026-06-30T22:00:10.335000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1340,7 +1301,7 @@
       "completions": 11,
       "duration": 150,
       "created_at": "2019-09-23T12:06:59.675000+00:00",
-      "updated_at": "2024-11-22T07:26:24.086000+00:00",
+      "updated_at": "2026-06-30T22:22:32.977000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1353,7 +1314,7 @@
       "completions": 51,
       "duration": 11745812,
       "created_at": "2019-09-23T12:07:06.935000+00:00",
-      "updated_at": "2024-12-05T11:01:00.964000+00:00",
+      "updated_at": "2026-06-30T21:57:45.217000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1366,7 +1327,7 @@
       "completions": 344,
       "duration": 668136,
       "created_at": "2019-09-23T12:07:11+00:00",
-      "updated_at": "2024-11-19T13:10:11.547000+00:00",
+      "updated_at": "2026-06-30T19:33:34.768000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1379,7 +1340,7 @@
       "completions": 87,
       "duration": 963939,
       "created_at": "2019-09-23T12:07:14.479000+00:00",
-      "updated_at": "2024-11-22T09:11:27.185000+00:00",
+      "updated_at": "2026-06-30T22:36:20.837000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1392,7 +1353,7 @@
       "completions": 110,
       "duration": 1206260,
       "created_at": "2019-09-23T12:07:18.787000+00:00",
-      "updated_at": "2024-11-22T07:31:25.787000+00:00",
+      "updated_at": "2026-06-30T23:18:24.527000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1405,7 +1366,7 @@
       "completions": 95,
       "duration": 2572977,
       "created_at": "2019-09-23T12:07:22.243000+00:00",
-      "updated_at": "2024-11-25T09:31:22.771000+00:00",
+      "updated_at": "2026-06-30T22:12:32.863000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1418,7 +1379,7 @@
       "completions": 67,
       "duration": 393938,
       "created_at": "2019-09-23T12:07:29.425000+00:00",
-      "updated_at": "2024-08-30T09:14:29.265000+00:00",
+      "updated_at": "2026-06-30T23:59:25.585000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1431,7 +1392,7 @@
       "completions": 532,
       "duration": 1950439,
       "created_at": "2019-09-23T12:07:32.886000+00:00",
-      "updated_at": "2024-12-02T10:56:59.421000+00:00",
+      "updated_at": "2026-06-30T23:55:37.727000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1444,7 +1405,7 @@
       "completions": 780,
       "duration": 1874994,
       "created_at": "2019-09-23T12:07:36.257000+00:00",
-      "updated_at": "2024-11-27T13:19:15.608000+00:00",
+      "updated_at": "2026-06-30T22:48:06.409000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1457,7 +1418,7 @@
       "completions": 542,
       "duration": 549648,
       "created_at": "2019-09-23T12:07:39.485000+00:00",
-      "updated_at": "2024-08-30T09:14:31.689000+00:00",
+      "updated_at": "2026-07-07T10:37:13.839000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1470,7 +1431,7 @@
       "completions": 1616,
       "duration": 176700,
       "created_at": "2019-09-23T12:07:43.549000+00:00",
-      "updated_at": "2024-11-23T07:46:22.941000+00:00",
+      "updated_at": "2026-06-30T22:53:50.041000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1483,7 +1444,7 @@
       "completions": 12808,
       "duration": 2389496,
       "created_at": "2019-09-23T12:07:46.847000+00:00",
-      "updated_at": "2025-01-08T13:07:36.645000+00:00",
+      "updated_at": "2026-07-07T09:16:59.500000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1496,7 +1457,7 @@
       "completions": 1552,
       "duration": 26227,
       "created_at": "2019-09-23T12:08:01.904000+00:00",
-      "updated_at": "2024-11-22T07:23:04.196000+00:00",
+      "updated_at": "2026-06-30T23:18:09.282000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1509,7 +1470,7 @@
       "completions": 5285,
       "duration": 1725265,
       "created_at": "2019-09-23T12:08:05.188000+00:00",
-      "updated_at": "2024-12-17T11:10:36.362000+00:00",
+      "updated_at": "2026-07-07T09:17:01.817000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -1522,633 +1483,9 @@
       "completions": 1216,
       "duration": 390043,
       "created_at": "2019-09-23T12:08:16.312000+00:00",
-      "updated_at": "2024-11-22T08:15:38.147000+00:00",
+      "updated_at": "2026-07-09T12:30:48.611000+00:00",
       "exam": false,
       "parent": null,
-      "children": []
-    },
-    {
-      "id": 1481,
-      "name": "Piscine PHP Symfony",
-      "slug": "42cursus-piscine-php-symfony",
-      "difficulty": 9450,
-      "completions": 3,
-      "duration": 0,
-      "created_at": "2019-10-02T12:39:56.257000+00:00",
-      "updated_at": "2024-08-30T09:14:31.607000+00:00",
-      "exam": false,
-      "parent": null,
-      "children": [
-        {
-          "name": "Day 00",
-          "id": 1584,
-          "slug": "42cursus-piscine-php-symfony-day-00"
-        },
-        {
-          "name": "Day 01",
-          "id": 1585,
-          "slug": "42cursus-piscine-php-symfony-day-01"
-        },
-        {
-          "name": "Day 02",
-          "id": 1586,
-          "slug": "42cursus-piscine-php-symfony-day-02"
-        },
-        {
-          "name": "Day 03",
-          "id": 1587,
-          "slug": "42cursus-piscine-php-symfony-day-03"
-        },
-        {
-          "name": "Day 04",
-          "id": 1588,
-          "slug": "42cursus-piscine-php-symfony-day-04"
-        },
-        {
-          "name": "Day 05",
-          "id": 1589,
-          "slug": "42cursus-piscine-php-symfony-day-05"
-        },
-        {
-          "name": "Day 06",
-          "id": 1590,
-          "slug": "42cursus-piscine-php-symfony-day-06"
-        },
-        {
-          "name": "Day 07",
-          "id": 1591,
-          "slug": "42cursus-piscine-php-symfony-day-07"
-        },
-        {
-          "name": "Day 08",
-          "id": 1592,
-          "slug": "42cursus-piscine-php-symfony-day-08"
-        },
-        {
-          "name": "Day 09",
-          "id": 1593,
-          "slug": "42cursus-piscine-php-symfony-day-09"
-        },
-        {
-          "name": "Rush 00",
-          "id": 1703,
-          "slug": "42cursus-piscine-php-symfony-rush-00"
-        },
-        {
-          "name": "Rush 01",
-          "id": 1702,
-          "slug": "42cursus-piscine-php-symfony-rush-01"
-        }
-      ]
-    },
-    {
-      "id": 1482,
-      "name": "Piscine Ruby on Rails",
-      "slug": "42cursus-piscine-ruby-on-rails",
-      "difficulty": 9450,
-      "completions": 2,
-      "duration": 0,
-      "created_at": "2019-10-02T12:40:51.615000+00:00",
-      "updated_at": "2024-08-30T09:14:31.590000+00:00",
-      "exam": false,
-      "parent": null,
-      "children": [
-        {
-          "name": "Day 00",
-          "id": 1608,
-          "slug": "42cursus-piscine-ruby-on-rails-day-00"
-        },
-        {
-          "name": "Day 01",
-          "id": 1609,
-          "slug": "42cursus-piscine-ruby-on-rails-day-01"
-        },
-        {
-          "name": "Day 02",
-          "id": 1610,
-          "slug": "42cursus-piscine-ruby-on-rails-day-02"
-        },
-        {
-          "name": "Day 03",
-          "id": 1611,
-          "slug": "42cursus-piscine-ruby-on-rails-day-03"
-        },
-        {
-          "name": "Day 04",
-          "id": 1612,
-          "slug": "42cursus-piscine-ruby-on-rails-day-04"
-        },
-        {
-          "name": "Day 05",
-          "id": 1613,
-          "slug": "42cursus-piscine-ruby-on-rails-day-05"
-        },
-        {
-          "name": "Day 06",
-          "id": 1614,
-          "slug": "42cursus-piscine-ruby-on-rails-day-06"
-        },
-        {
-          "name": "Day 07",
-          "id": 1615,
-          "slug": "42cursus-piscine-ruby-on-rails-day-07"
-        },
-        {
-          "name": "Day 08",
-          "id": 1616,
-          "slug": "42cursus-piscine-ruby-on-rails-day-08"
-        },
-        {
-          "name": "Day 09",
-          "id": 1617,
-          "slug": "42cursus-piscine-ruby-on-rails-day-09"
-        },
-        {
-          "name": "Rush 00",
-          "id": 1700,
-          "slug": "42cursus-piscine-ruby-on-rails-rush-00"
-        },
-        {
-          "name": "Rush 01",
-          "id": 1701,
-          "slug": "42cursus-piscine-ruby-on-rails-rush-01"
-        }
-      ]
-    },
-    {
-      "id": 1582,
-      "name": "Rush 00",
-      "slug": "piscine-ocaml-rush-00",
-      "difficulty": 0,
-      "completions": 193,
-      "duration": 0,
-      "created_at": "2019-10-04T11:37:21.567000+00:00",
-      "updated_at": "2024-08-30T09:14:31.211000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine OCaml",
-        "id": 370,
-        "slug": "piscine-ocaml"
-      },
-      "children": []
-    },
-    {
-      "id": 1583,
-      "name": "Rush 01",
-      "slug": "piscine-ocaml-rush-01",
-      "difficulty": 0,
-      "completions": 184,
-      "duration": 0,
-      "created_at": "2019-10-04T11:37:23.570000+00:00",
-      "updated_at": "2024-08-30T09:14:31.198000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine OCaml",
-        "id": 370,
-        "slug": "piscine-ocaml"
-      },
-      "children": []
-    },
-    {
-      "id": 1584,
-      "name": "Day 00",
-      "slug": "42cursus-piscine-php-symfony-day-00",
-      "difficulty": 0,
-      "completions": 15,
-      "duration": 5292561,
-      "created_at": "2019-10-04T11:37:25.404000+00:00",
-      "updated_at": "2024-08-30T09:14:31.186000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine PHP Symfony",
-        "id": 1481,
-        "slug": "42cursus-piscine-php-symfony"
-      },
-      "children": []
-    },
-    {
-      "id": 1585,
-      "name": "Day 01",
-      "slug": "42cursus-piscine-php-symfony-day-01",
-      "difficulty": 0,
-      "completions": 17,
-      "duration": 1872225,
-      "created_at": "2019-10-04T11:37:27.219000+00:00",
-      "updated_at": "2024-08-30T09:14:31.173000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine PHP Symfony",
-        "id": 1481,
-        "slug": "42cursus-piscine-php-symfony"
-      },
-      "children": []
-    },
-    {
-      "id": 1586,
-      "name": "Day 02",
-      "slug": "42cursus-piscine-php-symfony-day-02",
-      "difficulty": 0,
-      "completions": 12,
-      "duration": 2468816,
-      "created_at": "2019-10-04T11:37:29.034000+00:00",
-      "updated_at": "2024-08-30T09:14:31.159000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine PHP Symfony",
-        "id": 1481,
-        "slug": "42cursus-piscine-php-symfony"
-      },
-      "children": []
-    },
-    {
-      "id": 1587,
-      "name": "Day 03",
-      "slug": "42cursus-piscine-php-symfony-day-03",
-      "difficulty": 0,
-      "completions": 14,
-      "duration": 2536439,
-      "created_at": "2019-10-04T11:37:29.701000+00:00",
-      "updated_at": "2024-08-30T09:14:31.144000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine PHP Symfony",
-        "id": 1481,
-        "slug": "42cursus-piscine-php-symfony"
-      },
-      "children": []
-    },
-    {
-      "id": 1588,
-      "name": "Day 04",
-      "slug": "42cursus-piscine-php-symfony-day-04",
-      "difficulty": 0,
-      "completions": 13,
-      "duration": 10495696,
-      "created_at": "2019-10-04T11:37:31.460000+00:00",
-      "updated_at": "2024-08-30T09:14:31.115000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine PHP Symfony",
-        "id": 1481,
-        "slug": "42cursus-piscine-php-symfony"
-      },
-      "children": []
-    },
-    {
-      "id": 1589,
-      "name": "Day 05",
-      "slug": "42cursus-piscine-php-symfony-day-05",
-      "difficulty": 0,
-      "completions": 0,
-      "duration": 0,
-      "created_at": "2019-10-04T11:37:33.278000+00:00",
-      "updated_at": "2024-08-30T09:14:31.101000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine PHP Symfony",
-        "id": 1481,
-        "slug": "42cursus-piscine-php-symfony"
-      },
-      "children": []
-    },
-    {
-      "id": 1590,
-      "name": "Day 06",
-      "slug": "42cursus-piscine-php-symfony-day-06",
-      "difficulty": 0,
-      "completions": 0,
-      "duration": 0,
-      "created_at": "2019-10-04T11:37:34.976000+00:00",
-      "updated_at": "2024-08-30T09:14:31.087000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine PHP Symfony",
-        "id": 1481,
-        "slug": "42cursus-piscine-php-symfony"
-      },
-      "children": []
-    },
-    {
-      "id": 1591,
-      "name": "Day 07",
-      "slug": "42cursus-piscine-php-symfony-day-07",
-      "difficulty": 0,
-      "completions": 4,
-      "duration": 6285670,
-      "created_at": "2019-10-04T11:37:35.684000+00:00",
-      "updated_at": "2024-08-30T09:14:31.063000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine PHP Symfony",
-        "id": 1481,
-        "slug": "42cursus-piscine-php-symfony"
-      },
-      "children": []
-    },
-    {
-      "id": 1592,
-      "name": "Day 08",
-      "slug": "42cursus-piscine-php-symfony-day-08",
-      "difficulty": 0,
-      "completions": 1,
-      "duration": 0,
-      "created_at": "2019-10-04T11:37:37.499000+00:00",
-      "updated_at": "2024-08-30T09:14:31.044000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine PHP Symfony",
-        "id": 1481,
-        "slug": "42cursus-piscine-php-symfony"
-      },
-      "children": []
-    },
-    {
-      "id": 1593,
-      "name": "Day 09",
-      "slug": "42cursus-piscine-php-symfony-day-09",
-      "difficulty": 0,
-      "completions": 1,
-      "duration": 0,
-      "created_at": "2019-10-04T11:37:39.442000+00:00",
-      "updated_at": "2024-08-30T09:14:31.025000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine PHP Symfony",
-        "id": 1481,
-        "slug": "42cursus-piscine-php-symfony"
-      },
-      "children": []
-    },
-    {
-      "id": 1594,
-      "name": "Rush 00",
-      "slug": "piscine-php-symfony-rush-00",
-      "difficulty": 0,
-      "completions": 4,
-      "duration": 0,
-      "created_at": "2019-10-04T11:37:40.321000+00:00",
-      "updated_at": "2024-08-30T09:14:31.011000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine PHP Symfony",
-        "id": 1147,
-        "slug": "piscine-php-symfony"
-      },
-      "children": []
-    },
-    {
-      "id": 1595,
-      "name": "Rush 01",
-      "slug": "piscine-php-symfony-rush-01",
-      "difficulty": 0,
-      "completions": 0,
-      "duration": 0,
-      "created_at": "2019-10-04T11:37:42.394000+00:00",
-      "updated_at": "2024-08-30T09:14:30.997000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine PHP Symfony",
-        "id": 1147,
-        "slug": "piscine-php-symfony"
-      },
-      "children": []
-    },
-    {
-      "id": 1606,
-      "name": "Rush 00",
-      "slug": "piscine-swift-ios-rush-00",
-      "difficulty": 0,
-      "completions": 38,
-      "duration": 0,
-      "created_at": "2019-10-04T11:37:58.608000+00:00",
-      "updated_at": "2024-08-30T09:14:30.837000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine Swift iOS",
-        "id": 742,
-        "slug": "piscine-swift-ios"
-      },
-      "children": []
-    },
-    {
-      "id": 1607,
-      "name": "Rush 01",
-      "slug": "piscine-swift-ios-rush-01",
-      "difficulty": 0,
-      "completions": 78,
-      "duration": 0,
-      "created_at": "2019-10-04T11:38:00.632000+00:00",
-      "updated_at": "2024-08-30T09:14:30.790000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine Swift iOS",
-        "id": 742,
-        "slug": "piscine-swift-ios"
-      },
-      "children": []
-    },
-    {
-      "id": 1608,
-      "name": "Day 00",
-      "slug": "42cursus-piscine-ruby-on-rails-day-00",
-      "difficulty": 0,
-      "completions": 55,
-      "duration": 45487023,
-      "created_at": "2019-10-04T11:38:02.581000+00:00",
-      "updated_at": "2024-08-30T09:14:30.772000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine Ruby on Rails",
-        "id": 1482,
-        "slug": "42cursus-piscine-ruby-on-rails"
-      },
-      "children": []
-    },
-    {
-      "id": 1609,
-      "name": "Day 01",
-      "slug": "42cursus-piscine-ruby-on-rails-day-01",
-      "difficulty": 0,
-      "completions": 32,
-      "duration": 44912375,
-      "created_at": "2019-10-04T11:38:03.370000+00:00",
-      "updated_at": "2024-08-30T09:14:30.748000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine Ruby on Rails",
-        "id": 1482,
-        "slug": "42cursus-piscine-ruby-on-rails"
-      },
-      "children": []
-    },
-    {
-      "id": 1610,
-      "name": "Day 02",
-      "slug": "42cursus-piscine-ruby-on-rails-day-02",
-      "difficulty": 0,
-      "completions": 5,
-      "duration": 126386,
-      "created_at": "2019-10-04T11:38:05.184000+00:00",
-      "updated_at": "2024-08-30T09:14:30.734000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine Ruby on Rails",
-        "id": 1482,
-        "slug": "42cursus-piscine-ruby-on-rails"
-      },
-      "children": []
-    },
-    {
-      "id": 1611,
-      "name": "Day 03",
-      "slug": "42cursus-piscine-ruby-on-rails-day-03",
-      "difficulty": 0,
-      "completions": 30,
-      "duration": 122787,
-      "created_at": "2019-10-04T11:38:06.899000+00:00",
-      "updated_at": "2024-08-30T09:14:30.719000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine Ruby on Rails",
-        "id": 1482,
-        "slug": "42cursus-piscine-ruby-on-rails"
-      },
-      "children": []
-    },
-    {
-      "id": 1612,
-      "name": "Day 04",
-      "slug": "42cursus-piscine-ruby-on-rails-day-04",
-      "difficulty": 0,
-      "completions": 12,
-      "duration": 0,
-      "created_at": "2019-10-04T11:38:07.674000+00:00",
-      "updated_at": "2024-08-30T09:14:30.705000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine Ruby on Rails",
-        "id": 1482,
-        "slug": "42cursus-piscine-ruby-on-rails"
-      },
-      "children": []
-    },
-    {
-      "id": 1613,
-      "name": "Day 05",
-      "slug": "42cursus-piscine-ruby-on-rails-day-05",
-      "difficulty": 0,
-      "completions": 1,
-      "duration": 0,
-      "created_at": "2019-10-04T11:38:09.535000+00:00",
-      "updated_at": "2024-08-30T09:14:30.689000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine Ruby on Rails",
-        "id": 1482,
-        "slug": "42cursus-piscine-ruby-on-rails"
-      },
-      "children": []
-    },
-    {
-      "id": 1614,
-      "name": "Day 06",
-      "slug": "42cursus-piscine-ruby-on-rails-day-06",
-      "difficulty": 0,
-      "completions": 1,
-      "duration": 2548391,
-      "created_at": "2019-10-04T11:38:11.353000+00:00",
-      "updated_at": "2024-08-30T09:14:30.675000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine Ruby on Rails",
-        "id": 1482,
-        "slug": "42cursus-piscine-ruby-on-rails"
-      },
-      "children": []
-    },
-    {
-      "id": 1615,
-      "name": "Day 07",
-      "slug": "42cursus-piscine-ruby-on-rails-day-07",
-      "difficulty": 0,
-      "completions": 0,
-      "duration": 0,
-      "created_at": "2019-10-04T11:38:13.116000+00:00",
-      "updated_at": "2024-08-30T09:14:30.660000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine Ruby on Rails",
-        "id": 1482,
-        "slug": "42cursus-piscine-ruby-on-rails"
-      },
-      "children": []
-    },
-    {
-      "id": 1616,
-      "name": "Day 08",
-      "slug": "42cursus-piscine-ruby-on-rails-day-08",
-      "difficulty": 0,
-      "completions": 1,
-      "duration": 2623370,
-      "created_at": "2019-10-04T11:38:14.926000+00:00",
-      "updated_at": "2024-08-30T09:14:30.646000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine Ruby on Rails",
-        "id": 1482,
-        "slug": "42cursus-piscine-ruby-on-rails"
-      },
-      "children": []
-    },
-    {
-      "id": 1617,
-      "name": "Day 09",
-      "slug": "42cursus-piscine-ruby-on-rails-day-09",
-      "difficulty": 0,
-      "completions": 2,
-      "duration": 2995092,
-      "created_at": "2019-10-04T11:38:15.767000+00:00",
-      "updated_at": "2024-08-30T09:14:30.632000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine Ruby on Rails",
-        "id": 1482,
-        "slug": "42cursus-piscine-ruby-on-rails"
-      },
-      "children": []
-    },
-    {
-      "id": 1618,
-      "name": "Rush 00",
-      "slug": "piscine-ruby-on-rails-rush-00",
-      "difficulty": 0,
-      "completions": 36,
-      "duration": 0,
-      "created_at": "2019-10-04T11:38:18.902000+00:00",
-      "updated_at": "2024-08-30T09:14:30.621000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine Ruby on Rails",
-        "id": 791,
-        "slug": "piscine-ruby-on-rails"
-      },
-      "children": []
-    },
-    {
-      "id": 1619,
-      "name": "Rush 01",
-      "slug": "piscine-ruby-on-rails-rush-01",
-      "difficulty": 0,
-      "completions": 3,
-      "duration": 0,
-      "created_at": "2019-10-04T11:38:21.020000+00:00",
-      "updated_at": "2024-08-30T09:14:30.607000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine Ruby on Rails",
-        "id": 791,
-        "slug": "piscine-ruby-on-rails"
-      },
       "children": []
     },
     {
@@ -2159,33 +1496,33 @@
       "completions": 339,
       "duration": 5076212,
       "created_at": "2019-10-31T15:16:43.520000+00:00",
-      "updated_at": "2024-11-22T09:58:50.324000+00:00",
+      "updated_at": "2026-06-30T20:53:54.883000+00:00",
       "exam": false,
       "parent": null,
       "children": []
     },
     {
       "id": 1638,
-      "name": "Internship I",
-      "slug": "internship-i",
+      "name": "Work Experience I",
+      "slug": "work-experience-i",
       "difficulty": 42000,
       "completions": 4888,
       "duration": 9046081,
       "created_at": "2019-10-31T15:18:53.115000+00:00",
-      "updated_at": "2024-12-06T09:34:17.474000+00:00",
+      "updated_at": "2026-07-10T16:35:05.807000+00:00",
       "exam": false,
       "parent": null,
       "children": []
     },
     {
       "id": 1644,
-      "name": "Internship II",
-      "slug": "internship-ii",
+      "name": "Work Experience II",
+      "slug": "work-experience-ii",
       "difficulty": 63000,
       "completions": 1044,
       "duration": 20590321,
       "created_at": "2019-10-31T15:22:43.863000+00:00",
-      "updated_at": "2025-01-02T15:00:32.607000+00:00",
+      "updated_at": "2026-07-07T09:51:19.946000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -2198,7 +1535,7 @@
       "completions": 532,
       "duration": 17056314,
       "created_at": "2019-10-31T15:27:59.317000+00:00",
-      "updated_at": "2025-01-09T11:02:51.497000+00:00",
+      "updated_at": "2026-07-07T13:58:12.914000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -2211,90 +1548,48 @@
       "completions": 46,
       "duration": 24065702,
       "created_at": "2019-10-31T15:38:12.595000+00:00",
-      "updated_at": "2025-01-09T11:02:54.227000+00:00",
+      "updated_at": "2026-07-09T12:31:11.182000+00:00",
       "exam": false,
       "parent": null,
       "children": []
     },
     {
       "id": 1662,
-      "name": "Startup Internship",
-      "slug": "42cursus-startup-internship",
-      "difficulty": 42000,
+      "name": "Startup Experience",
+      "slug": "startup-experience",
+      "difficulty": 63000,
       "completions": 66,
       "duration": 9425466,
       "created_at": "2019-10-31T15:53:33.879000+00:00",
-      "updated_at": "2025-01-09T18:19:00.999000+00:00",
+      "updated_at": "2026-06-30T23:13:32.647000+00:00",
       "exam": false,
       "parent": null,
       "children": []
     },
     {
-      "id": 1700,
-      "name": "Rush 00",
-      "slug": "42cursus-piscine-ruby-on-rails-rush-00",
-      "difficulty": 0,
-      "completions": 14,
-      "duration": 1157507,
-      "created_at": "2020-01-17T17:12:27.887000+00:00",
-      "updated_at": "2024-08-30T09:14:29.827000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine Ruby on Rails",
-        "id": 1482,
-        "slug": "42cursus-piscine-ruby-on-rails"
-      },
-      "children": []
-    },
-    {
-      "id": 1701,
-      "name": "Rush 01",
-      "slug": "42cursus-piscine-ruby-on-rails-rush-01",
-      "difficulty": 0,
+      "id": 1683,
+      "name": "Old-Philosophers",
+      "slug": "old-philosophers",
+      "difficulty": 3360,
       "completions": 0,
       "duration": 0,
-      "created_at": "2020-01-17T17:12:39.092000+00:00",
-      "updated_at": "2024-08-30T09:14:29.808000+00:00",
+      "created_at": "2019-12-18T16:42:36.397000+00:00",
+      "updated_at": "2026-03-20T14:58:55.748000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Ruby on Rails",
-        "id": 1482,
-        "slug": "42cursus-piscine-ruby-on-rails"
-      },
+      "parent": null,
       "children": []
     },
     {
-      "id": 1702,
-      "name": "Rush 01",
-      "slug": "42cursus-piscine-php-symfony-rush-01",
-      "difficulty": 0,
-      "completions": 2,
-      "duration": 428783,
-      "created_at": "2020-01-17T17:13:21.701000+00:00",
-      "updated_at": "2024-08-30T09:14:29.795000+00:00",
+      "id": 1684,
+      "name": "Old-IRC",
+      "slug": "old-irc",
+      "difficulty": 21630,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2019-12-18T16:44:59.769000+00:00",
+      "updated_at": "2026-03-20T14:58:55.738000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine PHP Symfony",
-        "id": 1481,
-        "slug": "42cursus-piscine-php-symfony"
-      },
-      "children": []
-    },
-    {
-      "id": 1703,
-      "name": "Rush 00",
-      "slug": "42cursus-piscine-php-symfony-rush-00",
-      "difficulty": 0,
-      "completions": 10,
-      "duration": 812973,
-      "created_at": "2020-01-17T17:13:30.051000+00:00",
-      "updated_at": "2024-08-30T09:14:29.784000+00:00",
-      "exam": false,
-      "parent": {
-        "name": "Piscine PHP Symfony",
-        "id": 1481,
-        "slug": "42cursus-piscine-php-symfony"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -2318,7 +1613,7 @@
       "completions": 93,
       "duration": 1888355,
       "created_at": "2020-08-25T13:15:47.090000+00:00",
-      "updated_at": "2024-11-27T16:27:45.393000+00:00",
+      "updated_at": "2026-02-12T12:00:19.401000+00:00",
       "exam": false,
       "parent": null,
       "children": [
@@ -2392,7 +1687,7 @@
       "completions": 42,
       "duration": 1398973,
       "created_at": "2020-08-25T13:44:25.010000+00:00",
-      "updated_at": "2023-01-26T16:10:01.101000+00:00",
+      "updated_at": "2026-02-12T10:52:23.509000+00:00",
       "exam": false,
       "parent": {
         "name": "Piscine Java",
@@ -2409,7 +1704,7 @@
       "completions": 76,
       "duration": 1041996,
       "created_at": "2020-08-25T14:43:08.198000+00:00",
-      "updated_at": "2023-01-27T13:42:52.366000+00:00",
+      "updated_at": "2026-02-12T10:57:41.526000+00:00",
       "exam": false,
       "parent": {
         "name": "Piscine Java",
@@ -2426,7 +1721,7 @@
       "completions": 152,
       "duration": 1185483,
       "created_at": "2020-08-25T14:45:08.964000+00:00",
-      "updated_at": "2023-01-27T13:43:16.113000+00:00",
+      "updated_at": "2026-02-12T11:03:57.973000+00:00",
       "exam": false,
       "parent": {
         "name": "Piscine Java",
@@ -2443,7 +1738,7 @@
       "completions": 129,
       "duration": 1557383,
       "created_at": "2020-08-25T14:46:50.900000+00:00",
-      "updated_at": "2023-01-27T13:43:42.983000+00:00",
+      "updated_at": "2026-02-12T11:05:02.871000+00:00",
       "exam": false,
       "parent": {
         "name": "Piscine Java",
@@ -2460,7 +1755,7 @@
       "completions": 164,
       "duration": 1506371,
       "created_at": "2020-08-25T14:48:28.968000+00:00",
-      "updated_at": "2023-01-27T13:44:05.189000+00:00",
+      "updated_at": "2026-02-12T11:55:34.436000+00:00",
       "exam": false,
       "parent": {
         "name": "Piscine Java",
@@ -2477,7 +1772,7 @@
       "completions": 56,
       "duration": 1085496,
       "created_at": "2020-08-25T14:50:18.332000+00:00",
-      "updated_at": "2023-01-27T13:45:08.336000+00:00",
+      "updated_at": "2026-02-12T11:56:20.875000+00:00",
       "exam": false,
       "parent": {
         "name": "Piscine Java",
@@ -2494,7 +1789,7 @@
       "completions": 60,
       "duration": 981172,
       "created_at": "2020-08-25T14:51:52.421000+00:00",
-      "updated_at": "2023-01-27T13:45:34.107000+00:00",
+      "updated_at": "2026-02-12T11:57:40.659000+00:00",
       "exam": false,
       "parent": {
         "name": "Piscine Java",
@@ -2511,7 +1806,7 @@
       "completions": 45,
       "duration": 970322,
       "created_at": "2020-08-25T14:53:18.171000+00:00",
-      "updated_at": "2023-02-08T07:46:38.533000+00:00",
+      "updated_at": "2026-02-12T11:58:22.037000+00:00",
       "exam": false,
       "parent": {
         "name": "Piscine Java",
@@ -2528,7 +1823,7 @@
       "completions": 69,
       "duration": 864109,
       "created_at": "2020-08-25T14:54:37.324000+00:00",
-      "updated_at": "2023-01-27T13:46:20.231000+00:00",
+      "updated_at": "2026-02-12T11:59:10.306000+00:00",
       "exam": false,
       "parent": {
         "name": "Piscine Java",
@@ -2545,7 +1840,7 @@
       "completions": 11,
       "duration": 846661,
       "created_at": "2020-08-25T14:56:01.706000+00:00",
-      "updated_at": "2023-01-27T13:46:40.593000+00:00",
+      "updated_at": "2026-02-12T12:00:19.315000+00:00",
       "exam": false,
       "parent": {
         "name": "Piscine Java",
@@ -2609,7 +1904,7 @@
       "completions": 53,
       "duration": 6076670,
       "created_at": "2020-10-06T09:23:16.566000+00:00",
-      "updated_at": "2025-01-09T14:05:37.455000+00:00",
+      "updated_at": "2026-06-30T22:45:08.201000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -2618,11 +1913,11 @@
       "id": 1848,
       "name": "Electronique",
       "slug": "electronique",
-      "difficulty": 35700,
+      "difficulty": 42000,
       "completions": 7,
       "duration": 21057989,
       "created_at": "2020-10-09T11:24:29.257000+00:00",
-      "updated_at": "2024-08-30T09:14:29.686000+00:00",
+      "updated_at": "2026-05-11T09:40:44.204000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -2648,7 +1943,7 @@
       "completions": 142,
       "duration": 53105,
       "created_at": "2020-10-13T16:01:17.960000+00:00",
-      "updated_at": "2024-11-25T09:31:36.403000+00:00",
+      "updated_at": "2026-07-06T07:36:14.553000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -2661,40 +1956,40 @@
       "completions": 42,
       "duration": 2595435,
       "created_at": "2020-10-14T11:28:02.838000+00:00",
-      "updated_at": "2024-11-22T07:33:29.583000+00:00",
+      "updated_at": "2026-06-30T22:45:29.102000+00:00",
       "exam": false,
       "parent": null,
       "children": []
     },
     {
       "id": 1857,
-      "name": "Apprentissage 2 ans - 1\u00e8re ann\u00e9e",
+      "name": "Apprentissage 2 ans - 1ère année",
       "slug": "42cursus-apprentissage-2-ans-1ere-annee",
       "difficulty": 0,
       "completions": 84,
       "duration": 36861704,
       "created_at": "2020-10-22T16:50:07.444000+00:00",
-      "updated_at": "2024-12-05T12:58:50.384000+00:00",
+      "updated_at": "2026-03-20T14:58:55.445000+00:00",
       "exam": false,
       "parent": null,
       "children": [
         {
-          "name": "Apprentissage 2 ans - 1\u00e8re ann\u00e9e - 1",
+          "name": "Apprentissage 2 ans - 1ère année - 1",
           "id": 1861,
           "slug": "apprentissage-2-ans-1ere-annee-apprentissage-2-ans-1ere-annee-1"
         },
         {
-          "name": "Apprentissage 2 ans - 1\u00e8re ann\u00e9e - 2",
+          "name": "Apprentissage 2 ans - 1ère année - 2",
           "id": 1862,
           "slug": "apprentissage-2-ans-1ere-annee-apprentissage-2-ans-1ere-annee-2"
         },
         {
-          "name": "Apprentissage 2 ans - 1\u00e8re ann\u00e9e - 3",
+          "name": "Apprentissage 2 ans - 1ère année - 3",
           "id": 1863,
           "slug": "apprentissage-2-ans-1ere-annee-apprentissage-2-ans-1ere-annee-3"
         },
         {
-          "name": "Apprentissage 2 ans - 1\u00e8re ann\u00e9e - 4",
+          "name": "Apprentissage 2 ans - 1ère année - 4",
           "id": 1864,
           "slug": "apprentissage-2-ans-1ere-annee-apprentissage-2-ans-1ere-annee-4"
         }
@@ -2702,16 +1997,16 @@
     },
     {
       "id": 1861,
-      "name": "Apprentissage 2 ans - 1\u00e8re ann\u00e9e - 1",
+      "name": "Apprentissage 2 ans - 1ère année - 1",
       "slug": "apprentissage-2-ans-1ere-annee-apprentissage-2-ans-1ere-annee-1",
       "difficulty": 15000,
       "completions": 109,
       "duration": 2840304,
       "created_at": "2020-10-22T17:23:22.237000+00:00",
-      "updated_at": "2024-08-30T09:14:29.644000+00:00",
+      "updated_at": "2026-03-20T14:58:55.418000+00:00",
       "exam": false,
       "parent": {
-        "name": "Apprentissage 2 ans - 1\u00e8re ann\u00e9e",
+        "name": "Apprentissage 2 ans - 1ère année",
         "id": 1857,
         "slug": "42cursus-apprentissage-2-ans-1ere-annee"
       },
@@ -2719,16 +2014,16 @@
     },
     {
       "id": 1862,
-      "name": "Apprentissage 2 ans - 1\u00e8re ann\u00e9e - 2",
+      "name": "Apprentissage 2 ans - 1ère année - 2",
       "slug": "apprentissage-2-ans-1ere-annee-apprentissage-2-ans-1ere-annee-2",
       "difficulty": 20000,
       "completions": 108,
       "duration": 1111125,
       "created_at": "2020-10-22T17:24:58.586000+00:00",
-      "updated_at": "2024-08-30T09:14:29.631000+00:00",
+      "updated_at": "2026-03-20T14:58:55.395000+00:00",
       "exam": false,
       "parent": {
-        "name": "Apprentissage 2 ans - 1\u00e8re ann\u00e9e",
+        "name": "Apprentissage 2 ans - 1ère année",
         "id": 1857,
         "slug": "42cursus-apprentissage-2-ans-1ere-annee"
       },
@@ -2736,16 +2031,16 @@
     },
     {
       "id": 1863,
-      "name": "Apprentissage 2 ans - 1\u00e8re ann\u00e9e - 3",
+      "name": "Apprentissage 2 ans - 1ère année - 3",
       "slug": "apprentissage-2-ans-1ere-annee-apprentissage-2-ans-1ere-annee-3",
       "difficulty": 22150,
       "completions": 106,
       "duration": 694721,
       "created_at": "2020-10-22T17:26:39.791000+00:00",
-      "updated_at": "2024-08-30T09:14:29.618000+00:00",
+      "updated_at": "2026-03-20T14:58:55.370000+00:00",
       "exam": false,
       "parent": {
-        "name": "Apprentissage 2 ans - 1\u00e8re ann\u00e9e",
+        "name": "Apprentissage 2 ans - 1ère année",
         "id": 1857,
         "slug": "42cursus-apprentissage-2-ans-1ere-annee"
       },
@@ -2753,16 +2048,16 @@
     },
     {
       "id": 1864,
-      "name": "Apprentissage 2 ans - 1\u00e8re ann\u00e9e - 4",
+      "name": "Apprentissage 2 ans - 1ère année - 4",
       "slug": "apprentissage-2-ans-1ere-annee-apprentissage-2-ans-1ere-annee-4",
       "difficulty": 33150,
       "completions": 105,
       "duration": 809704,
       "created_at": "2020-10-22T17:30:16.066000+00:00",
-      "updated_at": "2024-08-30T09:14:29.605000+00:00",
+      "updated_at": "2026-03-20T14:58:55.342000+00:00",
       "exam": false,
       "parent": {
-        "name": "Apprentissage 2 ans - 1\u00e8re ann\u00e9e",
+        "name": "Apprentissage 2 ans - 1ère année",
         "id": 1857,
         "slug": "42cursus-apprentissage-2-ans-1ere-annee"
       },
@@ -2770,33 +2065,33 @@
     },
     {
       "id": 1865,
-      "name": " Apprentissage 2 ans - 2\u00e8me ann\u00e9e",
+      "name": " Apprentissage 2 ans - 2ème année",
       "slug": "apprentissage-2-ans-2eme-annee",
       "difficulty": 0,
       "completions": 65,
       "duration": 27873496,
       "created_at": "2020-11-06T13:49:47.548000+00:00",
-      "updated_at": "2024-12-05T12:59:20.197000+00:00",
+      "updated_at": "2026-03-20T14:58:55.331000+00:00",
       "exam": false,
       "parent": null,
       "children": [
         {
-          "name": "Apprentissage 2 ans - 2\u00e8me ann\u00e9e - 1",
+          "name": "Apprentissage 2 ans - 2ème année - 1",
           "id": 1869,
           "slug": "apprentissage-2-ans-2eme-annee-apprentissage-2-ans-2eme-annee-1"
         },
         {
-          "name": "Apprentissage 2 ans - 2\u00e8me ann\u00e9e - 2",
+          "name": "Apprentissage 2 ans - 2ème année - 2",
           "id": 1870,
           "slug": "apprentissage-2-ans-2eme-annee-apprentissage-2-ans-2eme-annee-2"
         },
         {
-          "name": "Apprentissage 2 ans - 2\u00e8me ann\u00e9e - 3",
+          "name": "Apprentissage 2 ans - 2ème année - 3",
           "id": 1871,
           "slug": "apprentissage-2-ans-2eme-annee-apprentissage-2-ans-2eme-annee-3"
         },
         {
-          "name": "Apprentissage 2 ans - 2\u00e8me ann\u00e9e - 4",
+          "name": "Apprentissage 2 ans - 2ème année - 4",
           "id": 1872,
           "slug": "apprentissage-2-ans-2eme-annee-apprentissage-2-ans-2eme-annee-4"
         }
@@ -2804,16 +2099,16 @@
     },
     {
       "id": 1869,
-      "name": "Apprentissage 2 ans - 2\u00e8me ann\u00e9e - 1",
+      "name": "Apprentissage 2 ans - 2ème année - 1",
       "slug": "apprentissage-2-ans-2eme-annee-apprentissage-2-ans-2eme-annee-1",
       "difficulty": 15000,
       "completions": 92,
       "duration": 1794291,
       "created_at": "2020-11-06T14:02:32.293000+00:00",
-      "updated_at": "2024-08-30T09:14:29.541000+00:00",
+      "updated_at": "2026-03-20T14:58:55.302000+00:00",
       "exam": false,
       "parent": {
-        "name": " Apprentissage 2 ans - 2\u00e8me ann\u00e9e",
+        "name": " Apprentissage 2 ans - 2ème année",
         "id": 1865,
         "slug": "apprentissage-2-ans-2eme-annee"
       },
@@ -2821,16 +2116,16 @@
     },
     {
       "id": 1870,
-      "name": "Apprentissage 2 ans - 2\u00e8me ann\u00e9e - 2",
+      "name": "Apprentissage 2 ans - 2ème année - 2",
       "slug": "apprentissage-2-ans-2eme-annee-apprentissage-2-ans-2eme-annee-2",
       "difficulty": 20000,
       "completions": 92,
       "duration": 929827,
       "created_at": "2020-11-06T14:03:27.583000+00:00",
-      "updated_at": "2024-08-30T09:14:29.519000+00:00",
+      "updated_at": "2026-03-20T14:58:55.289000+00:00",
       "exam": false,
       "parent": {
-        "name": " Apprentissage 2 ans - 2\u00e8me ann\u00e9e",
+        "name": " Apprentissage 2 ans - 2ème année",
         "id": 1865,
         "slug": "apprentissage-2-ans-2eme-annee"
       },
@@ -2838,16 +2133,16 @@
     },
     {
       "id": 1871,
-      "name": "Apprentissage 2 ans - 2\u00e8me ann\u00e9e - 3",
+      "name": "Apprentissage 2 ans - 2ème année - 3",
       "slug": "apprentissage-2-ans-2eme-annee-apprentissage-2-ans-2eme-annee-3",
       "difficulty": 22150,
       "completions": 89,
       "duration": 963900,
       "created_at": "2020-11-06T14:04:17.014000+00:00",
-      "updated_at": "2024-08-30T09:14:29.499000+00:00",
+      "updated_at": "2026-03-20T14:58:55.274000+00:00",
       "exam": false,
       "parent": {
-        "name": " Apprentissage 2 ans - 2\u00e8me ann\u00e9e",
+        "name": " Apprentissage 2 ans - 2ème année",
         "id": 1865,
         "slug": "apprentissage-2-ans-2eme-annee"
       },
@@ -2855,16 +2150,16 @@
     },
     {
       "id": 1872,
-      "name": "Apprentissage 2 ans - 2\u00e8me ann\u00e9e - 4",
+      "name": "Apprentissage 2 ans - 2ème année - 4",
       "slug": "apprentissage-2-ans-2eme-annee-apprentissage-2-ans-2eme-annee-4",
       "difficulty": 33150,
       "completions": 85,
       "duration": 1068753,
       "created_at": "2020-11-06T14:06:24.587000+00:00",
-      "updated_at": "2024-08-30T09:14:29.473000+00:00",
+      "updated_at": "2026-03-20T14:58:55.261000+00:00",
       "exam": false,
       "parent": {
-        "name": " Apprentissage 2 ans - 2\u00e8me ann\u00e9e",
+        "name": " Apprentissage 2 ans - 2ème année",
         "id": 1865,
         "slug": "apprentissage-2-ans-2eme-annee"
       },
@@ -2878,7 +2173,7 @@
       "completions": 100,
       "duration": 30802368,
       "created_at": "2020-11-06T14:08:10.537000+00:00",
-      "updated_at": "2024-12-05T12:59:56.197000+00:00",
+      "updated_at": "2026-03-20T14:58:55.252000+00:00",
       "exam": false,
       "parent": null,
       "children": [
@@ -2912,7 +2207,7 @@
       "completions": 122,
       "duration": 2212275,
       "created_at": "2020-11-06T14:12:26.391000+00:00",
-      "updated_at": "2024-11-06T12:31:42.882000+00:00",
+      "updated_at": "2026-03-20T14:58:55.215000+00:00",
       "exam": false,
       "parent": {
         "name": "Apprentissage 1 an",
@@ -2929,7 +2224,7 @@
       "completions": 122,
       "duration": 792018,
       "created_at": "2020-11-06T14:13:29.747000+00:00",
-      "updated_at": "2024-08-30T09:14:29.354000+00:00",
+      "updated_at": "2026-03-20T14:58:55.203000+00:00",
       "exam": false,
       "parent": {
         "name": "Apprentissage 1 an",
@@ -2946,7 +2241,7 @@
       "completions": 122,
       "duration": 866321,
       "created_at": "2020-11-06T14:14:19.431000+00:00",
-      "updated_at": "2024-08-30T09:14:29.341000+00:00",
+      "updated_at": "2026-03-20T14:58:55.190000+00:00",
       "exam": false,
       "parent": {
         "name": "Apprentissage 1 an",
@@ -2963,7 +2258,7 @@
       "completions": 117,
       "duration": 761314,
       "created_at": "2020-11-06T14:15:01.665000+00:00",
-      "updated_at": "2024-08-30T09:14:29.328000+00:00",
+      "updated_at": "2026-03-20T14:58:55.178000+00:00",
       "exam": false,
       "parent": {
         "name": "Apprentissage 1 an",
@@ -2980,7 +2275,20 @@
       "completions": 0,
       "duration": 0,
       "created_at": "2020-12-18T10:08:07.503000+00:00",
-      "updated_at": "2024-11-22T09:50:35.281000+00:00",
+      "updated_at": "2026-06-30T23:57:15.018000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 1933,
+      "name": "tweets [DEPRECATED]",
+      "slug": "tweets-deprecated",
+      "difficulty": 9450,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2021-01-20T14:23:48.446000+00:00",
+      "updated_at": "2026-06-09T10:22:07.720000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -2993,7 +2301,7 @@
       "completions": 14,
       "duration": 6320273,
       "created_at": "2021-01-20T14:46:06.045000+00:00",
-      "updated_at": "2024-05-28T08:41:41.413000+00:00",
+      "updated_at": "2026-06-08T15:31:25.666000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -3006,7 +2314,7 @@
       "completions": 8,
       "duration": 3696648,
       "created_at": "2021-02-04T15:33:15.786000+00:00",
-      "updated_at": "2023-08-02T13:02:20.009000+00:00",
+      "updated_at": "2026-06-08T15:31:29.711000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -3084,7 +2392,7 @@
       "completions": 4,
       "duration": 520101,
       "created_at": "2021-03-06T09:16:33.522000+00:00",
-      "updated_at": "2023-08-02T13:02:19.881000+00:00",
+      "updated_at": "2026-06-08T15:31:32.263000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -3097,7 +2405,7 @@
       "completions": 6,
       "duration": 796111,
       "created_at": "2021-03-06T13:05:03.117000+00:00",
-      "updated_at": "2023-08-02T13:02:19.991000+00:00",
+      "updated_at": "2026-06-08T15:31:34.469000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -3110,7 +2418,7 @@
       "completions": 5,
       "duration": 415086,
       "created_at": "2021-03-06T13:48:32.633000+00:00",
-      "updated_at": "2024-10-07T13:58:10.798000+00:00",
+      "updated_at": "2026-06-08T15:31:36.480000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -3149,7 +2457,7 @@
       "completions": 3,
       "duration": 1894058,
       "created_at": "2021-03-16T04:44:31.659000+00:00",
-      "updated_at": "2024-11-07T11:32:58.023000+00:00",
+      "updated_at": "2026-06-08T15:31:38.597000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -3162,7 +2470,7 @@
       "completions": 4,
       "duration": 4507014,
       "created_at": "2021-03-31T17:47:21.873000+00:00",
-      "updated_at": "2024-11-22T09:39:28.234000+00:00",
+      "updated_at": "2026-06-30T22:38:14.388000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -3171,11 +2479,11 @@
       "id": 1983,
       "name": "Inception",
       "slug": "inception",
-      "difficulty": 10042,
+      "difficulty": 15836,
       "completions": 9054,
       "duration": 5358723,
       "created_at": "2021-04-20T13:48:06.080000+00:00",
-      "updated_at": "2024-12-25T15:04:03.189000+00:00",
+      "updated_at": "2026-07-07T09:17:04.203000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -3188,7 +2496,7 @@
       "completions": 24882,
       "duration": 2404388,
       "created_at": "2021-05-05T21:06:38.023000+00:00",
-      "updated_at": "2024-12-30T09:30:52.608000+00:00",
+      "updated_at": "2026-07-06T14:15:40.294000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -3201,7 +2509,7 @@
       "completions": 9177,
       "duration": 2065120,
       "created_at": "2021-05-24T16:14:51.006000+00:00",
-      "updated_at": "2024-12-30T09:29:25.573000+00:00",
+      "updated_at": "2026-07-07T09:17:06.628000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -3214,7 +2522,20 @@
       "completions": 11841,
       "duration": 1710246,
       "created_at": "2021-05-24T18:16:35.658000+00:00",
-      "updated_at": "2025-01-07T08:23:35.021000+00:00",
+      "updated_at": "2026-07-07T09:17:10.316000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2006,
+      "name": "42SEOUL_TEST2",
+      "slug": "42seoul_test2",
+      "difficulty": 1855,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2021-05-25T06:08:17.925000+00:00",
+      "updated_at": "2025-03-20T17:18:23.104000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -3227,7 +2548,7 @@
       "completions": 12420,
       "duration": 1996082,
       "created_at": "2021-05-25T07:07:39.861000+00:00",
-      "updated_at": "2024-11-28T11:57:42.459000+00:00",
+      "updated_at": "2026-07-07T09:17:12.510000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -3240,7 +2561,7 @@
       "completions": 3278,
       "duration": 2651580,
       "created_at": "2021-05-25T15:08:29.797000+00:00",
-      "updated_at": "2024-11-28T11:59:06.202000+00:00",
+      "updated_at": "2026-07-07T09:17:15.125000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -3253,7 +2574,7 @@
       "completions": 11755,
       "duration": 2390877,
       "created_at": "2021-05-30T22:18:01.476000+00:00",
-      "updated_at": "2024-12-14T22:38:59.191000+00:00",
+      "updated_at": "2026-07-07T09:17:17.512000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -3266,7 +2587,7 @@
       "completions": 1057,
       "duration": 3744851,
       "created_at": "2021-09-20T10:08:03.678000+00:00",
-      "updated_at": "2024-11-28T11:12:05.433000+00:00",
+      "updated_at": "2026-06-30T22:26:18.776000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -3279,7 +2600,7 @@
       "completions": 5,
       "duration": 31030197,
       "created_at": "2021-09-23T12:21:18.185000+00:00",
-      "updated_at": "2025-01-10T10:00:48.245000+00:00",
+      "updated_at": "2026-07-07T06:59:02.494000+00:00",
       "exam": false,
       "parent": null,
       "children": [
@@ -3338,7 +2659,7 @@
       "completions": 97,
       "duration": 740865,
       "created_at": "2021-09-23T12:56:41.939000+00:00",
-      "updated_at": "2024-12-12T13:20:10.660000+00:00",
+      "updated_at": "2026-06-30T23:12:55.118000+00:00",
       "exam": false,
       "parent": {
         "name": "Rushes",
@@ -3355,7 +2676,7 @@
       "completions": 4,
       "duration": 249247,
       "created_at": "2021-09-27T07:43:53.116000+00:00",
-      "updated_at": "2024-08-30T09:14:28.860000+00:00",
+      "updated_at": "2026-03-20T14:58:54.696000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -3368,7 +2689,7 @@
       "completions": 19,
       "duration": 381791,
       "created_at": "2021-09-30T07:24:09.468000+00:00",
-      "updated_at": "2024-11-25T08:46:26.816000+00:00",
+      "updated_at": "2026-07-06T08:05:34.378000+00:00",
       "exam": false,
       "parent": {
         "name": "Rushes",
@@ -3385,7 +2706,7 @@
       "completions": 424,
       "duration": 3113902,
       "created_at": "2021-10-05T13:02:28.054000+00:00",
-      "updated_at": "2025-01-09T08:36:22.186000+00:00",
+      "updated_at": "2026-06-30T22:08:20.652000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -3398,7 +2719,7 @@
       "completions": 68,
       "duration": 4023149,
       "created_at": "2021-11-03T13:32:24.526000+00:00",
-      "updated_at": "2024-11-23T07:46:43.402000+00:00",
+      "updated_at": "2026-06-30T22:50:07.387000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -3411,7 +2732,7 @@
       "completions": 112,
       "duration": 6960734,
       "created_at": "2021-11-03T13:41:58.598000+00:00",
-      "updated_at": "2024-12-23T11:34:35.695000+00:00",
+      "updated_at": "2026-06-30T22:49:47.874000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -3424,7 +2745,7 @@
       "completions": 1333,
       "duration": 22603,
       "created_at": "2021-11-11T18:05:58.660000+00:00",
-      "updated_at": "2024-02-29T14:47:46.234000+00:00",
+      "updated_at": "2025-06-13T14:56:38.858000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -3437,7 +2758,7 @@
       "completions": 36,
       "duration": 3600057,
       "created_at": "2021-12-29T14:32:47.130000+00:00",
-      "updated_at": "2024-11-22T07:42:04.629000+00:00",
+      "updated_at": "2026-06-30T22:19:17.036000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -3450,7 +2771,7 @@
       "completions": 8,
       "duration": 8070717,
       "created_at": "2022-01-06T08:32:36.308000+00:00",
-      "updated_at": "2024-11-22T11:23:06.154000+00:00",
+      "updated_at": "2026-06-30T22:49:35.627000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -3463,7 +2784,7 @@
       "completions": 49,
       "duration": 678640,
       "created_at": "2022-01-12T08:37:25.980000+00:00",
-      "updated_at": "2025-01-09T18:19:29.879000+00:00",
+      "updated_at": "2026-06-30T23:01:00.783000+00:00",
       "exam": false,
       "parent": {
         "name": "Rushes",
@@ -3497,7 +2818,7 @@
       "completions": 71,
       "duration": 740178,
       "created_at": "2022-03-14T09:20:37.622000+00:00",
-      "updated_at": "2025-01-09T18:19:30.874000+00:00",
+      "updated_at": "2026-06-30T23:11:57.519000+00:00",
       "exam": false,
       "parent": {
         "name": "Rushes",
@@ -3514,7 +2835,7 @@
       "completions": 2,
       "duration": 15129119,
       "created_at": "2022-03-23T13:47:07.651000+00:00",
-      "updated_at": "2025-01-10T10:00:13.600000+00:00",
+      "updated_at": "2026-06-30T22:34:27.061000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -3527,7 +2848,7 @@
       "completions": 37,
       "duration": 597039,
       "created_at": "2022-04-04T06:49:13.612000+00:00",
-      "updated_at": "2025-01-09T18:19:31.978000+00:00",
+      "updated_at": "2026-06-30T23:12:08.676000+00:00",
       "exam": false,
       "parent": {
         "name": "Rushes",
@@ -3544,7 +2865,7 @@
       "completions": 109,
       "duration": 935012,
       "created_at": "2022-04-28T07:01:07.505000+00:00",
-      "updated_at": "2025-01-09T18:19:32.918000+00:00",
+      "updated_at": "2026-06-30T23:37:39.514000+00:00",
       "exam": false,
       "parent": {
         "name": "Rushes",
@@ -3561,7 +2882,7 @@
       "completions": 78,
       "duration": 1980321,
       "created_at": "2022-05-12T09:33:46.466000+00:00",
-      "updated_at": "2025-01-09T18:19:34.392000+00:00",
+      "updated_at": "2026-06-30T23:13:57.860000+00:00",
       "exam": false,
       "parent": {
         "name": "Rushes",
@@ -3578,56 +2899,10 @@
       "completions": 0,
       "duration": 0,
       "created_at": "2022-06-23T11:27:17.671000+00:00",
-      "updated_at": "2025-01-09T18:20:23.469000+00:00",
+      "updated_at": "2026-07-06T14:42:23.943000+00:00",
       "exam": false,
       "parent": null,
-      "children": [
-        {
-          "name": "RoR - 0 - Initiation",
-          "id": 2180,
-          "slug": "ror-0-initiation"
-        },
-        {
-          "name": "RoR - 0 - Starting",
-          "id": 2181,
-          "slug": "ror-0-starting"
-        },
-        {
-          "name": "RoR - 0 - Oob",
-          "id": 2182,
-          "slug": "ror-0-oob"
-        },
-        {
-          "name": "RoR - 1 - Gems",
-          "id": 2183,
-          "slug": "ror-1-gems"
-        },
-        {
-          "name": "RoR - 1 - Base Rails",
-          "id": 2184,
-          "slug": "ror-1-base-rails"
-        },
-        {
-          "name": "RoR - 2 - SQL",
-          "id": 2185,
-          "slug": "ror-2-sql"
-        },
-        {
-          "name": "RoR - 3 - Sessions",
-          "id": 2186,
-          "slug": "ror-3-sessions"
-        },
-        {
-          "name": "RoR - 3 - Advanced",
-          "id": 2187,
-          "slug": "ror-3-advanced"
-        },
-        {
-          "name": "RoR - 3 - Final",
-          "id": 2188,
-          "slug": "ror-3-final"
-        }
-      ]
+      "children": []
     },
     {
       "id": 2180,
@@ -3637,13 +2912,9 @@
       "completions": 8,
       "duration": 47425,
       "created_at": "2022-06-23T11:32:57.718000+00:00",
-      "updated_at": "2025-01-09T11:05:54.218000+00:00",
+      "updated_at": "2026-07-06T14:46:28.234000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine RoR",
-        "id": 2179,
-        "slug": "piscine-ror"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -3654,13 +2925,9 @@
       "completions": 4,
       "duration": 11211,
       "created_at": "2022-06-23T11:35:08.723000+00:00",
-      "updated_at": "2025-01-09T18:20:53.114000+00:00",
+      "updated_at": "2026-07-06T14:46:34.534000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine RoR",
-        "id": 2179,
-        "slug": "piscine-ror"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -3671,13 +2938,9 @@
       "completions": 3,
       "duration": 38252,
       "created_at": "2022-06-23T11:36:48.823000+00:00",
-      "updated_at": "2025-01-09T11:06:35.824000+00:00",
+      "updated_at": "2026-07-06T14:46:37.710000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine RoR",
-        "id": 2179,
-        "slug": "piscine-ror"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -3688,13 +2951,9 @@
       "completions": 2,
       "duration": 9235,
       "created_at": "2022-06-23T11:44:58.695000+00:00",
-      "updated_at": "2025-01-09T11:07:02.868000+00:00",
+      "updated_at": "2026-07-06T14:46:42.366000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine RoR",
-        "id": 2179,
-        "slug": "piscine-ror"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -3705,13 +2964,9 @@
       "completions": 3,
       "duration": 50318,
       "created_at": "2022-06-23T11:46:43.508000+00:00",
-      "updated_at": "2025-01-09T11:07:26.920000+00:00",
+      "updated_at": "2026-07-06T14:46:47.095000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine RoR",
-        "id": 2179,
-        "slug": "piscine-ror"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -3722,13 +2977,9 @@
       "completions": 0,
       "duration": 0,
       "created_at": "2022-06-23T11:48:16.606000+00:00",
-      "updated_at": "2025-01-09T11:07:51.052000+00:00",
+      "updated_at": "2026-07-06T14:46:51.142000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine RoR",
-        "id": 2179,
-        "slug": "piscine-ror"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -3739,13 +2990,9 @@
       "completions": 0,
       "duration": 0,
       "created_at": "2022-06-23T11:49:25.467000+00:00",
-      "updated_at": "2025-01-09T11:08:14.421000+00:00",
+      "updated_at": "2026-07-06T14:46:54.006000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine RoR",
-        "id": 2179,
-        "slug": "piscine-ror"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -3756,13 +3003,9 @@
       "completions": 0,
       "duration": 0,
       "created_at": "2022-06-23T11:50:36.986000+00:00",
-      "updated_at": "2025-01-09T11:08:37.409000+00:00",
+      "updated_at": "2026-07-06T14:47:00.028000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine RoR",
-        "id": 2179,
-        "slug": "piscine-ror"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -3773,13 +3016,9 @@
       "completions": 0,
       "duration": 0,
       "created_at": "2022-06-23T11:51:38.070000+00:00",
-      "updated_at": "2025-01-09T11:09:01.748000+00:00",
+      "updated_at": "2026-07-06T14:47:02.743000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine RoR",
-        "id": 2179,
-        "slug": "piscine-ror"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -3790,56 +3029,10 @@
       "completions": 13,
       "duration": 7965928,
       "created_at": "2022-06-23T11:53:57.824000+00:00",
-      "updated_at": "2025-01-09T18:20:33.972000+00:00",
+      "updated_at": "2026-07-06T14:42:39.111000+00:00",
       "exam": false,
       "parent": null,
-      "children": [
-        {
-          "name": "Django - 0 - Initiation",
-          "id": 2190,
-          "slug": "django-0-initiation"
-        },
-        {
-          "name": "Django - 0 - Starting",
-          "id": 2191,
-          "slug": "django-0-starting"
-        },
-        {
-          "name": "Django - 0 - Oob",
-          "id": 2192,
-          "slug": "django-0-oob"
-        },
-        {
-          "name": "Django - 1 - Lib",
-          "id": 2193,
-          "slug": "django-1-lib"
-        },
-        {
-          "name": "Django - 1 - Base Django",
-          "id": 2194,
-          "slug": "django-1-base-django"
-        },
-        {
-          "name": "Django - 2 - SQL",
-          "id": 2195,
-          "slug": "django-2-sql"
-        },
-        {
-          "name": "Django - 3 - Sessions",
-          "id": 2196,
-          "slug": "django-3-sessions"
-        },
-        {
-          "name": "Django - 3 - Advanced",
-          "id": 2197,
-          "slug": "django-3-advanced"
-        },
-        {
-          "name": "Django - 3 - Final",
-          "id": 2198,
-          "slug": "django-3-final"
-        }
-      ]
+      "children": []
     },
     {
       "id": 2190,
@@ -3849,13 +3042,9 @@
       "completions": 103,
       "duration": 79717,
       "created_at": "2022-06-23T11:55:35.374000+00:00",
-      "updated_at": "2025-01-09T10:54:29.150000+00:00",
+      "updated_at": "2026-07-09T12:28:29.100000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Django",
-        "id": 2189,
-        "slug": "piscine-django"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -3866,13 +3055,9 @@
       "completions": 71,
       "duration": 64137,
       "created_at": "2022-06-23T11:56:49.554000+00:00",
-      "updated_at": "2025-01-09T10:54:53.107000+00:00",
+      "updated_at": "2026-06-30T21:43:24.857000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Django",
-        "id": 2189,
-        "slug": "piscine-django"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -3883,13 +3068,9 @@
       "completions": 68,
       "duration": 52815,
       "created_at": "2022-06-23T11:58:08.716000+00:00",
-      "updated_at": "2025-01-09T18:20:46.901000+00:00",
+      "updated_at": "2026-07-06T11:54:32.383000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Django",
-        "id": 2189,
-        "slug": "piscine-django"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -3900,13 +3081,9 @@
       "completions": 51,
       "duration": 50106,
       "created_at": "2022-06-23T11:59:34.274000+00:00",
-      "updated_at": "2025-01-09T10:55:37.909000+00:00",
+      "updated_at": "2026-07-06T11:54:41.126000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Django",
-        "id": 2189,
-        "slug": "piscine-django"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -3917,13 +3094,9 @@
       "completions": 67,
       "duration": 58916,
       "created_at": "2022-06-23T12:00:58.982000+00:00",
-      "updated_at": "2025-01-09T10:56:00.788000+00:00",
+      "updated_at": "2026-07-06T11:54:49.969000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Django",
-        "id": 2189,
-        "slug": "piscine-django"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -3934,13 +3107,9 @@
       "completions": 30,
       "duration": 55289,
       "created_at": "2022-06-23T12:03:52.442000+00:00",
-      "updated_at": "2025-01-09T10:56:26.599000+00:00",
+      "updated_at": "2026-07-06T11:55:01.595000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Django",
-        "id": 2189,
-        "slug": "piscine-django"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -3951,13 +3120,9 @@
       "completions": 23,
       "duration": 57461,
       "created_at": "2022-06-23T12:05:04.614000+00:00",
-      "updated_at": "2025-01-09T10:56:55.139000+00:00",
+      "updated_at": "2026-07-06T11:55:07.194000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Django",
-        "id": 2189,
-        "slug": "piscine-django"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -3968,13 +3133,9 @@
       "completions": 17,
       "duration": 54371,
       "created_at": "2022-06-23T12:06:46.004000+00:00",
-      "updated_at": "2025-01-09T10:57:25.123000+00:00",
+      "updated_at": "2026-07-06T11:55:15.608000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Django",
-        "id": 2189,
-        "slug": "piscine-django"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -3985,13 +3146,9 @@
       "completions": 32,
       "duration": 206889,
       "created_at": "2022-06-23T12:07:43.640000+00:00",
-      "updated_at": "2025-01-09T10:57:49.242000+00:00",
+      "updated_at": "2026-07-06T11:55:20.418000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Django",
-        "id": 2189,
-        "slug": "piscine-django"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4002,56 +3159,10 @@
       "completions": 1,
       "duration": 28418925,
       "created_at": "2022-06-23T12:10:41.503000+00:00",
-      "updated_at": "2025-01-09T18:20:44.928000+00:00",
+      "updated_at": "2026-06-30T21:58:57.702000+00:00",
       "exam": false,
       "parent": null,
-      "children": [
-        {
-          "name": "Symfony - 0 - Initiation",
-          "id": 2200,
-          "slug": "symfony-0-initiation"
-        },
-        {
-          "name": "Symfony - 0 - Starting",
-          "id": 2201,
-          "slug": "symfony-0-starting"
-        },
-        {
-          "name": "Symfony - 0 - Oob",
-          "id": 2202,
-          "slug": "symfony-0-oob"
-        },
-        {
-          "name": "Symfony - 1 - Composer",
-          "id": 2203,
-          "slug": "symfony-1-composer"
-        },
-        {
-          "name": "Symfony - 1 - Base Symfony ",
-          "id": 2204,
-          "slug": "symfony-1-base-symfony"
-        },
-        {
-          "name": "Symfony - 2 - SQL",
-          "id": 2205,
-          "slug": "symfony-2-sql"
-        },
-        {
-          "name": "Symfony - 3 - Sessions",
-          "id": 2206,
-          "slug": "symfony-3-sessions"
-        },
-        {
-          "name": "Symfony - 3 - Advanced",
-          "id": 2207,
-          "slug": "symfony-3-advanced"
-        },
-        {
-          "name": "Symfony - 3 - Final",
-          "id": 2208,
-          "slug": "symfony-3-final"
-        }
-      ]
+      "children": []
     },
     {
       "id": 2200,
@@ -4061,13 +3172,9 @@
       "completions": 14,
       "duration": 42832,
       "created_at": "2022-06-23T12:13:06.991000+00:00",
-      "updated_at": "2025-01-09T11:10:13.054000+00:00",
+      "updated_at": "2026-06-30T21:53:21.811000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Symfony",
-        "id": 2199,
-        "slug": "piscine-symfony"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4078,13 +3185,9 @@
       "completions": 10,
       "duration": 81152,
       "created_at": "2022-06-23T12:14:16.764000+00:00",
-      "updated_at": "2025-01-09T11:10:38.430000+00:00",
+      "updated_at": "2026-06-30T22:00:33.843000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Symfony",
-        "id": 2199,
-        "slug": "piscine-symfony"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4095,13 +3198,9 @@
       "completions": 5,
       "duration": 46218,
       "created_at": "2022-06-23T12:15:30.056000+00:00",
-      "updated_at": "2025-01-09T11:11:03.503000+00:00",
+      "updated_at": "2026-06-30T22:01:45.159000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Symfony",
-        "id": 2199,
-        "slug": "piscine-symfony"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4112,13 +3211,9 @@
       "completions": 6,
       "duration": 42284,
       "created_at": "2022-06-23T12:16:36.891000+00:00",
-      "updated_at": "2025-01-09T11:11:27.690000+00:00",
+      "updated_at": "2026-07-01T09:40:58.416000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Symfony",
-        "id": 2199,
-        "slug": "piscine-symfony"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4129,13 +3224,9 @@
       "completions": 5,
       "duration": 40579,
       "created_at": "2022-06-23T12:17:48.900000+00:00",
-      "updated_at": "2025-01-09T11:11:58.221000+00:00",
+      "updated_at": "2026-07-01T09:24:21.190000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Symfony",
-        "id": 2199,
-        "slug": "piscine-symfony"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4146,13 +3237,9 @@
       "completions": 2,
       "duration": 97910,
       "created_at": "2022-06-23T12:19:17.829000+00:00",
-      "updated_at": "2025-01-09T11:12:21.599000+00:00",
+      "updated_at": "2026-06-30T22:03:32.489000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Symfony",
-        "id": 2199,
-        "slug": "piscine-symfony"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4163,13 +3250,9 @@
       "completions": 1,
       "duration": 86499,
       "created_at": "2022-06-23T12:20:18.137000+00:00",
-      "updated_at": "2025-01-09T11:12:55.497000+00:00",
+      "updated_at": "2026-06-30T22:04:22.260000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Symfony",
-        "id": 2199,
-        "slug": "piscine-symfony"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4180,13 +3263,9 @@
       "completions": 1,
       "duration": 14563,
       "created_at": "2022-06-23T12:22:45.913000+00:00",
-      "updated_at": "2025-01-09T11:13:21.149000+00:00",
+      "updated_at": "2026-06-30T22:05:18.711000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Symfony",
-        "id": 2199,
-        "slug": "piscine-symfony"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4197,13 +3276,9 @@
       "completions": 1,
       "duration": 174549,
       "created_at": "2022-06-23T12:23:41.903000+00:00",
-      "updated_at": "2025-01-09T11:13:49.079000+00:00",
+      "updated_at": "2026-06-30T22:06:40.468000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Symfony",
-        "id": 2199,
-        "slug": "piscine-symfony"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4214,7 +3289,7 @@
       "completions": 59,
       "duration": 550815,
       "created_at": "2022-07-05T10:22:22.293000+00:00",
-      "updated_at": "2025-01-10T10:00:47.689000+00:00",
+      "updated_at": "2026-07-07T06:59:02.490000+00:00",
       "exam": false,
       "parent": {
         "name": "Rushes",
@@ -4231,7 +3306,7 @@
       "completions": 62,
       "duration": 834701,
       "created_at": "2022-07-25T07:19:56.926000+00:00",
-      "updated_at": "2025-01-09T18:19:36.628000+00:00",
+      "updated_at": "2026-06-30T23:17:53.435000+00:00",
       "exam": false,
       "parent": {
         "name": "Rushes",
@@ -4261,7 +3336,7 @@
       "completions": 10,
       "duration": 5168549,
       "created_at": "2022-09-15T12:14:33.768000+00:00",
-      "updated_at": "2024-11-25T09:31:11.482000+00:00",
+      "updated_at": "2026-07-01T00:11:24.986000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -4274,56 +3349,10 @@
       "completions": 1,
       "duration": 2210047,
       "created_at": "2022-09-29T12:03:05.792000+00:00",
-      "updated_at": "2024-12-05T10:49:15.435000+00:00",
+      "updated_at": "2026-07-06T14:42:45.163000+00:00",
       "exam": false,
       "parent": null,
-      "children": [
-        {
-          "name": "OCAML - Basic syntax and semantics - 0",
-          "id": 2230,
-          "slug": "ocaml-basic-syntax-and-semantics-0"
-        },
-        {
-          "name": "OCAML - Recursion and higher-order functions - 0",
-          "id": 2234,
-          "slug": "ocaml-recursion-and-higher-order-functions-0"
-        },
-        {
-          "name": "OCAML - Pattern Matching and Data Types - 0",
-          "id": 2237,
-          "slug": "ocaml-pattern-matching-and-data-types-0"
-        },
-        {
-          "name": "OCAML  - OCaml\u2019s modules language - 1",
-          "id": 2251,
-          "slug": "ocaml-ocaml-s-modules-language-1"
-        },
-        {
-          "name": "OCAML - Imperative features - 1",
-          "id": 2252,
-          "slug": "ocaml-imperative-features-1"
-        },
-        {
-          "name": "OCAML - Functor - 1",
-          "id": 2279,
-          "slug": "ocaml-functor-1"
-        },
-        {
-          "name": "OCAML - Object Oriented Programming -  1",
-          "id": 2280,
-          "slug": "ocaml-object-oriented-programming-1"
-        },
-        {
-          "name": "OCAML - Object Oriented Programming - 2",
-          "id": 2281,
-          "slug": "ocaml-object-oriented-programming-2"
-        },
-        {
-          "name": "OCAML - Monoids and Monads - 3",
-          "id": 2282,
-          "slug": "ocaml-monoids-and-monads-3"
-        }
-      ]
+      "children": []
     },
     {
       "id": 2230,
@@ -4333,13 +3362,9 @@
       "completions": 8,
       "duration": 40799,
       "created_at": "2022-09-29T13:49:28.244000+00:00",
-      "updated_at": "2024-11-22T08:34:30.367000+00:00",
+      "updated_at": "2026-07-06T14:50:49.785000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine ocaml",
-        "id": 2228,
-        "slug": "42cursus-piscine-ocaml"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4350,13 +3375,9 @@
       "completions": 4,
       "duration": 38373,
       "created_at": "2022-10-05T08:54:35.257000+00:00",
-      "updated_at": "2024-11-22T08:34:39.626000+00:00",
+      "updated_at": "2026-07-06T14:50:44.551000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine ocaml",
-        "id": 2228,
-        "slug": "42cursus-piscine-ocaml"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4367,30 +3388,22 @@
       "completions": 4,
       "duration": 67542,
       "created_at": "2022-10-05T14:41:19.350000+00:00",
-      "updated_at": "2024-11-22T08:34:50.085000+00:00",
+      "updated_at": "2026-07-06T14:50:24.096000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine ocaml",
-        "id": 2228,
-        "slug": "42cursus-piscine-ocaml"
-      },
+      "parent": null,
       "children": []
     },
     {
       "id": 2251,
-      "name": "OCAML  - OCaml\u2019s modules language - 1",
+      "name": "OCAML  - OCaml’s modules language - 1",
       "slug": "ocaml-ocaml-s-modules-language-1",
       "difficulty": 0,
       "completions": 3,
       "duration": 136088,
       "created_at": "2022-10-13T09:44:36.979000+00:00",
-      "updated_at": "2024-11-15T12:47:59.870000+00:00",
+      "updated_at": "2026-07-06T14:50:39.602000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine ocaml",
-        "id": 2228,
-        "slug": "42cursus-piscine-ocaml"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4401,13 +3414,9 @@
       "completions": 1,
       "duration": 174176,
       "created_at": "2022-10-13T15:54:55.667000+00:00",
-      "updated_at": "2024-11-22T08:34:59.329000+00:00",
+      "updated_at": "2026-07-06T14:50:37.115000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine ocaml",
-        "id": 2228,
-        "slug": "42cursus-piscine-ocaml"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4418,36 +3427,10 @@
       "completions": 105,
       "duration": 4745992,
       "created_at": "2022-12-07T10:38:39.136000+00:00",
-      "updated_at": "2024-12-05T11:01:34.993000+00:00",
+      "updated_at": "2026-07-06T14:42:53.370000+00:00",
       "exam": false,
       "parent": null,
-      "children": [
-        {
-          "name": "Python - 0 - Starting",
-          "id": 2268,
-          "slug": "python-0-starting"
-        },
-        {
-          "name": "Python - 1 - Array",
-          "id": 2269,
-          "slug": "python-1-array"
-        },
-        {
-          "name": "Python - 2 - DataTable",
-          "id": 2270,
-          "slug": "python-2-datatable"
-        },
-        {
-          "name": "Python - 3 - OOP",
-          "id": 2271,
-          "slug": "python-3-oop"
-        },
-        {
-          "name": "Python - 4 - Dod",
-          "id": 2272,
-          "slug": "python-4-dod"
-        }
-      ]
+      "children": []
     },
     {
       "id": 2268,
@@ -4457,13 +3440,9 @@
       "completions": 275,
       "duration": 337133,
       "created_at": "2022-12-07T10:43:01.292000+00:00",
-      "updated_at": "2024-12-15T22:42:51.126000+00:00",
+      "updated_at": "2026-07-07T14:10:51.628000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Python for Data Science",
-        "id": 2267,
-        "slug": "python-for-data-science"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4474,13 +3453,9 @@
       "completions": 308,
       "duration": 804910,
       "created_at": "2022-12-07T12:35:09.729000+00:00",
-      "updated_at": "2024-12-15T22:42:52.383000+00:00",
+      "updated_at": "2026-07-06T14:44:00.640000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Python for Data Science",
-        "id": 2267,
-        "slug": "python-for-data-science"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4491,13 +3466,9 @@
       "completions": 313,
       "duration": 414668,
       "created_at": "2022-12-07T12:36:28.404000+00:00",
-      "updated_at": "2024-12-15T22:42:53.913000+00:00",
+      "updated_at": "2026-07-06T14:44:02.672000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Python for Data Science",
-        "id": 2267,
-        "slug": "python-for-data-science"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4508,13 +3479,9 @@
       "completions": 288,
       "duration": 598655,
       "created_at": "2022-12-07T12:49:05.567000+00:00",
-      "updated_at": "2024-12-15T22:42:55.598000+00:00",
+      "updated_at": "2026-07-06T14:44:05.377000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Python for Data Science",
-        "id": 2267,
-        "slug": "python-for-data-science"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4525,13 +3492,9 @@
       "completions": 283,
       "duration": 625956,
       "created_at": "2022-12-07T12:52:36.124000+00:00",
-      "updated_at": "2024-12-15T22:42:56.854000+00:00",
+      "updated_at": "2026-07-06T14:44:07.820000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Python for Data Science",
-        "id": 2267,
-        "slug": "python-for-data-science"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4542,13 +3505,9 @@
       "completions": 2,
       "duration": 92629,
       "created_at": "2022-12-16T08:32:19.138000+00:00",
-      "updated_at": "2024-11-22T08:35:14.037000+00:00",
+      "updated_at": "2026-07-06T14:50:32.670000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine ocaml",
-        "id": 2228,
-        "slug": "42cursus-piscine-ocaml"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4559,13 +3518,9 @@
       "completions": 2,
       "duration": 41365,
       "created_at": "2022-12-16T09:42:41.466000+00:00",
-      "updated_at": "2024-11-22T08:35:34.892000+00:00",
+      "updated_at": "2026-07-09T12:32:10.741000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine ocaml",
-        "id": 2228,
-        "slug": "42cursus-piscine-ocaml"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4576,13 +3531,9 @@
       "completions": 2,
       "duration": 20498,
       "created_at": "2022-12-16T10:13:40.786000+00:00",
-      "updated_at": "2024-11-22T08:35:52.509000+00:00",
+      "updated_at": "2026-07-06T14:50:27.216000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine ocaml",
-        "id": 2228,
-        "slug": "42cursus-piscine-ocaml"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4593,13 +3544,9 @@
       "completions": 2,
       "duration": 151304,
       "created_at": "2022-12-16T12:58:52.476000+00:00",
-      "updated_at": "2024-11-26T11:15:25.087000+00:00",
+      "updated_at": "2026-06-30T22:53:02.490000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine ocaml",
-        "id": 2228,
-        "slug": "42cursus-piscine-ocaml"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4610,13 +3557,9 @@
       "completions": 18,
       "duration": 7140400,
       "created_at": "2022-12-29T13:34:31.187000+00:00",
-      "updated_at": "2024-12-02T05:54:54.203000+00:00",
+      "updated_at": "2026-07-06T14:44:39.567000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Unity",
-        "id": 2288,
-        "slug": "unity"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4627,13 +3570,9 @@
       "completions": 9,
       "duration": 1816816,
       "created_at": "2022-12-29T13:39:42.500000+00:00",
-      "updated_at": "2024-11-22T10:27:44.116000+00:00",
+      "updated_at": "2026-07-06T14:45:04.681000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Unity",
-        "id": 2288,
-        "slug": "unity"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4644,13 +3583,9 @@
       "completions": 33,
       "duration": 3213078,
       "created_at": "2022-12-29T14:18:57.310000+00:00",
-      "updated_at": "2024-11-22T10:25:48.672000+00:00",
+      "updated_at": "2026-07-06T14:44:43.214000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Unity",
-        "id": 2288,
-        "slug": "unity"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4661,13 +3596,9 @@
       "completions": 13,
       "duration": 7531615,
       "created_at": "2022-12-29T14:23:11.514000+00:00",
-      "updated_at": "2024-11-22T10:27:10.397000+00:00",
+      "updated_at": "2026-07-06T14:44:49.065000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Unity",
-        "id": 2288,
-        "slug": "unity"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4678,46 +3609,10 @@
       "completions": 4,
       "duration": 14884959,
       "created_at": "2022-12-29T14:53:58.111000+00:00",
-      "updated_at": "2024-11-15T09:28:49.143000+00:00",
+      "updated_at": "2026-07-06T14:45:00.143000+00:00",
       "exam": false,
       "parent": null,
-      "children": [
-        {
-          "name": "Unity - 0 - The basics Unity tools",
-          "id": 2286,
-          "slug": "unity-0-the-basics-unity-tools"
-        },
-        {
-          "name": "Unity - 1 - 3D physics, Tags, Layers and Scene",
-          "id": 2284,
-          "slug": "unity-1-3d-physics-tags-layers-and-scene"
-        },
-        {
-          "name": "Unity - 2 - 2D environment, tiles and sprites",
-          "id": 2289,
-          "slug": "unity-2-2d-environment-tiles-and-sprites"
-        },
-        {
-          "name": "Unity - 3 - Advanced inputs and 2D GUI",
-          "id": 2290,
-          "slug": "unity-3-advanced-inputs-and-2d-gui"
-        },
-        {
-          "name": "Unity - 4 - Animations and Sound",
-          "id": 2292,
-          "slug": "unity-4-animations-and-sound"
-        },
-        {
-          "name": "Unity - 5 - Singleton, playerPrefs and coroutines",
-          "id": 2287,
-          "slug": "unity-5-singleton-playerprefs-and-coroutines"
-        },
-        {
-          "name": "Unity - 6 - Navmesh, light, sound and camera",
-          "id": 2285,
-          "slug": "unity-6-navmesh-light-sound-and-camera"
-        }
-      ]
+      "children": []
     },
     {
       "id": 2289,
@@ -4727,13 +3622,9 @@
       "completions": 22,
       "duration": 9550347,
       "created_at": "2022-12-29T15:48:17.147000+00:00",
-      "updated_at": "2024-11-22T10:26:29.533000+00:00",
+      "updated_at": "2026-07-06T14:44:53.921000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Unity",
-        "id": 2288,
-        "slug": "unity"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4744,13 +3635,9 @@
       "completions": 18,
       "duration": 6271527,
       "created_at": "2022-12-29T16:05:52.625000+00:00",
-      "updated_at": "2024-11-22T10:26:42.694000+00:00",
+      "updated_at": "2026-07-06T14:45:11.305000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Unity",
-        "id": 2288,
-        "slug": "unity"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4761,13 +3648,9 @@
       "completions": 19,
       "duration": 8628030,
       "created_at": "2023-01-02T10:54:14.790000+00:00",
-      "updated_at": "2024-11-22T10:27:05.380000+00:00",
+      "updated_at": "2026-07-06T14:45:52.390000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Unity",
-        "id": 2288,
-        "slug": "unity"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4778,36 +3661,10 @@
       "completions": 20,
       "duration": 5171574,
       "created_at": "2023-01-13T16:27:52.142000+00:00",
-      "updated_at": "2024-12-05T11:01:23.695000+00:00",
+      "updated_at": "2026-07-06T14:45:53.601000+00:00",
       "exam": false,
       "parent": null,
-      "children": [
-        {
-          "name": "Data Science - 0",
-          "id": 2306,
-          "slug": "data-science-0"
-        },
-        {
-          "name": "Data Science - 1",
-          "id": 2318,
-          "slug": "data-science-1"
-        },
-        {
-          "name": "Data Science - 2",
-          "id": 2311,
-          "slug": "data-science-2"
-        },
-        {
-          "name": "Data Science - 3",
-          "id": 2316,
-          "slug": "data-science-3"
-        },
-        {
-          "name": "Data Science - 4",
-          "id": 2317,
-          "slug": "data-science-4"
-        }
-      ]
+      "children": []
     },
     {
       "id": 2306,
@@ -4817,13 +3674,9 @@
       "completions": 85,
       "duration": 96597,
       "created_at": "2023-01-16T09:21:16.287000+00:00",
-      "updated_at": "2024-12-15T22:43:06.168000+00:00",
+      "updated_at": "2026-07-06T08:08:34.641000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Data Science",
-        "id": 2295,
-        "slug": "piscine-data-science"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4834,7 +3687,7 @@
       "completions": 6611,
       "duration": 1286188,
       "created_at": "2023-01-20T12:58:13.453000+00:00",
-      "updated_at": "2025-01-09T15:06:20.216000+00:00",
+      "updated_at": "2026-07-07T09:17:20.208000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -4847,7 +3700,7 @@
       "completions": 1,
       "duration": 167499,
       "created_at": "2023-01-25T11:15:24.722000+00:00",
-      "updated_at": "2023-01-25T11:16:50.809000+00:00",
+      "updated_at": "2025-08-27T07:19:43.977000+00:00",
       "exam": true,
       "parent": null,
       "children": []
@@ -4860,13 +3713,9 @@
       "completions": 31,
       "duration": 45712,
       "created_at": "2023-01-26T12:19:38.838000+00:00",
-      "updated_at": "2024-12-15T22:43:09.468000+00:00",
+      "updated_at": "2026-06-30T22:12:23.181000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Data Science",
-        "id": 2295,
-        "slug": "piscine-data-science"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4877,13 +3726,9 @@
       "completions": 37,
       "duration": 49017,
       "created_at": "2023-02-07T17:44:28.134000+00:00",
-      "updated_at": "2024-12-15T22:43:10.778000+00:00",
+      "updated_at": "2026-06-30T22:13:03.035000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Data Science",
-        "id": 2295,
-        "slug": "piscine-data-science"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4894,13 +3739,9 @@
       "completions": 32,
       "duration": 277582,
       "created_at": "2023-02-07T20:25:02.540000+00:00",
-      "updated_at": "2024-12-15T22:43:12.323000+00:00",
+      "updated_at": "2026-06-30T23:58:01.970000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Data Science",
-        "id": 2295,
-        "slug": "piscine-data-science"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4911,13 +3752,9 @@
       "completions": 58,
       "duration": 88664,
       "created_at": "2023-02-07T20:42:28.728000+00:00",
-      "updated_at": "2024-12-15T22:43:07.821000+00:00",
+      "updated_at": "2026-07-06T08:11:58.330000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Data Science",
-        "id": 2295,
-        "slug": "piscine-data-science"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4941,7 +3778,7 @@
       "completions": 31,
       "duration": 3829735,
       "created_at": "2023-03-01T21:22:34.564000+00:00",
-      "updated_at": "2024-07-04T15:26:09.185000+00:00",
+      "updated_at": "2026-06-08T15:32:30.290000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -4954,7 +3791,7 @@
       "completions": 24,
       "duration": 1143677,
       "created_at": "2023-03-02T13:08:34.266000+00:00",
-      "updated_at": "2024-05-20T19:15:11.069000+00:00",
+      "updated_at": "2025-06-17T09:27:12.016000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -4967,7 +3804,7 @@
       "completions": 21,
       "duration": 752822,
       "created_at": "2023-03-02T20:33:21.419000+00:00",
-      "updated_at": "2024-05-20T19:16:39.761000+00:00",
+      "updated_at": "2025-06-17T09:40:13.369000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -4980,13 +3817,9 @@
       "completions": 154,
       "duration": 168117,
       "created_at": "2023-03-03T11:57:42.371000+00:00",
-      "updated_at": "2024-12-15T22:42:04.026000+00:00",
+      "updated_at": "2026-07-01T00:01:26.938000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Cybersecurity",
-        "id": 2346,
-        "slug": "cybersecurity"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -4997,13 +3830,9 @@
       "completions": 119,
       "duration": 55409,
       "created_at": "2023-03-03T13:55:14.268000+00:00",
-      "updated_at": "2024-12-15T22:42:05.503000+00:00",
+      "updated_at": "2026-07-01T00:02:43.058000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Cybersecurity",
-        "id": 2346,
-        "slug": "cybersecurity"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -5014,13 +3843,9 @@
       "completions": 100,
       "duration": 57760,
       "created_at": "2023-03-03T14:33:22.340000+00:00",
-      "updated_at": "2024-12-15T22:42:07.006000+00:00",
+      "updated_at": "2026-07-01T00:02:57.622000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Cybersecurity",
-        "id": 2346,
-        "slug": "cybersecurity"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -5031,7 +3856,7 @@
       "completions": 17,
       "duration": 679903,
       "created_at": "2023-03-03T23:32:59.711000+00:00",
-      "updated_at": "2024-05-20T19:17:01.019000+00:00",
+      "updated_at": "2025-06-17T09:42:05.554000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5044,7 +3869,7 @@
       "completions": 12,
       "duration": 1251574,
       "created_at": "2023-03-04T00:35:43.333000+00:00",
-      "updated_at": "2024-05-20T19:17:15.352000+00:00",
+      "updated_at": "2025-06-17T09:42:34.342000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5057,7 +3882,7 @@
       "completions": 11,
       "duration": 1023071,
       "created_at": "2023-03-04T15:00:28.375000+00:00",
-      "updated_at": "2024-05-20T19:17:32.188000+00:00",
+      "updated_at": "2025-06-17T09:42:57.157000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5070,7 +3895,7 @@
       "completions": 11,
       "duration": 1442619,
       "created_at": "2023-03-04T18:36:38.986000+00:00",
-      "updated_at": "2024-05-20T19:17:45.789000+00:00",
+      "updated_at": "2025-06-17T09:43:38.636000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5083,7 +3908,7 @@
       "completions": 8,
       "duration": 3892090,
       "created_at": "2023-03-04T20:36:37.618000+00:00",
-      "updated_at": "2024-05-20T19:18:00.247000+00:00",
+      "updated_at": "2025-06-17T09:44:01.580000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5096,7 +3921,7 @@
       "completions": 7,
       "duration": 300351,
       "created_at": "2023-03-04T22:14:11.537000+00:00",
-      "updated_at": "2024-05-20T19:18:13.010000+00:00",
+      "updated_at": "2025-06-17T09:44:18.796000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5109,7 +3934,7 @@
       "completions": 7,
       "duration": 528289,
       "created_at": "2023-03-04T23:47:43.344000+00:00",
-      "updated_at": "2024-05-20T19:18:25.239000+00:00",
+      "updated_at": "2025-06-17T09:44:37.234000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5122,13 +3947,9 @@
       "completions": 71,
       "duration": 54885,
       "created_at": "2023-03-06T13:27:30.960000+00:00",
-      "updated_at": "2024-12-15T22:42:08.490000+00:00",
+      "updated_at": "2026-07-06T14:47:06.626000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Cybersecurity",
-        "id": 2346,
-        "slug": "cybersecurity"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -5139,13 +3960,9 @@
       "completions": 68,
       "duration": 70557,
       "created_at": "2023-03-06T15:34:11.873000+00:00",
-      "updated_at": "2024-12-15T22:42:10.076000+00:00",
+      "updated_at": "2026-07-06T14:47:08.679000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Cybersecurity",
-        "id": 2346,
-        "slug": "cybersecurity"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -5156,7 +3973,7 @@
       "completions": 3,
       "duration": 15007730,
       "created_at": "2023-03-08T09:35:05.593000+00:00",
-      "updated_at": "2024-08-30T09:14:28.244000+00:00",
+      "updated_at": "2026-03-20T14:58:53.997000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5169,7 +3986,7 @@
       "completions": 0,
       "duration": 0,
       "created_at": "2023-03-08T10:31:00.769000+00:00",
-      "updated_at": "2024-08-30T09:14:34.165000+00:00",
+      "updated_at": "2026-03-20T14:59:00.562000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5182,7 +3999,7 @@
       "completions": 2,
       "duration": 33270434,
       "created_at": "2023-03-08T10:40:53.696000+00:00",
-      "updated_at": "2024-08-30T09:14:34.155000+00:00",
+      "updated_at": "2026-03-20T14:59:00.545000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5195,7 +4012,7 @@
       "completions": 0,
       "duration": 0,
       "created_at": "2023-03-08T10:45:28.807000+00:00",
-      "updated_at": "2024-08-30T09:14:34.146000+00:00",
+      "updated_at": "2026-03-20T14:59:00.534000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5208,13 +4025,9 @@
       "completions": 39,
       "duration": 6171072,
       "created_at": "2023-03-09T10:28:22.535000+00:00",
-      "updated_at": "2024-12-15T22:42:13.262000+00:00",
+      "updated_at": "2026-07-06T14:47:11.862000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Cybersecurity",
-        "id": 2346,
-        "slug": "cybersecurity"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -5225,13 +4038,9 @@
       "completions": 5,
       "duration": 9540,
       "created_at": "2023-03-09T10:36:00.271000+00:00",
-      "updated_at": "2024-12-15T22:42:11.677000+00:00",
+      "updated_at": "2026-07-06T14:47:15.301000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Cybersecurity",
-        "id": 2346,
-        "slug": "cybersecurity"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -5242,13 +4051,9 @@
       "completions": 21,
       "duration": 504760,
       "created_at": "2023-03-09T11:35:26.964000+00:00",
-      "updated_at": "2024-12-15T22:42:14.712000+00:00",
+      "updated_at": "2026-07-06T14:47:19.097000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Cybersecurity",
-        "id": 2346,
-        "slug": "cybersecurity"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -5259,51 +4064,10 @@
       "completions": 14,
       "duration": 8683952,
       "created_at": "2023-03-09T11:40:59.191000+00:00",
-      "updated_at": "2025-01-08T11:52:19.595000+00:00",
+      "updated_at": "2026-07-06T14:47:22.662000+00:00",
       "exam": false,
       "parent": null,
-      "children": [
-        {
-          "name": "Cybersecurity - arachnida - Web",
-          "id": 2326,
-          "slug": "cybersecurity-arachnida-web"
-        },
-        {
-          "name": "Cybersecurity - ft_otp - OTP",
-          "id": 2327,
-          "slug": "cybersecurity-ft_otp-otp"
-        },
-        {
-          "name": "Cybersecurity - ft_onion - Web",
-          "id": 2328,
-          "slug": "cybersecurity-ft_onion-web"
-        },
-        {
-          "name": "Cybersecurity - Reverse me - Rev",
-          "id": 2336,
-          "slug": "cybersecurity-reverse-me-rev"
-        },
-        {
-          "name": " Cybersecurity - Stockholm - Malware",
-          "id": 2337,
-          "slug": "cybersecurity-stockholm-malware"
-        },
-        {
-          "name": "Cybersecurity - Inquisitor - Network",
-          "id": 2343,
-          "slug": "cybersecurity-inquisitor-network"
-        },
-        {
-          "name": "(Optional) Cybersecurity - Iron Dome - Malware",
-          "id": 2344,
-          "slug": "optional-cybersecurity-iron-dome-malware"
-        },
-        {
-          "name": "Cybersecurity - Vaccine - Web",
-          "id": 2345,
-          "slug": "cybersecurity-vaccine-web"
-        }
-      ]
+      "children": []
     },
     {
       "id": 2347,
@@ -5313,7 +4077,7 @@
       "completions": 3,
       "duration": 289745,
       "created_at": "2023-03-09T22:09:55.549000+00:00",
-      "updated_at": "2024-11-12T15:31:36.159000+00:00",
+      "updated_at": "2026-06-08T15:32:35.624000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5326,7 +4090,7 @@
       "completions": 1,
       "duration": 83,
       "created_at": "2023-03-11T14:38:09.762000+00:00",
-      "updated_at": "2025-01-07T11:25:53.394000+00:00",
+      "updated_at": "2026-06-08T15:32:37.430000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5339,7 +4103,7 @@
       "completions": 1,
       "duration": 138,
       "created_at": "2023-03-11T17:09:32.853000+00:00",
-      "updated_at": "2024-05-20T19:21:21.428000+00:00",
+      "updated_at": "2026-06-08T15:33:37.681000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5352,7 +4116,7 @@
       "completions": 1,
       "duration": 139,
       "created_at": "2023-03-11T18:55:41.202000+00:00",
-      "updated_at": "2024-05-20T19:21:42.415000+00:00",
+      "updated_at": "2026-06-08T15:32:39.744000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5365,7 +4129,7 @@
       "completions": 1,
       "duration": 99,
       "created_at": "2023-03-11T22:42:40.926000+00:00",
-      "updated_at": "2024-05-20T19:22:24.191000+00:00",
+      "updated_at": "2026-06-08T15:32:41.625000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5378,13 +4142,9 @@
       "completions": 110,
       "duration": 59646,
       "created_at": "2023-03-19T16:43:33.825000+00:00",
-      "updated_at": "2024-12-15T22:42:32.459000+00:00",
+      "updated_at": "2026-07-09T12:31:27.129000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Mobile",
-        "id": 2355,
-        "slug": "mobile"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -5395,41 +4155,10 @@
       "completions": 21,
       "duration": 10398580,
       "created_at": "2023-03-19T17:10:18.762000+00:00",
-      "updated_at": "2024-12-05T10:53:39.634000+00:00",
+      "updated_at": "2026-07-06T14:47:57.445000+00:00",
       "exam": false,
       "parent": null,
-      "children": [
-        {
-          "name": "Mobile - 0 - Basic of the mobile application",
-          "id": 2354,
-          "slug": "mobile-0-basic-of-the-mobile-application"
-        },
-        {
-          "name": "Mobile - 1 - Structure and logic",
-          "id": 2356,
-          "slug": "mobile-1-structure-and-logic"
-        },
-        {
-          "name": "Mobile - 2 - API and data",
-          "id": 2357,
-          "slug": "mobile-2-api-and-data"
-        },
-        {
-          "name": "Mobile - 3 - Design",
-          "id": 2358,
-          "slug": "mobile-3-design"
-        },
-        {
-          "name": "Mobile - 4 - Auth and dataBase",
-          "id": 2359,
-          "slug": "mobile-4-auth-and-database"
-        },
-        {
-          "name": "Mobile - 5 - Manage data and display",
-          "id": 2360,
-          "slug": "mobile-5-manage-data-and-display"
-        }
-      ]
+      "children": []
     },
     {
       "id": 2356,
@@ -5439,13 +4168,9 @@
       "completions": 84,
       "duration": 65006,
       "created_at": "2023-03-19T17:20:58.829000+00:00",
-      "updated_at": "2024-12-15T22:42:33.710000+00:00",
+      "updated_at": "2026-07-06T14:48:05.351000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Mobile",
-        "id": 2355,
-        "slug": "mobile"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -5456,13 +4181,9 @@
       "completions": 57,
       "duration": 73317,
       "created_at": "2023-03-19T17:33:30.346000+00:00",
-      "updated_at": "2024-12-15T22:42:35.698000+00:00",
+      "updated_at": "2026-07-09T12:32:01.471000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Mobile",
-        "id": 2355,
-        "slug": "mobile"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -5473,13 +4194,9 @@
       "completions": 56,
       "duration": 72748,
       "created_at": "2023-03-19T22:39:50.423000+00:00",
-      "updated_at": "2024-12-15T22:42:37.157000+00:00",
+      "updated_at": "2026-07-06T14:48:13.412000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Mobile",
-        "id": 2355,
-        "slug": "mobile"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -5490,13 +4207,9 @@
       "completions": 41,
       "duration": 63196,
       "created_at": "2023-03-19T22:40:36.113000+00:00",
-      "updated_at": "2024-12-15T22:42:38.732000+00:00",
+      "updated_at": "2026-07-09T09:51:40.898000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Mobile",
-        "id": 2355,
-        "slug": "mobile"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -5507,13 +4220,9 @@
       "completions": 38,
       "duration": 116301,
       "created_at": "2023-03-19T22:41:24.458000+00:00",
-      "updated_at": "2024-12-15T22:42:40.872000+00:00",
+      "updated_at": "2026-07-09T09:52:17.446000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Mobile",
-        "id": 2355,
-        "slug": "mobile"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -5524,41 +4233,10 @@
       "completions": 3,
       "duration": 15470024,
       "created_at": "2023-03-28T13:57:43.655000+00:00",
-      "updated_at": "2024-12-10T16:43:53.259000+00:00",
+      "updated_at": "2026-07-06T14:49:20.617000+00:00",
       "exam": false,
       "parent": null,
-      "children": [
-        {
-          "name": "Piscine Object - Module 00 - Encapsulation",
-          "id": 2365,
-          "slug": "piscine-object-module-00-encapsulation"
-        },
-        {
-          "name": "Piscine Object - Module 01 - Relationship",
-          "id": 2366,
-          "slug": "piscine-object-module-01-relationship"
-        },
-        {
-          "name": "Piscine Object - Module 02 - UML",
-          "id": 2367,
-          "slug": "piscine-object-module-02-uml"
-        },
-        {
-          "name": "Piscine Object - Module 03 - SOLID",
-          "id": 2368,
-          "slug": "piscine-object-module-03-solid"
-        },
-        {
-          "name": "Piscine Object - Module 04 - Design Pattern",
-          "id": 2369,
-          "slug": "piscine-object-module-04-design-pattern"
-        },
-        {
-          "name": "Piscine Object - Module 05 - Practical work",
-          "id": 2370,
-          "slug": "piscine-object-module-05-practical-work"
-        }
-      ]
+      "children": []
     },
     {
       "id": 2365,
@@ -5568,13 +4246,9 @@
       "completions": 58,
       "duration": 62338,
       "created_at": "2023-03-28T14:39:25.505000+00:00",
-      "updated_at": "2024-12-04T15:42:13.530000+00:00",
+      "updated_at": "2026-06-30T21:40:30.609000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Object",
-        "id": 2364,
-        "slug": "piscine-object"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -5585,13 +4259,9 @@
       "completions": 36,
       "duration": 69399,
       "created_at": "2023-03-29T09:15:38.141000+00:00",
-      "updated_at": "2024-11-22T08:20:42.155000+00:00",
+      "updated_at": "2026-07-06T14:49:25.682000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Object",
-        "id": 2364,
-        "slug": "piscine-object"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -5602,13 +4272,9 @@
       "completions": 34,
       "duration": 63525,
       "created_at": "2023-03-29T09:19:30.587000+00:00",
-      "updated_at": "2024-11-22T08:20:56.118000+00:00",
+      "updated_at": "2026-07-06T14:49:28.642000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Object",
-        "id": 2364,
-        "slug": "piscine-object"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -5619,13 +4285,9 @@
       "completions": 21,
       "duration": 74013,
       "created_at": "2023-03-29T09:26:39.464000+00:00",
-      "updated_at": "2024-11-22T08:21:19.183000+00:00",
+      "updated_at": "2026-07-06T14:49:33.139000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Object",
-        "id": 2364,
-        "slug": "piscine-object"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -5636,13 +4298,9 @@
       "completions": 12,
       "duration": 37494,
       "created_at": "2023-03-29T10:33:00.328000+00:00",
-      "updated_at": "2024-11-22T08:21:43.286000+00:00",
+      "updated_at": "2026-07-06T14:49:37.586000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Object",
-        "id": 2364,
-        "slug": "piscine-object"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -5653,13 +4311,9 @@
       "completions": 2,
       "duration": 96300,
       "created_at": "2023-03-29T10:35:26.028000+00:00",
-      "updated_at": "2024-11-22T08:22:00.783000+00:00",
+      "updated_at": "2026-07-06T14:49:39.218000+00:00",
       "exam": false,
-      "parent": {
-        "name": "Piscine Object",
-        "id": 2364,
-        "slug": "piscine-object"
-      },
+      "parent": null,
       "children": []
     },
     {
@@ -5670,7 +4324,7 @@
       "completions": 6,
       "duration": 3018031,
       "created_at": "2023-04-11T11:46:23.758000+00:00",
-      "updated_at": "2024-12-20T15:45:58.809000+00:00",
+      "updated_at": "2026-06-30T20:55:22.418000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5683,7 +4337,7 @@
       "completions": 70,
       "duration": 2628070,
       "created_at": "2023-04-11T13:07:14.759000+00:00",
-      "updated_at": "2024-12-05T11:00:31.747000+00:00",
+      "updated_at": "2026-07-06T07:36:35.721000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5696,7 +4350,33 @@
       "completions": 1,
       "duration": 105,
       "created_at": "2023-04-19T13:23:27.991000+00:00",
-      "updated_at": "2024-05-20T19:22:45.240000+00:00",
+      "updated_at": "2026-06-08T15:32:58.019000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2380,
+      "name": "ft_lex",
+      "slug": "ft_lex",
+      "difficulty": 15000,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2023-06-01T10:24:52.512000+00:00",
+      "updated_at": "2026-06-30T22:44:42.625000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2381,
+      "name": "ft_yacc",
+      "slug": "ft_yacc",
+      "difficulty": 20000,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2023-06-01T10:26:18.644000+00:00",
+      "updated_at": "2026-06-30T22:45:14.739000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5709,7 +4389,7 @@
       "completions": 27,
       "duration": 8914277,
       "created_at": "2023-06-08T13:39:39.862000+00:00",
-      "updated_at": "2024-11-22T07:59:21.649000+00:00",
+      "updated_at": "2026-07-07T14:10:54.343000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5722,7 +4402,7 @@
       "completions": 1,
       "duration": 95,
       "created_at": "2023-06-10T16:51:05.110000+00:00",
-      "updated_at": "2024-05-20T19:21:59.820000+00:00",
+      "updated_at": "2026-06-08T15:33:02.940000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5735,7 +4415,7 @@
       "completions": 0,
       "duration": 0,
       "created_at": "2023-06-13T12:31:34.510000+00:00",
-      "updated_at": "2025-01-09T11:05:04.226000+00:00",
+      "updated_at": "2026-06-30T21:20:33.317000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5748,7 +4428,7 @@
       "completions": 79,
       "duration": 4348976,
       "created_at": "2023-07-10T14:03:30.728000+00:00",
-      "updated_at": "2024-12-05T10:43:17.109000+00:00",
+      "updated_at": "2026-06-30T23:00:31.401000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5761,7 +4441,7 @@
       "completions": 11,
       "duration": 3176803,
       "created_at": "2023-09-15T13:51:33.940000+00:00",
-      "updated_at": "2025-01-09T14:37:50.027000+00:00",
+      "updated_at": "2026-07-08T16:36:53.015000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5774,7 +4454,7 @@
       "completions": 0,
       "duration": 0,
       "created_at": "2023-09-15T14:25:09.130000+00:00",
-      "updated_at": "2025-01-09T11:03:22.136000+00:00",
+      "updated_at": "2026-06-30T19:54:18.848000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5787,7 +4467,7 @@
       "completions": 0,
       "duration": 0,
       "created_at": "2023-09-15T14:30:08.105000+00:00",
-      "updated_at": "2025-01-09T11:03:23.551000+00:00",
+      "updated_at": "2026-06-30T19:55:12.748000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5800,7 +4480,7 @@
       "completions": 0,
       "duration": 0,
       "created_at": "2023-09-15T14:41:18.699000+00:00",
-      "updated_at": "2025-01-09T11:03:25.548000+00:00",
+      "updated_at": "2026-06-30T19:55:41.447000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5813,7 +4493,7 @@
       "completions": 1,
       "duration": 2616210,
       "created_at": "2023-09-29T07:40:49.482000+00:00",
-      "updated_at": "2025-01-09T11:03:31.462000+00:00",
+      "updated_at": "2026-06-30T19:53:08.459000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5826,20 +4506,7 @@
       "completions": 0,
       "duration": 0,
       "created_at": "2023-09-29T08:05:01.630000+00:00",
-      "updated_at": "2025-01-09T11:03:33.310000+00:00",
-      "exam": false,
-      "parent": null,
-      "children": []
-    },
-    {
-      "id": 2531,
-      "name": "ft_kleene",
-      "slug": "ft_kleene",
-      "difficulty": 0,
-      "completions": 0,
-      "duration": 0,
-      "created_at": "2023-10-04T06:41:51.579000+00:00",
-      "updated_at": "2024-09-11T14:03:40.734000+00:00",
+      "updated_at": "2026-06-30T19:55:25.162000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5852,7 +4519,7 @@
       "completions": 6,
       "duration": 4521126,
       "created_at": "2023-12-01T13:28:26.742000+00:00",
-      "updated_at": "2025-01-07T08:25:19.197000+00:00",
+      "updated_at": "2026-06-30T22:41:32.135000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5865,7 +4532,7 @@
       "completions": 7,
       "duration": 1859239,
       "created_at": "2023-12-01T15:21:06.192000+00:00",
-      "updated_at": "2024-12-09T06:03:15.731000+00:00",
+      "updated_at": "2026-07-07T09:20:18.771000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5878,7 +4545,7 @@
       "completions": 0,
       "duration": 0,
       "created_at": "2023-12-15T13:16:25.707000+00:00",
-      "updated_at": "2024-12-05T10:53:37.584000+00:00",
+      "updated_at": "2026-06-30T23:09:28.524000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5891,7 +4558,20 @@
       "completions": 0,
       "duration": 0,
       "created_at": "2023-12-15T13:17:53.254000+00:00",
-      "updated_at": "2025-01-06T14:12:14.988000+00:00",
+      "updated_at": "2026-06-30T22:53:18.891000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2560,
+      "name": "ft_IaC",
+      "slug": "ft_iac",
+      "difficulty": 21000,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2024-03-05T10:13:47.774000+00:00",
+      "updated_at": "2026-07-01T00:08:15.892000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5904,7 +4584,7 @@
       "completions": 0,
       "duration": 0,
       "created_at": "2024-04-11T09:40:22.327000+00:00",
-      "updated_at": "2025-01-10T14:58:04.770000+00:00",
+      "updated_at": "2026-03-20T14:58:53.035000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5917,7 +4597,7 @@
       "completions": 0,
       "duration": 0,
       "created_at": "2024-04-11T09:47:41.131000+00:00",
-      "updated_at": "2025-01-10T14:54:42.765000+00:00",
+      "updated_at": "2026-03-20T14:58:52.951000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5930,7 +4610,7 @@
       "completions": 3,
       "duration": 6065823,
       "created_at": "2024-04-11T09:50:56.197000+00:00",
-      "updated_at": "2025-01-10T14:53:33.570000+00:00",
+      "updated_at": "2026-03-20T14:58:52.883000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5943,7 +4623,7 @@
       "completions": 1,
       "duration": 2683871,
       "created_at": "2024-04-11T09:53:48.867000+00:00",
-      "updated_at": "2025-01-10T14:50:06.561000+00:00",
+      "updated_at": "2026-03-20T14:58:52.846000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5956,7 +4636,7 @@
       "completions": 6,
       "duration": 845951,
       "created_at": "2024-04-17T15:48:31.104000+00:00",
-      "updated_at": "2024-12-06T13:52:10.886000+00:00",
+      "updated_at": "2026-06-30T22:52:36.115000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5969,7 +4649,7 @@
       "completions": 0,
       "duration": 0,
       "created_at": "2024-08-16T12:44:01.540000+00:00",
-      "updated_at": "2025-01-03T15:54:29.223000+00:00",
+      "updated_at": "2026-06-30T22:43:36.106000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5982,7 +4662,20 @@
       "completions": 0,
       "duration": 0,
       "created_at": "2024-08-16T12:55:03.124000+00:00",
-      "updated_at": "2024-08-22T15:24:12.172000+00:00",
+      "updated_at": "2026-06-30T19:55:37.093000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2623,
+      "name": "42_Collaborative_resume",
+      "slug": "42_collaborative_resume",
+      "difficulty": 2100,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2024-12-03T15:56:08.522000+00:00",
+      "updated_at": "2026-07-07T09:17:23.611000+00:00",
       "exam": false,
       "parent": null,
       "children": []
@@ -5995,7 +4688,449 @@
       "completions": 0,
       "duration": 0,
       "created_at": "2024-12-26T16:17:49.682000+00:00",
-      "updated_at": "2025-01-06T08:35:09.035000+00:00",
+      "updated_at": "2026-06-30T22:56:49.891000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2664,
+      "name": "electronics - Prototyping",
+      "slug": "electronics-prototyping",
+      "difficulty": 2100,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-11-14T16:43:08.366000+00:00",
+      "updated_at": "2026-03-20T14:58:52.078000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2665,
+      "name": "electronics - Design",
+      "slug": "electronics-design",
+      "difficulty": 2100,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-11-14T20:01:26.439000+00:00",
+      "updated_at": "2026-03-20T14:58:52.067000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2686,
+      "name": "Born2beroot",
+      "slug": "42next-born2beroot",
+      "difficulty": 577,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-04T14:43:11.916000+00:00",
+      "updated_at": "2026-07-07T09:17:26.927000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2687,
+      "name": "push_swap",
+      "slug": "42next-push_swap",
+      "difficulty": 1855,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-04T14:44:14.902000+00:00",
+      "updated_at": "2026-07-07T09:17:29.152000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2688,
+      "name": "A-Maze-ing",
+      "slug": "a-maze-ing",
+      "difficulty": 1142,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-04T14:44:19.694000+00:00",
+      "updated_at": "2026-07-09T12:34:12.751000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2689,
+      "name": "Call Me Maybe",
+      "slug": "call-me-maybe",
+      "difficulty": 1764,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-04T14:44:23.671000+00:00",
+      "updated_at": "2026-07-07T14:11:21.771000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2690,
+      "name": "Python Module 00",
+      "slug": "python-module-00",
+      "difficulty": 70,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-04T14:44:31.178000+00:00",
+      "updated_at": "2026-07-07T09:17:36.836000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2691,
+      "name": "Python Module 01",
+      "slug": "python-module-01",
+      "difficulty": 70,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-04T14:44:34.461000+00:00",
+      "updated_at": "2026-07-09T12:32:23.938000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2692,
+      "name": "Python Module 02",
+      "slug": "python-module-02",
+      "difficulty": 80,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-04T14:44:37.461000+00:00",
+      "updated_at": "2026-07-07T09:17:43.141000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2693,
+      "name": "Python Module 03",
+      "slug": "python-module-03",
+      "difficulty": 80,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-04T14:44:42.193000+00:00",
+      "updated_at": "2026-07-07T09:17:47.248000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2694,
+      "name": "Python Module 04",
+      "slug": "python-module-04",
+      "difficulty": 90,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-04T14:44:45.210000+00:00",
+      "updated_at": "2026-07-07T09:17:49.907000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2695,
+      "name": "Python Module 05",
+      "slug": "python-module-05",
+      "difficulty": 90,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-04T14:44:48.274000+00:00",
+      "updated_at": "2026-07-09T12:32:31.593000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2696,
+      "name": "Python Module 06",
+      "slug": "python-module-06",
+      "difficulty": 100,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-04T14:44:51.060000+00:00",
+      "updated_at": "2026-07-07T09:17:55.169000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2697,
+      "name": "Python Module 07",
+      "slug": "python-module-07",
+      "difficulty": 100,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-04T14:44:54.243000+00:00",
+      "updated_at": "2026-07-07T09:17:57.316000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2698,
+      "name": "Python Module 08",
+      "slug": "python-module-08",
+      "difficulty": 100,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-04T14:44:57.150000+00:00",
+      "updated_at": "2026-07-07T12:25:22.872000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2699,
+      "name": "Python Module 10",
+      "slug": "python-module-10",
+      "difficulty": 110,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-04T14:45:02.092000+00:00",
+      "updated_at": "2026-07-08T22:30:06.407000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2700,
+      "name": "RAG against the machine",
+      "slug": "rag-against-the-machine",
+      "difficulty": 7717,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-04T14:45:05.381000+00:00",
+      "updated_at": "2026-07-09T12:33:14.878000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2701,
+      "name": "The Answer Protocol",
+      "slug": "the-answer-protocol",
+      "difficulty": 15836,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-04T14:45:09.272000+00:00",
+      "updated_at": "2026-07-07T09:18:20.917000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2702,
+      "name": "tree_nity",
+      "slug": "tree_nity",
+      "difficulty": 10042,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-04T14:45:13.228000+00:00",
+      "updated_at": "2026-05-11T11:50:45.674000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2703,
+      "name": "Agent Smith",
+      "slug": "agent-smith",
+      "difficulty": 10042,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-04T15:04:34.981000+00:00",
+      "updated_at": "2026-07-09T12:32:44.863000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2704,
+      "name": "Codexion",
+      "slug": "codexion",
+      "difficulty": 1764,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-04T15:06:30.150000+00:00",
+      "updated_at": "2026-07-09T14:19:17.742000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2705,
+      "name": "Fly-in",
+      "slug": "fly-in",
+      "difficulty": 2646,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-04T15:06:31.948000+00:00",
+      "updated_at": "2026-07-09T16:14:56.426000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2706,
+      "name": "Pac-Man",
+      "slug": "pac-man",
+      "difficulty": 7717,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-04T15:06:33.962000+00:00",
+      "updated_at": "2026-07-08T11:31:34.184000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2707,
+      "name": "Python Module 09",
+      "slug": "python-module-09",
+      "difficulty": 110,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-04T15:06:36.100000+00:00",
+      "updated_at": "2026-07-07T12:23:57.831000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2713,
+      "name": "Apprenticeship I",
+      "slug": "apprenticeship-i",
+      "difficulty": 42000,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-04T16:33:30.322000+00:00",
+      "updated_at": "2026-01-28T14:02:56.760000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2719,
+      "name": "TokenZwap",
+      "slug": "tokenzwap",
+      "difficulty": 9000,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-04T16:58:19.956000+00:00",
+      "updated_at": "2026-04-27T13:14:12.898000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2720,
+      "name": "[42adv]fdf",
+      "slug": "42adv-fdf",
+      "difficulty": 1000,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-31T14:29:29.204000+00:00",
+      "updated_at": "2026-02-06T18:07:32.906000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2721,
+      "name": "[42adv]Fract'ol",
+      "slug": "42adv-fract-ol",
+      "difficulty": 1000,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-31T14:32:42.207000+00:00",
+      "updated_at": "2026-02-06T18:06:46.221000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2722,
+      "name": "[42adv]so_long",
+      "slug": "42adv-so_long",
+      "difficulty": 1000,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-31T14:33:58.477000+00:00",
+      "updated_at": "2026-02-09T16:37:04.614000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2723,
+      "name": "[42adv]pipex",
+      "slug": "42adv-pipex",
+      "difficulty": 1142,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-31T14:35:25.117000+00:00",
+      "updated_at": "2026-02-06T18:05:07.650000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2724,
+      "name": "[42adv]minitalk",
+      "slug": "42adv-minitalk",
+      "difficulty": 1142,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-31T14:42:30.346000+00:00",
+      "updated_at": "2026-02-06T18:09:26.990000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2725,
+      "name": "cub3d",
+      "slug": "42cursus-cub3d",
+      "difficulty": 5775,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-31T14:43:50.706000+00:00",
+      "updated_at": "2025-12-31T15:41:17.738000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2726,
+      "name": "miniRT",
+      "slug": "42cursus-minirt",
+      "difficulty": 5775,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-31T14:45:45.284000+00:00",
+      "updated_at": "2025-12-31T16:05:11.918000+00:00",
+      "exam": false,
+      "parent": null,
+      "children": []
+    },
+    {
+      "id": 2727,
+      "name": "minishell",
+      "slug": "minishell-d972f7c4-dbec-4811-b575-c967db09f1f1",
+      "difficulty": 2814,
+      "completions": 0,
+      "duration": 0,
+      "created_at": "2025-12-31T14:48:30.902000+00:00",
+      "updated_at": "2025-12-31T16:12:17.849000+00:00",
       "exam": false,
       "parent": null,
       "children": []

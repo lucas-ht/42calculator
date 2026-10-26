@@ -12,6 +12,7 @@ import {
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { useCalculatorStore } from "@/providers/calculator-store-provider";
 import { useFortyTwoStore } from "@/providers/forty-two-store-provider";
+import { usePlannedProjects } from "@/stores/planned-projects-store";
 import { CirclePlus } from "lucide-react";
 import { useState } from "react";
 import { track } from "@vercel/analytics";
@@ -20,6 +21,8 @@ export function AddProject() {
   const [open, setOpen] = useState(false);
   const [, setValue] = useState("");
   const { addProject } = useCalculatorStore((state) => state);
+  const plan = usePlannedProjects((state) => state.toggle);
+  const isPlanned = usePlannedProjects((state) => state.isPlanned);
   let { projects } = useFortyTwoStore((state) => state);
 
   projects = Object.values(projects).filter((project) => !project.parentId);
@@ -57,6 +60,11 @@ export function AddProject() {
                   value={project.name}
                   onSelect={() => {
                     addProject(project);
+                    // Add to the shared plan (RNCP + localStorage) unless it is
+                    // already there.
+                    if (!isPlanned(project.id)) {
+                      plan(project.id);
+                    }
 
                     setValue("");
                     setOpen(false);

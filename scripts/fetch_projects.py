@@ -24,6 +24,15 @@ from fortytwo_client.json import register_serializer
 DIRECTORY           = 'data'
 CURSUS_ID           = 21
 
+# The app reads `projects_{id}.json` as { "meta": ..., "projects": [...] },
+# so the output is wrapped with this cursus metadata rather than a bare list.
+CURSUS_META         = {
+    'id':   CURSUS_ID,
+    'kind': 'main',
+    'name': '42cursus',
+    'slug': '42cursus',
+}
+
 
 class FortyTwoProjectWithStats:
     def __init__(self: Self, project: FortyTwoProject, project_users: List[FortyTwoProjectUser]) -> None:
@@ -157,7 +166,12 @@ def main() -> None:
         os.makedirs(os.path.dirname(filename), exist_ok=True)
 
         with open(filename, 'w', encoding='utf-8') as f:
-            json.dump(projects_with_stats, f, indent=2, default=default_serializer)
+            json.dump(
+                {'meta': CURSUS_META, 'projects': projects_with_stats},
+                f,
+                indent=2,
+                default=default_serializer,
+            )
     except IOError as e:
         logging.error('Failed to save projects to %s: %s.', filename, e)
 

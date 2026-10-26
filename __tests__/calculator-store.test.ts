@@ -1,67 +1,40 @@
-import { fortyTwoStore } from '@/providers/forty-two-store-provider'
 import {
   createCalculatorStore,
-  initCalculatorStore
+  initCalculatorStore,
 } from '@/stores/calculator-store'
-import { initFortyTwoStore } from '@/stores/forty-two-store'
-import {
-  FortyTwoCursus,
+import type {
+  CalculatorEntry,
+  FortyTwoLevel,
   FortyTwoProject,
-  FortyTwoProjectCalculator
 } from '@/types/forty-two'
+import type { StoreApi } from 'zustand'
+import type { CalculatorStore } from '@/stores/calculator-store'
 import '@testing-library/jest-dom'
 
 describe('Calculator Store', () => {
-  let store: any
+  let store: StoreApi<CalculatorStore>
 
   const project: FortyTwoProject = {
     id: 1,
     name: 'Test Project',
-    experience: 100
+    experience: 100,
+    children: [],
+    completions: 0,
+    duration: 0,
   }
 
-  const expandedProject: FortyTwoProjectCalculator = {
-    ...project,
-    addedAt: 0,
-    experience: {
-      base: 100,
-      gained: 100
-    },
-    level: 0.0,
-    mark: 100,
-    bonus: false
+  const levels: Record<number, FortyTwoLevel> = {
+    1: { level: 1, experience: 100 },
+    2: { level: 2, experience: 200 },
+    3: { level: 3, experience: 300 },
   }
 
-  const levels = {
-    1: {
-      level: 1,
-      experience: 100
-    },
-    2: {
-      level: 2,
-      experience: 200
-    },
-    3: {
-      level: 3,
-      experience: 300
-    }
-  }
-
-  const cursus: FortyTwoCursus = {
-    id: 0,
-    name: 'Test Cursus',
-    slug: 'test-cursus',
-    level: 1.0,
-    events: 0,
-    projects: {}
-  }
-
-  fortyTwoStore.setState(initFortyTwoStore({ cursus, levels, projects: {} }))
+  // Starting level of the (fake) cursus used to seed the calculator.
+  const startLevel = 1.0
 
   beforeEach(() => {
-    const initState = initCalculatorStore()
-
-    store = createCalculatorStore(initState)
+    const initState = initCalculatorStore(startLevel, levels)
+    store = createCalculatorStore(initState, levels)
   })
 
   it('should add a project correctly', () => {
@@ -72,14 +45,25 @@ describe('Calculator Store', () => {
   })
 
   it('should update a project correctly', () => {
-    const updatedProject: FortyTwoProjectCalculator = {
-      ...expandedProject,
-      mark: 125
-    }
-
     store.getState().addProject(project)
-    store.getState().updateProject(updatedProject)
 
+    const entry = store.getState().entries[project.id]
+    const updated: CalculatorEntry = {
+      ...entry,
+      project: { ...entry.project, mark: 125 },
+    }
+    store.getState().updateProject(updated)
+
+    expect(store.getState().experience.end).toEqual(225)
+    expect(store.getState().level.end).toEqual(2.25)
+  })
+
+  it('should seed a project with a stored config (survives reload)', () => {
+    // Mirrors CalculatorPlanSeed re-seeding from the persisted plan: a stored
+    // mark must be applied instead of resetting to 100.
+    store.getState().addProject(project, { mark: 125, bonus: false })
+
+    expect(store.getState().entries[project.id].project.mark).toEqual(125)
     expect(store.getState().experience.end).toEqual(225)
     expect(store.getState().level.end).toEqual(2.25)
   })
@@ -88,7 +72,7 @@ describe('Calculator Store', () => {
     store.getState().addProject(project)
     store.getState().removeProject(project.id)
 
-    expect(store.getState().projects[project.id]).toBeUndefined()
+    expect(store.getState().entries[project.id]).toBeUndefined()
     expect(store.getState().experience.end).toEqual(100)
     expect(store.getState().level.end).toEqual(1.0)
   })

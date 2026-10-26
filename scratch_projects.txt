@@ -1,0 +1,371 @@
+1865	0	 Apprentissage 2 ans - 2ème année	apprentissage-2-ans-2eme-annee
+2071	22450	 Bgp At Doors of Autonomous Systems is Simple	bgp-at-doors-of-autonomous-systems-is-simple
+2337	1350	 Cybersecurity - Stockholm - Malware	cybersecurity-stockholm-malware
+1956	9450	 Understanding customer	understanding-customer
+2344	0	(Optional) Cybersecurity - Iron Dome - Malware	optional-cybersecurity-iron-dome-malware
+1764	0	42 Squads	42-squads
+2623	2100	42_Collaborative_resume	42_collaborative_resume
+1387	9450	42run	42cursus-42run
+2006	1855	42SEOUL_TEST2	42seoul_test2
+1854	15750	42sh	42cursus-42sh
+2720	1000	[42adv]fdf	42adv-fdf
+2721	1000	[42adv]Fract'ol	42adv-fract-ol
+2724	1142	[42adv]minitalk	42adv-minitalk
+2723	1142	[42adv]pipex	42adv-pipex
+2722	1000	[42adv]so_long	42adv-so_long
+2688	1142	A-Maze-ing	a-maze-ing
+1461	9450	abstract-vm	42cursus-abstract-vm
+2371	20084	Abstract_data	abstract_data
+2523	9450	AccessibleDirectory	accessibledirectory
+2395	15750	ActiveConnect	activeconnect
+2520	15750	ActiveDiscovery	activediscovery
+2529	15750	ActiveTechTales	activetechtales
+2522	9450	AdministrativeDirectory	administrativedirectory
+2703	10042	Agent Smith	agent-smith
+2102	0	AlCu	42cursus-rushes-alcu
+2310	0	Alone in the Dark	42cursus-alone-in-the-dark
+1959	15750	Amazon	amazon
+2713	42000	Apprenticeship I	apprenticeship-i
+1873	0	Apprentissage 1 an	apprentissage-1-an
+1877	15000	Apprentissage 1 an - 1	apprentissage-1-an-apprentissage-1-an-1
+1878	20000	Apprentissage 1 an - 2	apprentissage-1-an-apprentissage-1-an-2
+1879	22150	Apprentissage 1 an - 3	apprentissage-1-an-apprentissage-1-an-3
+1880	51966	Apprentissage 1 an - 4	apprentissage-1-an-apprentissage-1-an-4
+1857	0	Apprentissage 2 ans - 1ère année	42cursus-apprentissage-2-ans-1ere-annee
+1861	15000	Apprentissage 2 ans - 1ère année - 1	apprentissage-2-ans-1ere-annee-apprentissage-2-ans-1ere-annee-1
+1862	20000	Apprentissage 2 ans - 1ère année - 2	apprentissage-2-ans-1ere-annee-apprentissage-2-ans-1ere-annee-2
+1863	22150	Apprentissage 2 ans - 1ère année - 3	apprentissage-2-ans-1ere-annee-apprentissage-2-ans-1ere-annee-3
+1864	33150	Apprentissage 2 ans - 1ère année - 4	apprentissage-2-ans-1ere-annee-apprentissage-2-ans-1ere-annee-4
+1869	15000	Apprentissage 2 ans - 2ème année - 1	apprentissage-2-ans-2eme-annee-apprentissage-2-ans-2eme-annee-1
+1870	20000	Apprentissage 2 ans - 2ème année - 2	apprentissage-2-ans-2eme-annee-apprentissage-2-ans-2eme-annee-2
+1871	22150	Apprentissage 2 ans - 2ème année - 3	apprentissage-2-ans-2eme-annee-apprentissage-2-ans-2eme-annee-3
+1872	33150	Apprentissage 2 ans - 2ème année - 4	apprentissage-2-ans-2eme-annee-apprentissage-2-ans-2eme-annee-4
+2521	9450	AutomaticDirectory	automaticdirectory
+1435	4200	avaj-launcher	42cursus-avaj-launcher
+2606	9450	B	b
+1389	25200	bomberman	42cursus-bomberman
+1446	11500	boot2root	42cursus-boot2root
+1994	577	Born2beroot	born2beroot
+2686	577	Born2beroot	42next-born2beroot
+2689	1764	Call Me Maybe	call-me-maybe
+1396	4200	camagru	42cursus-camagru
+2625	50000	cc1	cc1
+1934	9450	churn	churn
+1951	4200	Cinema	cinema
+2349	9450	cinema	42cursus-cinema
+1957	15750	City Life	city-life
+1414	9450	cloud-1	42cursus-cloud-1
+2704	1764	Codexion	codexion
+1382	4200	computorv1	42cursus-computorv1
+1433	9450	computorv2	42cursus-computorv2
+2174	0	Connect4	rushes-connect4
+1475	17500	corewar	42cursus-corewar
+2068	20000	Cow-Neck-TID	cow-neck-tid
+1338	0	CPP Module 00	cpp-module-00
+1339	0	CPP Module 01	cpp-module-01
+1340	0	CPP Module 02	cpp-module-02
+1341	0	CPP Module 03	cpp-module-03
+1342	9660	CPP Module 04	cpp-module-04
+1343	0	CPP Module 05	cpp-module-05
+1344	0	CPP Module 06	cpp-module-06
+1345	0	CPP Module 07	cpp-module-07
+1346	0	CPP Module 08	cpp-module-08
+2309	10042	CPP Module 09	cpp-module-09
+1326	5775	cub3d	cub3d
+2725	5775	cub3d	42cursus-cub3d
+2217	0	Cursus Eu Aceito Rio	cursus-eu-aceito-rio
+2346	0	Cybersecurity	cybersecurity
+2326	1350	Cybersecurity - arachnida - Web	cybersecurity-arachnida-web
+2328	1350	Cybersecurity - ft_onion - Web	cybersecurity-ft_onion-web
+2327	1350	Cybersecurity - ft_otp - OTP	cybersecurity-ft_otp-otp
+2343	1350	Cybersecurity - Inquisitor - Network	cybersecurity-inquisitor-network
+2336	1350	Cybersecurity - Reverse me - Rev	cybersecurity-reverse-me-rev
+2345	1350	Cybersecurity - Vaccine - Web	cybersecurity-vaccine-web
+1405	6300	darkly	42cursus-darkly
+1814	9450	darkly - web	darkly-web
+2306	545	Data Science - 0	data-science-0
+2318	545	Data Science - 1	data-science-1
+2311	545	Data Science - 2	data-science-2
+2316	545	Data Science - 3	data-science-3
+2317	2545	Data Science - 4	data-science-4
+1800	0	Day 00	piscine-java-day-00
+1801	0	Day 01	piscine-java-day-01
+1802	0	Day 02	piscine-java-day-02
+1803	0	Day 03	piscine-java-day-03
+1804	0	Day 04	piscine-java-day-04
+1805	0	Day 05	piscine-java-day-05
+1806	0	Day 06	piscine-java-day-06
+1807	0	Day 07	piscine-java-day-07
+1808	0	Day 08	piscine-java-day-08
+1809	0	Day 09	piscine-java-day-09
+1445	35700	death	42cursus-death
+2190	0	Django - 0 - Initiation	django-0-initiation
+2192	1500	Django - 0 - Oob	django-0-oob
+2191	0	Django - 0 - Starting	django-0-starting
+2194	3475	Django - 1 - Base Django	django-1-base-django
+2193	0	Django - 1 - Lib	django-1-lib
+2195	1000	Django - 2 - SQL	django-2-sql
+2197	0	Django - 3 - Advanced	django-3-advanced
+2198	3475	Django - 3 - Final	django-3-final
+2196	0	Django - 3 - Sessions	django-3-sessions
+1458	15750	doom-nukem	42cursus-doom-nukem
+1853	15750	doom_nukem	doom_nukem
+1418	2520	dr-quine	42cursus-dr-quine
+1422	15750	drivers-and-interrupts	42cursus-drivers-and-interrupts
+1453	6000	dslr	42cursus-dslr
+2665	2100	electronics - Design	electronics-design
+2664	2100	electronics - Prototyping	electronics-prototyping
+1848	42000	Electronique	electronique
+1320	0	Exam Rank 02	exam-rank-02
+1321	0	Exam Rank 03	exam-rank-03
+1322	0	Exam Rank 04	exam-rank-04
+1323	0	Exam Rank 05	exam-rank-05
+1324	0	Exam Rank 06	exam-rank-06
+1384	9450	expert-system	42cursus-expert-system
+1430	9450	famine	42cursus-famine
+2008	1000	FdF	42cursus-fdf
+1423	15750	filesystem	42cursus-filesystem
+1437	15750	fix-me	42cursus-fix-me
+2705	2646	Fly-in	fly-in
+2561	90000	FR - Alternance - RNCP6 - 1 an	fr-alternance-rncp6-1-an
+2562	150000	FR - Alternance - RNCP6 - 2 ans	fr-alternance-rncp6-2-ans
+2563	90000	FR - Alternance - RNCP7 - 1 an	fr-alternance-rncp7-1-an
+2564	180000	FR - Alternance - RNCP7 - 2 ans	fr-alternance-rncp7-2-ans
+2338	90000	FR Apprentissage RNCP 6 - 1 an	fr-apprentissage-rncp-6-1-an
+2339	150000	FR Apprentissage RNCP 6 - 2 ans	fr-apprentissage-rncp-6-2-ans
+2340	90000	FR Apprentissage RNCP 7 - 1 an	fr-apprentissage-rncp-7-1-an
+2341	180000	FR Apprentissage RNCP 7 - 2 ans	fr-apprentissage-rncp-7-2-ans
+1476	1000	fract-ol	42cursus-fract-ol
+1883	12600	freddie-mercury	freddie-mercury
+1960	25200	Fried eggs	fried-eggs
+1407	4200	ft_ality	42cursus-ft_ality
+1379	4200	ft_hangouts	42cursus-ft_hangouts
+2560	21000	ft_IaC	ft_iac
+1336	21630	ft_irc	ft_irc
+2098	16800	ft_kalman	ft_kalman
+2380	15000	ft_lex	ft_lex
+1391	4200	ft_linear_regression	42cursus-ft_linear_regression
+1415	4200	ft_linux	42cursus-ft_linux
+1479	4200	ft_ls	42cursus-ft_ls
+1840	6000	ft_malcolm	ft_malcolm
+2394	4200	ft_microservices	ft_microservices
+2126	20750	ft_minecraft	ft_minecraft
+1962	24360	ft_newton	ft_newton
+1400	15750	ft_nmap	42cursus-ft_nmap
+1397	4200	ft_ping	42cursus-ft_ping
+1316	882	ft_printf	42cursus-ft_printf
+1466	4200	ft_script	42cursus-ft_script
+1469	4200	ft_select	42cursus-ft_select
+1447	15750	ft_shield	42cursus-ft_shield
+2214	0	ft_shmup 	rushes-ft_shmup
+1452	9450	ft_ssl_des	42cursus-ft_ssl_des
+1451	9450	ft_ssl_md5	42cursus-ft_ssl_md5
+1450	15750	ft_ssl_rsa	42cursus-ft_ssl_rsa
+1399	4200	ft_traceroute	42cursus-ft_traceroute
+1337	24360	ft_transcendence	ft_transcendence
+1403	9450	ft_turing	42cursus-ft_turing
+1449	15750	ft_vox	42cursus-ft_vox
+2381	20000	ft_yacc	ft_yacc
+2225	6500	Ftl_quantum	ftl_quantum
+1945	0	FWA	fwa
+2347	4200	fwa	42cursus-fwa
+1411	31500	gbmu	42cursus-gbmu
+1327	882	get_next_line	42cursus-get_next_line
+1383	25200	gomoku	42cursus-gomoku
+1455	12600	guimp	42cursus-guimp
+1429	9450	h42n42	42cursus-h42n42
+2070	0	Hotrace	rushes-hotrace
+1394	4200	humangl	42cursus-humangl
+1402	15750	hypertube	42cursus-hypertube
+1409	9450	in-the-shadows	42cursus-in-the-shadows
+1983	15836	Inception	inception
+2064	25450	Inception-of-Things	inception-of-things
+2320	0	Java Module 00	java-module-00
+2321	0	Java Module 01	java-module-01
+2322	0	Java Module 02	java-module-02
+2329	0	Java Module 03	java-module-03
+2330	0	Java Module 04	java-module-04
+2331	0	Java Module 05	java-module-05
+2332	0	Java Module 06	java-module-06
+2333	0	Java Module 07	java-module-07
+2334	0	Java Module 08	java-module-08
+2335	15750	Java Module 09	java-module-09
+1425	15750	kfs-1	42cursus-kfs-1
+1424	15750	kfs-2	42cursus-kfs-2
+1426	35700	kfs-3	42cursus-kfs-3
+1431	25200	kfs-4	42cursus-kfs-4
+1432	35700	kfs-5	42cursus-kfs-5
+1438	25200	kfs-6	42cursus-kfs-6
+1439	35700	kfs-7	42cursus-kfs-7
+1440	15750	kfs-8	42cursus-kfs-8
+1441	15750	kfs-9	42cursus-kfs-9
+1442	35700	kfs-x	42cursus-kfs-x
+1392	9450	krpsim	42cursus-krpsim
+2372	15750	Leaffliction	leaffliction
+2551	9450	Learn2Slither	learn2slither
+1464	9450	lem-ipc	42cursus-lem-ipc
+1470	9450	lem_in	42cursus-lem_in
+1330	966	libasm	libasm
+1314	462	Libft	42cursus-libft
+2550	5880	libftpp	libftpp
+2066	0	Libunit	rushes-libunit
+1416	9450	little-penguin-1	42cursus-little-penguin-1
+1468	9450	malloc	42cursus-malloc
+1401	9450	matcha	42cursus-matcha
+2077	7000	matrix	matrix
+1420	9450	matt-daemon	42cursus-matt-daemon
+1958	9450	MessageQueue	messagequeue
+2353	9450	messagequeue	42cursus-messagequeue
+2527	9450	MicroForensX	microforensx
+1947	4200	MicroServices	microservices
+2373	24360	Microshop	microshop
+2607	0	minicomp	minicomp
+1315	5775	miniRT	minirt
+2726	5775	miniRT	42cursus-minirt
+1331	2814	minishell	42cursus-minishell
+2727	2814	minishell	minishell-d972f7c4-dbec-4811-b575-c967db09f1f1
+2005	1142	minitalk	minitalk
+2355	0	Mobile	mobile
+2354	500	Mobile - 0 - Basic of the mobile application	mobile-0-basic-of-the-mobile-application
+2356	950	Mobile - 1 - Structure and logic	mobile-1-structure-and-logic
+2357	1000	Mobile - 2 - API and data	mobile-2-api-and-data
+2358	2000	Mobile - 3 - Design	mobile-3-design
+2359	2000	Mobile - 4 - Auth and dataBase	mobile-4-auth-and-database
+2360	3000	Mobile - 5 - Manage data and display	mobile-5-manage-data-and-display
+1462	9450	mod1	42cursus-mod1
+1457	9450	multilayer-perceptron	42cursus-multilayer-perceptron
+1427	25200	music-room	42cursus-music-room
+1943	9450	mySpotify	myspotify
+1385	9450	n-puzzle	42cursus-n-puzzle
+2007	3160	NetPractice	netpractice
+1386	9450	nibbler	42cursus-nibbler
+1467	9450	nm	nm
+2251	0	OCAML  - OCaml’s modules language - 1	ocaml-ocaml-s-modules-language-1
+2230	0	OCAML - Basic syntax and semantics - 0	ocaml-basic-syntax-and-semantics-0
+2279	2250	OCAML - Functor - 1	ocaml-functor-1
+2252	0	OCAML - Imperative features - 1	ocaml-imperative-features-1
+2282	3475	OCAML - Monoids and Monads - 3	ocaml-monoids-and-monads-3
+2280	0	OCAML - Object Oriented Programming -  1	ocaml-object-oriented-programming-1
+2281	2225	OCAML - Object Oriented Programming - 2	ocaml-object-oriented-programming-2
+2237	1500	OCAML - Pattern Matching and Data Types - 0	ocaml-pattern-matching-and-data-types-0
+2234	0	OCAML - Recursion and higher-order functions - 0	ocaml-recursion-and-higher-order-functions-0
+1684	21630	Old-IRC	old-irc
+1683	3360	Old-Philosophers	old-philosophers
+1635	31500	Open Project	open-project
+1448	35700	override	42cursus-override
+2706	7717	Pac-Man	pac-man
+1650	42000	Part_Time I	part_time-i
+1656	63000	Part_Time II	part_time-ii
+1410	15750	particle-system	42cursus-particle-system
+2552	9000	Peace_Break	peace_break
+1443	15750	pestilence	42cursus-pestilence
+1334	3360	Philosophers	42cursus-philosophers
+2004	1142	pipex	pipex
+2295	0	Piscine Data Science	piscine-data-science
+2189	0	Piscine Django	piscine-django
+1799	0	Piscine Java	piscine-java
+2364	0	Piscine Object	piscine-object
+2365	945	Piscine Object - Module 00 - Encapsulation	piscine-object-module-00-encapsulation
+2366	945	Piscine Object - Module 01 - Relationship	piscine-object-module-01-relationship
+2367	1890	Piscine Object - Module 02 - UML	piscine-object-module-02-uml
+2368	1890	Piscine Object - Module 03 - SOLID	piscine-object-module-03-solid
+2369	1890	Piscine Object - Module 04 - Design Pattern	piscine-object-module-04-design-pattern
+2370	1890	Piscine Object - Module 05 - Practical work	piscine-object-module-05-practical-work
+2228	0	Piscine ocaml	42cursus-piscine-ocaml
+2179	0	Piscine RoR	piscine-ror
+2199	0	Piscine Symfony	piscine-symfony
+1421	9450	process-and-memory	42cursus-process-and-memory
+1471	1855	push_swap	42cursus-push_swap
+2687	1855	push_swap	42next-push_swap
+2268	545	Python - 0 - Starting	python-0-starting
+2269	545	Python - 1 - Array	python-1-array
+2270	545	Python - 2 - DataTable	python-2-datatable
+2271	545	Python - 3 - OOP	python-3-oop
+2272	2545	Python - 4 - Dod	python-4-dod
+2267	0	Python for Data Science	python-for-data-science
+2690	70	Python Module 00	python-module-00
+2691	70	Python Module 01	python-module-01
+2692	80	Python Module 02	python-module-02
+2693	80	Python Module 03	python-module-03
+2694	90	Python Module 04	python-module-04
+2695	90	Python Module 05	python-module-05
+2696	100	Python Module 06	python-module-06
+2697	100	Python Module 07	python-module-07
+2698	100	Python Module 08	python-module-08
+2707	110	Python Module 09	python-module-09
+2699	110	Python Module 10	python-module-10
+2700	7717	RAG against the machine	rag-against-the-machine
+1417	25200	rainfall	42cursus-rainfall
+2076	7000	ready set boole	ready-set-boole
+1428	15750	red-tetris	42cursus-red-tetris
+1946	4200	Restful	restful
+2351	4200	restful	42cursus-restful
+2210	0	Retro-MFA	rushes-retro-mfa
+2180	0	RoR - 0 - Initiation	ror-0-initiation
+2182	1500	RoR - 0 - Oob	ror-0-oob
+2181	0	RoR - 0 - Starting	ror-0-starting
+2184	3475	RoR - 1 - Base Rails	ror-1-base-rails
+2183	0	RoR - 1 - Gems	ror-1-gems
+2185	1000	RoR - 2 - SQL	ror-2-sql
+2187	0	RoR - 3 - Advanced	ror-3-advanced
+2188	3475	RoR - 3 - Final	ror-3-final
+2186	0	RoR - 3 - Sessions	ror-3-sessions
+1855	20750	rt	42cursus-rt
+1393	9450	rubik	42cursus-rubik
+1810	0	Rush 00	piscine-java-rush-00
+1811	150	Rush 01	piscine-java-rush-01
+2065	10000	Rushes	42cursus-rushes
+1390	9450	scop	42cursus-scop
+1454	15750	shaderpixel	42cursus-shaderpixel
+1404	9450	snow-crash	42cursus-snow-crash
+2009	1000	so_long	so_long
+2350	15750	Spring Boot	spring-boot
+1952	9450	SpringBoot	springboot
+1662	63000	Startup Experience	startup-experience
+1388	9450	strace	42cursus-strace
+1395	4200	swifty-companion	42cursus-swifty-companion
+1406	15750	swifty-proteins	42cursus-swifty-proteins
+1436	9450	swingy	42cursus-swingy
+2200	0	Symfony - 0 - Initiation	symfony-0-initiation
+2202	1500	Symfony - 0 - Oob	symfony-0-oob
+2201	0	Symfony - 0 - Starting	symfony-0-starting
+2204	3475	Symfony - 1 - Base Symfony 	symfony-1-base-symfony
+2203	0	Symfony - 1 - Composer	symfony-1-composer
+2205	1000	Symfony - 2 - SQL	symfony-2-sql
+2207	0	Symfony - 3 - Advanced	symfony-3-advanced
+2208	3475	Symfony - 3 - Final	symfony-3-final
+2206	0	Symfony - 3 - Sessions	symfony-3-sessions
+1381	9450	taskmaster	42cursus-taskmaster
+2701	15836	The Answer Protocol	the-answer-protocol
+2097	16800	tinky-winkey	tinky-winkey
+2600	9450	TokenizeArt	tokenizeart
+2485	9450	Tokenizer	tokenizer
+2719	9000	TokenZwap	tokenzwap
+1460	9450	total-perspective-vortex	42cursus-total-perspective-vortex
+2702	10042	tree_nity	tree_nity
+2319	9450	tweet	tweet
+1933	9450	tweets [DEPRECATED]	tweets-deprecated
+1955	9450	Uber	uber
+2288	0	Unity	unity
+2286	500	Unity - 0 - The basics Unity tools	unity-0-the-basics-unity-tools
+2284	500	Unity - 1 - 3D physics, Tags, Layers and Scene	unity-1-3d-physics-tags-layers-and-scene
+2289	1000	Unity - 2 - 2D environment, tiles and sprites	unity-2-2d-environment-tiles-and-sprites
+2290	1000	Unity - 3 - Advanced inputs and 2D GUI	unity-3-advanced-inputs-and-2d-gui
+2292	1000	Unity - 4 - Animations and Sound	unity-4-animations-and-sound
+2287	2000	Unity - 5 - Singleton, playerPrefs and coroutines	unity-5-singleton-playerprefs-and-coroutines
+2285	3450	Unity - 6 - Navmesh, light, sound and camera	unity-6-navmesh-light-sound-and-camera
+2393	15750	UnleashTheBox	unleashthebox
+1456	16800	userspace_digressions	42cursus-userspace_digressions
+2553	30000	Very_Real_Engine	very_real_engine
+1444	35700	war	42cursus-war
+1332	21630	webserv	webserv
+2078	10	Wolfsburg I Accept	wolfsburg-i-accept
+2122	0	Wong kar Wai	rushes-wong-kar-wai
+1419	9450	woody-woodpacker	42cursus-woody-woodpacker
+2110	0	Wordle	rushes-wordle
+2173	0	wordle	42cursus-rushes-wordle
+1638	42000	Work Experience I	work-experience-i
+1644	63000	Work Experience II	work-experience-ii
+1408	22000	xv	42cursus-xv
+2136	0	yasl	42cursus-rushes-yasl
+1463	25200	zappy	42cursus-zappy

@@ -98,7 +98,8 @@ class FortyTwoClient:
             return self._handle_http_exception(e.response)
 
         except RequestException as e:
-            logging.error('Failed to fetch from the API: %s', {e})
+            logging.warning('Request failed (%s), retrying in 2s...', e)
+            time.sleep(2)
             return self._make_request()
 
 
