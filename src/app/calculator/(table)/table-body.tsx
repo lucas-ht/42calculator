@@ -1,14 +1,15 @@
 "use client";
 
+import type { RowData } from "@tanstack/react-table";
+import { flexRender } from "@tanstack/react-table";
 import { TableBody, TableCell, TableRow } from "@/components/ui/table";
-import {
-  type Table as TableInstance,
-  flexRender,
-  type Row,
-} from "@tanstack/react-table";
-import { columns } from "./table-columns";
 import { cn } from "@/lib/utils";
 import { AddProject } from "../(project)/project-add";
+import type {
+  CalculatorRow as Row,
+  CalculatorTable as TableInstance,
+} from "../table-config";
+import { columns } from "./table-columns";
 
 function DataTableAddProject() {
   return (
@@ -23,10 +24,13 @@ function DataTableAddProject() {
   );
 }
 
-function DataTableProject<TData>({
+function DataTableProject<TData extends RowData>({
   table,
   row,
-}: { table: TableInstance<TData>; row: Row<TData> }) {
+}: {
+  table: TableInstance<TData>;
+  row: Row<TData>;
+}) {
   return (
     <>
       <TableRow>
@@ -59,9 +63,11 @@ function DataTableProject<TData>({
   );
 }
 
-export function DataTableBody<TData>({
+export function DataTableBody<TData extends RowData>({
   table,
-}: { table: TableInstance<TData> }) {
+}: {
+  table: TableInstance<TData>;
+}) {
   return (
     <TableBody>
       {table.getRowModel().rows.map((row) => (

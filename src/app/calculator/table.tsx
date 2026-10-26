@@ -1,29 +1,30 @@
 "use client";
 
-import { Table } from "@/components/ui/table";
-import { CalculatorStoreProvider } from "@/providers/calculator-store-provider";
-import { useCalculatorStore } from "@/providers/calculator-store-provider";
 import {
-  type VisibilityState,
+  type ColumnVisibilityState,
   type ExpandedState,
-  getCoreRowModel,
-  getExpandedRowModel,
-  useReactTable,
+  useTable,
 } from "@tanstack/react-table";
 import { useMemo, useState } from "react";
-import { useLocalStorage } from "@/hooks/use-local-storage";
-import { columns } from "./(table)/table-columns";
-import { DataTableBody } from "./(table)/table-body";
-import { TableAction } from "./(table)/table-actions";
-import { DataTableHeader, DataTableFooter } from "./(table)/table-decoration";
-import { FortyTwoStoreProvider } from "@/providers/forty-two-store-provider";
 import { PlannedProjectsSync } from "@/components/planned-projects-sync";
-import { CalculatorPlanSeed } from "./(project)/calculator-plan-seed";
+import { Table } from "@/components/ui/table";
+import { useLocalStorage } from "@/hooks/use-local-storage";
+import {
+  CalculatorStoreProvider,
+  useCalculatorStore,
+} from "@/providers/calculator-store-provider";
+import { FortyTwoStoreProvider } from "@/providers/forty-two-store-provider";
 import type {
   FortyTwoCursus,
   FortyTwoLevel,
   FortyTwoProject,
 } from "@/types/forty-two";
+import { CalculatorPlanSeed } from "./(project)/calculator-plan-seed";
+import { TableAction } from "./(table)/table-actions";
+import { DataTableBody } from "./(table)/table-body";
+import { columns } from "./(table)/table-columns";
+import { DataTableFooter, DataTableHeader } from "./(table)/table-decoration";
+import { calculatorFeatures } from "./table-config";
 
 export function Calculator({
   cursus,
@@ -59,7 +60,7 @@ function CalculatorTable() {
   // Persisted across reloads so the user's Base/Gained Experience column
   // choices stick.
   const [columnVisibility, setColumnVisibility] =
-    useLocalStorage<VisibilityState>(
+    useLocalStorage<ColumnVisibilityState>(
       "calculator:column-visibility",
       columns.reduce((acc, column) => {
         if (column.id !== undefined) {
@@ -67,10 +68,11 @@ function CalculatorTable() {
         }
 
         return acc;
-      }, {} as VisibilityState),
+      }, {} as ColumnVisibilityState),
     );
 
-  const table = useReactTable({
+  const table = useTable({
+    features: calculatorFeatures,
     data,
     columns,
     state: {
@@ -83,8 +85,6 @@ function CalculatorTable() {
       className: "px-2 md:px-4 truncate",
     },
     getSubRows: (row) => row.children,
-    getExpandedRowModel: getExpandedRowModel(),
-    getCoreRowModel: getCoreRowModel(),
   });
 
   return (

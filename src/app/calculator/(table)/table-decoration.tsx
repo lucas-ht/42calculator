@@ -1,5 +1,7 @@
 "use client";
 
+import type { RowData } from "@tanstack/react-table";
+import { flexRender } from "@tanstack/react-table";
 import {
   TableCell,
   TableFooter,
@@ -8,12 +10,14 @@ import {
   TableRow,
 } from "@/components/ui/table";
 import { cn } from "@/lib/utils";
-import { type Table as TableInstance, flexRender } from "@tanstack/react-table";
 import { StartLevel } from "../(project)/project-actions";
+import type { CalculatorTable as TableInstance } from "../table-config";
 
-export function DataTableHeader<TData>({
+export function DataTableHeader<TData extends RowData>({
   table,
-}: { table: TableInstance<TData> }) {
+}: {
+  table: TableInstance<TData>;
+}) {
   return (
     <>
       <TableHeader className="bg-muted/50">
@@ -64,7 +68,7 @@ export function DataTableHeader<TData>({
   );
 }
 
-export function DataTableFooter<TData>({
+export function DataTableFooter<TData extends RowData>({
   table,
   levelEnd,
 }: {
