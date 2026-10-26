@@ -85,6 +85,7 @@ function CalculatorTable() {
       className: "px-2 md:px-4 truncate",
     },
     getSubRows: (row) => row.children,
+    autoResetExpanded: false,
   });
 
   return (

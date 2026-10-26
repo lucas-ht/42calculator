@@ -1,6 +1,12 @@
 "use client";
 
-import { calculateExperience as gradedExperience } from "@/lib/forty-two/forty-two-calculator";
+import { Minus, Plus, Scan } from "lucide-react";
+import { JetBrains_Mono } from "next/font/google";
+import { useEffect, useMemo, useRef, useState } from "react";
+import {
+  getOptionProgress,
+  getProjectProgress,
+} from "@/lib/rncp/project-progress";
 import { cn } from "@/lib/utils";
 import { useFortyTwoStore } from "@/providers/forty-two-store-provider";
 import {
@@ -13,9 +19,6 @@ import type {
   FortyTwoTitle,
   FortyTwoTitleOption,
 } from "@/types/forty-two";
-import { Minus, Plus, Scan } from "lucide-react";
-import { JetBrains_Mono } from "next/font/google";
-import { useEffect, useMemo, useRef, useState } from "react";
 import { PolarPath } from "./polar-path";
 
 const mono = JetBrains_Mono({
@@ -176,36 +179,7 @@ function optionProgress(
   cursus: FortyTwoCursus,
   planned: Record<number, PlannedProject>,
 ): OptionProgress {
-  let projects = 0;
-  let simulatedProjects = 0;
-  let experience = 0;
-  let simulatedExperience = 0;
-  for (const project of Object.values(option.projects)) {
-    const userProject = cursus.projects[project.id];
-    if (userProject?.is_validated) {
-      projects++;
-      experience += (project.experience || 0) * ((userProject.mark || 0) / 100);
-    } else if (planned[project.id]) {
-      const config = planned[project.id];
-      simulatedProjects++;
-      simulatedExperience += gradedExperience(
-        project.experience || 0,
-        config.mark ?? 100,
-        config.bonus ?? false,
-      );
-    }
-  }
-  const isComplete =
-    projects + simulatedProjects >= option.numberOfProjects &&
-    (option.experience === 0 ||
-      experience + simulatedExperience >= option.experience);
-  return {
-    projects,
-    simulatedProjects,
-    experience,
-    simulatedExperience,
-    isComplete,
-  };
+  return getOptionProgress(option, cursus, planned);
 }
 
 function isOptionComplete(
@@ -217,7 +191,7 @@ function isOptionComplete(
 }
 
 export function RncpGraph({ titles }: { titles: FortyTwoTitle[] }) {
-  const { cursus } = useFortyTwoStore((state) => state);
+  const { cursus, projects } = useFortyTwoStore((state) => state);
   const planned = usePlannedProjects((state) => state.planned);
   const toggle = usePlannedProjects((state) => state.toggle);
 
@@ -363,14 +337,17 @@ export function RncpGraph({ titles }: { titles: FortyTwoTitle[] }) {
             .slice()
             .sort((a, b) => (b.experience || 0) - (a.experience || 0));
           const la0 = laneCursor;
-          const la1 = laneCursor + laneAvail * (laneProjects.length / totalCount);
+          const la1 =
+            laneCursor + laneAvail * (laneProjects.length / totalCount);
           laneCursor = la1 + laneGap;
 
           // group lane projects by XP tier (same tier → same radius)
           const byTier = new Map<number, FortyTwoProject[]>();
           for (const p of laneProjects) {
             const xp =
-              fixPiscines && type === "piscine" ? PISCINE_XP : p.experience || 0;
+              fixPiscines && type === "piscine"
+                ? PISCINE_XP
+                : p.experience || 0;
             const tier = xpTier(xp);
             if (!byTier.has(tier)) byTier.set(tier, []);
             byTier.get(tier)?.push(p);
@@ -508,13 +485,40 @@ export function RncpGraph({ titles }: { titles: FortyTwoTitle[] }) {
     projectId === selectedProject ||
     titleIndex === selectedTitle;
 
+  function selectTitle(index: number) {
+    setSelectedProject(null);
+    if (selectedTitle !== index) {
+      setSelectedTitle(index);
+      setTitleMode("focus");
+    } else if (titleMode === "focus") {
+      setTitleMode("info");
+    } else {
+      setSelectedTitle(null);
+      setTitleMode("focus");
+    }
+  }
+  function selectProject(id: number) {
+    setSelectedTitle(null);
+    setSelectedProject(id);
+    if (
+      projects[id] &&
+      getProjectProgress(projects[id], cursus, {}).projects === 0
+    )
+      toggle(id);
+  }
   function clearSelection() {
     setSelectedProject(null);
     setSelectedTitle(null);
   }
   function onPointerDown(e: React.PointerEvent<SVGSVGElement>) {
     (e.target as Element).setPointerCapture?.(e.pointerId);
-    drag.current = { px: e.clientX, py: e.clientY, ox: pan.x, oy: pan.y, moved: false };
+    drag.current = {
+      px: e.clientX,
+      py: e.clientY,
+      ox: pan.x,
+      oy: pan.y,
+      moved: false,
+    };
   }
   function onPointerMove(e: React.PointerEvent<SVGSVGElement>) {
     if (!drag.current) return;
@@ -541,6 +545,7 @@ export function RncpGraph({ titles }: { titles: FortyTwoTitle[] }) {
         "relative w-full overflow-hidden rounded-lg border bg-card/20",
       )}
     >
+      {/* biome-ignore lint/a11y/useSemanticElements: SVG controls use keyboard-accessible ARIA roles; HTML fieldsets and buttons cannot replace SVG graphics. */}
       <svg
         ref={svgRef}
         viewBox={`0 0 ${SIZE} ${SIZE}`}
@@ -552,7 +557,7 @@ export function RncpGraph({ titles }: { titles: FortyTwoTitle[] }) {
         onPointerMove={onPointerMove}
         onPointerUp={onPointerUp}
         onPointerLeave={onPointerUp}
-        role="img"
+        role="group"
         aria-label="RNCP certificates graph"
       >
         <g transform={`translate(${pan.x} ${pan.y}) scale(${zoom})`}>
@@ -563,7 +568,8 @@ export function RncpGraph({ titles }: { titles: FortyTwoTitle[] }) {
             const option = titles[req.titleIndex]?.options[req.optionIndex];
             if (!option) return null;
             const complete = completeByReq[req.key];
-            const color = SEGMENT_COLORS[req.titleIndex % SEGMENT_COLORS.length];
+            const color =
+              SEGMENT_COLORS[req.titleIndex % SEGMENT_COLORS.length];
             const prog = optionProgress(option, cursus, planned);
             const projFrac = Math.min(
               1,
@@ -606,7 +612,10 @@ export function RncpGraph({ titles }: { titles: FortyTwoTitle[] }) {
                   />
                 )}
                 {inFocus && complete && (
-                  <circle r={3.5} fill={color}>
+                  <circle
+                    r={3.5}
+                    fill={color}
+                  >
                     <animateMotion
                       dur="6s"
                       repeatCount="indefinite"
@@ -649,13 +658,11 @@ export function RncpGraph({ titles }: { titles: FortyTwoTitle[] }) {
           {edges.map((e) => {
             if (infoMode && e.titleIndex === selectedTitle) return null;
             const color = SEGMENT_COLORS[e.titleIndex % SEGMENT_COLORS.length];
-            const half = (
-              d: string,
-              projectId: number,
-              side: string,
-            ) => {
-              const validated =
-                cursus.projects[projectId]?.is_validated ?? false;
+            const half = (d: string, projectId: number, side: string) => {
+              const validated = projects[projectId]
+                ? getProjectProgress(projects[projectId], cursus, {}).projects >
+                  0
+                : false;
               const isPlanned = Boolean(planned[projectId]);
               if (!validated && !isPlanned) return null;
               const active =
@@ -747,20 +754,19 @@ export function RncpGraph({ titles }: { titles: FortyTwoTitle[] }) {
               Math.min(13, (arcLen * 0.92) / (label.length * 0.62)),
             );
             return (
+              // biome-ignore lint/a11y/useSemanticElements: An SVG group cannot be replaced by an HTML button; keyboard interaction is provided.
               <g
                 key={`seg-${i}`}
                 onPointerDown={(e) => e.stopPropagation()}
-                onClick={() => {
-                  setSelectedProject(null);
-                  // cycle: unselected -> focus -> info -> unselected
-                  if (selectedTitle !== i) {
-                    setSelectedTitle(i);
-                    setTitleMode("focus");
-                  } else if (titleMode === "focus") {
-                    setTitleMode("info");
-                  } else {
-                    setSelectedTitle(null);
-                    setTitleMode("focus");
+                role="button"
+                tabIndex={0}
+                aria-label={`Focus ${s.title.title}`}
+                aria-pressed={sel}
+                onClick={() => selectTitle(i)}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    selectTitle(i);
                   }
                 }}
                 className="cursor-pointer"
@@ -771,9 +777,17 @@ export function RncpGraph({ titles }: { titles: FortyTwoTitle[] }) {
                   fillOpacity={sel ? 1 : 0.85}
                   className="stroke-background"
                   strokeWidth={3}
-                  style={sel ? { filter: `drop-shadow(0 0 8px ${s.color})` } : undefined}
+                  style={
+                    sel
+                      ? { filter: `drop-shadow(0 0 8px ${s.color})` }
+                      : undefined
+                  }
                 />
-                <path id={`label-arc-${i}`} d={labelArc} fill="none" />
+                <path
+                  id={`label-arc-${i}`}
+                  d={labelArc}
+                  fill="none"
+                />
                 <text
                   fontSize={fontSize}
                   dominantBaseline="central"
@@ -796,19 +810,29 @@ export function RncpGraph({ titles }: { titles: FortyTwoTitle[] }) {
             if (infoMode && n.titleIndex === selectedTitle) return null;
             const sel = n.projectId === selectedProject;
             const active = isActive(n.titleIndex, n.projectId);
-            const validated = cursus.projects[n.projectId]?.is_validated ?? false;
+            const validated = projects[n.projectId]
+              ? getProjectProgress(projects[n.projectId], cursus, {}).projects >
+                0
+              : false;
             const isPlanned = Boolean(planned[n.projectId]);
             return (
+              // biome-ignore lint/a11y/useSemanticElements: An SVG circle cannot be replaced by an HTML button; keyboard interaction is provided.
               <circle
                 key={`node-${n.key}`}
                 cx={n.x}
                 cy={n.y}
                 r={sel ? NODE_R + 4 : NODE_R}
                 onPointerDown={(e) => e.stopPropagation()}
-                onClick={() => {
-                  setSelectedTitle(null);
-                  setSelectedProject(n.projectId);
-                  if (!validated) toggle(n.projectId);
+                role="button"
+                tabIndex={0}
+                aria-label={`${validated ? "Focus" : "Simulate completing"} ${n.name}`}
+                aria-pressed={isPlanned}
+                onClick={() => selectProject(n.projectId)}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault();
+                    selectProject(n.projectId);
+                  }
                 }}
                 className={cn(
                   "cursor-pointer",
@@ -893,7 +917,8 @@ export function RncpGraph({ titles }: { titles: FortyTwoTitle[] }) {
                 return (
                   <g key={`info-gauge-${req.key}`}>
                     {gauge(rScale(258), realP, simP, `gp-${req.key}`)}
-                    {needX > 0 && gauge(rScale(222), realX, simX, `gx-${req.key}`)}
+                    {needX > 0 &&
+                      gauge(rScale(222), realX, simX, `gx-${req.key}`)}
                   </g>
                 );
               })}

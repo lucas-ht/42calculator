@@ -16,3 +16,14 @@ it("keeps expansion and column visibility working with Table v9", () => {
   act(() => result.current.getColumn("id")!.toggleVisibility(false));
   expect(result.current.getVisibleFlatColumns()).toHaveLength(0);
 });
+
+it("keeps module rows expanded when an edit replaces the table data", () => {
+  const data = [{ id: "parent", children: [{ id: "child", children: [] }] }];
+  const { result, rerender } = renderHook(({ rows }) => useTable({
+    features: calculatorFeatures, columns: [{ accessorKey: "id" }], data: rows,
+    getSubRows: (row) => row.children, autoResetExpanded: false,
+  }), { initialProps: { rows: data } });
+  act(() => result.current.getRowModel().rows[0].toggleExpanded());
+  rerender({ rows: [{ ...data[0], children: [{ id: "edited child", children: [] }] }] });
+  expect(result.current.getRowModel().rows).toHaveLength(2);
+});

@@ -17,6 +17,8 @@ export interface FortyTwoProject {
   completions: number;
   duration: number;
 
+  completionProjectId?: number;
+  markedAt?: number;
   createdAt?: number;
   updatedAt?: number;
 
@@ -27,6 +29,7 @@ export interface FortyTwoProject {
 }
 
 export interface CalculatorEntry {
+  alreadyEarned?: boolean;
   project: FortyTwoProject;
   order: number;
 

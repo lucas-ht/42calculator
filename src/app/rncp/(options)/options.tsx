@@ -1,3 +1,5 @@
+import { WheelGesturesPlugin } from "embla-carousel-wheel-gestures";
+import { CircleCheck } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
@@ -9,10 +11,11 @@ import {
 } from "@/components/ui/carousel";
 import { cn } from "@/lib/utils";
 import type { FortyTwoTitle, FortyTwoTitleOption } from "@/types/forty-two";
-import { WheelGesturesPlugin } from "embla-carousel-wheel-gestures";
-import { CircleCheck } from "lucide-react";
-import { TitleOptionRequirements, useTitleOptionProgress } from "./requirements";
 import { ProjectList } from "./projects";
+import {
+  TitleOptionRequirements,
+  useTitleOptionProgress,
+} from "./requirements";
 
 function TitleOption({ option }: { option: FortyTwoTitleOption }) {
   const { isComplete, completedViaSimulation } = useTitleOptionProgress(option);

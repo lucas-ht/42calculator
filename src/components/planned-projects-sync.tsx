@@ -1,8 +1,8 @@
 "use client";
 
+import { useMemo } from "react";
 import { usePlannedProjectsHydration } from "@/hooks/use-planned-projects-hydration";
 import { useFortyTwoStore } from "@/providers/forty-two-store-provider";
-import { useMemo } from "react";
 
 /**
  * Mount inside a FortyTwoStoreProvider (RNCP and Calculator pages). Rehydrates
@@ -10,14 +10,22 @@ import { useMemo } from "react";
  * actually-completed projects. Renders nothing.
  */
 export function PlannedProjectsSync() {
-  const { cursus } = useFortyTwoStore((state) => state);
+  const { cursus, projects } = useFortyTwoStore((state) => state);
 
   const validatedProjectIds = useMemo(
-    () =>
-      Object.values(cursus.projects)
+    () => [
+      ...Object.values(cursus.projects)
         .filter((project) => project.is_validated)
         .map((project) => project.id),
-    [cursus],
+      ...Object.values(projects)
+        .filter(
+          (project) =>
+            project.completionProjectId &&
+            cursus.projects[project.completionProjectId]?.is_validated,
+        )
+        .map((project) => project.id),
+    ],
+    [cursus, projects],
   );
 
   usePlannedProjectsHydration(validatedProjectIds);

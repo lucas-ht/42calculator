@@ -11,6 +11,7 @@ const config = {
   coverageProvider: 'v8',
   testEnvironment: 'jsdom',
   clearMocks: true,
+  testMatch: ['**/*.test.[jt]s?(x)'],
   // setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
 }
 
