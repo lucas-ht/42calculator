@@ -1,51 +1,51 @@
 {
-	"$schema": "https://biomejs.dev/schemas/2.6.3/schema.json",
-	"vcs": {
-		"enabled": true,
-		"clientKind": "git",
-		"useIgnoreFile": true
-	},
-	"files": {
-		"ignoreUnknown": true,
-		"includes": [
-			"**/src/**/*.ts",
-			"**/src/**/*.tsx",
-			"!**/src/components/ui/**/*.tsx"
-		]
-	},
-	"formatter": {
-		"enabled": true,
-		"indentStyle": "space",
-		"attributePosition": "multiline",
-		"useEditorconfig": true
-	},
-	"assist": { "actions": { "source": { "organizeImports": "on" } } },
-	"linter": {
-		"enabled": true,
-		"rules": {
-			"nursery": {
-				"useTailwindSortedClasses": "info"
-			},
-			"style": {
-				"noDefaultExport": "off",
-				"noImplicitBoolean": "off",
-				"useNamingConvention": "off"
-			},
-			"suspicious": {
-				"noReactSpecificProps": "off"
-			},
-			"correctness": {
-				"useImportExtensions": "off"
-			},
-			"performance": {
-				"noNamespaceImport": "off"
-			}
-		}
-	},
-	"javascript": {
-		"formatter": {
-			"quoteStyle": "double"
-		},
-		"globals": ["React"]
-	}
+  "$schema": "https://biomejs.dev/schemas/2.6.3/schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "files": {
+    "ignoreUnknown": true,
+    "includes": [
+      "**/src/**/*.ts",
+      "**/src/**/*.tsx",
+      "!**/src/components/ui/**/*.tsx"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "attributePosition": "multiline",
+    "useEditorconfig": true
+  },
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "nursery": {
+        "useTailwindSortedClasses": "info"
+      },
+      "style": {
+        "noDefaultExport": "off",
+        "noImplicitBoolean": "off",
+        "useNamingConvention": "off"
+      },
+      "suspicious": {
+        "noReactSpecificProps": "off"
+      },
+      "correctness": {
+        "useImportExtensions": "off"
+      },
+      "performance": {
+        "noNamespaceImport": "off"
+      }
+    }
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "double"
+    },
+    "globals": ["React"]
+  }
 }
