@@ -5,6 +5,7 @@ import {
   initCalculatorStore,
   type CalculatorStore,
 } from "@/stores/calculator-store";
+import { useFortyTwoStore } from "@/providers/forty-two-store-provider";
 import { createContext, useContext, useRef, type ReactNode } from "react";
 import { useStore, type StoreApi } from "zustand";
 
@@ -18,9 +19,20 @@ export interface CalculatorStoreProviderProps {
 export const CalculatorStoreProvider = ({
   children,
 }: CalculatorStoreProviderProps) => {
+  // Read the static 42 data via a hook here (unconditionally) rather than
+  // inside the store factory, where it would only run on the first render and
+  // break the Rules of Hooks ("Rendered fewer hooks than expected").
+  const {
+    cursus: { level },
+    levels,
+  } = useFortyTwoStore((state) => state);
+
   const storeRef = useRef<StoreApi<CalculatorStore>>(null);
   if (!storeRef.current) {
-    storeRef.current = createCalculatorStore(initCalculatorStore());
+    storeRef.current = createCalculatorStore(
+      initCalculatorStore(level, levels),
+      levels,
+    );
   }
 
   return (

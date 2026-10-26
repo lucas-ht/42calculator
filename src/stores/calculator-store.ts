@@ -7,8 +7,11 @@ import {
   getExperience,
   getLevel,
 } from "@/lib/forty-two/forty-two-calculator";
-import { useFortyTwoStore } from "@/providers/forty-two-store-provider";
-import type { FortyTwoProject, CalculatorEntry } from "@/types/forty-two";
+import type {
+  FortyTwoProject,
+  FortyTwoLevel,
+  CalculatorEntry,
+} from "@/types/forty-two";
 
 export type CalculatorState = {
   level: {
@@ -26,7 +29,10 @@ export type CalculatorState = {
 export type CalculatorActions = {
   getProjects: () => CalculatorEntry[];
   setLevel: (level: number) => void;
-  addProject: (project: FortyTwoProject) => void;
+  addProject: (
+    project: FortyTwoProject,
+    config?: { mark?: number; bonus?: boolean },
+  ) => void;
   updateProject: (entry: CalculatorEntry) => void;
   removeProject: (projectId: number) => void;
   resetProjects: () => void;
@@ -36,11 +42,10 @@ export type CalculatorActions = {
 
 export type CalculatorStore = CalculatorState & CalculatorActions;
 
-export const initCalculatorStore = (): CalculatorState => {
-  const {
-    cursus: { level },
-    levels,
-  } = useFortyTwoStore((state) => state);
+export const initCalculatorStore = (
+  level: number,
+  levels: Record<number, FortyTwoLevel>,
+): CalculatorState => {
   const experience = getExperience(level, levels);
 
   return {
@@ -57,10 +62,11 @@ export const initCalculatorStore = (): CalculatorState => {
   };
 };
 
-export const createCalculatorStore = (initState: CalculatorState) => {
+export const createCalculatorStore = (
+  initState: CalculatorState,
+  levels: Record<number, FortyTwoLevel>,
+) => {
   return create<CalculatorStore>()((set, get) => {
-    const { levels } = useFortyTwoStore((state) => state);
-
     // Helper to recalculate experience & levels
     function recalculateLevels() {
       const state = get();
@@ -134,18 +140,24 @@ export const createCalculatorStore = (initState: CalculatorState) => {
         recalculateLevels();
       },
 
-      addProject: (project: FortyTwoProject) => {
+      addProject: (
+        project: FortyTwoProject,
+        config?: { mark?: number; bonus?: boolean },
+      ) => {
+        const mark = config?.mark ?? 100;
+        const bonus = config?.bonus ?? false;
+
         function getCalculatorEntry(project: FortyTwoProject): CalculatorEntry {
           const state = get();
           const entry: CalculatorEntry = {
             project: {
               ...project,
-              mark: 100,
-              bonus: false,
+              mark,
+              bonus,
             },
             order: state.nextOrder,
 
-            experience: project.experience,
+            experience: calculateExperience(project.experience, mark, bonus),
             level: 0,
 
             children: [],

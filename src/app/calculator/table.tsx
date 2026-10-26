@@ -11,11 +11,14 @@ import {
   useReactTable,
 } from "@tanstack/react-table";
 import { useMemo, useState } from "react";
+import { useLocalStorage } from "@/hooks/use-local-storage";
 import { columns } from "./(table)/table-columns";
 import { DataTableBody } from "./(table)/table-body";
 import { TableAction } from "./(table)/table-actions";
 import { DataTableHeader, DataTableFooter } from "./(table)/table-decoration";
 import { FortyTwoStoreProvider } from "@/providers/forty-two-store-provider";
+import { PlannedProjectsSync } from "@/components/planned-projects-sync";
+import { CalculatorPlanSeed } from "./(project)/calculator-plan-seed";
 import type {
   FortyTwoCursus,
   FortyTwoLevel,
@@ -37,7 +40,9 @@ export function Calculator({
       levels={levels}
       projects={projects}
     >
+      <PlannedProjectsSync />
       <CalculatorStoreProvider>
+        <CalculatorPlanSeed />
         <CalculatorTable />
       </CalculatorStoreProvider>
     </FortyTwoStoreProvider>
@@ -51,15 +56,19 @@ function CalculatorTable() {
   const data = useMemo(() => getProjects(), [entries]);
 
   const [expanded, setExpanded] = useState<ExpandedState>({});
-  const [columnVisibility, setColumnVisibility] = useState<VisibilityState>(
-    columns.reduce((acc, column) => {
-      if (column.id !== undefined) {
-        acc[column.id] = column.meta?.visible ?? true;
-      }
+  // Persisted across reloads so the user's Base/Gained Experience column
+  // choices stick.
+  const [columnVisibility, setColumnVisibility] =
+    useLocalStorage<VisibilityState>(
+      "calculator:column-visibility",
+      columns.reduce((acc, column) => {
+        if (column.id !== undefined) {
+          acc[column.id] = column.meta?.visible ?? true;
+        }
 
-      return acc;
-    }, {} as VisibilityState),
-  );
+        return acc;
+      }, {} as VisibilityState),
+    );
 
   const table = useReactTable({
     data,

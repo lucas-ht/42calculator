@@ -3,6 +3,7 @@ from dataclasses import dataclass
 
 import requests
 
+from fortytwo_client.config import REQUEST_TIMEOUT
 from fortytwo_client.exceptions import FortyTwoAuthException
 
 
@@ -57,7 +58,7 @@ class FortyTwoAuthentication:
             response = requests.post(
                 url='https://api.intra.42.fr/oauth/token',
                 data=data,
-                timeout=10
+                timeout=REQUEST_TIMEOUT
             )
             response.raise_for_status()
 

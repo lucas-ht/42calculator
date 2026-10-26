@@ -6,21 +6,21 @@ services:
     ports:
       - "3000:3000"
       - "43214:43214"
-    develop:
-      watch:
-        - action: sync
-          path: .
-          target: /app
-          ignore:
-            - node_modules
-        - action: rebuild
-          path: package.json
+    # Bind-mount source for live reload under plain `docker compose up`.
+    # Anonymous volumes keep the image's own node_modules/.next (owned by the
+    # nextjs user) instead of shadowing them with the host's.
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
     environment:
       VERCEL_ENV: "development"
       AUTH_SECRET: "${AUTH_SECRET}"
       AUTH_42_SCHOOL_ID: "${AUTH_42_SCHOOL_ID}"
       AUTH_42_SCHOOL_SECRET: "${AUTH_42_SCHOOL_SECRET}"
-      KV_REST_API_URL: "${KV_REST_API_URL}"
+      # Inside the compose network the app reaches the HTTP proxy by its
+      # service name, not the host-facing localhost URL from .env.
+      KV_REST_API_URL: "http://redis-http"
       KV_REST_API_TOKEN: "${KV_REST_API_TOKEN}"
 
   redis:
@@ -28,6 +28,10 @@ services:
 
   redis-http:
     image: hiett/serverless-redis-http:latest
+    # Publish the proxy so a locally-run `next dev` (outside compose) can
+    # reach it at http://localhost:8079. Container listens on port 80.
+    ports:
+      - "8079:80"
     environment:
       SRH_MODE: "env"
       SRH_TOKEN: "${KV_REST_API_TOKEN}"

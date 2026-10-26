@@ -20,21 +20,29 @@ const providers: Provider[] = [
     clientId: process.env.AUTH_42_SCHOOL_ID,
     clientSecret: process.env.AUTH_42_SCHOOL_SECRET,
 
-    profile(profile: FortyTwoProfile, tokens): User {
-      after(async () => {
+    async profile(profile: FortyTwoProfile, tokens): Promise<User> {
+      // Fetch and store the cursus *before* returning, so it is available on
+      // the very first render after sign-in. Deferring this with after() let
+      // the redirect to /calculator read the cache before the write landed,
+      // which showed a level of 0 until the page was refreshed.
+      try {
         const cursus = await parseCursus(
           profile,
           tokens.access_token as string,
         );
 
-        try {
-          await kv.set(`cursus:${profile.login}`, cursus, {
-            ex: SESSION_MAX_AGE,
-          });
-        } catch (error) {
-          return Promise.reject(error);
-        }
-      });
+        await kv.set(`cursus:${profile.login}`, cursus, {
+          ex: SESSION_MAX_AGE,
+        });
+      } catch (error) {
+        // Don't block sign-in if the cursus can't be fetched or stored; the UI
+        // falls back to defaults until the data becomes available.
+        console.error(
+          `[auth] Could not store cursus for "${profile.login}". ` +
+            `Verify KV_REST_API_URL (${process.env.KV_REST_API_URL}) is reachable ` +
+            `from this container and KV_REST_API_TOKEN matches the proxy. Cause: ${error}`,
+        );
+      }
 
       return {
         login: profile.login,
@@ -78,6 +86,9 @@ if (isDevelopment) {
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   basePath: "/auth",
+  // Self-hosted behind a reverse proxy (Coolify/Traefik): trust the
+  // X-Forwarded-Host header so Auth.js doesn't reject the request host.
+  trustHost: true,
   pages: {
     signIn: "/",
     signOut: "/",

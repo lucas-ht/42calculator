@@ -51,7 +51,7 @@ class FortyTwoRequest(Generic[T]):
             params=[
                 param.to_query_param() for param in self.params
             ],
-            timeout=10
+            timeout=self.ressource.config.request_timeout
         )
 
         response.raise_for_status()

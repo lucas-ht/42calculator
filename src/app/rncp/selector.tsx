@@ -29,7 +29,7 @@ function MainSelector({
           key={title.title}
           value={title.title}
           variant={activeTitle.title === title.title ? "default" : "secondary"}
-          className="relative flex h-[88px] items-center justify-center truncate"
+          className="relative flex h-[88px] items-center justify-center overflow-hidden truncate"
           data-state={activeTitle.title === title.title ? "active" : "inactive"}
           onClick={() => setActiveTitle(title)}
           aria-label={title.title}
@@ -41,7 +41,7 @@ function MainSelector({
             variant={
               activeTitle.title === title.title ? "secondary" : "default"
             }
-            className="absolute top-0 left-0 rounded-none rounded-tl-md rounded-br-md"
+            className="absolute top-0 left-0 rounded-none rounded-br-md"
           >
             {title.type === "rncp-6" ? "RNCP 6" : "RNCP 7"}
           </Badge>

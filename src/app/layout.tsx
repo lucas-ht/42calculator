@@ -27,6 +27,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const shouldInjectToolbar = process.env.NODE_ENV === "development";
+  // The Vercel analytics/speed-insights scripts are only served by Vercel's
+  // infrastructure; on other hosts (e.g. Coolify) they 404 and warn, so only
+  // render them when actually running on Vercel.
+  const isVercel = process.env.VERCEL === "1";
   return (
     <html
       lang="en"
@@ -58,8 +62,8 @@ export default function RootLayout({
           </StrictMode>
         </ThemeProvider>
 
-        <Analytics />
-        <SpeedInsights />
+        {isVercel && <Analytics />}
+        {isVercel && <SpeedInsights />}
         {shouldInjectToolbar && <VercelToolbar />}
       </body>
     </html>

@@ -4,6 +4,7 @@ import { MobileNav } from "./nav/mobile-nav";
 import ThemeToggle from "./theme-toggle";
 import UserMenu from "./user-menu/user-menu";
 import { Button } from "@/components/ui/button";
+import { GitFork } from "lucide-react";
 import Link from "next/link";
 import GitHub from "../icons/GitHub";
 
@@ -24,12 +25,14 @@ export async function Header() {
             className="hidden md:flex"
           >
             <Link
-              href="https://github.com/lucas-ht/42calculator"
+              href="https://github.com/pulgamecanica/42calculator"
               target="_blank"
               rel="noopener noreferrer"
+              title="This is a fork. Original: https://github.com/lucas-ht/42calculator"
             >
               <GitHub className="mr-2 size-6" />
               Star on GitHub
+              <GitFork className="ml-2 size-4" />
             </Link>
           </Button>
 

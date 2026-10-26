@@ -9,13 +9,20 @@ import {
 } from "@/types/forty-two";
 import { getFortyTwoProjects } from "./forty-two-projects";
 
+// The RNCP data is static local JSON, so parse it once and reuse the result
+// for the lifetime of the server process.
+let cachedTitles: FortyTwoTitle[] | undefined;
+
 export async function getFortyTwoTitles(): Promise<FortyTwoTitle[]> {
-  "use cache";
+  if (cachedTitles !== undefined) {
+    return cachedTitles;
+  }
 
   try {
     const titles = await loadLocalData(`rncp_${FortyTwoCursusId.MAIN}`);
 
-    return await parseTitles(titles);
+    cachedTitles = await parseTitles(titles);
+    return cachedTitles;
   } catch (error) {
     process.stderr.write(`Error loading rncp: ${error}\n`);
   }

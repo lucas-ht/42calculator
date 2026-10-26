@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Switch } from "@/components/ui/switch";
 import { useCalculatorStore } from "@/providers/calculator-store-provider";
+import { usePlannedProjects } from "@/stores/planned-projects-store";
 import type { CalculatorEntry } from "@/types/forty-two";
 import { Trash2 } from "lucide-react";
 import type React from "react";
@@ -53,6 +54,7 @@ export function RemoveProject({
   entry: CalculatorEntry;
 }) {
   const { removeProject } = useCalculatorStore((state) => state);
+  const unplan = usePlannedProjects((state) => state.remove);
 
   return (
     <Button
@@ -61,6 +63,8 @@ export function RemoveProject({
       className="group"
       onClick={() => {
         removeProject(entry.project.id);
+        // Keep the shared plan (RNCP + localStorage) in sync.
+        unplan(entry.project.id);
 
         track("calculator-project-removed", {
           project: entry.project.name,
@@ -79,6 +83,7 @@ export function ProjectBonus({
   entry: CalculatorEntry;
 }) {
   const { updateProject } = useCalculatorStore((state) => state);
+  const persistConfig = usePlannedProjects((state) => state.setConfig);
 
   return (
     <Switch
@@ -91,6 +96,7 @@ export function ProjectBonus({
             bonus: checked,
           },
         });
+        persistConfig(entry.project.id, { bonus: checked });
       }}
       aria-label="Project bonus"
     />

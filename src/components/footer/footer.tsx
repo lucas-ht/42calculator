@@ -1,4 +1,5 @@
 import { Separator } from "@/components/ui/separator";
+import { GitFork } from "lucide-react";
 import Link from "next/link";
 import GitHub from "../icons/GitHub";
 
@@ -18,7 +19,8 @@ export function Footer() {
           rel="noopener noreferrer"
         >
           <div className="inline-flex items-center text-muted-foreground transition-colors hover:text-foreground">
-            <div className="truncate text-xs">Checkout the Code</div>
+            <GitFork className="mr-1 h-3" />
+            <div className="truncate text-xs">Fork — Checkout the Code</div>
             <GitHub className="ml-2 h-4" />
           </div>
         </Link>
