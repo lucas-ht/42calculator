@@ -50,7 +50,7 @@ export function StartLevel() {
 
 export function RemoveProject({ entry }: { entry: CalculatorEntry }) {
   const { removeProject } = useCalculatorStore((state) => state);
-  const unplan = usePlannedProjects((state) => state.remove);
+  const removePlannedProject = usePlannedProjects((state) => state.remove);
 
   return (
     <Button
@@ -60,7 +60,7 @@ export function RemoveProject({ entry }: { entry: CalculatorEntry }) {
       onClick={() => {
         removeProject(entry.project.id);
         // Keep the shared plan (RNCP + localStorage) in sync.
-        unplan(entry.project.id);
+        removePlannedProject(entry.project.id);
 
         track("calculator-project-removed", {
           project: entry.project.name,

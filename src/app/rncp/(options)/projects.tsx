@@ -116,7 +116,7 @@ function Project({
   const isValidated = getProjectProgress(project, cursus, {}).projects > 0;
   // Only top-level option projects feed the requirement bars, and an
   // already-validated project can't be improved by simulating it.
-  const isSimulatable = depth === 0 && !isValidated;
+  const canSimulate = depth === 0 && !isValidated;
 
   const content = (
     <>
@@ -144,7 +144,7 @@ function Project({
           depth={depth}
         />
 
-        {isSimulatable ? (
+        {canSimulate ? (
           <button
             type="button"
             onClick={() => toggle(project.id)}

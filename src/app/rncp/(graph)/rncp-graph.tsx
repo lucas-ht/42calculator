@@ -883,9 +883,9 @@ export function RncpGraph({ titles }: { titles: FortyTwoTitle[] }) {
                   radius: number,
                   real: number,
                   sim: number,
-                  gkey: string,
+                  groupKey: string,
                 ) => (
-                  <g key={gkey}>
+                  <g key={groupKey}>
                     <path
                       d={arcPath(radius, a0, a1)}
                       fill="none"

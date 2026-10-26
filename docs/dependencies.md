@@ -1,6 +1,6 @@
 # Dependency maintenance
 
-The npm manifest and both lockfiles were refreshed on 26 October 2026.
+The npm manifest and both lock files were refreshed on 26 October 2026.
 Dependencies use the latest stable versions, with two intentional release lines:
 
 - `@types/node` follows the deployed Node.js 24 runtime.
@@ -13,5 +13,5 @@ compiler API through ts-node.
 
 The typography plugin still requests a vulnerable selector parser. Its scoped
 `postcss-selector-parser` override selects 7.1.6, the patched release for
-[GHSA-rj75-hqrm-r3gf](https://github.com/advisories/GHSA-rj75-hqrm-r3gf).
+[the security advisory](https://github.com/advisories/GHSA-rj75-hqrm-r3gf).
 Remove that override when typography requests a patched version itself.
