@@ -1,10 +1,14 @@
 {
   "name": "42calculator",
   "private": true,
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "typecheck": "tsc --noEmit",
     "test": "jest"
   },
   "dependencies": {
@@ -30,11 +34,11 @@
     "embla-carousel-react": "8.5.1",
     "embla-carousel-wheel-gestures": "8.0.1",
     "lucide-react": "0.469.0",
-    "next": "16.2.10",
+    "next": "16.4.3",
     "next-auth": "5.0.0-beta.31",
     "next-themes": "0.4.4",
-    "react": "^19.2.1",
-    "react-dom": "^19.2.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
     "react-responsive": "10.0.0",
     "tailwind-merge": "2.6.0",
     "tailwindcss-animate": "1.0.7",
@@ -49,9 +53,9 @@
     "@testing-library/jest-dom": "6.6.3",
     "@testing-library/react": "16.1.0",
     "@types/jest": "29.5.14",
-    "@types/node": "22.10.2",
-    "@types/react": "19.0.2",
-    "@types/react-dom": "19.0.2",
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
     "jest": "29.7.0",
     "jest-environment-jsdom": "29.7.0",
     "postcss": "8.5.16",
