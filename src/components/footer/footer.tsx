@@ -14,8 +14,9 @@ export function Footer() {
         </Link>
         <Separator orientation="vertical" />
         <Link
-          href="https://github.com/pulgamecanica/42calculator"
-          title="This is a fork. Original: https://github.com/lucas-ht/42calculator"
+          href="https://github.com/lucas-ht/42calculator"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <div className="inline-flex items-center text-muted-foreground transition-colors hover:text-foreground">
             <GitFork className="mr-1 h-3" />
