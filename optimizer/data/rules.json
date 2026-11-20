@@ -1,0 +1,366 @@
+{
+  "_doc": [
+    "Connaissances curees a la main. L'API 42 n'expose PAS les prerequis entre projets",
+    "(le champ `parent` des dumps = conteneur de piscine, pas un prerequis).",
+    "Tout ce qui est ici est editable : le solveur relit ce fichier a chaque run.",
+    "Chaque chaine est une suite STRICTEMENT sequentielle : on ne peut valider l'element",
+    "k qu'apres 1..k-1. Le solveur n'autorise donc que des prefixes de chaine."
+  ],
+  "chains": [
+    {
+      "id": "appr-1an",
+      "label": "Apprentissage 1 an (4 periodes)",
+      "confidence": "certain",
+      "note": "Les 4 sous-projets sont des periodes d'evaluation successives.",
+      "projects": [
+        1877,
+        1878,
+        1879,
+        1880
+      ]
+    },
+    {
+      "id": "appr-2ans",
+      "label": "Apprentissage 2 ans (2 x 4 periodes)",
+      "confidence": "certain",
+      "note": "Annee 2 apres annee 1, 4 periodes chacune.",
+      "projects": [
+        1861,
+        1862,
+        1863,
+        1864,
+        1869,
+        1870,
+        1871,
+        1872
+      ]
+    }
+  ],
+  "duration_overrides": {
+    "_doc": [
+      "Duree reelle en JOURS, quand l'intra enregistre une fenetre d'evaluation",
+      "au lieu du temps de travail. Sans ca l'optimiseur croit qu'une alternance",
+      "de 2 ans se fait en 9 jours et la choisit toujours pour l'objectif temps."
+    ],
+    "days": {
+      "1877": 91,
+      "1878": 91,
+      "1879": 91,
+      "1880": 92,
+      "1861": 91,
+      "1862": 91,
+      "1863": 91,
+      "1864": 92,
+      "1869": 91,
+      "1870": 91,
+      "1871": 91,
+      "1872": 92
+    }
+  },
+  "common_core": {
+    "_doc": "Tronc commun : considere comme deja fait (le niveau 17/21 l'implique). Exclu des candidats.",
+    "projects": [
+      1314,
+      1316,
+      1327,
+      1994,
+      1334,
+      1331,
+      1471,
+      2007,
+      1326,
+      1315,
+      2005,
+      2004,
+      2009,
+      2008,
+      1476,
+      1338,
+      1339,
+      1340,
+      1341,
+      1342,
+      1343,
+      1344,
+      1345,
+      1346,
+      2309,
+      1983,
+      1335,
+      1329,
+      1328,
+      1332,
+      1336,
+      1337,
+      1320,
+      1321,
+      1322,
+      1323,
+      1324
+    ]
+  },
+  "excluded": {
+    "_doc": [
+      "Doublons de gestion / entrees mortes qui fausseraient l'optimisation.",
+      "2338-2341 et 2561-2564 = lignes de gestion 'Alternance/Apprentissage RNCP x' qui",
+      "font doublon avec la structure Apprentissage 1873/1857/1865 : 90k a 180k XP en",
+      "un seul 'projet'. Les garder rendrait tout plan trivial et faux."
+    ],
+    "projects": {
+      "2338": "doublon gestion alternance (voir chaine appr-1an)",
+      "2339": "doublon gestion alternance (voir chaine appr-2ans)",
+      "2340": "doublon gestion alternance (voir chaine appr-1an)",
+      "2341": "doublon gestion alternance (voir chaine appr-2ans)",
+      "2561": "doublon gestion alternance",
+      "2562": "doublon gestion alternance",
+      "2563": "doublon gestion alternance",
+      "2564": "doublon gestion alternance",
+      "1853": "doublon de doom-nukem (1458)",
+      "2625": "entree de test 'cc1'",
+      "2553": "entree de test 'Very_Real_Engine'",
+      "1873": "conteneur Apprentissage 1 an (XP portee par les sous-projets)",
+      "1857": "conteneur Apprentissage 2 ans annee 1",
+      "1865": "conteneur Apprentissage 2 ans annee 2",
+      "2065": "conteneur Rushes",
+      "1799": "conteneur Piscine Java (hors cursus RNCP)",
+      "1848": "Electronique - 244j, campus specifique",
+      "2126": "ft_minecraft - 175j, 2 completions",
+      "1635": "Open Project - contenu libre, non comparable"
+    }
+  },
+  "titles": {
+    "_doc": "Noms courts demandes : rncp6-1, rncp6-2, rncp7-1, rncp7-2. Mappes sur l'ordre du dump rncp_21.json.",
+    "map": [
+      {
+        "key": "rncp6-1",
+        "index": 0
+      },
+      {
+        "key": "rncp6-2",
+        "index": 1
+      },
+      {
+        "key": "rncp7-1",
+        "index": 2
+      },
+      {
+        "key": "rncp7-2",
+        "index": 3
+      }
+    ]
+  },
+  "availability": {
+    "_doc": [
+      "Un projet hors pool RNCP avec moins de `min_completions` validations est traite",
+      "comme indisponible (projet retire, campus unique, jamais ouvert).",
+      "Les projets DANS un pool RNCP sont toujours gardes, meme a 0 completion,",
+      "mais marques `risky` dans la sortie."
+    ],
+    "min_completions": 5
+  },
+  "prereqs": {
+    "_doc": "Prerequis intra (holy graph Lyon, campus 9, cursus 21, regles 'must'/'should have validated'), hors tronc commun. cle = projet, valeur = projets a valider avant. Modules de piscine ramenes a la piscine.",
+    "source": "projects.intra.42.fr/project_data.json?cursus_id=21&campus_id=9 (2026-11-20)",
+    "projects": {
+      "1386": [
+        1464
+      ],
+      "1387": [
+        1390
+      ],
+      "1388": [
+        1464
+      ],
+      "1389": [
+        1394
+      ],
+      "1394": [
+        1390
+      ],
+      "1400": [
+        1399
+      ],
+      "1402": [
+        1401
+      ],
+      "1406": [
+        1395
+      ],
+      "1407": [
+        1403
+      ],
+      "1408": [
+        1409
+      ],
+      "1410": [
+        1394
+      ],
+      "1416": [
+        1415
+      ],
+      "1417": [
+        1404
+      ],
+      "1420": [
+        1381
+      ],
+      "1421": [
+        1415
+      ],
+      "1422": [
+        1415
+      ],
+      "1423": [
+        1415
+      ],
+      "1424": [
+        1425
+      ],
+      "1425": [
+        1416
+      ],
+      "1426": [
+        1424
+      ],
+      "1429": [
+        1403
+      ],
+      "1430": [
+        1419
+      ],
+      "1431": [
+        1426
+      ],
+      "1432": [
+        1431
+      ],
+      "1433": [
+        1382
+      ],
+      "1436": [
+        1435
+      ],
+      "1437": [
+        1436
+      ],
+      "1438": [
+        1432
+      ],
+      "1439": [
+        1438
+      ],
+      "1440": [
+        1439
+      ],
+      "1441": [
+        1440
+      ],
+      "1442": [
+        1441
+      ],
+      "1443": [
+        1430
+      ],
+      "1444": [
+        1443
+      ],
+      "1445": [
+        1444
+      ],
+      "1446": [
+        1404
+      ],
+      "1447": [
+        1419
+      ],
+      "1448": [
+        1417
+      ],
+      "1450": [
+        1452
+      ],
+      "1451": [
+        1397
+      ],
+      "1452": [
+        1451
+      ],
+      "1454": [
+        1394
+      ],
+      "1456": [
+        1416
+      ],
+      "1457": [
+        1453
+      ],
+      "1464": [
+        1468
+      ],
+      "1644": [
+        1638
+      ],
+      "1662": [
+        1638
+      ],
+      "2098": [
+        2077
+      ],
+      "2126": [
+        1449
+      ],
+      "2295": [
+        2267
+      ],
+      "2371": [
+        2364
+      ],
+      "2372": [
+        1453
+      ],
+      "2381": [
+        2380
+      ],
+      "2393": [
+        1446
+      ],
+      "2531": [
+        2076
+      ],
+      "2551": [
+        1453
+      ],
+      "2552": [
+        1406
+      ],
+      "2600": [
+        2485
+      ],
+      "2606": [
+        1330
+      ],
+      "2625": [
+        2381,
+        2606
+      ],
+      "2743": [
+        2744
+      ],
+      "2744": [
+        2745
+      ],
+      "2746": [
+        2064
+      ],
+      "2747": [
+        2064
+      ],
+      "2748": [
+        2225
+      ],
+      "2750": [
+        2746
+      ]
+    }
+  }
+}

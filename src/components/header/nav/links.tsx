@@ -21,4 +21,8 @@ export const navLinks: NavLink[] = [
     href: "/rncp",
     isProtected: true,
   },
+  {
+    text: "Planner",
+    href: "/planner",
+  },
 ];
